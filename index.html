@@ -322,11 +322,8 @@ fetch('kanban_data.json')
 
 function initFilters(data) {
   const bases = [...new Set(data.map(d => d.base || ''))].sort();
-  const subjects = [...new Set(data.map(d => d.subject || ''))].sort();
-  const groups = [...new Set(data.map(d => d.group || ''))].sort();
   fillSelect('filterBase', bases);
-  fillSelect('filterSubject', subjects);
-  fillSelect('filterGroup', groups);
+  refreshDependentFilters();
 
   const totalGroups = new Set(allData.map(d => d.subject + '||' + d.group)).size;
   document.getElementById('totalGroups').textContent = totalGroups;
@@ -334,13 +331,39 @@ function initFilters(data) {
   document.getElementById('dataDate').textContent = new Date().toLocaleDateString('zh-CN');
 }
 
-function fillSelect(id, values) {
+function fillSelect(id, values, selected) {
   const sel = document.getElementById(id);
+  sel.innerHTML = '';
+  const allOpt = document.createElement('option');
+  allOpt.value = ''; allOpt.textContent = '全部';
+  sel.appendChild(allOpt);
   values.forEach(v => {
     const opt = document.createElement('option');
     opt.value = v; opt.textContent = v;
+    if (v === selected) opt.selected = true;
     sel.appendChild(opt);
   });
+}
+
+// 根据当前上级筛选条件，刷新下级筛选器选项
+function refreshDependentFilters() {
+  const f = getFilters();
+
+  // 基地确定后，筛选教学组选项
+  if (f.base) {
+    const baseGroups = [...new Set(allData.filter(d => d.base === f.base).map(d => d.group || ''))].sort();
+    fillSelect('filterGroup', baseGroups, f.group);
+  } else {
+    const groups = [...new Set(allData.map(d => d.group || ''))].sort();
+    fillSelect('filterGroup', groups, f.group);
+  }
+
+  // 基地+教学组确定后，筛选学科选项
+  let subjData = allData;
+  if (f.base) subjData = subjData.filter(d => d.base === f.base);
+  if (f.group) subjData = subjData.filter(d => d.group === f.group);
+  const subjects = [...new Set(subjData.map(d => d.subject || ''))].sort();
+  fillSelect('filterSubject', subjects, f.subject);
 }
 
 function getFilters() {
@@ -525,7 +548,19 @@ function toggleGroup(key, btn) {
 }
 
 ['filterBase','filterSubject','filterGroup'].forEach(id => {
-  document.getElementById(id).addEventListener('change', () => render(allData));
+  document.getElementById(id).addEventListener('change', function() {
+    const thisId = this.id;
+    if (thisId === 'filterBase') {
+      // 基地变了，教学组重置，学科跟着变
+      document.getElementById('filterGroup').value = '';
+      document.getElementById('filterSubject').value = '';
+    } else if (thisId === 'filterGroup') {
+      // 教学组变了，学科跟着变
+      document.getElementById('filterSubject').value = '';
+    }
+    refreshDependentFilters();
+    render(allData);
+  });
 });
 document.getElementById('searchInput').addEventListener('input', () => render(allData));
 
