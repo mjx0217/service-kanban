@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>服务沟通看板</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #1a73e8, #0d47a1);
+  color: white;
+  padding: 20px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.header h1 { font-size: 22px; font-weight: 600; }
+.header-right { font-size: 13px; opacity: 0.85; }
+
+/* Filter Bar */
+.filter-bar {
+  background: white;
+  padding: 16px 32px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e8e8e8;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.filter-group label { font-size: 13px; color: #666; font-weight: 500; }
+.filter-group select {
+  padding: 6px 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  font-size: 13px;
+  outline: none;
+  min-width: 120px;
+  cursor: pointer;
+}
+.filter-group select:focus { border-color: #1a73e8; }
+.filter-stats {
+  margin-left: auto;
+  font-size: 13px;
+  color: #888;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.search-box input {
+  padding: 6px 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  font-size: 13px;
+  outline: none;
+  width: 160px;
+}
+.search-box input:focus { border-color: #1a73e8; }
+
+/* Group Sections */
+.section { padding: 16px 32px; }
+.group-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.group-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a73e8;
+  background: #e8f0fe;
+  padding: 5px 14px;
+  border-radius: 20px;
+  display: inline-block;
+}
+.group-title.teacher-mode {
+  background: #f0fdf4;
+  color: #16a34a;
+}
+.collapse-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+.collapse-btn:hover { background: #f0f0f0; }
+
+/* Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  border: 1px solid #f0f0f0;
+  transition: box-shadow 0.2s, transform 0.15s;
+}
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  transform: translateY(-1px);
+}
+.card-subject {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 6px;
+}
+.card-teacher {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 4px;
+}
+.card-pkg {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+.card-pkg.常规课包 { background: #e8f5e9; color: #2e7d32; }
+.card-pkg.抖音课包 { background: #fce4ec; color: #c62828; }
+
+.metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.metric {
+  background: #f8f9fa;
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+.metric-label {
+  font-size: 11px;
+  color: #888;
+  margin-bottom: 2px;
+}
+.metric-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a73e8;
+}
+.metric-value.green { color: #16a34a; }
+.metric-value.orange { color: #d97706; }
+.metric-value.red { color: #dc2626; }
+.metric-value.gray { color: #666; }
+
+/* Summary row in cards */
+.metric-small {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  font-size: 12px;
+}
+.metric-small-label { color: #888; }
+.metric-small-value { font-weight: 600; color: #444; }
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+  font-size: 15px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 24px;
+  color: #aaa;
+  font-size: 12px;
+}
+
+/* Scroll to top */
+.scroll-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 42px;
+  height: 42px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 2px 10px rgba(26,115,232,0.4);
+  display: none;
+  transition: opacity 0.2s;
+}
+.scroll-top.visible { display: block; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>📊 服务沟通看板</h1>
+  <div class="header-right">
+    <div>数据日期：<span id="dataDate">-</span></div>
+    <div style="margin-top:2px">共 <span id="totalCards">0</span> 条记录</div>
+  </div>
+</div>
+
+<div class="filter-bar">
+  <div class="filter-group">
+    <label>基地</label>
+    <select id="filterBase"><option value="">全部</option></select>
+  </div>
+  <div class="filter-group">
+    <label>学科</label>
+    <select id="filterSubject"><option value="">全部</option></select>
+  </div>
+  <div class="filter-group">
+    <label>教学组</label>
+    <select id="filterGroup"><option value="">全部</option></select>
+  </div>
+  <div class="filter-group">
+    <label>课包类型</label>
+    <select id="filterPkg"><option value="">全部</option></select>
+  </div>
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="搜索老师/教学组...">
+  </div>
+  <div class="filter-stats">
+    当前显示 <span id="visibleCount">0</span> / <span id="totalCount">0</span> 条
+  </div>
+</div>
+
+<div id="content"></div>
+<div class="footer">服务沟通看板 · 每日数据更新</div>
+
+<button class="scroll-top" id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+let allData = [];
+
+// Load data
+fetch('kanban_data.json')
+  .then(r => r.json())
+  .then(data => {
+    allData = data;
+    initFilters(data);
+    render(data);
+  })
+  .catch(() => {
+    document.getElementById('content').innerHTML = '<div class="empty-state">数据加载失败，请刷新重试</div>';
+  });
+
+function initFilters(data) {
+  const bases = [...new Set(data.map(d => d.group || ''))].sort();
+  const subjects = [...new Set(data.map(d => d.subject || ''))].sort();
+  const groups = [...new Set(data.map(d => d.group || ''))].sort();
+  const pkgs = [...new Set(data.map(d => d.packageType || ''))].sort();
+
+  fillSelect('filterBase', bases);
+  fillSelect('filterSubject', subjects);
+  fillSelect('filterGroup', groups);
+  fillSelect('filterPkg', pkgs);
+
+  document.getElementById('totalCards').textContent = data.length;
+  document.getElementById('totalCount').textContent = data.length;
+  document.getElementById('dataDate').textContent = new Date().toLocaleDateString('zh-CN');
+}
+
+function fillSelect(id, values) {
+  const sel = document.getElementById(id);
+  values.forEach(v => {
+    const opt = document.createElement('option');
+    opt.value = v;
+    opt.textContent = v;
+    sel.appendChild(opt);
+  });
+}
+
+function getFilters() {
+  return {
+    base: document.getElementById('filterBase').value,
+    subject: document.getElementById('filterSubject').value,
+    group: document.getElementById('filterGroup').value,
+    pkg: document.getElementById('filterPkg').value,
+    search: document.getElementById('searchInput').value.trim().toLowerCase()
+  };
+}
+
+function filterData(data) {
+  const f = getFilters();
+  return data.filter(d => {
+    if (f.base && d.base !== f.base) return false;
+    if (f.subject && d.subject !== f.subject) return false;
+    if (f.group && d.group !== f.group) return false;
+    if (f.pkg && d.packageType !== f.pkg) return false;
+    if (f.search) {
+      const s = f.search;
+      if (!d.teacher.toLowerCase().includes(s) && !d.group.toLowerCase().includes(s) && !d.subject.toLowerCase().includes(s)) return false;
+    }
+    return true;
+  });
+}
+
+function groupBy(data, keys) {
+  const groups = {};
+  data.forEach(d => {
+    const key = keys.map(k => d[k]).join('||');
+    if (!groups[key]) groups[key] = [];
+    groups[key].push(d);
+  });
+  return groups;
+}
+
+function pct(a, b) {
+  if (!b) return '0%';
+  return Math.round(a / b * 100) + '%';
+}
+
+function render(data) {
+  const filtered = filterData(data);
+  document.getElementById('visibleCount').textContent = filtered.length;
+
+  if (filtered.length === 0) {
+    document.getElementById('content').innerHTML = '<div class="empty-state">没有找到匹配的数据</div>';
+    return;
+  }
+
+  // Group by subject -> group -> teacher
+  const bySubject = groupBy(filtered, ['subject']);
+  let html = '';
+
+  Object.keys(bySubject).sort().forEach(subject => {
+    const subjectData = bySubject[subject];
+    const byGroup = groupBy(subjectData, ['group']);
+    
+    let subjectRows = '';
+    Object.keys(byGroup).sort().forEach(group => {
+      const groupData = byGroup[group];
+      const byTeacher = groupBy(groupData, ['teacher']);
+      
+      let groupRows = '';
+      Object.keys(byTeacher).sort().forEach(teacher => {
+        const teacherCards = byTeacher[teacher];
+        
+        let cardsHtml = '';
+        teacherCards.forEach(d => {
+          cardsHtml += renderCard(d);
+        });
+        groupRows += `<div style="margin-bottom:14px"><div class="group-title teacher-mode" style="margin-bottom:10px">👨‍🏫 ${teacher} <span style="font-weight:400;font-size:12px;color:#888">(${teacherCards.length} 个课包)</span></div><div class="card-grid">${cardsHtml}</div></div>`;
+      });
+      
+      subjectRows += `
+        <div style="background:white;border-radius:10px;padding:16px;margin-bottom:14px;box-shadow:0 1px 4px rgba(0,0,0,0.06);border:1px solid #f0f0f0">
+          <div class="group-title" style="margin-bottom:14px">👥 ${group}</div>
+          ${groupRows}
+        </div>`;
+    });
+
+    html += `
+      <div class="section">
+        <div class="group-header">
+          <span class="group-title" style="font-size:17px">📚 ${subject}</span>
+          <span style="font-size:12px;color:#888">${subjectData.length} 条记录</span>
+        </div>
+        ${subjectRows}
+      </div>`;
+  });
+
+  document.getElementById('content').innerHTML = html;
+}
+
+function renderCard(d) {
+  const pkgClass = d.packageType === '常规课包' ? '常规课包' : '抖音课包';
+  const bindRate = pct(d.bindCount, d.inClassCount);
+  const joinRate = pct(d.joinGroupCount, d.inClassCount);
+  const coverRate = pct(d.coverCount, d.inClassCount);
+  const confirmRate = pct(d.confirmCount, d.inClassCount);
+
+  return `
+    <div class="card">
+      <div class="card-subject">${d.subject}</div>
+      <div class="card-pkg ${pkgClass}">${d.packageType}</div>
+      <div class="metrics">
+        <div class="metric">
+          <div class="metric-label">在班人次</div>
+          <div class="metric-value">${fmt(d.inClassCount)}</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">绑定人次</div>
+          <div class="metric-value green">${fmt(d.bindCount)}</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">进群人次</div>
+          <div class="metric-value">${fmt(d.joinGroupCount)}</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">覆盖人次</div>
+          <div class="metric-value">${fmt(d.coverCount)}</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">交互人次</div>
+          <div class="metric-value orange">${fmt(d.interactCount)}</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">活跃人次</div>
+          <div class="metric-value">${fmt(d.activeCount)}</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">电话沟通</div>
+          <div class="metric-value gray">${fmt(d.phoneCount)}</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">出勤确认</div>
+          <div class="metric-value green">${fmt(d.confirmCount)}</div>
+        </div>
+        <div class="metric" style="grid-column:1/-1;background:#f0f9ff">
+          <div class="metric-label">预出勤人次</div>
+          <div class="metric-value" style="color:#0369a1">${fmt(d.attendCount)}</div>
+        </div>
+      </div>
+      <div style="margin-top:10px;padding-top:10px;border-top:1px solid #f0f0f0">
+        <div class="metric-small"><span class="metric-small-label">绑定率</span><span class="metric-small-value">${bindRate}</span></div>
+        <div class="metric-small"><span class="metric-small-label">进群率</span><span class="metric-small-value">${joinRate}</span></div>
+        <div class="metric-small"><span class="metric-small-label">覆盖率</span><span class="metric-small-value">${coverRate}</span></div>
+        <div class="metric-small"><span class="metric-small-label">出勤确认率</span><span class="metric-small-value">${confirmRate}</span></div>
+      </div>
+    </div>`;
+}
+
+function fmt(n) {
+  if (n >= 10000) return (n / 10000).toFixed(1) + 'w';
+  return n.toLocaleString();
+}
+
+// Bind filter events
+['filterBase','filterSubject','filterGroup','filterPkg'].forEach(id => {
+  document.getElementById(id).addEventListener('change', () => render(allData));
+});
+document.getElementById('searchInput').addEventListener('input', () => render(allData));
+
+// Scroll to top button
+window.addEventListener('scroll', () => {
+  document.getElementById('scrollTopBtn').classList.toggle('visible', window.scrollY > 300);
+});
+</script>
+</body>
+</html>
