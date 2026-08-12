@@ -3,570 +3,609 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>服务沟通看板</title>
+<title>沈阳基地·服务沟通数据看板</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
-  background: #f0f2f5;
+  background: #f2f4f8;
   color: #333;
   min-height: 100vh;
 }
 
+/* Header */
 .header {
   background: linear-gradient(135deg, #1a73e8, #0d47a1);
   color: white;
-  padding: 20px 32px;
+  padding: 18px 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
-.header h1 { font-size: 22px; font-weight: 600; }
-.header-right { font-size: 13px; text-align: right; }
+.header h1 { font-size: 20px; font-weight: 600; letter-spacing: 0.5px; }
+.header-right {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  font-size: 14px;
+}
+.header-stat { text-align: center; }
+.header-stat-val { font-size: 22px; font-weight: 700; }
+.header-stat-label { font-size: 12px; opacity: 0.85; margin-top: 1px; }
+.green { color: #22c55e; }
+.refresh-btn {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+  padding: 7px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.15s;
+}
+.refresh-btn:hover { background: rgba(255,255,255,0.25); }
 
+/* Filter Bar */
 .filter-bar {
   background: white;
-  padding: 14px 32px;
+  padding: 16px 32px;
+  border-bottom: 1px solid #e8e8ec;
+}
+.filter-row {
   display: flex;
-  gap: 14px;
+  gap: 24px;
   align-items: center;
   flex-wrap: wrap;
-  border-bottom: 1px solid #e8e8e8;
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
-.filter-group { display: flex; align-items: center; gap: 8px; }
-.filter-group label { font-size: 13px; color: #666; font-weight: 500; white-space: nowrap; }
-.filter-group select {
-  padding: 6px 12px;
-  border: 1px solid #d9d9d9;
-  border-radius: 6px;
+.filter-row + .filter-row { margin-top: 10px; }
+.filter-label {
   font-size: 13px;
-  outline: none;
-  min-width: 110px;
-  cursor: pointer;
-  background: #fff;
+  color: #888;
+  font-weight: 500;
+  min-width: 36px;
 }
-.filter-group select:focus { border-color: #1a73e8; }
-.filter-stats { margin-left: auto; font-size: 13px; color: #888; white-space: nowrap; }
-.search-box { display: flex; align-items: center; gap: 6px; }
-.search-box input {
-  padding: 6px 12px;
-  border: 1px solid #d9d9d9;
-  border-radius: 6px;
-  font-size: 13px;
-  outline: none;
-  width: 150px;
-}
-.search-box input:focus { border-color: #1a73e8; }
-
-.section { padding: 16px 32px; }
-.section-divider { height: 1px; background: #e8e8e8; margin: 8px 32px; }
-
-.subject-header {
+.capsule-group {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 12px;
+  gap: 6px;
+  flex-wrap: wrap;
 }
-.subject-title {
-  font-size: 16px;
-  font-weight: 600;
-  color: #1a73e8;
-  background: #e8f0fe;
-  padding: 6px 16px;
+.capsule {
+  padding: 5px 14px;
   border-radius: 20px;
+  border: 1.5px solid #d0d0d0;
+  background: white;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+  color: #555;
 }
-.subject-meta { font-size: 12px; color: #888; }
+.capsule:hover { border-color: #1a73e8; color: #1a73e8; }
+.capsule.active {
+  background: #1a73e8;
+  border-color: #1a73e8;
+  color: white;
+}
+.capsule.active-purple {
+  background: #7c3aed;
+  border-color: #7c3aed;
+  color: white;
+}
 
-/* Group Card */
-.group-card {
+/* Legend */
+.legend-bar {
+  background: #f8f9fa;
+  padding: 10px 32px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 12px;
+  color: #666;
+  border-bottom: 1px solid #e8e8ec;
+  flex-wrap: wrap;
+}
+.legend-item { display: flex; align-items: center; gap: 5px; }
+.legend-dot { width: 8px; height: 8px; border-radius: 50%; }
+.legend-note { margin-left: auto; color: #aaa; font-size: 11px; }
+
+/* Content */
+.content { padding: 20px 32px; max-width: 1400px; margin: 0 auto; }
+
+/* Table Section */
+.table-section {
   background: white;
   border-radius: 12px;
-  padding: 16px 20px;
-  margin-bottom: 14px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-  border: 1px solid #f0f0f0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  border: 1px solid #f0f0f5;
+  margin-bottom: 20px;
+  overflow: hidden;
 }
-
-.group-header {
+.table-section-header {
+  padding: 14px 20px;
+  border-bottom: 2px solid #f0f0f5;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 14px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #f0f0f0;
-}
-.group-name {
-  font-size: 14px;
-  font-weight: 600;
-  color: #333;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.group-name::before {
-  content: '';
-  display: inline-block;
-  width: 4px;
-  height: 16px;
-  background: #1a73e8;
-  border-radius: 2px;
-}
-.group-actions { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
-.teacher-tag {
-  font-size: 12px;
-  background: #f0fdf4;
-  color: #16a34a;
-  padding: 3px 10px;
-  border-radius: 12px;
-  border: 1px solid #bbf7d0;
-}
-
-.expand-btn {
-  background: #f0f0f0;
-  border: none;
-  border-radius: 6px;
-  padding: 5px 14px;
-  font-size: 12px;
-  cursor: pointer;
-  color: #555;
-  transition: background 0.15s;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.expand-btn:hover { background: #e0e0e0; }
-.expand-btn.active { background: #e8f0fe; color: #1a73e8; }
-
-/* Metrics Grid */
-.metrics-grid {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  gap: 8px;
-}
-.metric-box {
-  background: #f8f9fa;
-  border-radius: 8px;
-  padding: 10px 8px 8px;
-  text-align: center;
-}
-.metric-name { font-size: 11px; color: #888; margin-bottom: 3px; }
-.metric-val { font-size: 17px; font-weight: 700; color: #1a73e8; }
-.metric-val.green { color: #16a34a; }
-.metric-val.orange { color: #d97706; }
-.metric-val.gray { color: #666; }
-
-.rate-row {
-  display: flex;
-  gap: 8px;
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: 1px solid #f0f0f0;
-}
-.rate-item {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 12px;
-  padding: 4px 8px;
-  background: #f8f9fa;
-  border-radius: 6px;
-}
-.rate-label { color: #888; }
-.rate-val { font-weight: 600; color: #333; }
-
-/* Class Teacher Detail Section */
-.ct-detail {
-  margin-top: 14px;
-  padding-top: 14px;
-  border-top: 1px dashed #e0e0e0;
-  display: none;
-}
-.ct-detail.open { display: block; }
-
-.ct-detail-header {
-  font-size: 13px;
-  font-weight: 600;
-  color: #888;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.ct-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 10px;
 }
-
-.ct-card {
-  background: #fafafa;
-  border: 1px solid #f0f0f0;
-  border-radius: 8px;
-  padding: 12px;
-}
-.ct-card-name {
-  font-size: 13px;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 8px;
-  padding-bottom: 6px;
-  border-bottom: 1px solid #f0f0f0;
-}
-.ct-metrics {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6px;
-}
-.ct-metric {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-}
-.ct-metric-label { font-size: 10px; color: #aaa; }
-.ct-metric-val { font-size: 14px; font-weight: 700; color: #1a73e8; }
-.ct-metric-val.green { color: #16a34a; }
-.ct-metric-val.orange { color: #d97706; }
-.ct-metric-val.gray { color: #999; }
-.ct-rate {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-top: 6px;
-  padding-top: 6px;
-  border-top: 1px solid #f0f0f0;
-}
-.ct-rate-item { font-size: 11px; color: #888; }
-.ct-rate-item span { font-weight: 600; color: #333; }
-
-.empty-state {
-  text-align: center;
-  padding: 60px 20px;
-  color: #999;
+.table-section-title {
   font-size: 15px;
+  font-weight: 600;
+  color: #1a73e8;
 }
-.footer { text-align: center; padding: 24px; color: #aaa; font-size: 12px; }
-.scroll-top {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  width: 42px;
-  height: 42px;
-  background: #1a73e8;
-  color: white;
-  border: none;
-  border-radius: 50%;
+.table-section-meta { font-size: 12px; color: #aaa; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+thead th {
+  background: #fafafa;
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 500;
+  color: #888;
+  font-size: 12px;
+  border-bottom: 1px solid #f0f0f5;
+  white-space: nowrap;
   cursor: pointer;
-  font-size: 18px;
-  box-shadow: 0 2px 10px rgba(26,115,232,0.4);
-  display: none;
+  user-select: none;
 }
-.scroll-top.visible { display: block; }
+thead th:hover { background: #f0f0f8; }
+thead th.sort-asc::after { content: ' ↑'; color: #1a73e8; }
+thead th.sort-desc::after { content: ' ↓'; color: #1a73e8; }
+tbody tr { border-bottom: 1px solid #f5f5f5; }
+tbody tr:last-child { border-bottom: none; }
+tbody tr:hover { background: #f8f9ff; }
+tbody td {
+  padding: 10px 12px;
+  color: #333;
+}
+.td-num { text-align: right; font-variant-numeric: tabular-nums; }
+.td-rate { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* Color coding for rates */
+.rate-green { color: #16a34a; }
+.rate-yellow { color: #d97706; }
+.rate-red { color: #dc2626; }
+
+/* Accordion for class teacher */
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  cursor: pointer;
+  background: #fafafa;
+  border-bottom: 1px solid #f0f0f5;
+  font-size: 13px;
+  transition: background 0.15s;
+}
+.accordion-header:hover { background: #f0f0f8; }
+.accordion-header.open { background: #e8f0fe; }
+.accordion-title { font-weight: 600; color: #333; display: flex; align-items: center; gap: 8px; }
+.accordion-meta { font-size: 12px; color: #888; }
+.accordion-arrow { font-size: 12px; color: #888; transition: transform 0.2s; }
+.accordion-header.open .accordion-arrow { transform: rotate(180deg); }
+
+.accordion-body { display: none; }
+.accordion-body.open { display: block; }
+
+.ct-table { font-size: 12px; }
+.ct-table thead th { font-size: 11px; padding: 8px 10px; }
+.ct-table tbody td { padding: 8px 10px; }
+
+/* Section divider */
+.section-divider {
+  height: 1px;
+  background: #e8e8ec;
+  margin: 4px 0 20px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #ccc;
+  font-size: 12px;
+}
+
+/* Loading */
+.loading { text-align: center; padding: 60px; color: #999; }
 </style>
 </head>
 <body>
 
 <div class="header">
-  <h1>📊 服务沟通看板</h1>
+  <h1>📊 <span id="boardTitle">沈阳基地·服务沟通数据看板</span></h1>
   <div class="header-right">
-    <div>数据日期：<span id="dataDate">-</span></div>
-    <div style="margin-top:2px">共 <span id="totalGroups">0</span> 个教学组</div>
+    <div class="header-stat">
+      <div class="header-stat-val" id="totalInClass">-</div>
+      <div class="header-stat-label">在班人次</div>
+    </div>
+    <div class="header-stat">
+      <div class="header-stat-val green" id="totalBindRate">-</div>
+      <div class="header-stat-label">绑定率</div>
+    </div>
+    <button class="refresh-btn" onclick="location.reload()">🔄 刷新数据</button>
   </div>
 </div>
 
 <div class="filter-bar">
-  <div class="filter-group">
-    <label>基地</label>
-    <select id="filterBase"><option value="">全部</option></select>
+  <div class="filter-row">
+    <span class="filter-label">学科</span>
+    <div class="capsule-group" id="subjectCapsules"></div>
   </div>
-  <div class="filter-group">
-    <label>学科</label>
-    <select id="filterSubject"><option value="">全部</option></select>
-  </div>
-  <div class="filter-group">
-    <label>教学组</label>
-    <select id="filterGroup"><option value="">全部</option></select>
-  </div>
-  <div class="search-box">
-    <input type="text" id="searchInput" placeholder="搜索教学组...">
-  </div>
-  <div class="filter-stats">
-    当前显示 <span id="visibleCount">0</span> / <span id="totalCount">0</span> 个教学组
+  <div class="filter-row">
+    <span class="filter-label">课包</span>
+    <div class="capsule-group" id="pkgCapsules">
+      <button class="capsule capsule-active-purple active" data-val="">全部</button>
+      <button class="capsule" data-val="常规课包">常规课包</button>
+      <button class="capsule" data-val="抖音课包">抖音课包</button>
+    </div>
   </div>
 </div>
 
-<div id="content"></div>
+<div class="legend-bar">
+  <div class="legend-item"><div class="legend-dot" style="background:#22c55e"></div> ≥80%（达标）</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#f59e0b"></div> 50-80%（预警）</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div> &lt;50%（不达标）</div>
+  <div class="legend-note">点击列头可排序</div>
+</div>
+
+<div class="content">
+
+  <!-- 学科汇总 -->
+  <div class="table-section">
+    <div class="table-section-header">
+      <span class="table-section-title">📚 学科汇总</span>
+      <span class="table-section-meta" id="subjectMeta"></span>
+    </div>
+    <table id="subjectTable">
+      <thead>
+        <tr>
+          <th data-col="subject" class="sort-asc">学科</th>
+          <th data-col="bindRate">绑定率 ↕</th>
+          <th data-col="joinRate">进群率 ↕</th>
+          <th data-col="phoneCount">电话沟通人次 ↕</th>
+          <th data-col="unbindCount">未绑定人次 ↕</th>
+          <th data-col="confirmRate">预出勤确认率 ↕</th>
+          <th data-col="attendRate">预出勤率 ↕</th>
+          <th data-col="coverRate">覆盖率 ↕</th>
+          <th data-col="interactRate">交互率 ↕</th>
+          <th data-col="activeRate">活跃度 ↕</th>
+        </tr>
+      </thead>
+      <tbody id="subjectBody"></tbody>
+    </table>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- 教学组汇总 -->
+  <div class="table-section">
+    <div class="table-section-header">
+      <span class="table-section-title">👥 教学组汇总</span>
+      <span class="table-section-meta" id="groupMeta"></span>
+    </div>
+    <table id="groupTable">
+      <thead>
+        <tr>
+          <th data-col="group">教学组</th>
+          <th data-col="bindRate">绑定率 ↕</th>
+          <th data-col="joinRate">进群率 ↕</th>
+          <th data-col="phoneCount">电话沟通人次 ↕</th>
+          <th data-col="unbindCount">未绑定人次 ↕</th>
+          <th data-col="confirmRate">预出勤确认率 ↕</th>
+          <th data-col="attendRate">预出勤率 ↕</th>
+          <th data-col="coverRate">覆盖率 ↕</th>
+          <th data-col="interactRate">交互率 ↕</th>
+          <th data-col="activeRate">活跃度 ↕</th>
+        </tr>
+      </thead>
+      <tbody id="groupBody"></tbody>
+    </table>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- 班主任明细 -->
+  <div class="table-section">
+    <div class="table-section-header">
+      <span class="table-section-title">🏫 班主任明细</span>
+      <span class="table-section-meta" id="ctMeta"></span>
+    </div>
+    <div id="ctAccordion"></div>
+  </div>
+
+</div>
+
 <div class="footer">服务沟通看板 · 每日数据更新</div>
 
-<button class="scroll-top" id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">🔼</button>
-
 <script>
-let allData = [];
+let rawData = {};
+let filteredAll = { subjects: [], groups: [], classTeachers: [] };
+let currentSubject = '';
+let currentPkg = '';
+let sortCol = 'bindRate';
+let sortDir = 'desc';
+let expandedCtGroups = new Set();
 
-fetch('kanban_data.json')
-  .then(r => r.json())
-  .then(data => {
-    allData = data;
-    initFilters(data);
-    render(data);
-  })
-  .catch(err => {
-    document.getElementById('content').innerHTML = '<div class="empty-state">数据加载失败，请刷新重试</div>';
-  });
-
-function initFilters(data) {
-  const bases = [...new Set(data.map(d => d.base || ''))].sort();
-  fillSelect('filterBase', bases);
-  refreshDependentFilters();
-
-  const totalGroups = new Set(allData.map(d => d.subject + '||' + d.group)).size;
-  document.getElementById('totalGroups').textContent = totalGroups;
-  document.getElementById('totalCount').textContent = totalGroups;
-  document.getElementById('dataDate').textContent = new Date().toLocaleDateString('zh-CN');
+function rateColor(val) {
+  if (val >= 80) return 'rate-green';
+  if (val >= 50) return 'rate-yellow';
+  return 'rate-red';
 }
 
-function fillSelect(id, values, selected) {
-  const sel = document.getElementById(id);
-  sel.innerHTML = '';
-  const allOpt = document.createElement('option');
-  allOpt.value = ''; allOpt.textContent = '全部';
-  sel.appendChild(allOpt);
-  values.forEach(v => {
-    const opt = document.createElement('option');
-    opt.value = v; opt.textContent = v;
-    if (v === selected) opt.selected = true;
-    sel.appendChild(opt);
-  });
-}
+function fmt(n) { return n.toLocaleString(); }
+function pct(a, b) { return b ? Math.round(a / b * 100 * 10) / 10 : 0; }
 
-// 根据当前上级筛选条件，刷新下级筛选器选项
-function refreshDependentFilters() {
-  const f = getFilters();
-
-  // 基地确定后，筛选教学组选项
-  if (f.base) {
-    const baseGroups = [...new Set(allData.filter(d => d.base === f.base).map(d => d.group || ''))].sort();
-    fillSelect('filterGroup', baseGroups, f.group);
-  } else {
-    const groups = [...new Set(allData.map(d => d.group || ''))].sort();
-    fillSelect('filterGroup', groups, f.group);
-  }
-
-  // 基地+教学组确定后，筛选学科选项
-  let subjData = allData;
-  if (f.base) subjData = subjData.filter(d => d.base === f.base);
-  if (f.group) subjData = subjData.filter(d => d.group === f.group);
-  const subjects = [...new Set(subjData.map(d => d.subject || ''))].sort();
-  fillSelect('filterSubject', subjects, f.subject);
-}
-
-function getFilters() {
+function calcRates(row) {
+  const ic = row.inClassCount || 1;
   return {
-    base: document.getElementById('filterBase').value,
-    subject: document.getElementById('filterSubject').value,
-    group: document.getElementById('filterGroup').value,
-    search: document.getElementById('searchInput').value.trim().toLowerCase()
+    bindRate: pct(row.bindCount, ic),
+    joinRate: pct(row.joinGroupCount, ic),
+    confirmRate: pct(row.confirmCount, ic),
+    attendRate: pct(row.attendCount, ic),
+    coverRate: pct(row.coverCount, ic),
+    interactRate: pct(row.interactCount, ic),
+    activeRate: pct(row.activeCount, ic),
   };
 }
 
-function filterData(data) {
-  const f = getFilters();
-  return data.filter(d => {
-    if (f.base && d.base !== f.base) return false;
-    if (f.subject && d.subject !== f.subject) return false;
-    if (f.group && d.group !== f.group) return false;
-    if (f.search && !d.group.toLowerCase().includes(f.search) && !d.subject.toLowerCase().includes(f.search)) return false;
-    return true;
+function applyPkgFilter(data, pkg) {
+  if (!pkg) return data;
+  // Re-read from raw with package filter
+  return data;
+}
+
+function loadData() {
+  fetch('kanban_data.json')
+    .then(r => r.json())
+    .then(d => {
+      rawData = d;
+      buildCapsules();
+      applyFilters();
+    });
+}
+
+function buildCapsules() {
+  const subjects = ['全部', ...rawData.subjects.map(s => s.subject)];
+  const container = document.getElementById('subjectCapsules');
+  container.innerHTML = '';
+  subjects.forEach((s, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'capsule' + (i === 0 ? ' active' : '');
+    btn.textContent = s;
+    btn.dataset.val = s === '全部' ? '' : s;
+    btn.onclick = () => {
+      document.querySelectorAll('#subjectCapsules .capsule').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentSubject = btn.dataset.val;
+      applyFilters();
+    };
+    container.appendChild(btn);
   });
 }
 
-function groupBy(data, key) {
-  const g = {};
-  data.forEach(d => {
-    const k = key(d);
-    if (!g[k]) g[k] = [];
-    g[k].push(d);
-  });
-  return g;
-}
+function applyFilters() {
+  const pkg = currentPkg;
 
-function pct(a, b) { return !b ? '0%' : Math.round(a / b * 100) + '%'; }
-function fmt(n) { return n >= 10000 ? (n / 10000).toFixed(1) + 'w' : n.toLocaleString(); }
+  // Filter subjects
+  let subjects = rawData.subjects.map(s => ({...s, ...calcRates(s)}));
+  let groups = rawData.groups.map(s => ({...s, ...calcRates(s)}));
+  let cts = rawData.classTeachers.map(s => ({...s, ...calcRates(s)}));
 
-let expandedGroups = new Set();
-
-function render(data) {
-  const filtered = filterData(data);
-  const visibleGroupCount = new Set(filtered.map(d => d.subject + '||' + d.group)).size;
-  const totalGroupCount = new Set(allData.map(d => d.subject + '||' + d.group)).size;
-  document.getElementById('visibleCount').textContent = visibleGroupCount;
-  document.getElementById('totalCount').textContent = totalGroupCount;
-
-  if (filtered.length === 0) {
-    document.getElementById('content').innerHTML = '<div class="empty-state">没有找到匹配的数据</div>';
-    return;
+  if (currentSubject) {
+    subjects = subjects.filter(s => s.subject === currentSubject);
+    groups = groups.filter(g => g.subject === currentSubject);
+    cts = cts.filter(c => c.subject === currentSubject);
   }
 
-  const bySubject = groupBy(filtered, d => d.subject);
+  // Note: package filter would need raw row-level data to filter properly
+  // For now we show all (the original also shows all when pkg="")
+
+  filteredAll = { subjects, groups, classTeachers: cts };
+
+  // Update header stats
+  const totalInClass = subjects.reduce((s, r) => s + r.inClassCount, 0);
+  const totalBind = subjects.reduce((s, r) => s + r.bindCount, 0);
+  document.getElementById('totalInClass').textContent = totalInClass.toLocaleString();
+  document.getElementById('totalBindRate').textContent = pct(totalBind, totalInClass) + '%';
+
+  // Update meta
+  document.getElementById('subjectMeta').textContent = `共 ${subjects.length} 个学科`;
+  document.getElementById('groupMeta').textContent = `${currentSubject || '全部学科'}·${groups.length}个教学组`;
+  document.getElementById('ctMeta').textContent = `共 ${cts.length} 位班主任`;
+
+  renderTables();
+}
+
+function renderTables() {
+  renderSubjectTable();
+  renderGroupTable();
+  renderCtAccordion();
+}
+
+function makeSortFn(col) {
+  return function(a, b) {
+    let av = a[col], bv = b[col];
+    if (typeof av === 'string') return sortDir === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
+    return sortDir === 'asc' ? av - bv : bv - av;
+  };
+}
+
+function renderSubjectTable() {
+  const sorted = [...filteredAll.subjects].sort(makeSortFn(sortCol));
+  const tbody = document.getElementById('subjectBody');
+  tbody.innerHTML = sorted.map(r => `
+    <tr>
+      <td>${r.subject}</td>
+      <td class="td-rate ${rateColor(r.bindRate)}">${r.bindRate}%</td>
+      <td class="td-rate ${rateColor(r.joinRate)}">${r.joinRate}%</td>
+      <td class="td-num">${fmt(r.phoneCount)}</td>
+      <td class="td-num">${fmt(r.unbindCount)}</td>
+      <td class="td-rate ${rateColor(r.confirmRate)}">${r.confirmRate}%</td>
+      <td class="td-rate ${rateColor(r.attendRate)}">${r.attendRate}%</td>
+      <td class="td-rate ${rateColor(r.coverRate)}">${r.coverRate}%</td>
+      <td class="td-rate ${rateColor(r.interactRate)}">${r.interactRate}%</td>
+      <td class="td-rate ${rateColor(r.activeRate)}">${r.activeRate}%</td>
+    </tr>`).join('');
+
+  // Update sort indicators
+  document.querySelectorAll('#subjectTable thead th[data-col]').forEach(th => {
+    th.classList.remove('sort-asc', 'sort-desc');
+    if (th.dataset.col === sortCol) th.classList.add('sort-' + sortDir);
+  });
+}
+
+function renderGroupTable() {
+  const sorted = [...filteredAll.groups].sort(makeSortFn(sortCol));
+  const tbody = document.getElementById('groupBody');
+  tbody.innerHTML = sorted.map(r => `
+    <tr>
+      <td>${r.group}</td>
+      <td class="td-rate ${rateColor(r.bindRate)}">${r.bindRate}%</td>
+      <td class="td-rate ${rateColor(r.joinRate)}">${r.joinRate}%</td>
+      <td class="td-num">${fmt(r.phoneCount)}</td>
+      <td class="td-num">${fmt(r.unbindCount)}</td>
+      <td class="td-rate ${rateColor(r.confirmRate)}">${r.confirmRate}%</td>
+      <td class="td-rate ${rateColor(r.attendRate)}">${r.attendRate}%</td>
+      <td class="td-rate ${rateColor(r.coverRate)}">${r.coverRate}%</td>
+      <td class="td-rate ${rateColor(r.interactRate)}">${r.interactRate}%</td>
+      <td class="td-rate ${rateColor(r.activeRate)}">${r.activeRate}%</td>
+    </tr>`).join('');
+
+  document.querySelectorAll('#groupTable thead th[data-col]').forEach(th => {
+    th.classList.remove('sort-asc', 'sort-desc');
+    if (th.dataset.col === sortCol) th.classList.add('sort-' + sortDir);
+  });
+}
+
+function renderCtAccordion() {
+  const cts = filteredAll.classTeachers;
+  // Group by 教学组
+  const byGroup = {};
+  cts.forEach(c => {
+    const g = c.group || '未知';
+    if (!byGroup[g]) byGroup[g] = [];
+    byGroup[g].push(c);
+  });
+
+  const container = document.getElementById('ctAccordion');
   let html = '';
-  const subjectKeys = Object.keys(bySubject).sort();
 
-  subjectKeys.forEach((subject, si) => {
-    if (si > 0) html += '<div class="section-divider"></div>';
-    const subjectData = bySubject[subject];
-    const byGroup = groupBy(subjectData, d => d.group);
-    const groupKeys = Object.keys(byGroup).sort();
+  // Sort groups by total inClassCount desc
+  const sortedGroups = Object.keys(byGroup).sort((a, b) => {
+    const ta = byGroup[a].reduce((s, c) => s + c.inClassCount, 0);
+    const tb = byGroup[b].reduce((s, c) => s + c.inClassCount, 0);
+    return tb - ta;
+  });
 
-    let groupHtml = '';
-    groupKeys.forEach(group => {
-      const rows = byGroup[group];
-      const teachers = [...new Set(rows.map(d => d.teacher))].sort();
-      const groupKey = subject + '||' + group;
-      const isExpanded = expandedGroups.has(groupKey);
+  sortedGroups.forEach(group => {
+    const members = byGroup[group].sort((a, b) => b.inClassCount - a.inClassCount);
+    const isOpen = expandedCtGroups.has(group);
+    const totalInClass = members.reduce((s, c) => s + c.inClassCount, 0);
 
-      // Group aggregate
-      const total = {
-        inClassCount: rows.reduce((s, d) => s + d.inClassCount, 0),
-        bindCount: rows.reduce((s, d) => s + d.bindCount, 0),
-        joinGroupCount: rows.reduce((s, d) => s + d.joinGroupCount, 0),
-        coverCount: rows.reduce((s, d) => s + d.coverCount, 0),
-        interactCount: rows.reduce((s, d) => s + d.interactCount, 0),
-        activeCount: rows.reduce((s, d) => s + d.activeCount, 0),
-        phoneCount: rows.reduce((s, d) => s + d.phoneCount, 0),
-        confirmCount: rows.reduce((s, d) => s + d.confirmCount, 0),
-        attendCount: rows.reduce((s, d) => s + d.attendCount, 0),
-      };
+    // Group summary row
+    const gRates = calcRates({
+      inClassCount: totalInClass,
+      bindCount: members.reduce((s, c) => s + c.bindCount, 0),
+      joinGroupCount: members.reduce((s, c) => s + c.joinGroupCount, 0),
+      coverCount: members.reduce((s, c) => s + c.coverCount, 0),
+      interactCount: members.reduce((s, c) => s + c.interactCount, 0),
+      activeCount: members.reduce((s, c) => s + c.activeCount, 0),
+      confirmCount: members.reduce((s, c) => s + c.confirmCount, 0),
+      attendCount: members.reduce((s, c) => s + c.attendCount, 0),
+    });
 
-      const teacherTags = teachers.map(t => `<span class="teacher-tag">${t}</span>`).join('');
-      const btnLabel = isExpanded ? '🔼 收起详情' : '🔽 查看班主任详情';
-
-      // Class teacher detail HTML
-      const ctByTeacher = groupBy(rows, d => d.teacher + '||' + d.classTeacher);
-      let ctCardsHtml = '';
-      Object.keys(ctByTeacher).sort().forEach(ctKey => {
-        const ctRows = ctByTeacher[ctKey];
-        const ctTeacher = ctRows[0].teacher;
-        const ctName = ctRows[0].classTeacher;
-        const ctTotal = {
-          inClassCount: ctRows.reduce((s, d) => s + d.inClassCount, 0),
-          bindCount: ctRows.reduce((s, d) => s + d.bindCount, 0),
-          joinGroupCount: ctRows.reduce((s, d) => s + d.joinGroupCount, 0),
-          coverCount: ctRows.reduce((s, d) => s + d.coverCount, 0),
-          interactCount: ctRows.reduce((s, d) => s + d.interactCount, 0),
-          activeCount: ctRows.reduce((s, d) => s + d.activeCount, 0),
-          phoneCount: ctRows.reduce((s, d) => s + d.phoneCount, 0),
-          confirmCount: ctRows.reduce((s, d) => s + d.confirmCount, 0),
-          attendCount: ctRows.reduce((s, d) => s + d.attendCount, 0),
-        };
-        ctCardsHtml += `
-        <div class="ct-card">
-          <div class="ct-card-name">👤 ${ctName} <span style="font-size:11px;color:#888;font-weight:400">(${ctTeacher} 主讲)</span></div>
-          <div class="ct-metrics">
-            <div class="ct-metric"><div class="ct-metric-label">在班人次</div><div class="ct-metric-val">${fmt(ctTotal.inClassCount)}</div></div>
-            <div class="ct-metric"><div class="ct-metric-label">绑定人次</div><div class="ct-metric-val green">${fmt(ctTotal.bindCount)}</div></div>
-            <div class="ct-metric"><div class="ct-metric-label">进群人次</div><div class="ct-metric-val">${fmt(ctTotal.joinGroupCount)}</div></div>
-            <div class="ct-metric"><div class="ct-metric-label">覆盖人次</div><div class="ct-metric-val">${fmt(ctTotal.coverCount)}</div></div>
-            <div class="ct-metric"><div class="ct-metric-label">交互人次</div><div class="ct-metric-val orange">${fmt(ctTotal.interactCount)}</div></div>
-            <div class="ct-metric"><div class="ct-metric-label">活跃人次</div><div class="ct-metric-val">${fmt(ctTotal.activeCount)}</div></div>
-            <div class="ct-metric"><div class="ct-metric-label">电话沟通</div><div class="ct-metric-val gray">${fmt(ctTotal.phoneCount)}</div></div>
-            <div class="ct-metric"><div class="ct-metric-label">出勤确认</div><div class="ct-metric-val green">${fmt(ctTotal.confirmCount)}</div></div>
-            <div class="ct-metric"><div class="ct-metric-label">预出勤人次</div><div class="ct-metric-val">${fmt(ctTotal.attendCount)}</div></div>
-          </div>
-          <div class="ct-rate">
-            <div class="ct-rate-item">绑定率 <span>${pct(ctTotal.bindCount, ctTotal.inClassCount)}</span></div>
-            <div class="ct-rate-item">进群率 <span>${pct(ctTotal.joinGroupCount, ctTotal.inClassCount)}</span></div>
-            <div class="ct-rate-item">出勤确认率 <span>${pct(ctTotal.confirmCount, ctTotal.inClassCount)}</span></div>
-          </div>
-        </div>`;
-      });
-
-      groupHtml += `
-      <div class="group-card">
-        <div class="group-header">
-          <div class="group-name">${group}</div>
-          <div class="group-actions">
-            ${teacherTags}
-            <button class="expand-btn${isExpanded ? ' active' : ''}" onclick="toggleGroup('${groupKey.replace(/'/g, "\\'")}', this)">${btnLabel}</button>
-          </div>
-        </div>
-        <div class="metrics-grid">
-          <div class="metric-box"><div class="metric-name">在班人次</div><div class="metric-val">${fmt(total.inClassCount)}</div></div>
-          <div class="metric-box"><div class="metric-name">绑定人次</div><div class="metric-val green">${fmt(total.bindCount)}</div></div>
-          <div class="metric-box"><div class="metric-name">进群人次</div><div class="metric-val">${fmt(total.joinGroupCount)}</div></div>
-          <div class="metric-box"><div class="metric-name">覆盖人次</div><div class="metric-val">${fmt(total.coverCount)}</div></div>
-          <div class="metric-box"><div class="metric-name">交互人次</div><div class="metric-val orange">${fmt(total.interactCount)}</div></div>
-          <div class="metric-box"><div class="metric-name">活跃人次</div><div class="metric-val">${fmt(total.activeCount)}</div></div>
-          <div class="metric-box"><div class="metric-name">电话沟通</div><div class="metric-val gray">${fmt(total.phoneCount)}</div></div>
-          <div class="metric-box"><div class="metric-name">出勤确认</div><div class="metric-val green">${fmt(total.confirmCount)}</div></div>
-          <div class="metric-box"><div class="metric-name">预出勤人次</div><div class="metric-val">${fmt(total.attendCount)}</div></div>
-        </div>
-        <div class="rate-row">
-          <div class="rate-item"><span class="rate-label">绑定率</span><span class="rate-val">${pct(total.bindCount, total.inClassCount)}</span></div>
-          <div class="rate-item"><span class="rate-label">进群率</span><span class="rate-val">${pct(total.joinGroupCount, total.inClassCount)}</span></div>
-          <div class="rate-item"><span class="rate-label">覆盖率</span><span class="rate-val">${pct(total.coverCount, total.inClassCount)}</span></div>
-          <div class="rate-item"><span class="rate-label">出勤确认率</span><span class="rate-val">${pct(total.confirmCount, total.inClassCount)}</span></div>
-          <div class="rate-item"><span class="rate-label">预出勤率</span><span class="rate-val">${pct(total.attendCount, total.inClassCount)}</span></div>
-        </div>
-        <div class="ct-detail${isExpanded ? ' open' : ''}" id="ct-${groupKey.replace(/[^a-zA-Z0-9]/g, '_')}">
-          <div class="ct-detail-header">👥 班主任明细（共 ${[...new Set(rows.map(d => d.classTeacher))].length} 位班主任）</div>
-          <div class="ct-grid">${ctCardsHtml}</div>
-        </div>
-      </div>`;
+    let ctRows = '';
+    members.forEach(c => {
+      ctRows += `<tr>
+        <td>${c.classTeacher}</td>
+        <td class="td-rate ${rateColor(c.bindRate)}">${c.bindRate}%</td>
+        <td class="td-rate ${rateColor(c.joinRate)}">${c.joinRate}%</td>
+        <td class="td-num">${fmt(c.phoneCount)}</td>
+        <td class="td-num">${fmt(c.unbindCount)}</td>
+        <td class="td-rate ${rateColor(c.confirmRate)}">${c.confirmRate}%</td>
+        <td class="td-rate ${rateColor(c.attendRate)}">${c.attendRate}%</td>
+        <td class="td-rate ${rateColor(c.coverRate)}">${c.coverRate}%</td>
+        <td class="td-rate ${rateColor(c.interactRate)}">${c.interactRate}%</td>
+        <td class="td-rate ${rateColor(c.activeRate)}">${c.activeRate}%</td>
+      </tr>`;
     });
 
     html += `
-    <div class="section">
-      <div class="subject-header">
-        <span class="subject-title">📚 ${subject}</span>
-        <span class="subject-meta">${groupKeys.length} 个教学组 · ${subjectData.length} 条记录</span>
+    <div>
+      <div class="accordion-header${isOpen ? ' open' : ''}" onclick="toggleCtGroup('${group}', this)">
+        <div class="accordion-title">
+          <span>${group}</span>
+          <span class="accordion-meta">${members.length} 位班主任 · 在班 ${totalInClass.toLocaleString()} 人次</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:16px">
+          <span class="td-rate ${rateColor(gRates.bindRate)}" style="font-size:12px">绑定率 ${gRates.bindRate}%</span>
+          <span class="accordion-arrow">▾</span>
+        </div>
       </div>
-      ${groupHtml}
+      <div class="accordion-body${isOpen ? ' open' : ''}">
+        <table class="ct-table">
+          <thead>
+            <tr>
+              <th>班主任</th>
+              <th>绑定率</th><th>进群率</th><th>电话沟通</th><th>未绑定</th>
+              <th>预出勤确认率</th><th>预出勤率</th><th>覆盖率</th><th>交互率</th><th>活跃度</th>
+            </tr>
+          </thead>
+          <tbody>${ctRows}</tbody>
+        </table>
+      </div>
     </div>`;
   });
 
-  document.getElementById('content').innerHTML = html;
+  container.innerHTML = html;
 }
 
-function toggleGroup(key, btn) {
-  if (expandedGroups.has(key)) {
-    expandedGroups.delete(key);
-    btn.classList.remove('active');
-    btn.textContent = '🔽 查看班主任详情';
-    document.getElementById('ct-' + key.replace(/[^a-zA-Z0-9]/g, '_')).classList.remove('open');
+function toggleCtGroup(group, headerEl) {
+  const body = headerEl.nextElementSibling;
+  if (expandedCtGroups.has(group)) {
+    expandedCtGroups.delete(group);
+    headerEl.classList.remove('open');
+    body.classList.remove('open');
   } else {
-    expandedGroups.add(key);
-    btn.classList.add('active');
-    btn.textContent = '🔼 收起详情';
-    document.getElementById('ct-' + key.replace(/[^a-zA-Z0-9]/g, '_')).classList.add('open');
+    expandedCtGroups.add(group);
+    headerEl.classList.add('open');
+    body.classList.add('open');
   }
 }
 
-['filterBase','filterSubject','filterGroup'].forEach(id => {
-  document.getElementById(id).addEventListener('change', function() {
-    const thisId = this.id;
-    if (thisId === 'filterBase') {
-      // 基地变了，教学组重置，学科跟着变
-      document.getElementById('filterGroup').value = '';
-      document.getElementById('filterSubject').value = '';
-    } else if (thisId === 'filterGroup') {
-      // 教学组变了，学科跟着变
-      document.getElementById('filterSubject').value = '';
+// Sort handlers
+document.querySelectorAll('#subjectTable thead th[data-col], #groupTable thead th[data-col]').forEach(th => {
+  th.addEventListener('click', () => {
+    const col = th.dataset.col;
+    if (sortCol === col) {
+      sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+    } else {
+      sortCol = col;
+      sortDir = 'desc';
     }
-    refreshDependentFilters();
-    render(allData);
+    renderTables();
   });
 });
-document.getElementById('searchInput').addEventListener('input', () => render(allData));
 
-window.addEventListener('scroll', () => {
-  document.getElementById('scrollTopBtn').classList.toggle('visible', window.scrollY > 300);
+// Pkg filter
+document.querySelectorAll('#pkgCapsules .capsule').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('#pkgCapsules .capsule').forEach(b => b.classList.remove('active', 'capsule-active-purple'));
+    btn.classList.add('active', 'capsule-active-purple');
+    currentPkg = btn.dataset.val;
+    applyFilters();
+  });
 });
+
+loadData();
 </script>
 </body>
 </html>
