@@ -431,16 +431,27 @@ function toggleSubject(subject, btn) {
 }
 
 function applyFilters() {
-  // 1. Filter groups by base + subject
+  // 1. Filter CTs by base + subject
+  let cts = rawData.classTeachers.map(s => ({...s, ...calcRates(s)}));
+  if (currentBase) {
+    cts = cts.filter(c => c.base === currentBase);
+  }
+  if (currentSubjects.length > 0) {
+    cts = cts.filter(c => currentSubjects.includes(c.subject));
+  }
+
+  // 2. Groups: filter by base only; if subject selected, further filter to groups that have those subjects
   let groups = rawData.groups.map(s => ({...s, ...calcRates(s)}));
   if (currentBase) {
     groups = groups.filter(g => g.base === currentBase);
   }
   if (currentSubjects.length > 0) {
-    groups = groups.filter(g => currentSubjects.includes(g.subject));
+    // 只保留那些在CT列表里出现过的组（意味着该组有此学科）
+    const groupsWithSubject = new Set(cts.map(c => c.group));
+    groups = groups.filter(g => groupsWithSubject.has(g.group));
   }
 
-  // 2. Build subjects list from filtered groups (aggregate by subject within base)
+  // 3. Subjects list: aggregate from filtered groups
   const subjAgg = {};
   groups.forEach(g => {
     if (!subjAgg[g.subject]) {
@@ -450,11 +461,13 @@ function applyFilters() {
     }
     ['inClassCount','bindCount','joinGroupCount','coverCount','interactCount',
      'activeCount','phoneCount','confirmCount','attendCount','unbindCount']
-      .forEach(k => subjAgg[g.subject][k] += g[k]);
+      .forEach(k => subjAgg[g.subject][k] += g[k] || 0);
   });
   let subjects = Object.keys(subjAgg).sort().map(subj => {
     const ic = subjAgg[subj].inClassCount || 1;
-    const rates = {
+    return {
+      subject: subj,
+      ...subjAgg[subj],
       bindRate: pct(subjAgg[subj].bindCount, ic),
       joinRate: pct(subjAgg[subj].joinGroupCount, ic),
       confirmRate: pct(subjAgg[subj].confirmCount, ic),
@@ -463,33 +476,23 @@ function applyFilters() {
       interactRate: pct(subjAgg[subj].interactCount, ic),
       activeRate: pct(subjAgg[subj].activeCount, ic),
     };
-    return { subject: subj, ...subjAgg[subj], ...rates };
   });
-
-  // 3. Filter CTs by base + subject
-  let cts = rawData.classTeachers.map(s => ({...s, ...calcRates(s)}));
-  if (currentBase) {
-    cts = cts.filter(c => c.base === currentBase);
-  }
-  if (currentSubjects.length > 0) {
-    cts = cts.filter(c => currentSubjects.includes(c.subject));
-  }
 
   filteredAll = { subjects, groups, classTeachers: cts };
 
-  // 4. Update header stats
+  // 4. Header stats
   const totalInClass = subjects.reduce((s, r) => s + r.inClassCount, 0);
   const totalBind = subjects.reduce((s, r) => s + r.bindCount, 0);
   document.getElementById('totalInClass').textContent = totalInClass.toLocaleString();
   document.getElementById('totalBindRate').textContent = pct(totalBind, totalInClass) + '%';
 
-  // 5. Update meta
+  // 5. Meta
   const subjectLabel = currentSubjects.length > 0 ? currentSubjects.join('+') : '全部';
   document.getElementById('subjectMeta').textContent = `共 ${subjects.length} 个学科`;
   document.getElementById('groupMeta').textContent = `${subjectLabel} · ${groups.length}个教学组`;
   document.getElementById('ctMeta').textContent = `共 ${cts.length} 位班主任`;
 
-  // 6. Update board title
+  // 6. Title
   document.getElementById('boardTitle').textContent = `${currentBase || '全部基地'}·服务沟通数据看板`;
 
   renderTables();
