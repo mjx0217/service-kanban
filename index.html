@@ -431,34 +431,66 @@ function toggleSubject(subject, btn) {
 }
 
 function applyFilters() {
-  // Filter by base (数据已经是按基地分离的，这里做安全过滤)
-  let subjects = rawData.subjects.map(s => ({...s, ...calcRates(s)}));
+  // 1. Filter groups by base + subject
   let groups = rawData.groups.map(s => ({...s, ...calcRates(s)}));
-  let cts = rawData.classTeachers.map(s => ({...s, ...calcRates(s)}));
-
-  // 学科多选过滤（空数组 = 全部）
+  if (currentBase) {
+    groups = groups.filter(g => g.base === currentBase);
+  }
   if (currentSubjects.length > 0) {
-    subjects = subjects.filter(s => currentSubjects.includes(s.subject));
     groups = groups.filter(g => currentSubjects.includes(g.subject));
+  }
+
+  // 2. Build subjects list from filtered groups (aggregate by subject within base)
+  const subjAgg = {};
+  groups.forEach(g => {
+    if (!subjAgg[g.subject]) {
+      subjAgg[g.subject] = { inClassCount:0, bindCount:0, joinGroupCount:0,
+        coverCount:0, interactCount:0, activeCount:0,
+        phoneCount:0, confirmCount:0, attendCount:0, unbindCount:0 };
+    }
+    ['inClassCount','bindCount','joinGroupCount','coverCount','interactCount',
+     'activeCount','phoneCount','confirmCount','attendCount','unbindCount']
+      .forEach(k => subjAgg[g.subject][k] += g[k]);
+  });
+  let subjects = Object.keys(subjAgg).sort().map(subj => {
+    const ic = subjAgg[subj].inClassCount || 1;
+    const rates = {
+      bindRate: pct(subjAgg[subj].bindCount, ic),
+      joinRate: pct(subjAgg[subj].joinGroupCount, ic),
+      confirmRate: pct(subjAgg[subj].confirmCount, ic),
+      attendRate: pct(subjAgg[subj].attendCount, ic),
+      coverRate: pct(subjAgg[subj].coverCount, ic),
+      interactRate: pct(subjAgg[subj].interactCount, ic),
+      activeRate: pct(subjAgg[subj].activeCount, ic),
+    };
+    return { subject: subj, ...subjAgg[subj], ...rates };
+  });
+
+  // 3. Filter CTs by base + subject
+  let cts = rawData.classTeachers.map(s => ({...s, ...calcRates(s)}));
+  if (currentBase) {
+    cts = cts.filter(c => c.base === currentBase);
+  }
+  if (currentSubjects.length > 0) {
     cts = cts.filter(c => currentSubjects.includes(c.subject));
   }
 
   filteredAll = { subjects, groups, classTeachers: cts };
 
-  // Update header stats
+  // 4. Update header stats
   const totalInClass = subjects.reduce((s, r) => s + r.inClassCount, 0);
   const totalBind = subjects.reduce((s, r) => s + r.bindCount, 0);
   document.getElementById('totalInClass').textContent = totalInClass.toLocaleString();
   document.getElementById('totalBindRate').textContent = pct(totalBind, totalInClass) + '%';
 
-  // Update meta
+  // 5. Update meta
   const subjectLabel = currentSubjects.length > 0 ? currentSubjects.join('+') : '全部';
   document.getElementById('subjectMeta').textContent = `共 ${subjects.length} 个学科`;
   document.getElementById('groupMeta').textContent = `${subjectLabel} · ${groups.length}个教学组`;
   document.getElementById('ctMeta').textContent = `共 ${cts.length} 位班主任`;
 
-  // Update board title
-  document.getElementById('boardTitle').textContent = `${currentBase}基地·服务沟通数据看板`;
+  // 6. Update board title
+  document.getElementById('boardTitle').textContent = `${currentBase || '全部基地'}·服务沟通数据看板`;
 
   renderTables();
 }
