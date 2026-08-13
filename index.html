@@ -439,7 +439,7 @@ function applyFilters() {
   // 学科多选过滤（空数组 = 全部）
   if (currentSubjects.length > 0) {
     subjects = subjects.filter(s => currentSubjects.includes(s.subject));
-    groups = groups.filter(g => currentSubjects.includes(g.subject));
+    // 教学组不按学科过滤（去重后教学组跨学科，只显示全组汇总）
     cts = cts.filter(c => currentSubjects.includes(c.subject));
   }
 
