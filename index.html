@@ -82,6 +82,7 @@ body {
   cursor: pointer;
   transition: all 0.15s;
   color: #555;
+  user-select: none;
 }
 .capsule:hover { border-color: #1a73e8; color: #1a73e8; }
 .capsule.active {
@@ -93,6 +94,11 @@ body {
   background: #7c3aed;
   border-color: #7c3aed;
   color: white;
+}
+.capsule-toggle-hint {
+  font-size: 11px;
+  color: #aaa;
+  margin-left: 4px;
 }
 
 /* Legend */
@@ -235,10 +241,25 @@ tbody td {
 </div>
 
 <div class="filter-bar">
+  <!-- 基地筛选 -->
+  <div class="filter-row">
+    <span class="filter-label">基地</span>
+    <div class="capsule-group" id="baseCapsules">
+      <button class="capsule active" data-val="沈阳">沈阳</button>
+      <button class="capsule" data-val="石家庄">石家庄</button>
+      <button class="capsule" data-val="西安">西安</button>
+      <button class="capsule" data-val="北京">北京</button>
+      <button class="capsule" data-val="济南">济南</button>
+    </div>
+  </div>
+  <!-- 学科筛选（多选） -->
   <div class="filter-row">
     <span class="filter-label">学科</span>
-    <div class="capsule-group" id="subjectCapsules"></div>
+    <div class="capsule-group" id="subjectCapsules">
+      <span class="capsule-toggle-hint" id="subjectHint">（可多选，点击选中多个）</span>
+    </div>
   </div>
+  <!-- 课包筛选 -->
   <div class="filter-row">
     <span class="filter-label">课包</span>
     <div class="capsule-group" id="pkgCapsules">
@@ -253,7 +274,7 @@ tbody td {
   <div class="legend-item"><div class="legend-dot" style="background:#22c55e"></div> ≥80%（达标）</div>
   <div class="legend-item"><div class="legend-dot" style="background:#f59e0b"></div> 50-80%（预警）</div>
   <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div> &lt;50%（不达标）</div>
-  <div class="legend-note">点击列头可排序</div>
+  <div class="legend-note">点击列头可排序 · 学科支持多选</div>
 </div>
 
 <div class="content">
@@ -328,7 +349,8 @@ tbody td {
 <script>
 let rawData = {};
 let filteredAll = { subjects: [], groups: [], classTeachers: [] };
-let currentSubject = '';
+let currentBase = '沈阳';
+let currentSubjects = [];  // 多选：空数组表示全部
 let currentPkg = '';
 let sortCol = 'bindRate';
 let sortDir = 'desc';
@@ -356,12 +378,6 @@ function calcRates(row) {
   };
 }
 
-function applyPkgFilter(data, pkg) {
-  if (!pkg) return data;
-  // Re-read from raw with package filter
-  return data;
-}
-
 function loadData() {
   fetch('kanban_data.json')
     .then(r => r.json())
@@ -372,41 +388,60 @@ function loadData() {
     });
 }
 
+// 构建基地和学科胶囊
 function buildCapsules() {
-  const subjects = ['全部', ...rawData.subjects.map(s => s.subject)];
-  const container = document.getElementById('subjectCapsules');
-  container.innerHTML = '';
-  subjects.forEach((s, i) => {
-    const btn = document.createElement('button');
-    btn.className = 'capsule' + (i === 0 ? ' active' : '');
-    btn.textContent = s;
-    btn.dataset.val = s === '全部' ? '' : s;
+  // 基地胶囊（单选）
+  const baseContainer = document.getElementById('baseCapsules');
+  baseContainer.querySelectorAll('button').forEach(btn => {
     btn.onclick = () => {
-      document.querySelectorAll('#subjectCapsules .capsule').forEach(b => b.classList.remove('active'));
+      baseContainer.querySelectorAll('.capsule').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      currentSubject = btn.dataset.val;
+      currentBase = btn.dataset.val;
       applyFilters();
     };
-    container.appendChild(btn);
+  });
+
+  // 学科胶囊（多选）- 先清空hint外的旧按钮
+  const subjectContainer = document.getElementById('subjectCapsules');
+  // 移除旧按钮（保留hint）
+  subjectContainer.querySelectorAll('.capsule').forEach(b => b.remove());
+
+  const allSubjects = rawData.subjects.map(s => s.subject);
+  allSubjects.forEach(s => {
+    const btn = document.createElement('button');
+    btn.className = 'capsule';
+    btn.textContent = s;
+    btn.dataset.val = s;
+    btn.onclick = () => toggleSubject(s, btn);
+    subjectContainer.appendChild(btn);
   });
 }
 
-function applyFilters() {
-  const pkg = currentPkg;
+// 切换学科多选
+function toggleSubject(subject, btn) {
+  const idx = currentSubjects.indexOf(subject);
+  if (idx === -1) {
+    currentSubjects.push(subject);
+    btn.classList.add('active');
+  } else {
+    currentSubjects.splice(idx, 1);
+    btn.classList.remove('active');
+  }
+  applyFilters();
+}
 
-  // Filter subjects
+function applyFilters() {
+  // Filter by base (数据已经是按基地分离的，这里做安全过滤)
   let subjects = rawData.subjects.map(s => ({...s, ...calcRates(s)}));
   let groups = rawData.groups.map(s => ({...s, ...calcRates(s)}));
   let cts = rawData.classTeachers.map(s => ({...s, ...calcRates(s)}));
 
-  if (currentSubject) {
-    subjects = subjects.filter(s => s.subject === currentSubject);
-    groups = groups.filter(g => g.subject === currentSubject);
-    cts = cts.filter(c => c.subject === currentSubject);
+  // 学科多选过滤（空数组 = 全部）
+  if (currentSubjects.length > 0) {
+    subjects = subjects.filter(s => currentSubjects.includes(s.subject));
+    groups = groups.filter(g => currentSubjects.includes(g.subject));
+    cts = cts.filter(c => currentSubjects.includes(c.subject));
   }
-
-  // Note: package filter would need raw row-level data to filter properly
-  // For now we show all (the original also shows all when pkg="")
 
   filteredAll = { subjects, groups, classTeachers: cts };
 
@@ -417,9 +452,13 @@ function applyFilters() {
   document.getElementById('totalBindRate').textContent = pct(totalBind, totalInClass) + '%';
 
   // Update meta
+  const subjectLabel = currentSubjects.length > 0 ? currentSubjects.join('+') : '全部';
   document.getElementById('subjectMeta').textContent = `共 ${subjects.length} 个学科`;
-  document.getElementById('groupMeta').textContent = `${currentSubject || '全部学科'}·${groups.length}个教学组`;
+  document.getElementById('groupMeta').textContent = `${subjectLabel} · ${groups.length}个教学组`;
   document.getElementById('ctMeta').textContent = `共 ${cts.length} 位班主任`;
+
+  // Update board title
+  document.getElementById('boardTitle').textContent = `${currentBase}基地·服务沟通数据看板`;
 
   renderTables();
 }
@@ -455,7 +494,6 @@ function renderSubjectTable() {
       <td class="td-rate ${rateColor(r.activeRate)}">${r.activeRate}%</td>
     </tr>`).join('');
 
-  // Update sort indicators
   document.querySelectorAll('#subjectTable thead th[data-col]').forEach(th => {
     th.classList.remove('sort-asc', 'sort-desc');
     if (th.dataset.col === sortCol) th.classList.add('sort-' + sortDir);
@@ -487,7 +525,6 @@ function renderGroupTable() {
 
 function renderCtAccordion() {
   const cts = filteredAll.classTeachers;
-  // Group by 教学组
   const byGroup = {};
   cts.forEach(c => {
     const g = c.group || '未知';
@@ -498,7 +535,6 @@ function renderCtAccordion() {
   const container = document.getElementById('ctAccordion');
   let html = '';
 
-  // Sort groups by total inClassCount desc
   const sortedGroups = Object.keys(byGroup).sort((a, b) => {
     const ta = byGroup[a].reduce((s, c) => s + c.inClassCount, 0);
     const tb = byGroup[b].reduce((s, c) => s + c.inClassCount, 0);
@@ -510,7 +546,6 @@ function renderCtAccordion() {
     const isOpen = expandedCtGroups.has(group);
     const totalInClass = members.reduce((s, c) => s + c.inClassCount, 0);
 
-    // Group summary row
     const gRates = calcRates({
       inClassCount: totalInClass,
       bindCount: members.reduce((s, c) => s + c.bindCount, 0),
