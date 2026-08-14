@@ -397,17 +397,25 @@ function buildCapsules() {
       baseContainer.querySelectorAll('.capsule').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       currentBase = btn.dataset.val;
+      // 切换基地时重置学科筛选并重建胶囊
+      currentSubjects = [];
+      buildSubjectCapsules();
       applyFilters();
     };
   });
 
-  // 学科胶囊（多选）- 先清空hint外的旧按钮
+  buildSubjectCapsules();
+}
+
+// 重建学科胶囊（按当前基地去重）
+function buildSubjectCapsules() {
   const subjectContainer = document.getElementById('subjectCapsules');
-  // 移除旧按钮（保留hint）
   subjectContainer.querySelectorAll('.capsule').forEach(b => b.remove());
 
-  const allSubjects = rawData.subjects.map(s => s.subject);
-  allSubjects.forEach(s => {
+  // 只展示当前基地的学科（去重）
+  const baseSubjects = rawData.subjects.filter(s => !currentBase || s.base === currentBase);
+  const uniqueSubjects = [...new Set(baseSubjects.map(s => s.subject))].sort();
+  uniqueSubjects.forEach(s => {
     const btn = document.createElement('button');
     btn.className = 'capsule';
     btn.textContent = s;
@@ -431,7 +439,7 @@ function toggleSubject(subject, btn) {
 }
 
 function applyFilters() {
-  // 1. Filter CTs by base + subject
+  // 1. Filter CTs by base + subject + pkg
   let cts = rawData.classTeachers.map(s => ({...s, ...calcRates(s)}));
   if (currentBase) {
     cts = cts.filter(c => c.base === currentBase);
@@ -439,29 +447,34 @@ function applyFilters() {
   if (currentSubjects.length > 0) {
     cts = cts.filter(c => currentSubjects.includes(c.subject));
   }
+  if (currentPkg) {
+    cts = cts.filter(c => (c.pkg || c.package || '') === currentPkg);
+  }
 
-  // 2. Groups: filter by base only; if subject selected, further filter to groups that have those subjects
+  // 2. Groups: 按基地过滤，学科/课包筛选不影响教学组汇总（因为groups是全学科汇总，subject=汇总）
   let groups = rawData.groups.map(s => ({...s, ...calcRates(s)}));
   if (currentBase) {
     groups = groups.filter(g => g.base === currentBase);
   }
-  if (currentSubjects.length > 0) {
-    // 只保留那些在CT列表里出现过的组（意味着该组有此学科）
-    const groupsWithSubject = new Set(cts.map(c => c.group));
-    groups = groups.filter(g => groupsWithSubject.has(g.group));
-  }
 
-  // 3. Subjects list: aggregate from filtered groups
+  // 3. Subjects list: 从subjects原始数据按基地+学科聚合（不依赖groups.subject=汇总）
+  let rawSubjs = rawData.subjects;
+  if (currentBase) {
+    rawSubjs = rawSubjs.filter(s => s.base === currentBase);
+  }
+  if (currentSubjects.length > 0) {
+    rawSubjs = rawSubjs.filter(s => currentSubjects.includes(s.subject));
+  }
   const subjAgg = {};
-  groups.forEach(g => {
-    if (!subjAgg[g.subject]) {
-      subjAgg[g.subject] = { inClassCount:0, bindCount:0, joinGroupCount:0,
+  rawSubjs.forEach(s => {
+    if (!subjAgg[s.subject]) {
+      subjAgg[s.subject] = { inClassCount:0, bindCount:0, joinGroupCount:0,
         coverCount:0, interactCount:0, activeCount:0,
         phoneCount:0, confirmCount:0, attendCount:0, unbindCount:0 };
     }
     ['inClassCount','bindCount','joinGroupCount','coverCount','interactCount',
      'activeCount','phoneCount','confirmCount','attendCount','unbindCount']
-      .forEach(k => subjAgg[g.subject][k] += g[k] || 0);
+      .forEach(k => subjAgg[s.subject][k] += s[k] || 0);
   });
   let subjects = Object.keys(subjAgg).sort().map(subj => {
     const ic = subjAgg[subj].inClassCount || 1;
