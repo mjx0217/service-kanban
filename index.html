@@ -241,17 +241,6 @@ tbody td {
 </div>
 
 <div class="filter-bar">
-  <!-- 基地筛选 -->
-  <div class="filter-row">
-    <span class="filter-label">基地</span>
-    <div class="capsule-group" id="baseCapsules">
-      <button class="capsule active" data-val="沈阳">沈阳</button>
-      <button class="capsule" data-val="石家庄">石家庄</button>
-      <button class="capsule" data-val="西安">西安</button>
-      <button class="capsule" data-val="北京">北京</button>
-      <button class="capsule" data-val="济南">济南</button>
-    </div>
-  </div>
   <!-- 学科筛选（多选） -->
   <div class="filter-row">
     <span class="filter-label">学科</span>
@@ -375,7 +364,7 @@ tbody td {
 <script>
 let rawData = {};
 let filteredAll = { subjects: [], groups: [], classTeachers: [] };
-let currentBase = '沈阳';
+// let currentBase = '沈阳'; // 固定沈阳
 let currentSubjects = [];  // 多选：空数组表示全部
 let currentPkg = '';
 let currentCtGroups = [];
@@ -437,20 +426,6 @@ function loadData() {
 
 // 构建基地和学科胶囊
 function buildCapsules() {
-  // 基地胶囊（单选）
-  const baseContainer = document.getElementById('baseCapsules');
-  baseContainer.querySelectorAll('button').forEach(btn => {
-    btn.onclick = () => {
-      baseContainer.querySelectorAll('.capsule').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentBase = btn.dataset.val;
-      // 切换基地时重置学科筛选并重建胶囊
-      currentSubjects = [];
-      buildSubjectCapsules();
-      applyFilters();
-    };
-  });
-
   buildSubjectCapsules();
 }
 
@@ -460,7 +435,7 @@ function buildSubjectCapsules() {
   subjectContainer.querySelectorAll('.capsule').forEach(b => b.remove());
 
   // 只展示当前基地的学科（去重）
-  const baseSubjects = rawData.subjects.filter(s => !currentBase || s.base === currentBase);
+  const baseSubjects = rawData.subjects.filter(s => s.base === '沈阳');
   const uniqueSubjects = [...new Set(baseSubjects.map(s => s.subject))].sort();
   uniqueSubjects.forEach(s => {
     const btn = document.createElement('button');
@@ -488,9 +463,8 @@ function toggleSubject(subject, btn) {
 function applyFilters() {
   // 1. Filter CTs by base + subject + pkg
   let cts = rawData.classTeachers.map(s => ({...s, ...calcRates(s)}));
-  if (currentBase) {
-    cts = cts.filter(c => c.base === currentBase);
-  }
+  // 固定沈阳，不过滤
+  cts = cts.filter(c => c.base === '沈阳');
   if (currentSubjects.length > 0) {
     cts = cts.filter(c => currentSubjects.includes(c.subject));
   }
@@ -499,10 +473,10 @@ function applyFilters() {
   }
 
   // 2. Groups: 按基地过滤，学科/课包筛选不影响教学组汇总（因为groups是全学科汇总，subject=汇总）
-  // 教学组：从 rawData.classTeachers（不过滤学科）按 group 聚合，计算加权 replyRate/avgRespTime
+  // 教学组：从 rawData.classTeachers（固定沈阳）按 group 聚合，计算加权 replyRate/avgRespTime
   const grpAgg = {};
   rawData.classTeachers.forEach(ct => {
-    if (currentBase && ct.base !== currentBase) return;
+    if (ct.base !== '沈阳') return;
     const g = ct.group || '未知';
     if (!grpAgg[g]) {
       grpAgg[g] = { base: ct.base || '沈阳', group: g, inClassCount:0, bindCount:0, joinGroupCount:0,
@@ -535,9 +509,8 @@ function applyFilters() {
 
   // 3. Subjects list: 从subjects原始数据按基地+学科聚合（不依赖groups.subject=汇总）
   let rawSubjs = rawData.subjects;
-  if (currentBase) {
-    rawSubjs = rawSubjs.filter(s => s.base === currentBase);
-  }
+  // 固定沈阳
+  rawSubjs = rawSubjs.filter(s => s.base === '沈阳');
   if (currentSubjects.length > 0) {
     rawSubjs = rawSubjs.filter(s => currentSubjects.includes(s.subject));
   }
@@ -588,7 +561,7 @@ function applyFilters() {
   document.getElementById('ctMeta').textContent = `共 ${cts.length} 位班主任`;
 
   // 6. Title
-  document.getElementById('boardTitle').textContent = `${currentBase || '全部基地'}·服务沟通数据看板`;
+  document.getElementById('boardTitle').textContent = `沈阳基地·服务沟通数据看板`;
 
   renderTables();
   buildCtGroupCapsules();
