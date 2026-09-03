@@ -291,7 +291,6 @@ tbody td {
           <th data-col="subject" class="sort-asc">学科</th>
           <th data-col="bindRate">绑定率 ↕</th>
           <th data-col="joinRate">进群率 ↕</th>
-          <th data-col="phoneCount">电话沟通人次 ↕</th>
           <th data-col="unbindCount">未绑定人次 ↕</th>
           <th data-col="confirmRate">预出勤确认率 ↕</th>
           <th data-col="attendRate">预出勤率 ↕</th>
@@ -320,7 +319,6 @@ tbody td {
           <th data-col="group">教学组</th>
           <th data-col="bindRate">绑定率 ↕</th>
           <th data-col="joinRate">进群率 ↕</th>
-          <th data-col="phoneCount">电话沟通人次 ↕</th>
           <th data-col="unbindCount">未绑定人次 ↕</th>
           <th data-col="confirmRate">预出勤确认率 ↕</th>
           <th data-col="attendRate">预出勤率 ↕</th>
@@ -590,51 +588,45 @@ function renderSubjectTable() {
   tbody.innerHTML = sorted.map(r => `
     <tr>
       <td>${r.subject}</td>
-      <td class="td-rate ${rateColor(r.bindRate)}">${r.bindRate}%</td>
-      <td class="td-rate ${rateColor(r.joinRate)}">${r.joinRate}%</td>
-      <td class="td-num">${fmt(r.phoneCount)}</td>
+      <td class="td-rate ${rateColor(r.bindRate,'bindRate')}">${r.bindRate}%</td>
+      <td class="td-rate ${rateColor(r.joinRate,'joinRate')}">${r.joinRate}%</td>
       <td class="td-num">${fmt(r.unbindCount)}</td>
-      <td class="td-rate ${rateColor(r.confirmRate)}">${r.confirmRate}%</td>
-      <td class="td-rate ${rateColor(r.attendRate)}">${r.attendRate}%</td>
-      <td class="td-rate ${rateColor(r.coverRate)}">${r.coverRate}%</td>
-      <td class="td-rate ${rateColor(r.interactRate)}">${r.interactRate}%</td>
-      <td class="td-rate ${rateColor(r.activeRate)}">${r.activeRate}%</td>
-      <td class="td-rate ${rateColor(r.replyRate)}">${r.replyRate}%</td>
-      <td class="td-num">${r.avgRespTime}</td>
+      <td class="td-rate ${rateColor(r.confirmRate,'confirmRate')}">${r.confirmRate}%</td>
+      <td class="td-rate ${rateColor(r.attendRate,'attendRate')}">${r.attendRate}%</td>
+      <td class="td-rate ${rateColor(r.coverRate,'coverRate')}">${r.coverRate}%</td>
+      <td class="td-rate ${rateColor(r.interactRate,'interactRate')}">${r.interactRate}%</td>
+      <td class="td-rate ${rateColor(r.activeRate,'activeRate')}">${r.activeRate}%</td>
+      <td class="td-rate ${rateColor(r.replyRate,'replyRate')}">${r.replyRate}%</td>
+      <td class="td-rate ${rateColor(r.avgRespTime,'avgRespTime')}">${r.avgRespTime}</td>
     </tr>`).join('');
 
   document.querySelectorAll('#subjectTable thead th[data-col]').forEach(th => {
     th.classList.remove('sort-asc', 'sort-desc');
     if (th.dataset.col === sortCol) th.classList.add('sort-' + sortDir);
   });
-}
-
-function renderGroupTable() {
+}function renderGroupTable() {
   const sorted = [...filteredAll.groups].sort(makeSortFn(sortCol));
   const tbody = document.getElementById('groupBody');
   tbody.innerHTML = sorted.map(r => `
     <tr>
       <td>${r.group}</td>
-      <td class="td-rate ${rateColor(r.bindRate)}">${r.bindRate}%</td>
-      <td class="td-rate ${rateColor(r.joinRate)}">${r.joinRate}%</td>
-      <td class="td-num">${fmt(r.phoneCount)}</td>
+      <td class="td-rate ${rateColor(r.bindRate,'bindRate')}">${r.bindRate}%</td>
+      <td class="td-rate ${rateColor(r.joinRate,'joinRate')}">${r.joinRate}%</td>
       <td class="td-num">${fmt(r.unbindCount)}</td>
-      <td class="td-rate ${rateColor(r.confirmRate)}">${r.confirmRate}%</td>
-      <td class="td-rate ${rateColor(r.attendRate)}">${r.attendRate}%</td>
-      <td class="td-rate ${rateColor(r.coverRate)}">${r.coverRate}%</td>
-      <td class="td-rate ${rateColor(r.interactRate)}">${r.interactRate}%</td>
-      <td class="td-rate ${rateColor(r.activeRate)}">${r.activeRate}%</td>
-      <td class="td-rate ${rateColor(r.replyRate)}">${r.replyRate}%</td>
-      <td class="td-num">${r.avgRespTime}</td>
+      <td class="td-rate ${rateColor(r.confirmRate,'confirmRate')}">${r.confirmRate}%</td>
+      <td class="td-rate ${rateColor(r.attendRate,'attendRate')}">${r.attendRate}%</td>
+      <td class="td-rate ${rateColor(r.coverRate,'coverRate')}">${r.coverRate}%</td>
+      <td class="td-rate ${rateColor(r.interactRate,'interactRate')}">${r.interactRate}%</td>
+      <td class="td-rate ${rateColor(r.activeRate,'activeRate')}">${r.activeRate}%</td>
+      <td class="td-rate ${rateColor(r.replyRate,'replyRate')}">${r.replyRate}%</td>
+      <td class="td-rate ${rateColor(r.avgRespTime,'avgRespTime')}">${r.avgRespTime}</td>
     </tr>`).join('');
 
   document.querySelectorAll('#groupTable thead th[data-col]').forEach(th => {
     th.classList.remove('sort-asc', 'sort-desc');
     if (th.dataset.col === sortCol) th.classList.add('sort-' + sortDir);
   });
-}
-
-function renderCtAccordion() {
+}function renderCtAccordion() {
   const cts = filteredAll.classTeachers;
   const byGroup = {};
   cts.forEach(c => {
