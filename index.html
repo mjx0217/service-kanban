@@ -298,6 +298,8 @@ tbody td {
           <th data-col="coverRate">覆盖率 ↕</th>
           <th data-col="interactRate">交互率 ↕</th>
           <th data-col="activeRate">活跃度 ↕</th>
+          <th data-col="replyRate">回复率 ↕</th>
+          <th data-col="avgRespTime">平均响应(分钟) ↕</th>
         </tr>
       </thead>
       <tbody id="subjectBody"></tbody>
@@ -325,6 +327,8 @@ tbody td {
           <th data-col="coverRate">覆盖率 ↕</th>
           <th data-col="interactRate">交互率 ↕</th>
           <th data-col="activeRate">活跃度 ↕</th>
+          <th data-col="replyRate">回复率 ↕</th>
+          <th data-col="avgRespTime">平均响应(分钟) ↕</th>
         </tr>
       </thead>
       <tbody id="groupBody"></tbody>
@@ -452,10 +456,38 @@ function applyFilters() {
   }
 
   // 2. Groups: 按基地过滤，学科/课包筛选不影响教学组汇总（因为groups是全学科汇总，subject=汇总）
-  let groups = rawData.groups.map(s => ({...s, ...calcRates(s)}));
-  if (currentBase) {
-    groups = groups.filter(g => g.base === currentBase);
-  }
+  // 教学组：从 rawData.classTeachers（不过滤学科）按 group 聚合，计算加权 replyRate/avgRespTime
+  const grpAgg = {};
+  rawData.classTeachers.forEach(ct => {
+    if (currentBase && ct.base !== currentBase) return;
+    const g = ct.group || '未知';
+    if (!grpAgg[g]) {
+      grpAgg[g] = { base: ct.base, group: g, inClassCount:0, bindCount:0, joinGroupCount:0,
+        coverCount:0, interactCount:0, activeCount:0,
+        confirmCount:0, attendCount:0, unbindCount:0,
+        weightedReplyRate:0, weightedRespTime:0 };
+    }
+    ['inClassCount','bindCount','joinGroupCount','coverCount','interactCount',
+     'activeCount','confirmCount','attendCount','unbindCount']
+      .forEach(k => grpAgg[g][k] += ct[k] || 0);
+    grpAgg[g].weightedReplyRate += (ct.replyRate || 0) * ct.inClassCount;
+    grpAgg[g].weightedRespTime += (ct.avgRespTime || 0) * ct.inClassCount;
+  });
+  let groups = Object.keys(grpAgg).sort().map(grp => {
+    const ic = grpAgg[grp].inClassCount || 1;
+    return {
+      ...grpAgg[grp],
+      replyRate: ic > 0 ? Math.round(grpAgg[grp].weightedReplyRate / ic * 10) / 10 : 0,
+      avgRespTime: ic > 0 ? Math.round(grpAgg[grp].weightedRespTime / ic * 10) / 10 : 0,
+      bindRate: pct(grpAgg[grp].bindCount, ic),
+      joinRate: pct(grpAgg[grp].joinGroupCount, ic),
+      confirmRate: pct(grpAgg[grp].confirmCount, ic),
+      attendRate: pct(grpAgg[grp].attendCount, ic),
+      coverRate: pct(grpAgg[grp].coverCount, ic),
+      interactRate: pct(grpAgg[grp].interactCount, ic),
+      activeRate: pct(grpAgg[grp].activeCount, ic),
+    };
+  });
 
   // 3. Subjects list: 从subjects原始数据按基地+学科聚合（不依赖groups.subject=汇总）
   let rawSubjs = rawData.subjects;
@@ -470,17 +502,23 @@ function applyFilters() {
     if (!subjAgg[s.subject]) {
       subjAgg[s.subject] = { inClassCount:0, bindCount:0, joinGroupCount:0,
         coverCount:0, interactCount:0, activeCount:0,
-        phoneCount:0, confirmCount:0, attendCount:0, unbindCount:0 };
+        phoneCount:0, confirmCount:0, attendCount:0, unbindCount:0,
+        weightedReplyRate:0, weightedRespTime:0 };
     }
     ['inClassCount','bindCount','joinGroupCount','coverCount','interactCount',
      'activeCount','phoneCount','confirmCount','attendCount','unbindCount']
       .forEach(k => subjAgg[s.subject][k] += s[k] || 0);
+    // replyRate/avgRespTime 加权平均（用 inClassCount 做权重）
+    subjAgg[s.subject].weightedReplyRate += (s.replyRate || 0) * s.inClassCount;
+    subjAgg[s.subject].weightedRespTime += (s.avgRespTime || 0) * s.inClassCount;
   });
   let subjects = Object.keys(subjAgg).sort().map(subj => {
     const ic = subjAgg[subj].inClassCount || 1;
     return {
       subject: subj,
       ...subjAgg[subj],
+      replyRate: ic > 0 ? Math.round(subjAgg[subj].weightedReplyRate / ic * 10) / 10 : 0,
+      avgRespTime: ic > 0 ? Math.round(subjAgg[subj].weightedRespTime / ic * 10) / 10 : 0,
       bindRate: pct(subjAgg[subj].bindCount, ic),
       joinRate: pct(subjAgg[subj].joinGroupCount, ic),
       confirmRate: pct(subjAgg[subj].confirmCount, ic),
@@ -540,6 +578,8 @@ function renderSubjectTable() {
       <td class="td-rate ${rateColor(r.coverRate)}">${r.coverRate}%</td>
       <td class="td-rate ${rateColor(r.interactRate)}">${r.interactRate}%</td>
       <td class="td-rate ${rateColor(r.activeRate)}">${r.activeRate}%</td>
+      <td class="td-rate ${rateColor(r.replyRate)}">${r.replyRate}%</td>
+      <td class="td-num">${r.avgRespTime}</td>
     </tr>`).join('');
 
   document.querySelectorAll('#subjectTable thead th[data-col]').forEach(th => {
@@ -563,6 +603,8 @@ function renderGroupTable() {
       <td class="td-rate ${rateColor(r.coverRate)}">${r.coverRate}%</td>
       <td class="td-rate ${rateColor(r.interactRate)}">${r.interactRate}%</td>
       <td class="td-rate ${rateColor(r.activeRate)}">${r.activeRate}%</td>
+      <td class="td-rate ${rateColor(r.replyRate)}">${r.replyRate}%</td>
+      <td class="td-num">${r.avgRespTime}</td>
     </tr>`).join('');
 
   document.querySelectorAll('#groupTable thead th[data-col]').forEach(th => {
@@ -608,16 +650,17 @@ function renderCtAccordion() {
     let ctRows = '';
     members.forEach(c => {
       ctRows += `<tr>
-        <td>${c.classTeacher}</td>
+        <td>${c.name}</td>
         <td class="td-rate ${rateColor(c.bindRate)}">${c.bindRate}%</td>
         <td class="td-rate ${rateColor(c.joinRate)}">${c.joinRate}%</td>
-        <td class="td-num">${fmt(c.phoneCount)}</td>
         <td class="td-num">${fmt(c.unbindCount)}</td>
         <td class="td-rate ${rateColor(c.confirmRate)}">${c.confirmRate}%</td>
         <td class="td-rate ${rateColor(c.attendRate)}">${c.attendRate}%</td>
         <td class="td-rate ${rateColor(c.coverRate)}">${c.coverRate}%</td>
         <td class="td-rate ${rateColor(c.interactRate)}">${c.interactRate}%</td>
         <td class="td-rate ${rateColor(c.activeRate)}">${c.activeRate}%</td>
+        <td class="td-rate ${rateColor(c.replyRate)}">${c.replyRate}%</td>
+        <td class="td-num">${c.avgRespTime}</td>
       </tr>`;
     });
 
@@ -638,8 +681,9 @@ function renderCtAccordion() {
           <thead>
             <tr>
               <th>班主任</th>
-              <th>绑定率</th><th>进群率</th><th>电话沟通</th><th>未绑定</th>
+              <th>绑定率</th><th>进群率</th><th>未绑定</th>
               <th>预出勤确认率</th><th>预出勤率</th><th>覆盖率</th><th>交互率</th><th>活跃度</th>
+              <th>回复率</th><th>响应(分钟)</th>
             </tr>
           </thead>
           <tbody>${ctRows}</tbody>
