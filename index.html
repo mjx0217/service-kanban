@@ -648,6 +648,56 @@ function buildCtGroupCapsules() {
 
 
 
+
+function toggleCtGroupFilter(g) {
+  if (g === '') {
+    currentCtGroups = [];
+  } else {
+    const idx = currentCtGroups.indexOf(g);
+    if (idx === -1) { currentCtGroups.push(g); }
+    else { currentCtGroups.splice(idx, 1); }
+  }
+  document.querySelectorAll('#ctGroupCapsules .capsule').forEach(b => {
+    const v = b.dataset.val;
+    if (v === '') { b.classList.toggle('active', currentCtGroups.length === 0); }
+    else { b.classList.toggle('active', currentCtGroups.includes(v)); }
+  });
+  renderCtTable();
+}
+
+function renderCtTable() {
+  let cts = filteredAll.classTeachers;
+  if (currentCtGroups.length > 0) {
+    cts = cts.filter(c => currentCtGroups.includes(c.group || '未知'));
+  }
+  const sorted = [...cts].sort(makeSortFn(sortCol));
+  const tbody = document.getElementById('ctBody');
+  tbody.innerHTML = sorted.map(c => {
+    return '<tr>' +
+      '<td>' + (c.name || '') + '</td>' +
+      '<td>' + (c.group || '未知') + '</td>' +
+      '<td class="td-rate ' + rateColor(c.bindRate,'bindRate') + '">' + c.bindRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.joinRate,'joinRate') + '">' + c.joinRate + '%</td>' +
+      '<td class="td-num">' + fmt(c.unbindCount) + '</td>' +
+      '<td class="td-rate ' + rateColor(c.confirmRate,'confirmRate') + '">' + c.confirmRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.attendRate,'attendRate') + '">' + c.attendRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.coverRate,'coverRate') + '">' + c.coverRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.interactRate,'interactRate') + '">' + c.interactRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.activeRate,'activeRate') + '">' + c.activeRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.replyRate,'replyRate') + '">' + c.replyRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.avgRespTime,'avgRespTime') + '">' + c.avgRespTime + '</td>' +
+    '</tr>';
+  }).join('');
+
+  document.getElementById('ctMeta').textContent = '共 ' + cts.length + ' 位班主任' + (currentCtGroups.length > 0 ? '（已筛选）' : '');
+
+  document.querySelectorAll('#ctTable thead th[data-col]').forEach(th => {
+    th.classList.remove('sort-asc', 'sort-desc');
+    if (th.dataset.col === sortCol) th.classList.add('sort-' + sortDir);
+  });
+}
+
+
 // Sort handlers
 document.querySelectorAll('#subjectTable thead th[data-col], #groupTable thead th[data-col], #ctTable thead th[data-col]').forEach(th => {
   th.addEventListener('click', () => {
