@@ -360,9 +360,29 @@ let sortCol = 'bindRate';
 let sortDir = 'desc';
 let expandedCtGroups = new Set();
 
-function rateColor(val) {
-  if (val >= 80) return 'rate-green';
-  if (val >= 50) return 'rate-yellow';
+// 相对颜色：根据列内所有值排序，排名越高越绿，排名越低越红
+// respTimeCol=true 时表示响应时长列：≤15绿，15-20黄，>20红
+function rateColor(val, col) {
+  if (col === 'avgRespTime') {
+    // 响应时长特殊规则
+    if (val <= 15) return 'rate-green';
+    if (val <= 20) return 'rate-yellow';
+    return 'rate-red';
+  }
+  // 通用相对排名：找出当前列所有值，计算排名
+  const colKey = col || sortCol;
+  const vals = filteredAll.subjects.map(r => r[colKey]).concat(
+                filteredAll.groups.map(r => r[colKey])).concat(
+                filteredAll.classTeachers.map(r => r[colKey]));
+  const nums = vals.filter(v => typeof v === 'number' && !isNaN(v));
+  if (nums.length === 0) return 'rate-green';
+  const min = Math.min(...nums);
+  const max = Math.max(...nums);
+  const range = max - min;
+  if (range === 0) return 'rate-green';
+  const ratio = (val - min) / range; // 0=最红, 1=最绿
+  if (ratio >= 0.7) return 'rate-green';
+  if (ratio >= 0.4) return 'rate-yellow';
   return 'rate-red';
 }
 
@@ -462,11 +482,12 @@ function applyFilters() {
     if (currentBase && ct.base !== currentBase) return;
     const g = ct.group || '未知';
     if (!grpAgg[g]) {
-      grpAgg[g] = { base: ct.base, group: g, inClassCount:0, bindCount:0, joinGroupCount:0,
+      grpAgg[g] = { base: ct.base || '沈阳', group: g, inClassCount:0, bindCount:0, joinGroupCount:0,
         coverCount:0, interactCount:0, activeCount:0,
         confirmCount:0, attendCount:0, unbindCount:0,
-        weightedReplyRate:0, weightedRespTime:0 };
+        weightedReplyRate:0, weightedRespTime:0, _ctCount:0 };
     }
+    grpAgg[g]._ctCount += 1;
     ['inClassCount','bindCount','joinGroupCount','coverCount','interactCount',
      'activeCount','confirmCount','attendCount','unbindCount']
       .forEach(k => grpAgg[g][k] += ct[k] || 0);
@@ -651,16 +672,16 @@ function renderCtAccordion() {
     members.forEach(c => {
       ctRows += `<tr>
         <td>${c.name}</td>
-        <td class="td-rate ${rateColor(c.bindRate)}">${c.bindRate}%</td>
-        <td class="td-rate ${rateColor(c.joinRate)}">${c.joinRate}%</td>
+        <td class="td-rate ${rateColor(c.bindRate,'bindRate')}">${c.bindRate}%</td>
+        <td class="td-rate ${rateColor(c.joinRate,'joinRate')}">${c.joinRate}%</td>
         <td class="td-num">${fmt(c.unbindCount)}</td>
-        <td class="td-rate ${rateColor(c.confirmRate)}">${c.confirmRate}%</td>
-        <td class="td-rate ${rateColor(c.attendRate)}">${c.attendRate}%</td>
-        <td class="td-rate ${rateColor(c.coverRate)}">${c.coverRate}%</td>
-        <td class="td-rate ${rateColor(c.interactRate)}">${c.interactRate}%</td>
-        <td class="td-rate ${rateColor(c.activeRate)}">${c.activeRate}%</td>
-        <td class="td-rate ${rateColor(c.replyRate)}">${c.replyRate}%</td>
-        <td class="td-num">${c.avgRespTime}</td>
+        <td class="td-rate ${rateColor(c.confirmRate,'confirmRate')}">${c.confirmRate}%</td>
+        <td class="td-rate ${rateColor(c.attendRate,'attendRate')}">${c.attendRate}%</td>
+        <td class="td-rate ${rateColor(c.coverRate,'coverRate')}">${c.coverRate}%</td>
+        <td class="td-rate ${rateColor(c.interactRate,'interactRate')}">${c.interactRate}%</td>
+        <td class="td-rate ${rateColor(c.activeRate,'activeRate')}">${c.activeRate}%</td>
+        <td class="td-rate ${rateColor(c.replyRate,'replyRate')}">${c.replyRate}%</td>
+        <td class="td-rate ${rateColor(c.avgRespTime,'avgRespTime')}">${c.avgRespTime}</td>
       </tr>`;
     });
 
@@ -672,7 +693,7 @@ function renderCtAccordion() {
           <span class="accordion-meta">${members.length} 位班主任 · 在班 ${totalInClass.toLocaleString()} 人次</span>
         </div>
         <div style="display:flex;align-items:center;gap:16px">
-          <span class="td-rate ${rateColor(gRates.bindRate)}" style="font-size:12px">绑定率 ${gRates.bindRate}%</span>
+          <span class="td-rate ${rateColor(gRates.bindRate,'bindRate')}" style="font-size:12px">绑定率 ${gRates.bindRate}%</span>
           <span class="accordion-arrow">▾</span>
         </div>
       </div>
