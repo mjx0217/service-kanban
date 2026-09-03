@@ -465,7 +465,7 @@ function applyFilters() {
     cts = cts.filter(c => currentSubjects.includes(c.subject));
   }
   if (currentPkg) {
-    cts = cts.filter(c => (c.pkg || c.package || '') === currentPkg);
+    cts = cts.filter(c => (c.pkgs || []).includes(currentPkg));
   }
 
   // 2. Groups: 按基地过滤，学科/课包筛选不影响教学组汇总（因为groups是全学科汇总，subject=汇总）
