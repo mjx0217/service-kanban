@@ -51,7 +51,7 @@ jobs:
       - name: 下载最新底表
         env:
           AIDOUTANG_COOKIE: ${{ secrets.AIDOUTANG_COOKIE }}
-          PUSH_TASK_ID: ${{ steps.taskid.outputs.value }}
+          PUSH_TASK_ID: ${{ steps.taskid.outputs.value || '3084' }}
         run: |
           python scripts/download.py "今日底表.xlsx"
 
