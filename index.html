@@ -289,7 +289,6 @@ tbody td {
           <th data-col="activeRate">活跃度 ↕</th>
           <th data-col="avgRespTime">响应时长 ↕</th>
           
-          <th data-col="avgRespTime">平均响应(分钟) ↕</th>
         </tr>
       </thead>
       <tbody id="subjectBody"></tbody>
@@ -318,7 +317,6 @@ tbody td {
           <th data-col="activeRate">活跃度 ↕</th>
           <th data-col="avgRespTime">响应时长 ↕</th>
           
-          <th data-col="avgRespTime">平均响应(分钟) ↕</th>
         </tr>
       </thead>
       <tbody id="groupBody"></tbody>
@@ -357,7 +355,6 @@ tbody td {
           <th data-col="activeRate">活跃度 ↕</th>
           <th data-col="avgRespTime">响应时长 ↕</th>
           
-          <th data-col="avgRespTime">响应时长(分钟) ↕</th>
         </tr>
       </thead>
       <tbody id="ctBody"></tbody>
@@ -620,7 +617,6 @@ function renderSubjectTable() {
     coverRate: sorted.map(r => r.coverRate),
     interactRate: sorted.map(r => r.interactRate),
     activeRate: sorted.map(r => r.activeRate),
-    avgRespTime: sorted.map(r => r.avgRespTime),
     unbindCount: sorted.map(r => r.unbindCount),
   };
   tbody.innerHTML = sorted.map(r => {
@@ -634,7 +630,7 @@ function renderSubjectTable() {
       '<td class="td-rate ' + rateColor(r.coverRate,'coverRate',_v.coverRate) + '">' + r.coverRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.interactRate,'interactRate',_v.interactRate) + '">' + r.interactRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.activeRate,'activeRate',_v.activeRate) + '">' + r.activeRate + '%</td>' +
-      '<td<td class="td-rate ' + rateColor(r.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + r.avgRespTime + '</td>' +
+      '<td class="td-rate ' + rateColor(r.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + r.avgRespTime + '</td>' +
     '</tr>';
   }).join('');
 
@@ -655,7 +651,6 @@ function renderGroupTable() {
     coverRate: sorted.map(r => r.coverRate),
     interactRate: sorted.map(r => r.interactRate),
     activeRate: sorted.map(r => r.activeRate),
-    avgRespTime: sorted.map(r => r.avgRespTime),
     unbindCount: sorted.map(r => r.unbindCount),
   };
   tbody.innerHTML = sorted.map(r => {
@@ -669,7 +664,7 @@ function renderGroupTable() {
       '<td class="td-rate ' + rateColor(r.coverRate,'coverRate',_v.coverRate) + '">' + r.coverRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.interactRate,'interactRate',_v.interactRate) + '">' + r.interactRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.activeRate,'activeRate',_v.activeRate) + '">' + r.activeRate + '%</td>' +
-      '<td<td class="td-rate ' + rateColor(r.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + r.avgRespTime + '</td>' +
+      '<td class="td-rate ' + rateColor(r.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + r.avgRespTime + '</td>' +
     '</tr>';
   }).join('');
 
@@ -700,7 +695,6 @@ function renderCtTable() {
     coverRate: sorted.map(r => r.coverRate),
     interactRate: sorted.map(r => r.interactRate),
     activeRate: sorted.map(r => r.activeRate),
-    avgRespTime: sorted.map(r => r.avgRespTime),
     unbindCount: sorted.map(r => r.unbindCount),
   };
   tbody.innerHTML = sorted.map(c => {
