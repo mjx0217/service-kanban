@@ -287,7 +287,8 @@ tbody td {
           <th data-col="coverRate">覆盖率 ↕</th>
           <th data-col="interactRate">交互率 ↕</th>
           <th data-col="activeRate">活跃度 ↕</th>
-          <th data-col="replyRate">回复率 ↕</th>
+          <th data-col="avgRespTime">响应时长 ↕</th>
+          
           <th data-col="avgRespTime">平均响应(分钟) ↕</th>
         </tr>
       </thead>
@@ -315,7 +316,8 @@ tbody td {
           <th data-col="coverRate">覆盖率 ↕</th>
           <th data-col="interactRate">交互率 ↕</th>
           <th data-col="activeRate">活跃度 ↕</th>
-          <th data-col="replyRate">回复率 ↕</th>
+          <th data-col="avgRespTime">响应时长 ↕</th>
+          
           <th data-col="avgRespTime">平均响应(分钟) ↕</th>
         </tr>
       </thead>
@@ -344,7 +346,7 @@ tbody td {
         <tr>
           <th data-col="name" class="sort-asc">班主任</th>
           <th data-col="group">教学组</th>
-          <th data-col="pkg">课包</th>
+          
           <th data-col="bindRate">绑定率 ↕</th>
           <th data-col="joinRate">进群率 ↕</th>
           <th data-col="unbindCount">未绑定人次 ↕</th>
@@ -353,7 +355,8 @@ tbody td {
           <th data-col="coverRate">覆盖率 ↕</th>
           <th data-col="interactRate">交互率 ↕</th>
           <th data-col="activeRate">活跃度 ↕</th>
-          <th data-col="replyRate">回复率 ↕</th>
+          <th data-col="avgRespTime">响应时长 ↕</th>
+          
           <th data-col="avgRespTime">响应时长(分钟) ↕</th>
         </tr>
       </thead>
@@ -575,6 +578,23 @@ function applyFilters() {
   buildCtGroupCapsules();
 }
 
+function buildCtGroupCapsules() {
+  const allGroups = [...new Set(filteredAll.classTeachers.map(c => c.group || '未知'))].sort();
+  const container = document.getElementById('ctGroupCapsules');
+  container.innerHTML = allGroups.map(g => {
+    const active = currentCtGroups.includes(g) ? ' active' : '';
+    return `<button class="capsule${active}" data-val="${g}" onclick="toggleCtGroup('${g}')">${g}</button>`;
+  }).join('');
+}
+
+function toggleCtGroup(g) {
+  const idx = currentCtGroups.indexOf(g);
+  if (idx >= 0) currentCtGroups.splice(idx, 1);
+  else currentCtGroups.push(g);
+  buildCtGroupCapsules();
+  renderCtTable();
+}
+
 function renderTables() {
   renderSubjectTable();
   renderGroupTable();
@@ -600,7 +620,6 @@ function renderSubjectTable() {
     coverRate: sorted.map(r => r.coverRate),
     interactRate: sorted.map(r => r.interactRate),
     activeRate: sorted.map(r => r.activeRate),
-    replyRate: sorted.map(r => r.replyRate),
     avgRespTime: sorted.map(r => r.avgRespTime),
     unbindCount: sorted.map(r => r.unbindCount),
   };
@@ -615,8 +634,7 @@ function renderSubjectTable() {
       '<td class="td-rate ' + rateColor(r.coverRate,'coverRate',_v.coverRate) + '">' + r.coverRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.interactRate,'interactRate',_v.interactRate) + '">' + r.interactRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.activeRate,'activeRate',_v.activeRate) + '">' + r.activeRate + '%</td>' +
-      '<td class="td-rate ' + rateColor(r.replyRate,'replyRate',_v.replyRate) + '">' + r.replyRate + '%</td>' +
-      '<td class="td-rate ' + rateColor(r.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + r.avgRespTime + '</td>' +
+      '<td<td class="td-rate ' + rateColor(r.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + r.avgRespTime + '</td>' +
     '</tr>';
   }).join('');
 
@@ -637,7 +655,6 @@ function renderGroupTable() {
     coverRate: sorted.map(r => r.coverRate),
     interactRate: sorted.map(r => r.interactRate),
     activeRate: sorted.map(r => r.activeRate),
-    replyRate: sorted.map(r => r.replyRate),
     avgRespTime: sorted.map(r => r.avgRespTime),
     unbindCount: sorted.map(r => r.unbindCount),
   };
@@ -652,8 +669,7 @@ function renderGroupTable() {
       '<td class="td-rate ' + rateColor(r.coverRate,'coverRate',_v.coverRate) + '">' + r.coverRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.interactRate,'interactRate',_v.interactRate) + '">' + r.interactRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.activeRate,'activeRate',_v.activeRate) + '">' + r.activeRate + '%</td>' +
-      '<td class="td-rate ' + rateColor(r.replyRate,'replyRate',_v.replyRate) + '">' + r.replyRate + '%</td>' +
-      '<td class="td-rate ' + rateColor(r.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + r.avgRespTime + '</td>' +
+      '<td<td class="td-rate ' + rateColor(r.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + r.avgRespTime + '</td>' +
     '</tr>';
   }).join('');
 
@@ -684,7 +700,6 @@ function renderCtTable() {
     coverRate: sorted.map(r => r.coverRate),
     interactRate: sorted.map(r => r.interactRate),
     activeRate: sorted.map(r => r.activeRate),
-    replyRate: sorted.map(r => r.replyRate),
     avgRespTime: sorted.map(r => r.avgRespTime),
     unbindCount: sorted.map(r => r.unbindCount),
   };
@@ -692,7 +707,6 @@ function renderCtTable() {
     return '<tr>' +
       '<td>' + (c.name || '') + '</td>' +
       '<td>' + (c.group || '未知') + '</td>' +
-      '<td>' + c.pkg + '</td>' +
       '<td class="td-rate ' + rateColor(c.bindRate,'bindRate',_v.bindRate) + '">' + c.bindRate + '%</td>' +
       '<td class="td-rate ' + rateColor(c.joinRate,'joinRate',_v.joinRate) + '">' + c.joinRate + '%</td>' +
       '<td class="td-num">' + fmt(c.unbindCount) + '</td>' +
@@ -701,8 +715,7 @@ function renderCtTable() {
       '<td class="td-rate ' + rateColor(c.coverRate,'coverRate',_v.coverRate) + '">' + c.coverRate + '%</td>' +
       '<td class="td-rate ' + rateColor(c.interactRate,'interactRate',_v.interactRate) + '">' + c.interactRate + '%</td>' +
       '<td class="td-rate ' + rateColor(c.activeRate,'activeRate',_v.activeRate) + '">' + c.activeRate + '%</td>' +
-      '<td class="td-rate ' + rateColor(c.replyRate,'replyRate',_v.replyRate) + '">' + c.replyRate + '%</td>' +
-      '<td class="td-rate ' + rateColor(c.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + c.avgRespTime + '</td>' +
+      '<td class="td-rate ' + rateColor(c.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + c.avgRespTime + '分</td>' +
     '</tr>';
   }).join('');
 
