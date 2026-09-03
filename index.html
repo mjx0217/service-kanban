@@ -341,7 +341,31 @@ tbody td {
       <span class="table-section-title">🏫 班主任明细</span>
       <span class="table-section-meta" id="ctMeta"></span>
     </div>
-    <div id="ctAccordion"></div>
+    <div class="filter-row" id="ctGroupFilterRow">
+      <span class="filter-label">教学组</span>
+      <div class="capsule-group" id="ctGroupCapsules">
+        <span class="capsule-toggle-hint">（可多选）</span>
+      </div>
+    </div>
+    <table id="ctTable">
+      <thead>
+        <tr>
+          <th data-col="name" class="sort-asc">班主任</th>
+          <th data-col="group">教学组</th>
+          <th data-col="bindRate">绑定率 ↕</th>
+          <th data-col="joinRate">进群率 ↕</th>
+          <th data-col="unbindCount">未绑定人次 ↕</th>
+          <th data-col="confirmRate">预出勤确认率 ↕</th>
+          <th data-col="attendRate">预出勤率 ↕</th>
+          <th data-col="coverRate">覆盖率 ↕</th>
+          <th data-col="interactRate">交互率 ↕</th>
+          <th data-col="activeRate">活跃度 ↕</th>
+          <th data-col="replyRate">回复率 ↕</th>
+          <th data-col="avgRespTime">响应时长(分钟) ↕</th>
+        </tr>
+      </thead>
+      <tbody id="ctBody"></tbody>
+    </table>
   </div>
 
 </div>
@@ -354,6 +378,7 @@ let filteredAll = { subjects: [], groups: [], classTeachers: [] };
 let currentBase = '沈阳';
 let currentSubjects = [];  // 多选：空数组表示全部
 let currentPkg = '';
+let currentCtGroups = [];
 let sortCol = 'bindRate';
 let sortDir = 'desc';
 let expandedCtGroups = new Set();
@@ -566,12 +591,13 @@ function applyFilters() {
   document.getElementById('boardTitle').textContent = `${currentBase || '全部基地'}·服务沟通数据看板`;
 
   renderTables();
+  buildCtGroupCapsules();
 }
 
 function renderTables() {
   renderSubjectTable();
   renderGroupTable();
-  renderCtAccordion();
+  renderCtTable();
 }
 
 function makeSortFn(col) {
@@ -626,103 +652,31 @@ function renderSubjectTable() {
     th.classList.remove('sort-asc', 'sort-desc');
     if (th.dataset.col === sortCol) th.classList.add('sort-' + sortDir);
   });
-}function renderCtAccordion() {
-  const cts = filteredAll.classTeachers;
-  const byGroup = {};
-  cts.forEach(c => {
-    const g = c.group || '未知';
-    if (!byGroup[g]) byGroup[g] = [];
-    byGroup[g].push(c);
+}
+function buildCtGroupCapsules() {
+  const ctContainer = document.getElementById('ctGroupCapsules');
+  ctContainer.innerHTML = '';
+  const allGroups = [...new Set(filteredAll.classTeachers.map(c => c.group || '未知'))].sort();
+  const allBtn = document.createElement('button');
+  allBtn.className = 'capsule' + (currentCtGroups.length === 0 ? ' active' : '');
+  allBtn.textContent = '全部';
+  allBtn.dataset.val = '';
+  allBtn.onclick = () => toggleCtGroupFilter('');
+  ctContainer.appendChild(allBtn);
+  allGroups.forEach(g => {
+    const btn = document.createElement('button');
+    btn.className = 'capsule' + (currentCtGroups.includes(g) ? ' active' : '');
+    btn.textContent = g;
+    btn.dataset.val = g;
+    btn.onclick = () => toggleCtGroupFilter(g);
+    ctContainer.appendChild(btn);
   });
-
-  const container = document.getElementById('ctAccordion');
-  let html = '';
-
-  const sortedGroups = Object.keys(byGroup).sort((a, b) => {
-    const ta = byGroup[a].reduce((s, c) => s + c.inClassCount, 0);
-    const tb = byGroup[b].reduce((s, c) => s + c.inClassCount, 0);
-    return tb - ta;
-  });
-
-  sortedGroups.forEach(group => {
-    const members = byGroup[group].sort((a, b) => b.inClassCount - a.inClassCount);
-    const isOpen = expandedCtGroups.has(group);
-    const totalInClass = members.reduce((s, c) => s + c.inClassCount, 0);
-
-    const gRates = calcRates({
-      inClassCount: totalInClass,
-      bindCount: members.reduce((s, c) => s + c.bindCount, 0),
-      joinGroupCount: members.reduce((s, c) => s + c.joinGroupCount, 0),
-      coverCount: members.reduce((s, c) => s + c.coverCount, 0),
-      interactCount: members.reduce((s, c) => s + c.interactCount, 0),
-      activeCount: members.reduce((s, c) => s + c.activeCount, 0),
-      confirmCount: members.reduce((s, c) => s + c.confirmCount, 0),
-      attendCount: members.reduce((s, c) => s + c.attendCount, 0),
-    });
-
-    let ctRows = '';
-    members.forEach(c => {
-      ctRows += `<tr>
-        <td>${c.name}</td>
-        <td class="td-rate ${rateColor(c.bindRate,'bindRate')}">${c.bindRate}%</td>
-        <td class="td-rate ${rateColor(c.joinRate,'joinRate')}">${c.joinRate}%</td>
-        <td class="td-num">${fmt(c.unbindCount)}</td>
-        <td class="td-rate ${rateColor(c.confirmRate,'confirmRate')}">${c.confirmRate}%</td>
-        <td class="td-rate ${rateColor(c.attendRate,'attendRate')}">${c.attendRate}%</td>
-        <td class="td-rate ${rateColor(c.coverRate,'coverRate')}">${c.coverRate}%</td>
-        <td class="td-rate ${rateColor(c.interactRate,'interactRate')}">${c.interactRate}%</td>
-        <td class="td-rate ${rateColor(c.activeRate,'activeRate')}">${c.activeRate}%</td>
-        <td class="td-rate ${rateColor(c.replyRate,'replyRate')}">${c.replyRate}%</td>
-        <td class="td-rate ${rateColor(c.avgRespTime,'avgRespTime')}">${c.avgRespTime}</td>
-      </tr>`;
-    });
-
-    html += `
-    <div>
-      <div class="accordion-header${isOpen ? ' open' : ''}" onclick="toggleCtGroup('${group}', this)">
-        <div class="accordion-title">
-          <span>${group}</span>
-          <span class="accordion-meta">${members.length} 位班主任 · 在班 ${totalInClass.toLocaleString()} 人次</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:16px">
-          <span class="td-rate ${rateColor(gRates.bindRate,'bindRate')}" style="font-size:12px">绑定率 ${gRates.bindRate}%</span>
-          <span class="accordion-arrow">▾</span>
-        </div>
-      </div>
-      <div class="accordion-body${isOpen ? ' open' : ''}">
-        <table class="ct-table">
-          <thead>
-            <tr>
-              <th>班主任</th>
-              <th>绑定率</th><th>进群率</th><th>未绑定</th>
-              <th>预出勤确认率</th><th>预出勤率</th><th>覆盖率</th><th>交互率</th><th>活跃度</th>
-              <th>回复率</th><th>响应(分钟)</th>
-            </tr>
-          </thead>
-          <tbody>${ctRows}</tbody>
-        </table>
-      </div>
-    </div>`;
-  });
-
-  container.innerHTML = html;
 }
 
-function toggleCtGroup(group, headerEl) {
-  const body = headerEl.nextElementSibling;
-  if (expandedCtGroups.has(group)) {
-    expandedCtGroups.delete(group);
-    headerEl.classList.remove('open');
-    body.classList.remove('open');
-  } else {
-    expandedCtGroups.add(group);
-    headerEl.classList.add('open');
-    body.classList.add('open');
-  }
-}
+
 
 // Sort handlers
-document.querySelectorAll('#subjectTable thead th[data-col], #groupTable thead th[data-col]').forEach(th => {
+document.querySelectorAll('#subjectTable thead th[data-col], #groupTable thead th[data-col], #ctTable thead th[data-col]').forEach(th => {
   th.addEventListener('click', () => {
     const col = th.dataset.col;
     if (sortCol === col) {
