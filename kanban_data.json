@@ -457,6 +457,10 @@
       "subjects": [
         "生物"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.9,
       "joinRate": 88.4,
       "confirmRate": 0.6,
@@ -464,7 +468,8 @@
       "coverRate": 8.6,
       "interactRate": 5.3,
       "activeRate": 2.7,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092390",
@@ -484,6 +489,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.0,
       "joinRate": 89.8,
       "confirmRate": 0.0,
@@ -491,7 +500,8 @@
       "coverRate": 8.0,
       "interactRate": 8.0,
       "activeRate": 5.2,
-      "unbindCount": 21
+      "unbindCount": 21,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88298",
@@ -511,6 +521,10 @@
       "subjects": [
         "生物"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.3,
       "joinRate": 95.0,
       "confirmRate": 0.1,
@@ -518,7 +532,8 @@
       "coverRate": 5.1,
       "interactRate": 4.8,
       "activeRate": 2.8,
-      "unbindCount": 5
+      "unbindCount": 5,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87835",
@@ -538,6 +553,10 @@
       "subjects": [
         "生物"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.6,
       "joinRate": 96.2,
       "confirmRate": 3.2,
@@ -545,7 +564,8 @@
       "coverRate": 9.9,
       "interactRate": 7.1,
       "activeRate": 3.5,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87652",
@@ -565,6 +585,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.4,
       "joinRate": 92.5,
       "confirmRate": 0.0,
@@ -572,7 +596,8 @@
       "coverRate": 6.4,
       "interactRate": 6.3,
       "activeRate": 4.3,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87737",
@@ -592,6 +617,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 92.3,
       "joinRate": 87.1,
       "confirmRate": 0.2,
@@ -599,7 +628,8 @@
       "coverRate": 12.1,
       "interactRate": 10.3,
       "activeRate": 5.4,
-      "unbindCount": 50
+      "unbindCount": 50,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1093854",
@@ -619,6 +649,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.7,
       "joinRate": 91.4,
       "confirmRate": 48.8,
@@ -626,7 +660,8 @@
       "coverRate": 98.2,
       "interactRate": 18.7,
       "activeRate": 7.7,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092584",
@@ -646,6 +681,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.4,
       "joinRate": 92.1,
       "confirmRate": 29.9,
@@ -653,7 +692,8 @@
       "coverRate": 10.4,
       "interactRate": 10.4,
       "activeRate": 6.0,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1093853",
@@ -673,6 +713,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 94.0,
       "joinRate": 89.5,
       "confirmRate": 5.0,
@@ -680,7 +724,8 @@
       "coverRate": 35.2,
       "interactRate": 19.0,
       "activeRate": 7.8,
-      "unbindCount": 38
+      "unbindCount": 38,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306520",
@@ -700,6 +745,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.4,
       "joinRate": 92.6,
       "confirmRate": 0.0,
@@ -707,7 +756,8 @@
       "coverRate": 5.4,
       "interactRate": 4.4,
       "activeRate": 3.1,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096169",
@@ -727,6 +777,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.4,
       "joinRate": 94.8,
       "confirmRate": 38.4,
@@ -734,7 +788,8 @@
       "coverRate": 99.1,
       "interactRate": 41.5,
       "activeRate": 12.6,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1301690",
@@ -754,6 +809,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.4,
       "joinRate": 91.1,
       "confirmRate": 0.0,
@@ -761,7 +820,8 @@
       "coverRate": 8.5,
       "interactRate": 8.5,
       "activeRate": 4.6,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092257",
@@ -781,6 +841,10 @@
       "subjects": [
         "生物"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.4,
       "joinRate": 95.4,
       "confirmRate": 69.8,
@@ -788,7 +852,8 @@
       "coverRate": 5.4,
       "interactRate": 5.3,
       "activeRate": 3.4,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1093856",
@@ -808,6 +873,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.4,
       "joinRate": 92.8,
       "confirmRate": 5.3,
@@ -815,7 +884,8 @@
       "coverRate": 11.9,
       "interactRate": 9.8,
       "activeRate": 6.9,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87736",
@@ -835,6 +905,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 100.0,
       "joinRate": 97.7,
       "confirmRate": 7.4,
@@ -842,7 +916,8 @@
       "coverRate": 26.1,
       "interactRate": 19.0,
       "activeRate": 8.4,
-      "unbindCount": 0
+      "unbindCount": 0,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306451",
@@ -862,6 +937,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.2,
       "joinRate": 89.2,
       "confirmRate": 1.1,
@@ -869,7 +948,8 @@
       "coverRate": 10.3,
       "interactRate": 9.7,
       "activeRate": 4.8,
-      "unbindCount": 5
+      "unbindCount": 5,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1300019",
@@ -889,6 +969,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.5,
       "joinRate": 92.2,
       "confirmRate": 0.0,
@@ -896,7 +980,8 @@
       "coverRate": 8.9,
       "interactRate": 8.7,
       "activeRate": 4.4,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1300018",
@@ -916,6 +1001,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.8,
       "joinRate": 95.8,
       "confirmRate": 0.0,
@@ -923,7 +1012,8 @@
       "coverRate": 17.6,
       "interactRate": 12.9,
       "activeRate": 7.8,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1307471",
@@ -943,6 +1033,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.5,
       "joinRate": 89.4,
       "confirmRate": 0.0,
@@ -950,7 +1044,8 @@
       "coverRate": 10.4,
       "interactRate": 10.1,
       "activeRate": 7.5,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306986",
@@ -970,6 +1065,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.7,
       "joinRate": 87.6,
       "confirmRate": 0.8,
@@ -977,7 +1076,8 @@
       "coverRate": 13.7,
       "interactRate": 13.4,
       "activeRate": 8.3,
-      "unbindCount": 14
+      "unbindCount": 14,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092259",
@@ -997,6 +1097,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.5,
       "joinRate": 93.4,
       "confirmRate": 0.2,
@@ -1004,7 +1108,8 @@
       "coverRate": 15.9,
       "interactRate": 12.6,
       "activeRate": 6.1,
-      "unbindCount": 9
+      "unbindCount": 9,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1095947",
@@ -1024,6 +1129,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.9,
       "joinRate": 90.1,
       "confirmRate": 37.4,
@@ -1031,7 +1140,8 @@
       "coverRate": 95.6,
       "interactRate": 50.7,
       "activeRate": 26.4,
-      "unbindCount": 13
+      "unbindCount": 13,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87839",
@@ -1051,6 +1161,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.0,
       "joinRate": 96.2,
       "confirmRate": 0.0,
@@ -1058,7 +1172,8 @@
       "coverRate": 17.0,
       "interactRate": 10.6,
       "activeRate": 5.0,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87701",
@@ -1078,6 +1193,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.3,
       "joinRate": 89.9,
       "confirmRate": 4.3,
@@ -1085,7 +1204,8 @@
       "coverRate": 32.8,
       "interactRate": 17.2,
       "activeRate": 9.9,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096288",
@@ -1105,6 +1225,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.7,
       "joinRate": 92.9,
       "confirmRate": 0.0,
@@ -1112,7 +1236,8 @@
       "coverRate": 17.7,
       "interactRate": 10.4,
       "activeRate": 5.0,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1300020",
@@ -1132,6 +1257,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.0,
       "joinRate": 96.4,
       "confirmRate": 0.0,
@@ -1139,7 +1268,8 @@
       "coverRate": 62.8,
       "interactRate": 32.9,
       "activeRate": 14.7,
-      "unbindCount": 12
+      "unbindCount": 12,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096166",
@@ -1159,6 +1289,10 @@
       "subjects": [
         "道德与法治"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.7,
       "joinRate": 96.8,
       "confirmRate": 0.0,
@@ -1166,7 +1300,8 @@
       "coverRate": 7.1,
       "interactRate": 6.0,
       "activeRate": 4.3,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306523",
@@ -1186,6 +1321,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.5,
       "joinRate": 90.9,
       "confirmRate": 0.0,
@@ -1193,7 +1332,8 @@
       "coverRate": 56.4,
       "interactRate": 13.3,
       "activeRate": 6.5,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306989",
@@ -1213,6 +1353,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.2,
       "joinRate": 88.1,
       "confirmRate": 0.0,
@@ -1220,7 +1364,8 @@
       "coverRate": 8.0,
       "interactRate": 7.6,
       "activeRate": 5.6,
-      "unbindCount": 17
+      "unbindCount": 17,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306981",
@@ -1240,6 +1385,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 96.5,
       "joinRate": 93.7,
       "confirmRate": 4.3,
@@ -1247,7 +1396,8 @@
       "coverRate": 47.5,
       "interactRate": 26.9,
       "activeRate": 10.5,
-      "unbindCount": 21
+      "unbindCount": 21,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1089400",
@@ -1267,6 +1417,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 95.5,
       "joinRate": 89.0,
       "confirmRate": 0.0,
@@ -1274,7 +1428,8 @@
       "coverRate": 15.3,
       "interactRate": 14.5,
       "activeRate": 8.7,
-      "unbindCount": 27
+      "unbindCount": 27,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306973",
@@ -1294,6 +1449,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.5,
       "joinRate": 92.5,
       "confirmRate": 0.0,
@@ -1301,7 +1460,8 @@
       "coverRate": 8.5,
       "interactRate": 8.5,
       "activeRate": 5.2,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87872",
@@ -1321,6 +1481,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.5,
       "joinRate": 95.2,
       "confirmRate": 0.3,
@@ -1328,7 +1492,8 @@
       "coverRate": 10.0,
       "interactRate": 8.2,
       "activeRate": 5.0,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096290",
@@ -1348,6 +1513,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 100.0,
       "joinRate": 95.0,
       "confirmRate": 3.8,
@@ -1355,7 +1524,8 @@
       "coverRate": 10.0,
       "interactRate": 7.9,
       "activeRate": 3.5,
-      "unbindCount": 0
+      "unbindCount": 0,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87780",
@@ -1375,6 +1545,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.7,
       "joinRate": 93.1,
       "confirmRate": 0.0,
@@ -1382,7 +1556,8 @@
       "coverRate": 13.7,
       "interactRate": 9.9,
       "activeRate": 5.4,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1307290",
@@ -1402,6 +1577,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 94.1,
       "joinRate": 81.4,
       "confirmRate": 0.0,
@@ -1409,7 +1588,8 @@
       "coverRate": 82.4,
       "interactRate": 12.7,
       "activeRate": 7.7,
-      "unbindCount": 35
+      "unbindCount": 35,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306983",
@@ -1429,6 +1609,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.5,
       "joinRate": 89.1,
       "confirmRate": 0.2,
@@ -1436,7 +1620,8 @@
       "coverRate": 10.6,
       "interactRate": 10.2,
       "activeRate": 5.5,
-      "unbindCount": 15
+      "unbindCount": 15,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1094563",
@@ -1456,6 +1641,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.3,
       "joinRate": 95.6,
       "confirmRate": 0.5,
@@ -1463,7 +1652,8 @@
       "coverRate": 14.3,
       "interactRate": 9.9,
       "activeRate": 5.9,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306449",
@@ -1483,6 +1673,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.3,
       "joinRate": 89.3,
       "confirmRate": 0.2,
@@ -1490,7 +1684,8 @@
       "coverRate": 11.2,
       "interactRate": 10.1,
       "activeRate": 7.2,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306519",
@@ -1510,6 +1705,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.8,
       "joinRate": 87.7,
       "confirmRate": 0.0,
@@ -1517,7 +1716,8 @@
       "coverRate": 9.4,
       "interactRate": 8.7,
       "activeRate": 5.0,
-      "unbindCount": 13
+      "unbindCount": 13,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092252",
@@ -1537,6 +1737,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 93.3,
       "joinRate": 87.4,
       "confirmRate": 0.3,
@@ -1544,7 +1748,8 @@
       "coverRate": 12.1,
       "interactRate": 9.3,
       "activeRate": 5.7,
-      "unbindCount": 40
+      "unbindCount": 40,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1300026",
@@ -1564,6 +1769,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.2,
       "joinRate": 91.6,
       "confirmRate": 17.0,
@@ -1571,7 +1780,8 @@
       "coverRate": 97.6,
       "interactRate": 33.2,
       "activeRate": 14.3,
-      "unbindCount": 5
+      "unbindCount": 5,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1301689",
@@ -1591,6 +1801,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.3,
       "joinRate": 96.3,
       "confirmRate": 66.4,
@@ -1598,7 +1812,8 @@
       "coverRate": 97.5,
       "interactRate": 42.5,
       "activeRate": 16.0,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096173",
@@ -1618,6 +1833,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.0,
       "joinRate": 91.1,
       "confirmRate": 0.3,
@@ -1625,7 +1844,8 @@
       "coverRate": 6.1,
       "interactRate": 5.6,
       "activeRate": 3.4,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092262",
@@ -1645,6 +1865,10 @@
       "subjects": [
         "历史"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.0,
       "joinRate": 92.9,
       "confirmRate": 0.0,
@@ -1652,7 +1876,8 @@
       "coverRate": 8.9,
       "interactRate": 7.3,
       "activeRate": 5.2,
-      "unbindCount": 12
+      "unbindCount": 12,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1307287",
@@ -1672,6 +1897,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.0,
       "joinRate": 86.3,
       "confirmRate": 0.2,
@@ -1679,7 +1908,8 @@
       "coverRate": 14.3,
       "interactRate": 13.5,
       "activeRate": 7.3,
-      "unbindCount": 12
+      "unbindCount": 12,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1094422",
@@ -1699,6 +1929,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.7,
       "joinRate": 90.9,
       "confirmRate": 4.2,
@@ -1706,7 +1940,8 @@
       "coverRate": 12.6,
       "interactRate": 8.1,
       "activeRate": 4.6,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1300022",
@@ -1726,6 +1961,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.8,
       "joinRate": 95.4,
       "confirmRate": 0.0,
@@ -1733,7 +1972,8 @@
       "coverRate": 11.3,
       "interactRate": 8.6,
       "activeRate": 4.1,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1089510",
@@ -1753,6 +1993,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.0,
       "joinRate": 93.6,
       "confirmRate": 2.0,
@@ -1760,7 +2004,8 @@
       "coverRate": 9.8,
       "interactRate": 7.9,
       "activeRate": 5.2,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306516",
@@ -1780,6 +2025,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.0,
       "joinRate": 89.8,
       "confirmRate": 0.0,
@@ -1787,7 +2036,8 @@
       "coverRate": 6.8,
       "interactRate": 6.6,
       "activeRate": 4.2,
-      "unbindCount": 18
+      "unbindCount": 18,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1300015",
@@ -1807,6 +2057,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.5,
       "joinRate": 91.7,
       "confirmRate": 0.3,
@@ -1814,7 +2068,8 @@
       "coverRate": 15.3,
       "interactRate": 11.9,
       "activeRate": 7.1,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87792",
@@ -1834,6 +2089,10 @@
       "subjects": [
         "地理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.3,
       "joinRate": 95.6,
       "confirmRate": 2.7,
@@ -1841,7 +2100,8 @@
       "coverRate": 11.9,
       "interactRate": 6.8,
       "activeRate": 4.6,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87538",
@@ -1861,6 +2121,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.6,
       "joinRate": 92.9,
       "confirmRate": 2.6,
@@ -1868,7 +2132,8 @@
       "coverRate": 20.1,
       "interactRate": 16.2,
       "activeRate": 10.9,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1093009",
@@ -1888,6 +2153,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.3,
       "joinRate": 95.9,
       "confirmRate": 0.0,
@@ -1895,7 +2164,8 @@
       "coverRate": 9.2,
       "interactRate": 5.3,
       "activeRate": 3.6,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092260",
@@ -1915,6 +2185,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.7,
       "joinRate": 95.6,
       "confirmRate": 0.3,
@@ -1922,7 +2196,8 @@
       "coverRate": 7.7,
       "interactRate": 6.8,
       "activeRate": 3.4,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1093010",
@@ -1942,6 +2217,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.0,
       "joinRate": 96.8,
       "confirmRate": 20.3,
@@ -1949,7 +2228,8 @@
       "coverRate": 43.5,
       "interactRate": 31.6,
       "activeRate": 16.2,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88172",
@@ -1969,6 +2249,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.3,
       "joinRate": 98.3,
       "confirmRate": 0.0,
@@ -1976,7 +2260,8 @@
       "coverRate": 16.2,
       "interactRate": 13.8,
       "activeRate": 9.6,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096045",
@@ -1996,6 +2281,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.0,
       "joinRate": 97.6,
       "confirmRate": 0.0,
@@ -2003,7 +2292,8 @@
       "coverRate": 10.1,
       "interactRate": 8.9,
       "activeRate": 5.3,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87771",
@@ -2023,6 +2313,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.3,
       "joinRate": 89.2,
       "confirmRate": 55.7,
@@ -2030,7 +2324,8 @@
       "coverRate": 96.2,
       "interactRate": 60.7,
       "activeRate": 21.4,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87854",
@@ -2050,6 +2345,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.7,
       "joinRate": 94.9,
       "confirmRate": 0.0,
@@ -2057,7 +2356,8 @@
       "coverRate": 8.0,
       "interactRate": 6.8,
       "activeRate": 3.4,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092428",
@@ -2077,6 +2377,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.5,
       "joinRate": 93.7,
       "confirmRate": 0.0,
@@ -2084,7 +2388,8 @@
       "coverRate": 8.6,
       "interactRate": 8.2,
       "activeRate": 4.3,
-      "unbindCount": 9
+      "unbindCount": 9,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1093184",
@@ -2104,6 +2409,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.1,
       "joinRate": 91.9,
       "confirmRate": 0.0,
@@ -2111,7 +2420,8 @@
       "coverRate": 11.0,
       "interactRate": 8.7,
       "activeRate": 6.0,
-      "unbindCount": 5
+      "unbindCount": 5,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092392",
@@ -2131,6 +2441,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.9,
       "joinRate": 94.8,
       "confirmRate": 0.0,
@@ -2138,7 +2452,8 @@
       "coverRate": 8.8,
       "interactRate": 8.2,
       "activeRate": 5.7,
-      "unbindCount": 12
+      "unbindCount": 12,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1302749",
@@ -2158,6 +2473,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.3,
       "joinRate": 90.5,
       "confirmRate": 70.4,
@@ -2165,7 +2484,8 @@
       "coverRate": 0.0,
       "interactRate": 0.0,
       "activeRate": 0.0,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092266",
@@ -2185,6 +2505,10 @@
       "subjects": [
         "历史"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.5,
       "joinRate": 94.7,
       "confirmRate": 13.6,
@@ -2192,7 +2516,8 @@
       "coverRate": 5.8,
       "interactRate": 5.3,
       "activeRate": 3.4,
-      "unbindCount": 9
+      "unbindCount": 9,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1089396",
@@ -2212,6 +2537,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 100.0,
       "joinRate": 97.4,
       "confirmRate": 15.1,
@@ -2219,7 +2548,8 @@
       "coverRate": 10.8,
       "interactRate": 9.6,
       "activeRate": 5.5,
-      "unbindCount": 0
+      "unbindCount": 0,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88154",
@@ -2239,6 +2569,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.3,
       "joinRate": 89.7,
       "confirmRate": 0.0,
@@ -2246,7 +2580,8 @@
       "coverRate": 12.9,
       "interactRate": 12.6,
       "activeRate": 8.1,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306982",
@@ -2266,6 +2601,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.6,
       "joinRate": 90.9,
       "confirmRate": 0.0,
@@ -2273,7 +2612,8 @@
       "coverRate": 16.2,
       "interactRate": 12.9,
       "activeRate": 9.0,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88111",
@@ -2293,6 +2633,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.0,
       "joinRate": 95.5,
       "confirmRate": 35.6,
@@ -2300,7 +2644,8 @@
       "coverRate": 43.7,
       "interactRate": 27.2,
       "activeRate": 14.8,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87772",
@@ -2320,6 +2665,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.3,
       "joinRate": 87.4,
       "confirmRate": 0.0,
@@ -2327,7 +2676,8 @@
       "coverRate": 11.0,
       "interactRate": 10.5,
       "activeRate": 7.4,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87851",
@@ -2347,6 +2697,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.7,
       "joinRate": 91.9,
       "confirmRate": 87.8,
@@ -2354,7 +2708,8 @@
       "coverRate": 99.3,
       "interactRate": 89.5,
       "activeRate": 36.7,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1095951",
@@ -2374,6 +2729,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.3,
       "joinRate": 88.1,
       "confirmRate": 0.2,
@@ -2381,7 +2740,8 @@
       "coverRate": 13.1,
       "interactRate": 12.8,
       "activeRate": 9.0,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1300016",
@@ -2401,6 +2761,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.8,
       "joinRate": 92.1,
       "confirmRate": 1.2,
@@ -2408,7 +2772,8 @@
       "coverRate": 9.5,
       "interactRate": 9.3,
       "activeRate": 6.0,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87742",
@@ -2428,6 +2793,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.6,
       "joinRate": 87.6,
       "confirmRate": 0.0,
@@ -2435,7 +2804,8 @@
       "coverRate": 18.1,
       "interactRate": 17.6,
       "activeRate": 11.7,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1091007",
@@ -2455,6 +2825,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.0,
       "joinRate": 94.5,
       "confirmRate": 0.0,
@@ -2462,7 +2836,8 @@
       "coverRate": 97.1,
       "interactRate": 67.0,
       "activeRate": 26.1,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88206",
@@ -2482,6 +2857,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.3,
       "joinRate": 96.2,
       "confirmRate": 0.9,
@@ -2489,7 +2868,8 @@
       "coverRate": 16.6,
       "interactRate": 10.6,
       "activeRate": 5.7,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092393",
@@ -2509,6 +2889,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.4,
       "joinRate": 92.9,
       "confirmRate": 9.2,
@@ -2516,7 +2900,8 @@
       "coverRate": 11.3,
       "interactRate": 8.0,
       "activeRate": 4.5,
-      "unbindCount": 9
+      "unbindCount": 9,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1300031",
@@ -2536,6 +2921,10 @@
       "subjects": [
         "道德与法治"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.1,
       "joinRate": 95.0,
       "confirmRate": 52.7,
@@ -2543,7 +2932,8 @@
       "coverRate": 6.8,
       "interactRate": 5.0,
       "activeRate": 3.3,
-      "unbindCount": 5
+      "unbindCount": 5,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306452",
@@ -2563,6 +2953,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.7,
       "joinRate": 95.5,
       "confirmRate": 0.0,
@@ -2570,7 +2964,8 @@
       "coverRate": 7.0,
       "interactRate": 5.4,
       "activeRate": 2.8,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1093860",
@@ -2590,6 +2985,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.2,
       "joinRate": 87.8,
       "confirmRate": 0.2,
@@ -2597,7 +2996,8 @@
       "coverRate": 11.5,
       "interactRate": 11.0,
       "activeRate": 8.2,
-      "unbindCount": 16
+      "unbindCount": 16,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096162",
@@ -2617,6 +3017,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.6,
       "joinRate": 96.7,
       "confirmRate": 0.5,
@@ -2624,7 +3028,8 @@
       "coverRate": 20.7,
       "interactRate": 16.2,
       "activeRate": 9.8,
-      "unbindCount": 14
+      "unbindCount": 14,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1307289",
@@ -2644,6 +3049,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.1,
       "joinRate": 92.2,
       "confirmRate": 0.0,
@@ -2651,7 +3060,8 @@
       "coverRate": 87.8,
       "interactRate": 13.4,
       "activeRate": 6.8,
-      "unbindCount": 5
+      "unbindCount": 5,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1094554",
@@ -2671,6 +3081,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 100.0,
       "joinRate": 94.8,
       "confirmRate": 0.9,
@@ -2678,7 +3092,8 @@
       "coverRate": 7.5,
       "interactRate": 6.8,
       "activeRate": 3.5,
-      "unbindCount": 0
+      "unbindCount": 0,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1089394",
@@ -2698,6 +3113,10 @@
       "subjects": [
         "地理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.3,
       "joinRate": 93.0,
       "confirmRate": 0.2,
@@ -2705,7 +3124,8 @@
       "coverRate": 5.4,
       "interactRate": 4.2,
       "activeRate": 2.3,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1307472",
@@ -2725,6 +3145,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.3,
       "joinRate": 92.3,
       "confirmRate": 0.0,
@@ -2732,7 +3156,8 @@
       "coverRate": 18.2,
       "interactRate": 13.5,
       "activeRate": 10.3,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1089964",
@@ -2752,6 +3177,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.4,
       "joinRate": 82.2,
       "confirmRate": 0.0,
@@ -2759,7 +3188,8 @@
       "coverRate": 11.8,
       "interactRate": 11.8,
       "activeRate": 8.3,
-      "unbindCount": 15
+      "unbindCount": 15,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1094564",
@@ -2779,6 +3209,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.9,
       "joinRate": 90.5,
       "confirmRate": 0.2,
@@ -2786,7 +3220,8 @@
       "coverRate": 39.7,
       "interactRate": 12.0,
       "activeRate": 6.9,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1307291",
@@ -2806,6 +3241,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.8,
       "joinRate": 90.5,
       "confirmRate": 0.0,
@@ -2813,7 +3252,8 @@
       "coverRate": 15.3,
       "interactRate": 12.3,
       "activeRate": 6.7,
-      "unbindCount": 7
+      "unbindCount": 7,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1095953",
@@ -2833,6 +3273,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.6,
       "joinRate": 92.8,
       "confirmRate": 0.0,
@@ -2840,7 +3284,8 @@
       "coverRate": 10.2,
       "interactRate": 7.2,
       "activeRate": 4.1,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88100",
@@ -2860,6 +3305,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.1,
       "joinRate": 91.7,
       "confirmRate": 0.0,
@@ -2867,7 +3316,8 @@
       "coverRate": 11.0,
       "interactRate": 8.8,
       "activeRate": 5.5,
-      "unbindCount": 5
+      "unbindCount": 5,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306987",
@@ -2887,6 +3337,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.3,
       "joinRate": 94.0,
       "confirmRate": 0.0,
@@ -2894,7 +3348,8 @@
       "coverRate": 15.6,
       "interactRate": 11.5,
       "activeRate": 7.6,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87753",
@@ -2914,6 +3369,10 @@
       "subjects": [
         "历史"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.8,
       "joinRate": 96.1,
       "confirmRate": 0.5,
@@ -2921,7 +3380,8 @@
       "coverRate": 6.9,
       "interactRate": 5.1,
       "activeRate": 2.7,
-      "unbindCount": 7
+      "unbindCount": 7,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87793",
@@ -2941,6 +3401,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.5,
       "joinRate": 94.0,
       "confirmRate": 0.0,
@@ -2948,7 +3412,8 @@
       "coverRate": 8.9,
       "interactRate": 7.8,
       "activeRate": 5.3,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87848",
@@ -2968,6 +3433,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 95.6,
       "joinRate": 78.5,
       "confirmRate": 0.0,
@@ -2975,7 +3444,8 @@
       "coverRate": 81.5,
       "interactRate": 44.9,
       "activeRate": 20.4,
-      "unbindCount": 25
+      "unbindCount": 25,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1091010",
@@ -2995,6 +3465,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.1,
       "joinRate": 94.3,
       "confirmRate": 22.9,
@@ -3002,7 +3476,8 @@
       "coverRate": 9.4,
       "interactRate": 4.4,
       "activeRate": 2.1,
-      "unbindCount": 5
+      "unbindCount": 5,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092394",
@@ -3022,6 +3497,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.6,
       "joinRate": 94.7,
       "confirmRate": 0.0,
@@ -3029,7 +3508,8 @@
       "coverRate": 7.3,
       "interactRate": 6.9,
       "activeRate": 3.0,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1301704",
@@ -3049,6 +3529,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.3,
       "joinRate": 95.0,
       "confirmRate": 59.9,
@@ -3056,7 +3540,8 @@
       "coverRate": 98.8,
       "interactRate": 48.1,
       "activeRate": 12.7,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1301829",
@@ -3076,6 +3561,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.4,
       "joinRate": 88.2,
       "confirmRate": 0.0,
@@ -3083,7 +3572,8 @@
       "coverRate": 13.5,
       "interactRate": 13.0,
       "activeRate": 9.3,
-      "unbindCount": 9
+      "unbindCount": 9,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87906",
@@ -3103,6 +3593,10 @@
       "subjects": [
         "历史"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.5,
       "joinRate": 97.7,
       "confirmRate": 0.0,
@@ -3110,7 +3604,8 @@
       "coverRate": 97.1,
       "interactRate": 32.1,
       "activeRate": 8.9,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87752",
@@ -3130,6 +3625,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.8,
       "joinRate": 90.7,
       "confirmRate": 36.0,
@@ -3137,7 +3636,8 @@
       "coverRate": 98.6,
       "interactRate": 48.3,
       "activeRate": 23.4,
-      "unbindCount": 7
+      "unbindCount": 7,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87700",
@@ -3157,6 +3657,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.9,
       "joinRate": 93.0,
       "confirmRate": 0.0,
@@ -3164,7 +3668,8 @@
       "coverRate": 18.8,
       "interactRate": 13.6,
       "activeRate": 7.7,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88153",
@@ -3184,6 +3689,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.3,
       "joinRate": 93.6,
       "confirmRate": 0.0,
@@ -3191,7 +3700,8 @@
       "coverRate": 10.4,
       "interactRate": 8.6,
       "activeRate": 6.4,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1302752",
@@ -3211,6 +3721,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.6,
       "joinRate": 90.5,
       "confirmRate": 0.0,
@@ -3218,7 +3732,8 @@
       "coverRate": 7.2,
       "interactRate": 5.5,
       "activeRate": 2.7,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87803",
@@ -3238,6 +3753,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.6,
       "joinRate": 94.5,
       "confirmRate": 68.9,
@@ -3245,7 +3764,8 @@
       "coverRate": 55.3,
       "interactRate": 30.6,
       "activeRate": 6.6,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87942",
@@ -3265,6 +3785,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.3,
       "joinRate": 97.5,
       "confirmRate": 77.6,
@@ -3272,7 +3796,8 @@
       "coverRate": 99.1,
       "interactRate": 56.1,
       "activeRate": 22.2,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1301354",
@@ -3292,6 +3817,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.7,
       "joinRate": 91.6,
       "confirmRate": 0.2,
@@ -3299,7 +3828,8 @@
       "coverRate": 9.3,
       "interactRate": 7.5,
       "activeRate": 4.7,
-      "unbindCount": 7
+      "unbindCount": 7,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092255",
@@ -3319,6 +3849,10 @@
       "subjects": [
         "地理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.6,
       "joinRate": 94.3,
       "confirmRate": 65.2,
@@ -3326,7 +3860,8 @@
       "coverRate": 6.3,
       "interactRate": 6.3,
       "activeRate": 4.5,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88310",
@@ -3346,6 +3881,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.1,
       "joinRate": 98.9,
       "confirmRate": 96.2,
@@ -3353,7 +3892,8 @@
       "coverRate": 98.9,
       "interactRate": 93.4,
       "activeRate": 31.8,
-      "unbindCount": 5
+      "unbindCount": 5,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1301921",
@@ -3373,6 +3913,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.7,
       "joinRate": 96.9,
       "confirmRate": 0.0,
@@ -3380,7 +3924,8 @@
       "coverRate": 11.2,
       "interactRate": 9.4,
       "activeRate": 5.2,
-      "unbindCount": 7
+      "unbindCount": 7,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1094417",
@@ -3400,6 +3945,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.7,
       "joinRate": 89.7,
       "confirmRate": 31.8,
@@ -3407,7 +3956,8 @@
       "coverRate": 13.9,
       "interactRate": 13.7,
       "activeRate": 9.2,
-      "unbindCount": 13
+      "unbindCount": 13,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092391",
@@ -3427,6 +3977,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.3,
       "joinRate": 92.1,
       "confirmRate": 54.3,
@@ -3434,7 +3988,8 @@
       "coverRate": 68.6,
       "interactRate": 30.0,
       "activeRate": 11.0,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1302751",
@@ -3454,6 +4009,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.4,
       "joinRate": 89.9,
       "confirmRate": 22.1,
@@ -3461,7 +4020,8 @@
       "coverRate": 50.8,
       "interactRate": 29.7,
       "activeRate": 11.6,
-      "unbindCount": 9
+      "unbindCount": 9,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1093008",
@@ -3481,6 +4041,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.1,
       "joinRate": 92.4,
       "confirmRate": 10.3,
@@ -3488,7 +4052,8 @@
       "coverRate": 15.2,
       "interactRate": 12.8,
       "activeRate": 8.0,
-      "unbindCount": 5
+      "unbindCount": 5,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306525",
@@ -3508,6 +4073,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.8,
       "joinRate": 90.1,
       "confirmRate": 0.0,
@@ -3515,7 +4084,8 @@
       "coverRate": 13.4,
       "interactRate": 11.8,
       "activeRate": 7.8,
-      "unbindCount": 12
+      "unbindCount": 12,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092254",
@@ -3535,6 +4105,10 @@
       "subjects": [
         "地理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.7,
       "joinRate": 95.6,
       "confirmRate": 0.7,
@@ -3542,7 +4116,8 @@
       "coverRate": 3.8,
       "interactRate": 3.6,
       "activeRate": 2.0,
-      "unbindCount": 7
+      "unbindCount": 7,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1094555",
@@ -3562,6 +4137,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.6,
       "joinRate": 93.5,
       "confirmRate": 0.0,
@@ -3569,7 +4148,8 @@
       "coverRate": 10.4,
       "interactRate": 8.9,
       "activeRate": 6.0,
-      "unbindCount": 13
+      "unbindCount": 13,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1091008",
@@ -3589,6 +4169,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.9,
       "joinRate": 90.0,
       "confirmRate": 0.0,
@@ -3596,7 +4180,8 @@
       "coverRate": 11.7,
       "interactRate": 10.9,
       "activeRate": 7.8,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096286",
@@ -3616,6 +4201,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.4,
       "joinRate": 91.1,
       "confirmRate": 0.2,
@@ -3623,7 +4212,8 @@
       "coverRate": 12.6,
       "interactRate": 9.2,
       "activeRate": 4.1,
-      "unbindCount": 14
+      "unbindCount": 14,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87781",
@@ -3643,6 +4233,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.8,
       "joinRate": 98.0,
       "confirmRate": 99.6,
@@ -3650,7 +4244,8 @@
       "coverRate": 99.4,
       "interactRate": 89.3,
       "activeRate": 36.0,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87870",
@@ -3670,6 +4265,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.7,
       "joinRate": 93.3,
       "confirmRate": 56.4,
@@ -3677,7 +4276,8 @@
       "coverRate": 8.5,
       "interactRate": 7.6,
       "activeRate": 4.1,
-      "unbindCount": 7
+      "unbindCount": 7,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88308",
@@ -3697,6 +4297,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.7,
       "joinRate": 92.8,
       "confirmRate": 0.0,
@@ -3704,7 +4308,8 @@
       "coverRate": 15.6,
       "interactRate": 14.8,
       "activeRate": 9.5,
-      "unbindCount": 7
+      "unbindCount": 7,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304729",
@@ -3724,6 +4329,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.9,
       "joinRate": 94.6,
       "confirmRate": 0.2,
@@ -3731,7 +4340,8 @@
       "coverRate": 11.9,
       "interactRate": 11.5,
       "activeRate": 7.4,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87957",
@@ -3751,6 +4361,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.1,
       "joinRate": 93.1,
       "confirmRate": 0.0,
@@ -3758,7 +4372,8 @@
       "coverRate": 9.5,
       "interactRate": 8.8,
       "activeRate": 5.0,
-      "unbindCount": 5
+      "unbindCount": 5,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1093857",
@@ -3778,6 +4393,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 94.2,
       "joinRate": 79.4,
       "confirmRate": 0.6,
@@ -3785,7 +4404,8 @@
       "coverRate": 13.3,
       "interactRate": 13.1,
       "activeRate": 5.8,
-      "unbindCount": 31
+      "unbindCount": 31,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87787",
@@ -3805,6 +4425,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.5,
       "joinRate": 95.5,
       "confirmRate": 34.8,
@@ -3812,7 +4436,8 @@
       "coverRate": 19.1,
       "interactRate": 13.3,
       "activeRate": 10.3,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1095956",
@@ -3832,6 +4457,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.5,
       "joinRate": 88.0,
       "confirmRate": 0.0,
@@ -3839,7 +4468,8 @@
       "coverRate": 26.5,
       "interactRate": 12.1,
       "activeRate": 7.5,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87779",
@@ -3859,6 +4489,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.6,
       "joinRate": 86.9,
       "confirmRate": 49.7,
@@ -3866,7 +4500,8 @@
       "coverRate": 84.1,
       "interactRate": 43.4,
       "activeRate": 14.4,
-      "unbindCount": 13
+      "unbindCount": 13,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096171",
@@ -3886,6 +4521,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.6,
       "joinRate": 96.4,
       "confirmRate": 50.6,
@@ -3893,7 +4532,8 @@
       "coverRate": 8.3,
       "interactRate": 6.4,
       "activeRate": 2.1,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87789",
@@ -3913,6 +4553,10 @@
       "subjects": [
         "地理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.6,
       "joinRate": 89.5,
       "confirmRate": 0.0,
@@ -3920,7 +4564,8 @@
       "coverRate": 10.2,
       "interactRate": 7.5,
       "activeRate": 4.0,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1094411",
@@ -3940,6 +4585,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.8,
       "joinRate": 96.4,
       "confirmRate": 45.3,
@@ -3947,7 +4596,8 @@
       "coverRate": 99.1,
       "interactRate": 51.7,
       "activeRate": 11.9,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87738",
@@ -3967,6 +4617,10 @@
       "subjects": [
         "道德与法治"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.1,
       "joinRate": 95.5,
       "confirmRate": 0.0,
@@ -3974,7 +4628,8 @@
       "coverRate": 7.7,
       "interactRate": 5.1,
       "activeRate": 2.3,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88224",
@@ -3994,6 +4649,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.5,
       "joinRate": 92.1,
       "confirmRate": 68.3,
@@ -4001,7 +4660,8 @@
       "coverRate": 97.2,
       "interactRate": 73.2,
       "activeRate": 21.7,
-      "unbindCount": 13
+      "unbindCount": 13,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1095948",
@@ -4021,6 +4681,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.9,
       "joinRate": 87.4,
       "confirmRate": 1.9,
@@ -4028,7 +4692,8 @@
       "coverRate": 11.1,
       "interactRate": 10.0,
       "activeRate": 6.0,
-      "unbindCount": 11
+      "unbindCount": 11,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1093863",
@@ -4048,6 +4713,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.7,
       "joinRate": 93.9,
       "confirmRate": 9.8,
@@ -4055,7 +4724,8 @@
       "coverRate": 22.7,
       "interactRate": 16.3,
       "activeRate": 8.5,
-      "unbindCount": 12
+      "unbindCount": 12,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1093851",
@@ -4075,6 +4745,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.3,
       "joinRate": 90.3,
       "confirmRate": 0.0,
@@ -4082,7 +4756,8 @@
       "coverRate": 10.1,
       "interactRate": 9.7,
       "activeRate": 5.3,
-      "unbindCount": 9
+      "unbindCount": 9,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87947",
@@ -4102,6 +4777,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 96.6,
       "joinRate": 83.3,
       "confirmRate": 0.0,
@@ -4109,7 +4788,8 @@
       "coverRate": 20.0,
       "interactRate": 16.7,
       "activeRate": 11.4,
-      "unbindCount": 18
+      "unbindCount": 18,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87940",
@@ -4129,6 +4809,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.1,
       "joinRate": 88.8,
       "confirmRate": 0.2,
@@ -4136,7 +4820,8 @@
       "coverRate": 22.7,
       "interactRate": 21.1,
       "activeRate": 14.3,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1094421",
@@ -4156,6 +4841,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 96.6,
       "joinRate": 88.0,
       "confirmRate": 13.0,
@@ -4163,7 +4852,8 @@
       "coverRate": 42.0,
       "interactRate": 27.7,
       "activeRate": 13.9,
-      "unbindCount": 18
+      "unbindCount": 18,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87476",
@@ -4183,6 +4873,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.9,
       "joinRate": 91.2,
       "confirmRate": 0.0,
@@ -4190,7 +4884,8 @@
       "coverRate": 13.4,
       "interactRate": 13.2,
       "activeRate": 9.6,
-      "unbindCount": 11
+      "unbindCount": 11,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092249",
@@ -4210,6 +4905,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.4,
       "joinRate": 96.6,
       "confirmRate": 53.6,
@@ -4217,7 +4916,8 @@
       "coverRate": 97.3,
       "interactRate": 46.2,
       "activeRate": 19.2,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096047",
@@ -4237,6 +4937,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 100.0,
       "joinRate": 97.3,
       "confirmRate": 0.0,
@@ -4244,7 +4948,8 @@
       "coverRate": 99.2,
       "interactRate": 62.8,
       "activeRate": 19.6,
-      "unbindCount": 0
+      "unbindCount": 0,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87895",
@@ -4264,6 +4969,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 96.0,
       "joinRate": 82.3,
       "confirmRate": 1.5,
@@ -4271,7 +4980,8 @@
       "coverRate": 82.1,
       "interactRate": 46.5,
       "activeRate": 14.8,
-      "unbindCount": 21
+      "unbindCount": 21,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1307927",
@@ -4291,6 +5001,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 96.9,
       "joinRate": 87.6,
       "confirmRate": 1.5,
@@ -4298,7 +5012,8 @@
       "coverRate": 49.8,
       "interactRate": 28.8,
       "activeRate": 18.1,
-      "unbindCount": 16
+      "unbindCount": 16,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304730",
@@ -4318,6 +5033,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.5,
       "joinRate": 93.2,
       "confirmRate": 0.0,
@@ -4325,7 +5044,8 @@
       "coverRate": 13.9,
       "interactRate": 11.2,
       "activeRate": 8.1,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092551",
@@ -4345,6 +5065,10 @@
       "subjects": [
         "生物"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.6,
       "joinRate": 91.5,
       "confirmRate": 0.6,
@@ -4352,7 +5076,8 @@
       "coverRate": 8.1,
       "interactRate": 4.3,
       "activeRate": 2.1,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1091009",
@@ -4372,6 +5097,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.8,
       "joinRate": 98.4,
       "confirmRate": 64.1,
@@ -4379,7 +5108,8 @@
       "coverRate": 98.6,
       "interactRate": 68.2,
       "activeRate": 25.0,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88152",
@@ -4399,6 +5129,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.1,
       "joinRate": 89.3,
       "confirmRate": 0.2,
@@ -4406,7 +5140,8 @@
       "coverRate": 15.6,
       "interactRate": 13.6,
       "activeRate": 10.1,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88347",
@@ -4426,6 +5161,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.0,
       "joinRate": 92.4,
       "confirmRate": 64.7,
@@ -4433,7 +5172,8 @@
       "coverRate": 87.5,
       "interactRate": 60.2,
       "activeRate": 18.2,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304732",
@@ -4453,6 +5193,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.2,
       "joinRate": 91.5,
       "confirmRate": 0.2,
@@ -4460,7 +5204,8 @@
       "coverRate": 5.9,
       "interactRate": 5.7,
       "activeRate": 3.9,
-      "unbindCount": 9
+      "unbindCount": 9,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096167",
@@ -4480,6 +5225,10 @@
       "subjects": [
         "历史"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.4,
       "joinRate": 91.9,
       "confirmRate": 0.2,
@@ -4487,7 +5236,8 @@
       "coverRate": 5.9,
       "interactRate": 5.3,
       "activeRate": 2.0,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304964",
@@ -4507,6 +5257,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.2,
       "joinRate": 94.5,
       "confirmRate": 12.3,
@@ -4514,7 +5268,8 @@
       "coverRate": 98.0,
       "interactRate": 30.5,
       "activeRate": 17.0,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304733",
@@ -4534,6 +5289,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.8,
       "joinRate": 94.0,
       "confirmRate": 0.0,
@@ -4541,7 +5300,8 @@
       "coverRate": 16.7,
       "interactRate": 11.7,
       "activeRate": 7.3,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306513",
@@ -4561,6 +5321,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 96.2,
       "joinRate": 85.3,
       "confirmRate": 4.6,
@@ -4568,7 +5332,8 @@
       "coverRate": 16.7,
       "interactRate": 16.5,
       "activeRate": 9.7,
-      "unbindCount": 19
+      "unbindCount": 19,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87588",
@@ -4588,6 +5353,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.6,
       "joinRate": 93.6,
       "confirmRate": 14.1,
@@ -4595,7 +5364,8 @@
       "coverRate": 39.0,
       "interactRate": 20.1,
       "activeRate": 8.7,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096041",
@@ -4615,6 +5385,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.2,
       "joinRate": 92.4,
       "confirmRate": 2.2,
@@ -4622,7 +5396,8 @@
       "coverRate": 98.2,
       "interactRate": 42.0,
       "activeRate": 18.7,
-      "unbindCount": 9
+      "unbindCount": 9,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306524",
@@ -4642,6 +5417,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.0,
       "joinRate": 89.4,
       "confirmRate": 0.2,
@@ -4649,7 +5428,8 @@
       "coverRate": 6.8,
       "interactRate": 6.4,
       "activeRate": 4.4,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096163",
@@ -4669,6 +5449,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.6,
       "joinRate": 92.2,
       "confirmRate": 0.0,
@@ -4676,7 +5460,8 @@
       "coverRate": 10.0,
       "interactRate": 6.2,
       "activeRate": 3.6,
-      "unbindCount": 7
+      "unbindCount": 7,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1300226",
@@ -4696,6 +5481,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.0,
       "joinRate": 93.4,
       "confirmRate": 19.4,
@@ -4703,7 +5492,8 @@
       "coverRate": 63.6,
       "interactRate": 22.4,
       "activeRate": 6.6,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87956",
@@ -4723,6 +5513,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.4,
       "joinRate": 92.6,
       "confirmRate": 0.0,
@@ -4730,7 +5524,8 @@
       "coverRate": 43.0,
       "interactRate": 23.1,
       "activeRate": 8.6,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87782",
@@ -4750,6 +5545,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.2,
       "joinRate": 88.1,
       "confirmRate": 0.0,
@@ -4757,7 +5556,8 @@
       "coverRate": 5.8,
       "interactRate": 5.6,
       "activeRate": 4.0,
-      "unbindCount": 9
+      "unbindCount": 9,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092389",
@@ -4777,6 +5577,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.4,
       "joinRate": 95.8,
       "confirmRate": 0.0,
@@ -4784,7 +5588,8 @@
       "coverRate": 5.2,
       "interactRate": 5.0,
       "activeRate": 3.6,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304731",
@@ -4804,6 +5609,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.6,
       "joinRate": 95.6,
       "confirmRate": 0.0,
@@ -4811,7 +5620,8 @@
       "coverRate": 97.6,
       "interactRate": 53.9,
       "activeRate": 17.8,
-      "unbindCount": 7
+      "unbindCount": 7,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87941",
@@ -4831,6 +5641,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 94.5,
       "joinRate": 86.7,
       "confirmRate": 36.6,
@@ -4838,7 +5652,8 @@
       "coverRate": 94.5,
       "interactRate": 49.7,
       "activeRate": 16.4,
-      "unbindCount": 27
+      "unbindCount": 27,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096170",
@@ -4858,6 +5673,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.2,
       "joinRate": 91.7,
       "confirmRate": 21.6,
@@ -4865,7 +5684,8 @@
       "coverRate": 98.8,
       "interactRate": 50.9,
       "activeRate": 22.2,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88136",
@@ -4885,6 +5705,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.6,
       "joinRate": 87.7,
       "confirmRate": 0.0,
@@ -4892,7 +5716,8 @@
       "coverRate": 16.2,
       "interactRate": 14.8,
       "activeRate": 10.3,
-      "unbindCount": 12
+      "unbindCount": 12,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87447",
@@ -4912,6 +5737,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.8,
       "joinRate": 95.1,
       "confirmRate": 22.2,
@@ -4919,7 +5748,8 @@
       "coverRate": 57.2,
       "interactRate": 25.7,
       "activeRate": 10.2,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1093214",
@@ -4939,6 +5769,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.4,
       "joinRate": 95.5,
       "confirmRate": 6.5,
@@ -4946,7 +5780,8 @@
       "coverRate": 15.3,
       "interactRate": 12.9,
       "activeRate": 6.9,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87673",
@@ -4966,6 +5801,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.6,
       "joinRate": 93.3,
       "confirmRate": 0.2,
@@ -4973,7 +5812,8 @@
       "coverRate": 9.0,
       "interactRate": 8.4,
       "activeRate": 3.3,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87893",
@@ -4993,6 +5833,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.4,
       "joinRate": 94.9,
       "confirmRate": 0.6,
@@ -5000,7 +5844,8 @@
       "coverRate": 13.1,
       "interactRate": 7.6,
       "activeRate": 4.3,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87826",
@@ -5020,6 +5865,10 @@
       "subjects": [
         "地理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.6,
       "joinRate": 93.8,
       "confirmRate": 0.0,
@@ -5027,7 +5876,8 @@
       "coverRate": 4.3,
       "interactRate": 4.3,
       "activeRate": 1.6,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304728",
@@ -5047,6 +5897,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.4,
       "joinRate": 96.9,
       "confirmRate": 6.2,
@@ -5054,7 +5908,8 @@
       "coverRate": 19.3,
       "interactRate": 15.8,
       "activeRate": 11.7,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87837",
@@ -5074,6 +5929,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.1,
       "joinRate": 95.7,
       "confirmRate": 46.7,
@@ -5081,7 +5940,8 @@
       "coverRate": 97.3,
       "interactRate": 50.4,
       "activeRate": 13.4,
-      "unbindCount": 9
+      "unbindCount": 9,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1300025",
@@ -5101,6 +5961,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.0,
       "joinRate": 89.9,
       "confirmRate": 40.1,
@@ -5108,7 +5972,8 @@
       "coverRate": 97.5,
       "interactRate": 42.8,
       "activeRate": 18.8,
-      "unbindCount": 5
+      "unbindCount": 5,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1093852",
@@ -5128,6 +5993,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.8,
       "joinRate": 96.7,
       "confirmRate": 51.1,
@@ -5135,7 +6004,8 @@
       "coverRate": 80.7,
       "interactRate": 46.6,
       "activeRate": 18.8,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1300014",
@@ -5155,6 +6025,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 96.9,
       "joinRate": 91.5,
       "confirmRate": 0.0,
@@ -5162,7 +6036,8 @@
       "coverRate": 7.7,
       "interactRate": 5.8,
       "activeRate": 3.5,
-      "unbindCount": 15
+      "unbindCount": 15,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1089509",
@@ -5182,6 +6057,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.5,
       "joinRate": 89.4,
       "confirmRate": 1.9,
@@ -5189,7 +6068,8 @@
       "coverRate": 11.4,
       "interactRate": 11.2,
       "activeRate": 6.8,
-      "unbindCount": 12
+      "unbindCount": 12,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1093998",
@@ -5209,6 +6089,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.0,
       "joinRate": 94.2,
       "confirmRate": 51.5,
@@ -5216,7 +6100,8 @@
       "coverRate": 97.9,
       "interactRate": 56.9,
       "activeRate": 19.4,
-      "unbindCount": 5
+      "unbindCount": 5,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1300229",
@@ -5236,6 +6121,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.8,
       "joinRate": 88.3,
       "confirmRate": 78.3,
@@ -5243,7 +6132,8 @@
       "coverRate": 88.3,
       "interactRate": 69.6,
       "activeRate": 20.6,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87850",
@@ -5263,6 +6153,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.1,
       "joinRate": 86.4,
       "confirmRate": 34.4,
@@ -5270,7 +6164,8 @@
       "coverRate": 75.6,
       "interactRate": 46.6,
       "activeRate": 16.5,
-      "unbindCount": 14
+      "unbindCount": 14,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88210",
@@ -5290,6 +6185,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.3,
       "joinRate": 87.8,
       "confirmRate": 38.4,
@@ -5297,7 +6196,8 @@
       "coverRate": 93.5,
       "interactRate": 45.1,
       "activeRate": 14.9,
-      "unbindCount": 13
+      "unbindCount": 13,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87641",
@@ -5317,6 +6217,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.1,
       "joinRate": 88.1,
       "confirmRate": 0.0,
@@ -5324,7 +6228,8 @@
       "coverRate": 10.1,
       "interactRate": 8.6,
       "activeRate": 6.3,
-      "unbindCount": 14
+      "unbindCount": 14,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304766",
@@ -5344,6 +6249,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.8,
       "joinRate": 97.3,
       "confirmRate": 0.0,
@@ -5351,7 +6260,8 @@
       "coverRate": 6.7,
       "interactRate": 6.5,
       "activeRate": 4.0,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88150",
@@ -5371,6 +6281,10 @@
       "subjects": [
         "生物"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.9,
       "joinRate": 85.9,
       "confirmRate": 21.1,
@@ -5378,7 +6292,8 @@
       "coverRate": 29.3,
       "interactRate": 15.2,
       "activeRate": 9.9,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304768",
@@ -5398,6 +6313,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.9,
       "joinRate": 93.2,
       "confirmRate": 11.8,
@@ -5405,7 +6324,8 @@
       "coverRate": 19.4,
       "interactRate": 14.8,
       "activeRate": 9.7,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304968",
@@ -5425,6 +6345,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.7,
       "joinRate": 91.3,
       "confirmRate": 0.0,
@@ -5432,7 +6356,8 @@
       "coverRate": 14.0,
       "interactRate": 11.8,
       "activeRate": 9.3,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304770",
@@ -5452,6 +6377,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 100.0,
       "joinRate": 94.7,
       "confirmRate": 0.0,
@@ -5459,7 +6388,8 @@
       "coverRate": 7.8,
       "interactRate": 5.7,
       "activeRate": 3.2,
-      "unbindCount": 0
+      "unbindCount": 0,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88307",
@@ -5479,6 +6409,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.6,
       "joinRate": 94.7,
       "confirmRate": 8.3,
@@ -5486,7 +6420,8 @@
       "coverRate": 49.3,
       "interactRate": 20.0,
       "activeRate": 10.6,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87830",
@@ -5506,6 +6441,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.2,
       "joinRate": 90.0,
       "confirmRate": 13.8,
@@ -5513,7 +6452,8 @@
       "coverRate": 43.5,
       "interactRate": 17.8,
       "activeRate": 5.9,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87944",
@@ -5533,6 +6473,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 96.8,
       "joinRate": 89.1,
       "confirmRate": 0.0,
@@ -5540,7 +6484,8 @@
       "coverRate": 14.9,
       "interactRate": 10.9,
       "activeRate": 6.6,
-      "unbindCount": 15
+      "unbindCount": 15,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87669",
@@ -5560,6 +6505,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.9,
       "joinRate": 82.6,
       "confirmRate": 70.4,
@@ -5567,7 +6516,8 @@
       "coverRate": 97.2,
       "interactRate": 80.4,
       "activeRate": 41.7,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1094412",
@@ -5587,6 +6537,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.1,
       "joinRate": 96.8,
       "confirmRate": 36.4,
@@ -5594,7 +6548,8 @@
       "coverRate": 97.4,
       "interactRate": 46.5,
       "activeRate": 15.8,
-      "unbindCount": 9
+      "unbindCount": 9,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304965",
@@ -5614,6 +6569,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.3,
       "joinRate": 90.4,
       "confirmRate": 0.4,
@@ -5621,7 +6580,8 @@
       "coverRate": 17.3,
       "interactRate": 14.8,
       "activeRate": 11.3,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1095250",
@@ -5641,6 +6601,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.9,
       "joinRate": 92.9,
       "confirmRate": 0.0,
@@ -5648,7 +6612,8 @@
       "coverRate": 98.7,
       "interactRate": 24.9,
       "activeRate": 8.8,
-      "unbindCount": 5
+      "unbindCount": 5,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1095950",
@@ -5668,6 +6633,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.8,
       "joinRate": 97.2,
       "confirmRate": 29.8,
@@ -5675,7 +6644,8 @@
       "coverRate": 98.5,
       "interactRate": 40.1,
       "activeRate": 14.2,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1300030",
@@ -5695,6 +6665,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.8,
       "joinRate": 92.2,
       "confirmRate": 68.1,
@@ -5702,7 +6676,8 @@
       "coverRate": 89.4,
       "interactRate": 47.6,
       "activeRate": 14.4,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304771",
@@ -5722,6 +6697,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.8,
       "joinRate": 95.9,
       "confirmRate": 12.7,
@@ -5729,7 +6708,8 @@
       "coverRate": 33.4,
       "interactRate": 20.9,
       "activeRate": 10.1,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304773",
@@ -5749,6 +6729,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.2,
       "joinRate": 91.4,
       "confirmRate": 1.1,
@@ -5756,7 +6740,8 @@
       "coverRate": 13.8,
       "interactRate": 12.5,
       "activeRate": 9.7,
-      "unbindCount": 13
+      "unbindCount": 13,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88211",
@@ -5776,6 +6761,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.4,
       "joinRate": 96.1,
       "confirmRate": 73.5,
@@ -5783,7 +6772,8 @@
       "coverRate": 98.7,
       "interactRate": 37.9,
       "activeRate": 19.0,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1094561",
@@ -5803,6 +6793,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.3,
       "joinRate": 88.8,
       "confirmRate": 14.0,
@@ -5810,7 +6804,8 @@
       "coverRate": 10.2,
       "interactRate": 8.0,
       "activeRate": 5.6,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87836",
@@ -5830,6 +6825,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.4,
       "joinRate": 90.3,
       "confirmRate": 1.5,
@@ -5837,7 +6836,8 @@
       "coverRate": 12.7,
       "interactRate": 11.0,
       "activeRate": 6.7,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88291",
@@ -5857,6 +6857,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.5,
       "joinRate": 91.4,
       "confirmRate": 72.1,
@@ -5864,7 +6868,8 @@
       "coverRate": 97.2,
       "interactRate": 73.4,
       "activeRate": 25.7,
-      "unbindCount": 7
+      "unbindCount": 7,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304962",
@@ -5884,6 +6889,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.1,
       "joinRate": 94.6,
       "confirmRate": 0.0,
@@ -5891,7 +6900,8 @@
       "coverRate": 97.2,
       "interactRate": 41.6,
       "activeRate": 9.7,
-      "unbindCount": 9
+      "unbindCount": 9,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88135",
@@ -5911,6 +6921,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.6,
       "joinRate": 94.4,
       "confirmRate": 0.0,
@@ -5918,7 +6932,8 @@
       "coverRate": 20.3,
       "interactRate": 14.5,
       "activeRate": 9.1,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304971",
@@ -5938,6 +6953,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.6,
       "joinRate": 88.2,
       "confirmRate": 0.2,
@@ -5945,7 +6964,8 @@
       "coverRate": 8.3,
       "interactRate": 7.6,
       "activeRate": 4.1,
-      "unbindCount": 11
+      "unbindCount": 11,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1089399",
@@ -5965,6 +6985,10 @@
       "subjects": [
         "地理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.8,
       "joinRate": 89.9,
       "confirmRate": 0.2,
@@ -5972,7 +6996,8 @@
       "coverRate": 6.6,
       "interactRate": 5.9,
       "activeRate": 4.2,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87448",
@@ -5992,6 +7017,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 96.3,
       "joinRate": 80.5,
       "confirmRate": 0.0,
@@ -5999,7 +7028,8 @@
       "coverRate": 17.5,
       "interactRate": 15.8,
       "activeRate": 6.6,
-      "unbindCount": 17
+      "unbindCount": 17,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87853",
@@ -6019,6 +7049,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 95.4,
       "joinRate": 86.2,
       "confirmRate": 48.5,
@@ -6026,7 +7060,8 @@
       "coverRate": 93.9,
       "interactRate": 50.7,
       "activeRate": 19.7,
-      "unbindCount": 21
+      "unbindCount": 21,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304767",
@@ -6046,6 +7081,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.6,
       "joinRate": 88.8,
       "confirmRate": 1.3,
@@ -6053,7 +7092,8 @@
       "coverRate": 1.5,
       "interactRate": 1.1,
       "activeRate": 0.7,
-      "unbindCount": 11
+      "unbindCount": 11,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304774",
@@ -6073,6 +7113,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 96.3,
       "joinRate": 89.2,
       "confirmRate": 0.0,
@@ -6080,7 +7124,8 @@
       "coverRate": 10.1,
       "interactRate": 9.9,
       "activeRate": 4.8,
-      "unbindCount": 17
+      "unbindCount": 17,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87874",
@@ -6100,6 +7145,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 88.1,
       "joinRate": 80.3,
       "confirmRate": 0.0,
@@ -6107,7 +7156,8 @@
       "coverRate": 79.9,
       "interactRate": 26.5,
       "activeRate": 11.3,
-      "unbindCount": 54
+      "unbindCount": 54,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1094415",
@@ -6127,6 +7177,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.2,
       "joinRate": 92.7,
       "confirmRate": 0.0,
@@ -6134,7 +7188,8 @@
       "coverRate": 11.8,
       "interactRate": 11.1,
       "activeRate": 6.4,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88335",
@@ -6154,6 +7209,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.3,
       "joinRate": 97.3,
       "confirmRate": 77.4,
@@ -6161,7 +7220,8 @@
       "coverRate": 97.8,
       "interactRate": 76.5,
       "activeRate": 22.0,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87966",
@@ -6181,6 +7241,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 93.8,
       "joinRate": 86.2,
       "confirmRate": 0.4,
@@ -6188,7 +7252,8 @@
       "coverRate": 13.1,
       "interactRate": 11.6,
       "activeRate": 8.0,
-      "unbindCount": 28
+      "unbindCount": 28,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092250",
@@ -6208,6 +7273,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.7,
       "joinRate": 95.1,
       "confirmRate": 0.0,
@@ -6215,7 +7284,8 @@
       "coverRate": 96.9,
       "interactRate": 39.5,
       "activeRate": 12.5,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306511",
@@ -6235,6 +7305,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.6,
       "joinRate": 93.7,
       "confirmRate": 0.0,
@@ -6242,7 +7316,8 @@
       "coverRate": 96.2,
       "interactRate": 22.6,
       "activeRate": 7.7,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304963",
@@ -6262,6 +7337,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.4,
       "joinRate": 93.8,
       "confirmRate": 0.0,
@@ -6269,7 +7348,8 @@
       "coverRate": 0.0,
       "interactRate": 0.0,
       "activeRate": 0.0,
-      "unbindCount": 7
+      "unbindCount": 7,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87948",
@@ -6289,6 +7369,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.3,
       "joinRate": 85.6,
       "confirmRate": 42.1,
@@ -6296,7 +7380,8 @@
       "coverRate": 95.2,
       "interactRate": 48.7,
       "activeRate": 18.5,
-      "unbindCount": 12
+      "unbindCount": 12,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096285",
@@ -6316,6 +7401,10 @@
       "subjects": [
         "历史"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.3,
       "joinRate": 92.4,
       "confirmRate": 0.0,
@@ -6323,7 +7412,8 @@
       "coverRate": 4.6,
       "interactRate": 4.6,
       "activeRate": 2.8,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87943",
@@ -6343,6 +7433,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 100.0,
       "joinRate": 94.0,
       "confirmRate": 5.5,
@@ -6350,7 +7444,8 @@
       "coverRate": 100.0,
       "interactRate": 27.8,
       "activeRate": 7.1,
-      "unbindCount": 0
+      "unbindCount": 0,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1094000",
@@ -6370,6 +7465,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.2,
       "joinRate": 92.4,
       "confirmRate": 1.2,
@@ -6377,7 +7476,8 @@
       "coverRate": 0.0,
       "interactRate": 0.0,
       "activeRate": 0.0,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092251",
@@ -6397,6 +7497,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.2,
       "joinRate": 93.8,
       "confirmRate": 0.0,
@@ -6404,7 +7508,8 @@
       "coverRate": 63.8,
       "interactRate": 32.0,
       "activeRate": 8.1,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1300230",
@@ -6424,6 +7529,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.8,
       "joinRate": 95.8,
       "confirmRate": 0.0,
@@ -6431,7 +7540,8 @@
       "coverRate": 8.1,
       "interactRate": 6.7,
       "activeRate": 3.9,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306506",
@@ -6451,6 +7561,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.7,
       "joinRate": 81.8,
       "confirmRate": 0.0,
@@ -6458,7 +7572,8 @@
       "coverRate": 11.2,
       "interactRate": 8.2,
       "activeRate": 3.7,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1089398",
@@ -6478,6 +7593,10 @@
       "subjects": [
         "道德与法治"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.5,
       "joinRate": 94.6,
       "confirmRate": 0.0,
@@ -6485,7 +7604,8 @@
       "coverRate": 4.4,
       "interactRate": 3.7,
       "activeRate": 2.6,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1089395",
@@ -6505,6 +7625,10 @@
       "subjects": [
         "历史"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.5,
       "joinRate": 97.9,
       "confirmRate": 0.0,
@@ -6512,7 +7636,8 @@
       "coverRate": 8.5,
       "interactRate": 5.7,
       "activeRate": 3.3,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88348",
@@ -6532,6 +7657,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.8,
       "joinRate": 94.6,
       "confirmRate": 1.9,
@@ -6539,7 +7668,8 @@
       "coverRate": 6.6,
       "interactRate": 5.7,
       "activeRate": 2.6,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88299",
@@ -6559,6 +7689,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.9,
       "joinRate": 92.5,
       "confirmRate": 0.0,
@@ -6566,7 +7700,8 @@
       "coverRate": 8.0,
       "interactRate": 7.5,
       "activeRate": 4.0,
-      "unbindCount": 9
+      "unbindCount": 9,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87864",
@@ -6586,6 +7721,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 95.7,
       "joinRate": 80.1,
       "confirmRate": 0.9,
@@ -6593,7 +7732,8 @@
       "coverRate": 30.5,
       "interactRate": 26.7,
       "activeRate": 18.4,
-      "unbindCount": 18
+      "unbindCount": 18,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092261",
@@ -6613,6 +7753,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.4,
       "joinRate": 91.9,
       "confirmRate": 2.4,
@@ -6620,7 +7764,8 @@
       "coverRate": 8.1,
       "interactRate": 7.4,
       "activeRate": 3.8,
-      "unbindCount": 11
+      "unbindCount": 11,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304970",
@@ -6640,6 +7785,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.6,
       "joinRate": 91.9,
       "confirmRate": 0.2,
@@ -6647,7 +7796,8 @@
       "coverRate": 18.1,
       "interactRate": 11.0,
       "activeRate": 5.5,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092397",
@@ -6667,6 +7817,10 @@
       "subjects": [
         "道德与法治"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.5,
       "joinRate": 96.7,
       "confirmRate": 0.0,
@@ -6674,7 +7828,8 @@
       "coverRate": 7.7,
       "interactRate": 6.9,
       "activeRate": 3.1,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1300024",
@@ -6694,6 +7849,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.5,
       "joinRate": 96.9,
       "confirmRate": 0.0,
@@ -6701,7 +7860,8 @@
       "coverRate": 41.6,
       "interactRate": 15.3,
       "activeRate": 5.5,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88175",
@@ -6721,6 +7881,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.6,
       "joinRate": 92.1,
       "confirmRate": 0.0,
@@ -6728,7 +7892,8 @@
       "coverRate": 10.5,
       "interactRate": 7.9,
       "activeRate": 3.1,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1093862",
@@ -6748,6 +7913,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.0,
       "joinRate": 94.5,
       "confirmRate": 0.0,
@@ -6755,7 +7924,8 @@
       "coverRate": 8.7,
       "interactRate": 7.0,
       "activeRate": 4.6,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304969",
@@ -6775,6 +7945,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.3,
       "joinRate": 99.3,
       "confirmRate": 27.5,
@@ -6782,7 +7956,8 @@
       "coverRate": 99.0,
       "interactRate": 41.1,
       "activeRate": 19.3,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88110",
@@ -6802,6 +7977,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.1,
       "joinRate": 94.9,
       "confirmRate": 0.0,
@@ -6809,7 +7988,8 @@
       "coverRate": 20.3,
       "interactRate": 16.5,
       "activeRate": 11.4,
-      "unbindCount": 12
+      "unbindCount": 12,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87967",
@@ -6829,6 +8009,10 @@
       "subjects": [
         "道德与法治"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.5,
       "joinRate": 97.3,
       "confirmRate": 0.0,
@@ -6836,7 +8020,8 @@
       "coverRate": 6.6,
       "interactRate": 6.1,
       "activeRate": 3.4,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88366",
@@ -6856,6 +8041,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 100.0,
       "joinRate": 88.6,
       "confirmRate": 21.6,
@@ -6863,7 +8052,8 @@
       "coverRate": 44.7,
       "interactRate": 24.3,
       "activeRate": 12.4,
-      "unbindCount": 0
+      "unbindCount": 0,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092267",
@@ -6883,6 +8073,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.8,
       "joinRate": 95.6,
       "confirmRate": 0.0,
@@ -6890,7 +8084,8 @@
       "coverRate": 13.1,
       "interactRate": 12.4,
       "activeRate": 6.3,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096043",
@@ -6910,6 +8105,10 @@
       "subjects": [
         "历史"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.3,
       "joinRate": 94.9,
       "confirmRate": 0.5,
@@ -6917,7 +8116,8 @@
       "coverRate": 0.0,
       "interactRate": 0.0,
       "activeRate": 0.0,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1094419",
@@ -6937,6 +8137,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.0,
       "joinRate": 92.6,
       "confirmRate": 21.8,
@@ -6944,7 +8148,8 @@
       "coverRate": 68.9,
       "interactRate": 35.5,
       "activeRate": 16.7,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304735",
@@ -6964,6 +8169,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.5,
       "joinRate": 89.7,
       "confirmRate": 7.1,
@@ -6971,7 +8180,8 @@
       "coverRate": 33.0,
       "interactRate": 18.7,
       "activeRate": 9.9,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87741",
@@ -6991,6 +8201,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.8,
       "joinRate": 93.1,
       "confirmRate": 0.0,
@@ -6998,7 +8212,8 @@
       "coverRate": 7.9,
       "interactRate": 7.9,
       "activeRate": 4.2,
-      "unbindCount": 5
+      "unbindCount": 5,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1089392",
@@ -7018,6 +8233,9 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包"
+      ],
       "bindRate": 97.0,
       "joinRate": 94.3,
       "confirmRate": 95.5,
@@ -7025,7 +8243,8 @@
       "coverRate": 88.1,
       "interactRate": 46.8,
       "activeRate": 12.4,
-      "unbindCount": 12
+      "unbindCount": 12,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092265",
@@ -7045,6 +8264,10 @@
       "subjects": [
         "历史"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.8,
       "joinRate": 98.0,
       "confirmRate": 0.0,
@@ -7052,7 +8275,8 @@
       "coverRate": 10.2,
       "interactRate": 7.2,
       "activeRate": 2.5,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1089397",
@@ -7072,6 +8296,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.5,
       "joinRate": 91.9,
       "confirmRate": 40.7,
@@ -7079,7 +8307,8 @@
       "coverRate": 96.5,
       "interactRate": 49.0,
       "activeRate": 18.7,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1307120",
@@ -7099,6 +8328,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.5,
       "joinRate": 95.9,
       "confirmRate": 0.0,
@@ -7106,7 +8339,8 @@
       "coverRate": 11.4,
       "interactRate": 10.1,
       "activeRate": 4.3,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1300027",
@@ -7126,6 +8360,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.7,
       "joinRate": 93.3,
       "confirmRate": 3.6,
@@ -7133,7 +8371,8 @@
       "coverRate": 9.7,
       "interactRate": 8.7,
       "activeRate": 6.7,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1307288",
@@ -7153,6 +8392,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.9,
       "joinRate": 86.9,
       "confirmRate": 0.0,
@@ -7160,7 +8403,8 @@
       "coverRate": 11.3,
       "interactRate": 11.1,
       "activeRate": 8.7,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1307400",
@@ -7180,6 +8424,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.9,
       "joinRate": 87.0,
       "confirmRate": 33.0,
@@ -7187,7 +8435,8 @@
       "coverRate": 10.6,
       "interactRate": 10.4,
       "activeRate": 6.0,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87733",
@@ -7207,6 +8456,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.2,
       "joinRate": 97.9,
       "confirmRate": 6.2,
@@ -7214,7 +8467,8 @@
       "coverRate": 29.2,
       "interactRate": 19.0,
       "activeRate": 9.1,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87757",
@@ -7234,6 +8488,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 96.6,
       "joinRate": 89.8,
       "confirmRate": 17.8,
@@ -7241,7 +8499,8 @@
       "coverRate": 8.4,
       "interactRate": 5.7,
       "activeRate": 4.7,
-      "unbindCount": 13
+      "unbindCount": 13,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306972",
@@ -7261,6 +8520,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.9,
       "joinRate": 91.2,
       "confirmRate": 0.0,
@@ -7268,7 +8531,8 @@
       "coverRate": 14.1,
       "interactRate": 12.5,
       "activeRate": 8.3,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88343",
@@ -7288,6 +8552,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.9,
       "joinRate": 92.8,
       "confirmRate": 10.1,
@@ -7295,7 +8563,8 @@
       "coverRate": 11.2,
       "interactRate": 11.2,
       "activeRate": 8.0,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306980",
@@ -7315,6 +8584,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.3,
       "joinRate": 86.1,
       "confirmRate": 3.5,
@@ -7322,7 +8595,8 @@
       "coverRate": 5.6,
       "interactRate": 4.8,
       "activeRate": 1.9,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1301920",
@@ -7342,6 +8616,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.2,
       "joinRate": 89.9,
       "confirmRate": 0.0,
@@ -7349,7 +8627,8 @@
       "coverRate": 9.9,
       "interactRate": 9.1,
       "activeRate": 7.2,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87791",
@@ -7369,6 +8648,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.7,
       "joinRate": 94.4,
       "confirmRate": 0.0,
@@ -7376,7 +8659,8 @@
       "coverRate": 11.0,
       "interactRate": 9.1,
       "activeRate": 5.6,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1307293",
@@ -7396,6 +8680,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.8,
       "joinRate": 87.4,
       "confirmRate": 0.0,
@@ -7403,7 +8691,8 @@
       "coverRate": 15.1,
       "interactRate": 12.9,
       "activeRate": 10.2,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1309147",
@@ -7423,6 +8712,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 93.3,
       "joinRate": 82.5,
       "confirmRate": 0.3,
@@ -7430,7 +8723,8 @@
       "coverRate": 49.5,
       "interactRate": 38.2,
       "activeRate": 15.6,
-      "unbindCount": 25
+      "unbindCount": 25,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1307117",
@@ -7450,6 +8744,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 100.0,
       "joinRate": 94.8,
       "confirmRate": 0.3,
@@ -7457,7 +8755,8 @@
       "coverRate": 7.9,
       "interactRate": 7.9,
       "activeRate": 4.6,
-      "unbindCount": 0
+      "unbindCount": 0,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1095955",
@@ -7477,6 +8776,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.8,
       "joinRate": 89.9,
       "confirmRate": 0.0,
@@ -7484,7 +8787,8 @@
       "coverRate": 15.3,
       "interactRate": 15.0,
       "activeRate": 10.1,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1300224",
@@ -7504,6 +8808,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.9,
       "joinRate": 93.4,
       "confirmRate": 44.2,
@@ -7511,7 +8819,8 @@
       "coverRate": 64.6,
       "interactRate": 23.1,
       "activeRate": 8.0,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096284",
@@ -7531,6 +8840,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.8,
       "joinRate": 92.0,
       "confirmRate": 0.3,
@@ -7538,7 +8851,8 @@
       "coverRate": 14.9,
       "interactRate": 13.5,
       "activeRate": 8.0,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096172",
@@ -7558,6 +8872,9 @@
       "subjects": [
         "生物"
       ],
+      "pkgs": [
+        "常规课包"
+      ],
       "bindRate": 98.6,
       "joinRate": 97.0,
       "confirmRate": 0.6,
@@ -7565,7 +8882,8 @@
       "coverRate": 5.2,
       "interactRate": 4.7,
       "activeRate": 1.9,
-      "unbindCount": 5
+      "unbindCount": 5,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1094414",
@@ -7585,6 +8903,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.7,
       "joinRate": 94.5,
       "confirmRate": 0.0,
@@ -7592,7 +8914,8 @@
       "coverRate": 9.9,
       "interactRate": 8.3,
       "activeRate": 6.6,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304765",
@@ -7612,6 +8935,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 96.7,
       "joinRate": 87.8,
       "confirmRate": 0.3,
@@ -7619,7 +8946,8 @@
       "coverRate": 10.0,
       "interactRate": 9.2,
       "activeRate": 6.1,
-      "unbindCount": 12
+      "unbindCount": 12,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306448",
@@ -7639,6 +8967,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 95.8,
       "joinRate": 86.2,
       "confirmRate": 78.6,
@@ -7646,7 +8978,8 @@
       "coverRate": 15.2,
       "interactRate": 13.5,
       "activeRate": 7.6,
-      "unbindCount": 15
+      "unbindCount": 15,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87865",
@@ -7666,6 +8999,10 @@
       "subjects": [
         "道德与法治"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.1,
       "joinRate": 95.7,
       "confirmRate": 0.3,
@@ -7673,7 +9010,8 @@
       "coverRate": 4.3,
       "interactRate": 4.3,
       "activeRate": 2.6,
-      "unbindCount": 3
+      "unbindCount": 3,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87907",
@@ -7693,6 +9031,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.3,
       "joinRate": 88.3,
       "confirmRate": 0.0,
@@ -7700,7 +9042,8 @@
       "coverRate": 95.1,
       "interactRate": 32.6,
       "activeRate": 10.9,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304967",
@@ -7720,6 +9063,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.3,
       "joinRate": 90.2,
       "confirmRate": 0.3,
@@ -7727,7 +9074,8 @@
       "coverRate": 13.8,
       "interactRate": 10.4,
       "activeRate": 7.5,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87926",
@@ -7747,6 +9095,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 96.2,
       "joinRate": 91.8,
       "confirmRate": 0.0,
@@ -7754,7 +9106,8 @@
       "coverRate": 21.6,
       "interactRate": 16.6,
       "activeRate": 12.5,
-      "unbindCount": 13
+      "unbindCount": 13,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1091188",
@@ -7774,6 +9127,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.4,
       "joinRate": 90.9,
       "confirmRate": 0.0,
@@ -7781,7 +9138,8 @@
       "coverRate": 12.3,
       "interactRate": 10.8,
       "activeRate": 7.0,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87734",
@@ -7801,6 +9159,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 97.6,
       "joinRate": 85.9,
       "confirmRate": 0.3,
@@ -7808,7 +9170,8 @@
       "coverRate": 15.3,
       "interactRate": 15.3,
       "activeRate": 8.5,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306509",
@@ -7828,6 +9191,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 96.4,
       "joinRate": 90.5,
       "confirmRate": 6.5,
@@ -7835,7 +9202,8 @@
       "coverRate": 6.2,
       "interactRate": 6.2,
       "activeRate": 2.4,
-      "unbindCount": 12
+      "unbindCount": 12,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306976",
@@ -7855,6 +9223,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.8,
       "joinRate": 91.1,
       "confirmRate": 0.0,
@@ -7862,7 +9234,8 @@
       "coverRate": 12.8,
       "interactRate": 10.1,
       "activeRate": 7.4,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096165",
@@ -7882,6 +9255,9 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包"
+      ],
       "bindRate": 98.2,
       "joinRate": 92.2,
       "confirmRate": 0.6,
@@ -7889,7 +9265,8 @@
       "coverRate": 22.5,
       "interactRate": 19.8,
       "activeRate": 13.8,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1304775",
@@ -7909,6 +9286,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.8,
       "joinRate": 92.1,
       "confirmRate": 0.3,
@@ -7916,7 +9297,8 @@
       "coverRate": 9.4,
       "interactRate": 9.4,
       "activeRate": 4.9,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306990",
@@ -7936,6 +9318,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.7,
       "joinRate": 95.7,
       "confirmRate": 16.3,
@@ -7943,7 +9329,8 @@
       "coverRate": 28.5,
       "interactRate": 8.0,
       "activeRate": 4.3,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1094691",
@@ -7963,6 +9350,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.8,
       "joinRate": 93.8,
       "confirmRate": 0.0,
@@ -7970,7 +9361,8 @@
       "coverRate": 7.1,
       "interactRate": 6.2,
       "activeRate": 3.4,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1307607",
@@ -7990,6 +9382,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.4,
       "joinRate": 96.5,
       "confirmRate": 5.0,
@@ -7997,7 +9393,8 @@
       "coverRate": 96.9,
       "interactRate": 10.7,
       "activeRate": 1.9,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1092253",
@@ -8017,6 +9414,10 @@
       "subjects": [
         "地理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.7,
       "joinRate": 94.3,
       "confirmRate": 14.5,
@@ -8024,7 +9425,8 @@
       "coverRate": 45.4,
       "interactRate": 21.8,
       "activeRate": 11.4,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306505",
@@ -8044,6 +9446,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.4,
       "joinRate": 98.1,
       "confirmRate": 45.2,
@@ -8051,7 +9457,8 @@
       "coverRate": 97.8,
       "interactRate": 56.1,
       "activeRate": 22.6,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096161",
@@ -8071,6 +9478,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.3,
       "joinRate": 96.7,
       "confirmRate": 59.0,
@@ -8078,7 +9489,8 @@
       "coverRate": 99.3,
       "interactRate": 65.8,
       "activeRate": 24.4,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1309149",
@@ -8098,6 +9510,9 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包"
+      ],
       "bindRate": 97.6,
       "joinRate": 90.3,
       "confirmRate": 0.0,
@@ -8105,7 +9520,8 @@
       "coverRate": 10.8,
       "interactRate": 9.7,
       "activeRate": 4.5,
-      "unbindCount": 7
+      "unbindCount": 7,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1309057",
@@ -8125,6 +9541,9 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包"
+      ],
       "bindRate": 95.1,
       "joinRate": 83.9,
       "confirmRate": 0.0,
@@ -8132,7 +9551,8 @@
       "coverRate": 91.6,
       "interactRate": 37.1,
       "activeRate": 12.9,
-      "unbindCount": 14
+      "unbindCount": 14,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096283",
@@ -8152,6 +9572,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.6,
       "joinRate": 91.8,
       "confirmRate": 0.0,
@@ -8159,7 +9583,8 @@
       "coverRate": 97.5,
       "interactRate": 47.9,
       "activeRate": 8.9,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306988",
@@ -8179,6 +9604,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.5,
       "joinRate": 92.3,
       "confirmRate": 0.0,
@@ -8186,7 +9615,8 @@
       "coverRate": 19.1,
       "interactRate": 13.6,
       "activeRate": 10.3,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1309146",
@@ -8206,6 +9636,9 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包"
+      ],
       "bindRate": 96.3,
       "joinRate": 88.6,
       "confirmRate": 0.0,
@@ -8213,7 +9646,8 @@
       "coverRate": 19.6,
       "interactRate": 15.5,
       "activeRate": 10.3,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1309055",
@@ -8233,6 +9667,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.1,
       "joinRate": 94.8,
       "confirmRate": 0.0,
@@ -8240,7 +9678,8 @@
       "coverRate": 71.7,
       "interactRate": 36.1,
       "activeRate": 21.9,
-      "unbindCount": 5
+      "unbindCount": 5,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1309056",
@@ -8260,6 +9699,9 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包"
+      ],
       "bindRate": 97.8,
       "joinRate": 91.8,
       "confirmRate": 0.4,
@@ -8267,7 +9709,8 @@
       "coverRate": 52.6,
       "interactRate": 36.2,
       "activeRate": 7.1,
-      "unbindCount": 6
+      "unbindCount": 6,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1309058",
@@ -8287,6 +9730,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 96.2,
       "joinRate": 88.8,
       "confirmRate": 0.4,
@@ -8294,7 +9741,8 @@
       "coverRate": 14.6,
       "interactRate": 12.3,
       "activeRate": 8.1,
-      "unbindCount": 10
+      "unbindCount": 10,
+      "pkg": "常规课包"
     },
     {
       "ctid": "87827",
@@ -8314,6 +9762,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 96.9,
       "joinRate": 93.1,
       "confirmRate": 18.9,
@@ -8321,7 +9773,8 @@
       "coverRate": 61.0,
       "interactRate": 38.6,
       "activeRate": 14.3,
-      "unbindCount": 8
+      "unbindCount": 8,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096046",
@@ -8341,6 +9794,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 100.0,
       "joinRate": 97.3,
       "confirmRate": 99.6,
@@ -8348,7 +9805,8 @@
       "coverRate": 99.2,
       "interactRate": 30.6,
       "activeRate": 9.4,
-      "unbindCount": 0
+      "unbindCount": 0,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306974",
@@ -8368,6 +9826,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 100.0,
       "joinRate": 91.2,
       "confirmRate": 1.2,
@@ -8375,7 +9837,8 @@
       "coverRate": 15.1,
       "interactRate": 15.1,
       "activeRate": 10.0,
-      "unbindCount": 0
+      "unbindCount": 0,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1096042",
@@ -8395,6 +9858,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 94.1,
       "joinRate": 88.7,
       "confirmRate": 0.0,
@@ -8402,7 +9869,8 @@
       "coverRate": 0.0,
       "interactRate": 0.0,
       "activeRate": 0.0,
-      "unbindCount": 14
+      "unbindCount": 14,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88249",
@@ -8422,6 +9890,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.2,
       "joinRate": 91.6,
       "confirmRate": 0.0,
@@ -8429,7 +9901,8 @@
       "coverRate": 13.4,
       "interactRate": 11.3,
       "activeRate": 6.7,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1309054",
@@ -8449,6 +9922,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 98.3,
       "joinRate": 91.6,
       "confirmRate": 7.2,
@@ -8456,7 +9933,8 @@
       "coverRate": 13.5,
       "interactRate": 9.3,
       "activeRate": 5.5,
-      "unbindCount": 4
+      "unbindCount": 4,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306512",
@@ -8476,6 +9954,10 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 94.0,
       "joinRate": 75.2,
       "confirmRate": 0.0,
@@ -8483,7 +9965,8 @@
       "coverRate": 2.6,
       "interactRate": 2.1,
       "activeRate": 2.1,
-      "unbindCount": 14
+      "unbindCount": 14,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1307606",
@@ -8503,6 +9986,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 100.0,
       "joinRate": 93.5,
       "confirmRate": 0.0,
@@ -8510,7 +9997,8 @@
       "coverRate": 0.0,
       "interactRate": 0.0,
       "activeRate": 0.0,
-      "unbindCount": 0
+      "unbindCount": 0,
+      "pkg": "常规课包"
     },
     {
       "ctid": "88039",
@@ -8530,6 +10018,9 @@
       "subjects": [
         "物理"
       ],
+      "pkgs": [
+        "常规课包"
+      ],
       "bindRate": 99.6,
       "joinRate": 98.2,
       "confirmRate": 13.0,
@@ -8537,7 +10028,8 @@
       "coverRate": 99.1,
       "interactRate": 22.0,
       "activeRate": 9.0,
-      "unbindCount": 1
+      "unbindCount": 1,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1307399",
@@ -8557,6 +10049,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.1,
       "joinRate": 93.2,
       "confirmRate": 0.0,
@@ -8564,7 +10060,8 @@
       "coverRate": 6.8,
       "interactRate": 6.4,
       "activeRate": 4.1,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1307286",
@@ -8584,6 +10081,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 100.0,
       "joinRate": 94.9,
       "confirmRate": 0.0,
@@ -8591,7 +10092,8 @@
       "coverRate": 19.4,
       "interactRate": 14.3,
       "activeRate": 7.8,
-      "unbindCount": 0
+      "unbindCount": 0,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1306979",
@@ -8611,6 +10113,10 @@
       "subjects": [
         "数学"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 99.0,
       "joinRate": 96.7,
       "confirmRate": 0.0,
@@ -8618,7 +10124,8 @@
       "coverRate": 8.1,
       "interactRate": 6.2,
       "activeRate": 4.3,
-      "unbindCount": 2
+      "unbindCount": 2,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1307930",
@@ -8638,6 +10145,10 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包",
+        "抖音课包"
+      ],
       "bindRate": 100.0,
       "joinRate": 92.7,
       "confirmRate": 0.0,
@@ -8645,7 +10156,8 @@
       "coverRate": 6.3,
       "interactRate": 5.9,
       "activeRate": 3.4,
-      "unbindCount": 0
+      "unbindCount": 0,
+      "pkg": "常规课包"
     },
     {
       "ctid": "1309148",
@@ -8665,6 +10177,9 @@
       "subjects": [
         "英语"
       ],
+      "pkgs": [
+        "常规课包"
+      ],
       "bindRate": 90.1,
       "joinRate": 66.9,
       "confirmRate": 2.3,
@@ -8672,7 +10187,8 @@
       "coverRate": 14.5,
       "interactRate": 14.0,
       "activeRate": 7.6,
-      "unbindCount": 17
+      "unbindCount": 17,
+      "pkg": "常规课包"
     }
   ]
 }
