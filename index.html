@@ -461,119 +461,101 @@ function toggleSubject(subject, btn) {
 }
 
 function applyFilters() {
-  // 1. Filter CTs by base + subject + pkg
-  let cts = rawData.classTeachers.map(s => ({...s, ...calcRates(s)}));
-  // 固定沈阳，不过滤
-  cts = cts.filter(c => c.base === '沈阳');
+  // 根据课包筛选决定数据来源：全部=聚合305人，单课包=ctPkgList每人×每课包
+  const pkgSrc = currentPkg
+    ? (rawData.ctPkgList || []).filter(c => c.pkg === currentPkg)
+    : rawData.classTeachers;
+
+  // ===== 1. 班主任列表：每人一行 =====（subjects筛选影响班主任）
+  let cts = pkgSrc.filter(c => c.base === '沈阳');
   if (currentSubjects.length > 0) {
-    cts = cts.filter(c => currentSubjects.includes(c.subject));
+    cts = cts.filter(c => (c.subjects || []).some(s => currentSubjects.includes(s)));
   }
-  if (currentPkg) {
-    cts = cts.filter(c => (c.pkgs || []).includes(currentPkg));
+  if (currentCtGroups.length > 0) {
+    cts = cts.filter(c => currentCtGroups.includes(c.group || '未知'));
   }
   if (currentCtSearch) {
     cts = cts.filter(c => (c.name || '').includes(currentCtSearch));
   }
 
-  // 2. Groups 和 Subjects：按课包分开统计，学科筛选影响班主任
-  // 教学组：从 rawData.classTeachers（固定沈阳）按 group 聚合，计算加权 replyRate/avgRespTime
+  // ===== 2. 教学组汇总：从 pkgSrc 按 group 聚合 =====（subjects筛选不影响group）
   const grpAgg = {};
-  rawData.classTeachers.forEach(ct => {
+  pkgSrc.forEach(ct => {
     if (ct.base !== '沈阳') return;
-    if (currentPkg && ct.pkgs && !ct.pkgs.includes(currentPkg)) return;
     const g = ct.group || '未知';
     if (!grpAgg[g]) {
-      grpAgg[g] = { base: ct.base || '沈阳', group: g, inClassCount:0, bindCount:0, joinGroupCount:0,
-        coverCount:0, interactCount:0, activeCount:0,
-        confirmCount:0, attendCount:0, unbindCount:0,
-        weightedReplyRate:0, weightedRespTime:0, _ctCount:0 };
+      grpAgg[g] = { base: '沈阳', group: g, inClassCount:0, bindCount:0, joinGroupCount:0,
+        coverCount:0, interactCount:0, activeCount:0, confirmCount:0, attendCount:0, unbindCount:0,
+        weightedRespTime:0 };
     }
-    grpAgg[g]._ctCount += 1;
     ['inClassCount','bindCount','joinGroupCount','coverCount','interactCount',
      'activeCount','confirmCount','attendCount','unbindCount']
       .forEach(k => grpAgg[g][k] += ct[k] || 0);
-    grpAgg[g].weightedReplyRate += (ct.replyRate || 0) * ct.inClassCount;
     grpAgg[g].weightedRespTime += (ct.avgRespTime || 0) * ct.inClassCount;
   });
   let groups = Object.keys(grpAgg).sort().map(grp => {
     const ic = grpAgg[grp].inClassCount || 1;
-    return {
-      ...grpAgg[grp],
-      replyRate: ic > 0 ? Math.round(grpAgg[grp].weightedReplyRate / ic * 10) / 10 : 0,
-      avgRespTime: ic > 0 ? Math.round(grpAgg[grp].weightedRespTime / ic * 10) / 10 : 0,
-      bindRate: pct(grpAgg[grp].bindCount, ic),
-      joinRate: pct(grpAgg[grp].joinGroupCount, ic),
-      confirmRate: pct(grpAgg[grp].confirmCount, ic),
-      attendRate: pct(grpAgg[grp].attendCount, ic),
-      coverRate: pct(grpAgg[grp].coverCount, ic),
-      interactRate: pct(grpAgg[grp].interactCount, ic),
-      activeRate: pct(grpAgg[grp].activeCount, ic),
-    };
+    const obj = { ...grpAgg[grp] };
+    obj.avgRespTime = ic > 0 ? Math.round(grpAgg[grp].weightedRespTime / ic * 10) / 10 : 0;
+    obj.bindRate = pct(obj.bindCount, ic);
+    obj.joinRate = pct(obj.joinGroupCount, ic);
+    obj.confirmRate = pct(obj.confirmCount, ic);
+    obj.attendRate = pct(obj.attendCount, ic);
+    obj.coverRate = pct(obj.coverCount, ic);
+    obj.interactRate = pct(obj.interactCount, ic);
+    obj.activeRate = pct(obj.activeCount, ic);
+    return obj;
   });
 
-  // 3. Subjects list: 从subjects原始数据按基地+学科聚合（不依赖groups.subject=汇总）
-  let rawSubjs = rawData.subjects;
-  // 固定沈阳
-  rawSubjs = rawSubjs.filter(s => s.base === '沈阳');
-  if (currentSubjects.length > 0) {
-    rawSubjs = rawSubjs.filter(s => currentSubjects.includes(s.subject));
-  }
-  if (currentPkg) {
-    rawSubjs = rawSubjs.filter(s => s.pkg === currentPkg);
-  }
+  // ===== 3. 学科汇总：从 pkgSrc 按 subject 聚合 =====（subjects筛选不影响subject聚合）
   const subjAgg = {};
-  rawSubjs.forEach(s => {
-    if (!subjAgg[s.subject]) {
-      subjAgg[s.subject] = { inClassCount:0, bindCount:0, joinGroupCount:0,
-        coverCount:0, interactCount:0, activeCount:0,
-        phoneCount:0, confirmCount:0, attendCount:0, unbindCount:0,
-        weightedReplyRate:0, weightedRespTime:0 };
-    }
-    ['inClassCount','bindCount','joinGroupCount','coverCount','interactCount',
-     'activeCount','phoneCount','confirmCount','attendCount','unbindCount']
-      .forEach(k => subjAgg[s.subject][k] += s[k] || 0);
-    // replyRate/avgRespTime 加权平均（用 inClassCount 做权重）
-    subjAgg[s.subject].weightedReplyRate += (s.replyRate || 0) * s.inClassCount;
-    subjAgg[s.subject].weightedRespTime += (s.avgRespTime || 0) * s.inClassCount;
+  pkgSrc.forEach(ct => {
+    if (ct.base !== '沈阳') return;
+    (ct.subjects || []).forEach(subj => {
+      if (!subjAgg[subj]) {
+        subjAgg[subj] = { base: '沈阳', subject: subj, inClassCount:0, bindCount:0, joinGroupCount:0,
+          coverCount:0, interactCount:0, activeCount:0, confirmCount:0, attendCount:0, unbindCount:0,
+          weightedRespTime:0 };
+      }
+      ['inClassCount','bindCount','joinGroupCount','coverCount','interactCount',
+       'activeCount','confirmCount','attendCount','unbindCount']
+        .forEach(k => subjAgg[subj][k] += ct[k] || 0);
+      subjAgg[subj].weightedRespTime += (ct.avgRespTime || 0) * ct.inClassCount;
+    });
   });
   let subjects = Object.keys(subjAgg).sort().map(subj => {
     const ic = subjAgg[subj].inClassCount || 1;
-    return {
-      subject: subj,
-      ...subjAgg[subj],
-      replyRate: ic > 0 ? Math.round(subjAgg[subj].weightedReplyRate / ic * 10) / 10 : 0,
-      avgRespTime: ic > 0 ? Math.round(subjAgg[subj].weightedRespTime / ic * 10) / 10 : 0,
-      bindRate: pct(subjAgg[subj].bindCount, ic),
-      joinRate: pct(subjAgg[subj].joinGroupCount, ic),
-      confirmRate: pct(subjAgg[subj].confirmCount, ic),
-      attendRate: pct(subjAgg[subj].attendCount, ic),
-      coverRate: pct(subjAgg[subj].coverCount, ic),
-      interactRate: pct(subjAgg[subj].interactCount, ic),
-      activeRate: pct(subjAgg[subj].activeCount, ic),
-    };
+    const obj = { ...subjAgg[subj] };
+    obj.avgRespTime = ic > 0 ? Math.round(subjAgg[subj].weightedRespTime / ic * 10) / 10 : 0;
+    obj.bindRate = pct(obj.bindCount, ic);
+    obj.joinRate = pct(obj.joinGroupCount, ic);
+    obj.confirmRate = pct(obj.confirmCount, ic);
+    obj.attendRate = pct(obj.attendCount, ic);
+    obj.coverRate = pct(obj.coverCount, ic);
+    obj.interactRate = pct(obj.interactCount, ic);
+    obj.activeRate = pct(obj.activeCount, ic);
+    return obj;
   });
 
   filteredAll = { subjects, groups, classTeachers: cts };
 
-  // 4. Header stats
+  // ===== 4. Header =====
   const totalInClass = subjects.reduce((s, r) => s + r.inClassCount, 0);
   const totalBind = subjects.reduce((s, r) => s + r.bindCount, 0);
   document.getElementById('totalInClass').textContent = totalInClass.toLocaleString();
   document.getElementById('totalBindRate').textContent = pct(totalBind, totalInClass) + '%';
   document.getElementById('boardTitle').textContent = '沈阳基地·服务沟通数据看板' + (currentPkg ? '（' + currentPkg + '）' : '');
 
-  // 5. Meta
+  // ===== 5. Meta =====
   const subjectLabel = currentSubjects.length > 0 ? currentSubjects.join('+') : '全部';
-  document.getElementById('subjectMeta').textContent = `共 ${subjects.length} 个学科`;
-  document.getElementById('groupMeta').textContent = `${subjectLabel} · ${groups.length}个教学组`;
-  document.getElementById('ctMeta').textContent = `共 ${cts.length} 位班主任`;
-
-  // 6. Title
-
+  document.getElementById('subjectMeta').textContent = '共 ' + subjects.length + ' 个学科';
+  document.getElementById('groupMeta').textContent = subjectLabel + ' · ' + groups.length + '个教学组';
+  document.getElementById('ctMeta').textContent = '共 ' + cts.length + ' 位班主任';
 
   renderTables();
   buildCtGroupCapsules();
 }
+
 
 function buildCtGroupCapsules() {
   const allGroups = [...new Set(filteredAll.classTeachers.map(c => c.group || '未知'))].sort();
@@ -676,9 +658,6 @@ function renderGroupTable() {
 
 function renderCtTable() {
   let cts = filteredAll.classTeachers;
-  if (currentPkg) {
-    cts = cts.filter(c => (c.pkgs || []).includes(currentPkg));
-  }
   if (currentCtGroups.length > 0) {
     cts = cts.filter(c => currentCtGroups.includes(c.group || '未知'));
   }
