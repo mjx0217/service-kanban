@@ -336,12 +336,15 @@ tbody td {
       <div class="capsule-group" id="ctGroupCapsules">
         <span class="capsule-toggle-hint">（可多选）</span>
       </div>
+      <span class="filter-label" style="margin-left:16px">搜索</span>
+      <input id="ctSearchInput" type="text" placeholder="输入班主任姓名" oninput="onCtSearchChange(this.value)" style="padding:4px 10px;border:1.5px solid #d0d0d0;border-radius:16px;font-size:13px;outline:none;width:140px">
     </div>
     <table id="ctTable">
       <thead>
         <tr>
           <th data-col="name" class="sort-asc">班主任</th>
           <th data-col="group">教学组</th>
+          <th data-col="pkg">课包</th>
           <th data-col="bindRate">绑定率 ↕</th>
           <th data-col="joinRate">进群率 ↕</th>
           <th data-col="unbindCount">未绑定人次 ↕</th>
@@ -369,6 +372,7 @@ let filteredAll = { subjects: [], groups: [], classTeachers: [] };
 let currentSubjects = [];  // 多选：空数组表示全部
 let currentPkg = '';
 let currentCtGroups = [];
+let currentCtSearch = '';
 let sortCol = 'bindRate';
 let sortDir = 'desc';
 let expandedCtGroups = new Set();
@@ -467,12 +471,16 @@ function applyFilters() {
   if (currentPkg) {
     cts = cts.filter(c => (c.pkgs || []).includes(currentPkg));
   }
+  if (currentCtSearch) {
+    cts = cts.filter(c => (c.name || '').includes(currentCtSearch));
+  }
 
-  // 2. Groups: 按基地过滤，学科/课包筛选不影响教学组汇总（因为groups是全学科汇总，subject=汇总）
+  // 2. Groups 和 Subjects：按课包分开统计，学科筛选影响班主任
   // 教学组：从 rawData.classTeachers（固定沈阳）按 group 聚合，计算加权 replyRate/avgRespTime
   const grpAgg = {};
   rawData.classTeachers.forEach(ct => {
     if (ct.base !== '沈阳') return;
+    if (currentPkg && ct.pkgs && !ct.pkgs.includes(currentPkg)) return;
     const g = ct.group || '未知';
     if (!grpAgg[g]) {
       grpAgg[g] = { base: ct.base || '沈阳', group: g, inClassCount:0, bindCount:0, joinGroupCount:0,
@@ -509,6 +517,9 @@ function applyFilters() {
   rawSubjs = rawSubjs.filter(s => s.base === '沈阳');
   if (currentSubjects.length > 0) {
     rawSubjs = rawSubjs.filter(s => currentSubjects.includes(s.subject));
+  }
+  if (currentPkg) {
+    rawSubjs = rawSubjs.filter(s => s.pkg === currentPkg);
   }
   const subjAgg = {};
   rawSubjs.forEach(s => {
@@ -549,6 +560,7 @@ function applyFilters() {
   const totalBind = subjects.reduce((s, r) => s + r.bindCount, 0);
   document.getElementById('totalInClass').textContent = totalInClass.toLocaleString();
   document.getElementById('totalBindRate').textContent = pct(totalBind, totalInClass) + '%';
+  document.getElementById('boardTitle').textContent = '沈阳基地·服务沟通数据看板' + (currentPkg ? '（' + currentPkg + '）' : '');
 
   // 5. Meta
   const subjectLabel = currentSubjects.length > 0 ? currentSubjects.join('+') : '全部';
@@ -557,7 +569,7 @@ function applyFilters() {
   document.getElementById('ctMeta').textContent = `共 ${cts.length} 位班主任`;
 
   // 6. Title
-  document.getElementById('boardTitle').textContent = `沈阳基地·服务沟通数据看板`;
+
 
   renderTables();
   buildCtGroupCapsules();
@@ -653,8 +665,14 @@ function renderGroupTable() {
 
 function renderCtTable() {
   let cts = filteredAll.classTeachers;
+  if (currentPkg) {
+    cts = cts.filter(c => (c.pkgs || []).includes(currentPkg));
+  }
   if (currentCtGroups.length > 0) {
     cts = cts.filter(c => currentCtGroups.includes(c.group || '未知'));
+  }
+  if (currentCtSearch) {
+    cts = cts.filter(c => (c.name || '').includes(currentCtSearch));
   }
   const sorted = [...cts].sort(makeSortFn(sortCol));
   const tbody = document.getElementById('ctBody');
@@ -674,6 +692,7 @@ function renderCtTable() {
     return '<tr>' +
       '<td>' + (c.name || '') + '</td>' +
       '<td>' + (c.group || '未知') + '</td>' +
+      '<td>' + c.pkg + '</td>' +
       '<td class="td-rate ' + rateColor(c.bindRate,'bindRate',_v.bindRate) + '">' + c.bindRate + '%</td>' +
       '<td class="td-rate ' + rateColor(c.joinRate,'joinRate',_v.joinRate) + '">' + c.joinRate + '%</td>' +
       '<td class="td-num">' + fmt(c.unbindCount) + '</td>' +
@@ -687,7 +706,7 @@ function renderCtTable() {
     '</tr>';
   }).join('');
 
-  document.getElementById('ctMeta').textContent = '共 ' + cts.length + ' 位班主任' + (currentCtGroups.length > 0 ? '（已筛选）' : '');
+  document.getElementById('ctMeta').textContent = '共 ' + cts.length + ' 条记录' + (currentCtGroups.length > 0 || currentCtSearch ? '（已筛选）' : '');
 
   document.querySelectorAll('#ctTable thead th[data-col]').forEach(th => {
     th.classList.remove('sort-asc', 'sort-desc');
@@ -695,6 +714,10 @@ function renderCtTable() {
   });
 }
 
+function onCtSearchChange(val) {
+  currentCtSearch = val.trim();
+  renderCtTable();
+}
 // Sort handlers
 document.querySelectorAll('#subjectTable thead th[data-col], #groupTable thead th[data-col], #ctTable thead th[data-col]').forEach(th => {
   th.addEventListener('click', () => {
