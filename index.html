@@ -237,6 +237,22 @@ tbody td {
       <div class="header-stat-val green" id="totalBindRate">-</div>
       <div class="header-stat-label">绑定率</div>
     </div>
+    <div class="header-stat">
+      <div class="header-stat-val red" id="totalUnbindCount">-</div>
+      <div class="header-stat-label">未绑定人次</div>
+    </div>
+    <div class="header-stat">
+      <div class="header-stat-val" id="totalCoverRate">-</div>
+      <div class="header-stat-label">覆盖率</div>
+    </div>
+    <div class="header-stat">
+      <div class="header-stat-val" id="totalActiveRate">-</div>
+      <div class="header-stat-label">活跃度</div>
+    </div>
+    <div class="header-stat">
+      <div class="header-stat-val" id="totalAvgRespTime">-</div>
+      <div class="header-stat-label">响应时长(分)</div>
+    </div>
     <button class="refresh-btn" onclick="location.reload()">🔄 刷新数据</button>
   </div>
 </div>
@@ -545,8 +561,18 @@ function applyFilters() {
   // ===== 4. Header =====
   const totalInClass = subjects.reduce((s, r) => s + r.inClassCount, 0);
   const totalBind = subjects.reduce((s, r) => s + r.bindCount, 0);
+  const totalUnbind = subjects.reduce((s, r) => s + (r.unbindCount || 0), 0);
+  const totalCoverRate = totalInClass > 0 ? pct(subjects.reduce((s, r) => s + (r.coverCount || 0), 0), totalInClass) : 0;
+  const totalActiveRate = totalInClass > 0 ? pct(subjects.reduce((s, r) => s + (r.activeCount || 0), 0), totalInClass) : 0;
+  const totalAvgRespTime = groups.length > 0
+    ? (groups.reduce((s, r) => s + (r.avgRespTime || 0) * (r.inClassCount || 0), 0) / subjects.reduce((s, r) => s + (r.inClassCount || 0), 0)).toFixed(1)
+    : 0;
   document.getElementById('totalInClass').textContent = totalInClass.toLocaleString();
   document.getElementById('totalBindRate').textContent = pct(totalBind, totalInClass) + '%';
+  document.getElementById('totalUnbindCount').textContent = totalUnbind.toLocaleString();
+  document.getElementById('totalCoverRate').textContent = totalCoverRate + '%';
+  document.getElementById('totalActiveRate').textContent = totalActiveRate + '%';
+  document.getElementById('totalAvgRespTime').textContent = totalAvgRespTime;
   document.getElementById('boardTitle').textContent = '沈阳基地·服务沟通数据看板' + (currentPkg ? '（' + currentPkg + '）' : '');
 
   // ===== 5. Meta =====
