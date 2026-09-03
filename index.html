@@ -375,19 +375,14 @@ let expandedCtGroups = new Set();
 
 // 相对颜色：根据列内所有值排序，排名越高越绿，排名越低越红
 // respTimeCol=true 时表示响应时长列：≤15绿，15-20黄，>20红
-function rateColor(val, col) {
+function rateColor(val, col, localVals) {
   if (col === 'avgRespTime') {
     // 响应时长特殊规则
     if (val <= 15) return 'rate-green';
     if (val <= 20) return 'rate-yellow';
     return 'rate-red';
   }
-  // 通用相对排名：找出当前列所有值，计算排名
-  const colKey = col || sortCol;
-  const vals = filteredAll.subjects.map(r => r[colKey]).concat(
-                filteredAll.groups.map(r => r[colKey])).concat(
-                filteredAll.classTeachers.map(r => r[colKey]));
-  const nums = vals.filter(v => typeof v === 'number' && !isNaN(v));
+  const nums = (localVals || []).filter(v => typeof v === 'number' && !isNaN(v));
   if (nums.length === 0) return 'rate-green';
   const min = Math.min(...nums);
   const max = Math.max(...nums);
@@ -585,85 +580,75 @@ function makeSortFn(col) {
 function renderSubjectTable() {
   const sorted = [...filteredAll.subjects].sort(makeSortFn(sortCol));
   const tbody = document.getElementById('subjectBody');
-  tbody.innerHTML = sorted.map(r => `
-    <tr>
-      <td>${r.subject}</td>
-      <td class="td-rate ${rateColor(r.bindRate,'bindRate')}">${r.bindRate}%</td>
-      <td class="td-rate ${rateColor(r.joinRate,'joinRate')}">${r.joinRate}%</td>
-      <td class="td-num">${fmt(r.unbindCount)}</td>
-      <td class="td-rate ${rateColor(r.confirmRate,'confirmRate')}">${r.confirmRate}%</td>
-      <td class="td-rate ${rateColor(r.attendRate,'attendRate')}">${r.attendRate}%</td>
-      <td class="td-rate ${rateColor(r.coverRate,'coverRate')}">${r.coverRate}%</td>
-      <td class="td-rate ${rateColor(r.interactRate,'interactRate')}">${r.interactRate}%</td>
-      <td class="td-rate ${rateColor(r.activeRate,'activeRate')}">${r.activeRate}%</td>
-      <td class="td-rate ${rateColor(r.replyRate,'replyRate')}">${r.replyRate}%</td>
-      <td class="td-rate ${rateColor(r.avgRespTime,'avgRespTime')}">${r.avgRespTime}</td>
-    </tr>`).join('');
+  const _v = {
+    bindRate: sorted.map(r => r.bindRate),
+    joinRate: sorted.map(r => r.joinRate),
+    confirmRate: sorted.map(r => r.confirmRate),
+    attendRate: sorted.map(r => r.attendRate),
+    coverRate: sorted.map(r => r.coverRate),
+    interactRate: sorted.map(r => r.interactRate),
+    activeRate: sorted.map(r => r.activeRate),
+    replyRate: sorted.map(r => r.replyRate),
+    avgRespTime: sorted.map(r => r.avgRespTime),
+    unbindCount: sorted.map(r => r.unbindCount),
+  };
+  tbody.innerHTML = sorted.map(r => {
+    return '<tr>' +
+      '<td>' + r.subject + '</td>' +
+      '<td class="td-rate ' + rateColor(r.bindRate,'bindRate',_v.bindRate) + '">' + r.bindRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.joinRate,'joinRate',_v.joinRate) + '">' + r.joinRate + '%</td>' +
+      '<td class="td-num">' + fmt(r.unbindCount) + '</td>' +
+      '<td class="td-rate ' + rateColor(r.confirmRate,'confirmRate',_v.confirmRate) + '">' + r.confirmRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.attendRate,'attendRate',_v.attendRate) + '">' + r.attendRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.coverRate,'coverRate',_v.coverRate) + '">' + r.coverRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.interactRate,'interactRate',_v.interactRate) + '">' + r.interactRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.activeRate,'activeRate',_v.activeRate) + '">' + r.activeRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.replyRate,'replyRate',_v.replyRate) + '">' + r.replyRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + r.avgRespTime + '</td>' +
+    '</tr>';
+  }).join('');
 
   document.querySelectorAll('#subjectTable thead th[data-col]').forEach(th => {
     th.classList.remove('sort-asc', 'sort-desc');
     if (th.dataset.col === sortCol) th.classList.add('sort-' + sortDir);
   });
-}function renderGroupTable() {
+}
+
+function renderGroupTable() {
   const sorted = [...filteredAll.groups].sort(makeSortFn(sortCol));
   const tbody = document.getElementById('groupBody');
-  tbody.innerHTML = sorted.map(r => `
-    <tr>
-      <td>${r.group}</td>
-      <td class="td-rate ${rateColor(r.bindRate,'bindRate')}">${r.bindRate}%</td>
-      <td class="td-rate ${rateColor(r.joinRate,'joinRate')}">${r.joinRate}%</td>
-      <td class="td-num">${fmt(r.unbindCount)}</td>
-      <td class="td-rate ${rateColor(r.confirmRate,'confirmRate')}">${r.confirmRate}%</td>
-      <td class="td-rate ${rateColor(r.attendRate,'attendRate')}">${r.attendRate}%</td>
-      <td class="td-rate ${rateColor(r.coverRate,'coverRate')}">${r.coverRate}%</td>
-      <td class="td-rate ${rateColor(r.interactRate,'interactRate')}">${r.interactRate}%</td>
-      <td class="td-rate ${rateColor(r.activeRate,'activeRate')}">${r.activeRate}%</td>
-      <td class="td-rate ${rateColor(r.replyRate,'replyRate')}">${r.replyRate}%</td>
-      <td class="td-rate ${rateColor(r.avgRespTime,'avgRespTime')}">${r.avgRespTime}</td>
-    </tr>`).join('');
+  const _v = {
+    bindRate: sorted.map(r => r.bindRate),
+    joinRate: sorted.map(r => r.joinRate),
+    confirmRate: sorted.map(r => r.confirmRate),
+    attendRate: sorted.map(r => r.attendRate),
+    coverRate: sorted.map(r => r.coverRate),
+    interactRate: sorted.map(r => r.interactRate),
+    activeRate: sorted.map(r => r.activeRate),
+    replyRate: sorted.map(r => r.replyRate),
+    avgRespTime: sorted.map(r => r.avgRespTime),
+    unbindCount: sorted.map(r => r.unbindCount),
+  };
+  tbody.innerHTML = sorted.map(r => {
+    return '<tr>' +
+      '<td>' + r.group + '</td>' +
+      '<td class="td-rate ' + rateColor(r.bindRate,'bindRate',_v.bindRate) + '">' + r.bindRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.joinRate,'joinRate',_v.joinRate) + '">' + r.joinRate + '%</td>' +
+      '<td class="td-num">' + fmt(r.unbindCount) + '</td>' +
+      '<td class="td-rate ' + rateColor(r.confirmRate,'confirmRate',_v.confirmRate) + '">' + r.confirmRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.attendRate,'attendRate',_v.attendRate) + '">' + r.attendRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.coverRate,'coverRate',_v.coverRate) + '">' + r.coverRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.interactRate,'interactRate',_v.interactRate) + '">' + r.interactRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.activeRate,'activeRate',_v.activeRate) + '">' + r.activeRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.replyRate,'replyRate',_v.replyRate) + '">' + r.replyRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + r.avgRespTime + '</td>' +
+    '</tr>';
+  }).join('');
 
   document.querySelectorAll('#groupTable thead th[data-col]').forEach(th => {
     th.classList.remove('sort-asc', 'sort-desc');
     if (th.dataset.col === sortCol) th.classList.add('sort-' + sortDir);
   });
-}
-function buildCtGroupCapsules() {
-  const ctContainer = document.getElementById('ctGroupCapsules');
-  ctContainer.innerHTML = '';
-  const allGroups = [...new Set(filteredAll.classTeachers.map(c => c.group || '未知'))].sort();
-  const allBtn = document.createElement('button');
-  allBtn.className = 'capsule' + (currentCtGroups.length === 0 ? ' active' : '');
-  allBtn.textContent = '全部';
-  allBtn.dataset.val = '';
-  allBtn.onclick = () => toggleCtGroupFilter('');
-  ctContainer.appendChild(allBtn);
-  allGroups.forEach(g => {
-    const btn = document.createElement('button');
-    btn.className = 'capsule' + (currentCtGroups.includes(g) ? ' active' : '');
-    btn.textContent = g;
-    btn.dataset.val = g;
-    btn.onclick = () => toggleCtGroupFilter(g);
-    ctContainer.appendChild(btn);
-  });
-}
-
-
-
-
-function toggleCtGroupFilter(g) {
-  if (g === '') {
-    currentCtGroups = [];
-  } else {
-    const idx = currentCtGroups.indexOf(g);
-    if (idx === -1) { currentCtGroups.push(g); }
-    else { currentCtGroups.splice(idx, 1); }
-  }
-  document.querySelectorAll('#ctGroupCapsules .capsule').forEach(b => {
-    const v = b.dataset.val;
-    if (v === '') { b.classList.toggle('active', currentCtGroups.length === 0); }
-    else { b.classList.toggle('active', currentCtGroups.includes(v)); }
-  });
-  renderCtTable();
 }
 
 function renderCtTable() {
@@ -673,20 +658,32 @@ function renderCtTable() {
   }
   const sorted = [...cts].sort(makeSortFn(sortCol));
   const tbody = document.getElementById('ctBody');
+  const _v = {
+    bindRate: sorted.map(r => r.bindRate),
+    joinRate: sorted.map(r => r.joinRate),
+    confirmRate: sorted.map(r => r.confirmRate),
+    attendRate: sorted.map(r => r.attendRate),
+    coverRate: sorted.map(r => r.coverRate),
+    interactRate: sorted.map(r => r.interactRate),
+    activeRate: sorted.map(r => r.activeRate),
+    replyRate: sorted.map(r => r.replyRate),
+    avgRespTime: sorted.map(r => r.avgRespTime),
+    unbindCount: sorted.map(r => r.unbindCount),
+  };
   tbody.innerHTML = sorted.map(c => {
     return '<tr>' +
       '<td>' + (c.name || '') + '</td>' +
       '<td>' + (c.group || '未知') + '</td>' +
-      '<td class="td-rate ' + rateColor(c.bindRate,'bindRate') + '">' + c.bindRate + '%</td>' +
-      '<td class="td-rate ' + rateColor(c.joinRate,'joinRate') + '">' + c.joinRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.bindRate,'bindRate',_v.bindRate) + '">' + c.bindRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.joinRate,'joinRate',_v.joinRate) + '">' + c.joinRate + '%</td>' +
       '<td class="td-num">' + fmt(c.unbindCount) + '</td>' +
-      '<td class="td-rate ' + rateColor(c.confirmRate,'confirmRate') + '">' + c.confirmRate + '%</td>' +
-      '<td class="td-rate ' + rateColor(c.attendRate,'attendRate') + '">' + c.attendRate + '%</td>' +
-      '<td class="td-rate ' + rateColor(c.coverRate,'coverRate') + '">' + c.coverRate + '%</td>' +
-      '<td class="td-rate ' + rateColor(c.interactRate,'interactRate') + '">' + c.interactRate + '%</td>' +
-      '<td class="td-rate ' + rateColor(c.activeRate,'activeRate') + '">' + c.activeRate + '%</td>' +
-      '<td class="td-rate ' + rateColor(c.replyRate,'replyRate') + '">' + c.replyRate + '%</td>' +
-      '<td class="td-rate ' + rateColor(c.avgRespTime,'avgRespTime') + '">' + c.avgRespTime + '</td>' +
+      '<td class="td-rate ' + rateColor(c.confirmRate,'confirmRate',_v.confirmRate) + '">' + c.confirmRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.attendRate,'attendRate',_v.attendRate) + '">' + c.attendRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.coverRate,'coverRate',_v.coverRate) + '">' + c.coverRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.interactRate,'interactRate',_v.interactRate) + '">' + c.interactRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.activeRate,'activeRate',_v.activeRate) + '">' + c.activeRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.replyRate,'replyRate',_v.replyRate) + '">' + c.replyRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + c.avgRespTime + '</td>' +
     '</tr>';
   }).join('');
 
@@ -697,7 +694,6 @@ function renderCtTable() {
     if (th.dataset.col === sortCol) th.classList.add('sort-' + sortDir);
   });
 }
-
 
 // Sort handlers
 document.querySelectorAll('#subjectTable thead th[data-col], #groupTable thead th[data-col], #ctTable thead th[data-col]').forEach(th => {
