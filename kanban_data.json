@@ -8,7 +8,7 @@
     "totalInteract": 84437,
     "totalActive": 29248,
     "bindRate": 98.5,
-    "joinRate": 94.0,
+    "joinRate": 95.5,
     "coverRate": 92.1,
     "interactRate": 56.8,
     "activeRate": 19.7,
@@ -30,7 +30,7 @@
       "confirmCount": 33363.0,
       "attendCount": 30113.0,
       "bindRate": 98.9,
-      "joinRate": 95.0,
+      "joinRate": 96.1,
       "confirmRate": 58.2,
       "attendRate": 52.5,
       "coverRate": 91.0,
@@ -50,7 +50,7 @@
       "confirmCount": 21418.0,
       "attendCount": 18877.0,
       "bindRate": 98.2,
-      "joinRate": 93.3,
+      "joinRate": 95.0,
       "confirmRate": 55.6,
       "attendRate": 49.0,
       "coverRate": 94.4,
@@ -70,7 +70,7 @@
       "confirmCount": 19463.0,
       "attendCount": 17445.0,
       "bindRate": 97.9,
-      "joinRate": 93.1,
+      "joinRate": 95.0,
       "confirmRate": 52.7,
       "attendRate": 47.2,
       "coverRate": 91.9,
@@ -90,7 +90,7 @@
       "confirmCount": 2286.0,
       "attendCount": 1056.0,
       "bindRate": 99.3,
-      "joinRate": 95.4,
+      "joinRate": 96.1,
       "confirmRate": 51.6,
       "attendRate": 23.8,
       "coverRate": 95.2,
@@ -110,7 +110,7 @@
       "confirmCount": 1647.0,
       "attendCount": 918.0,
       "bindRate": 99.4,
-      "joinRate": 94.5,
+      "joinRate": 95.1,
       "confirmRate": 41.0,
       "attendRate": 22.8,
       "coverRate": 96.4,
@@ -130,7 +130,7 @@
       "confirmCount": 1368.0,
       "attendCount": 765.0,
       "bindRate": 98.3,
-      "joinRate": 91.8,
+      "joinRate": 93.4,
       "confirmRate": 34.1,
       "attendRate": 19.1,
       "coverRate": 81.2,
@@ -150,7 +150,7 @@
       "confirmCount": 1290.0,
       "attendCount": 575.0,
       "bindRate": 99.3,
-      "joinRate": 96.5,
+      "joinRate": 97.1,
       "confirmRate": 39.4,
       "attendRate": 17.6,
       "coverRate": 93.1,
@@ -172,7 +172,7 @@
       "confirmCount": 10136.0,
       "attendCount": 8888.0,
       "bindRate": 98.3,
-      "joinRate": 94.0,
+      "joinRate": 95.7,
       "confirmRate": 52.1,
       "attendRate": 45.7,
       "coverRate": 92.4,
@@ -192,7 +192,7 @@
       "confirmCount": 11282.0,
       "attendCount": 9989.0,
       "bindRate": 98.1,
-      "joinRate": 92.5,
+      "joinRate": 94.4,
       "confirmRate": 59.1,
       "attendRate": 52.3,
       "coverRate": 96.4,
@@ -212,7 +212,7 @@
       "confirmCount": 6736.0,
       "attendCount": 6001.0,
       "bindRate": 98.0,
-      "joinRate": 92.2,
+      "joinRate": 94.1,
       "confirmRate": 52.3,
       "attendRate": 46.6,
       "coverRate": 94.8,
@@ -232,7 +232,7 @@
       "confirmCount": 6205.0,
       "attendCount": 5422.0,
       "bindRate": 98.0,
-      "joinRate": 93.7,
+      "joinRate": 95.6,
       "confirmRate": 50.3,
       "attendRate": 44.0,
       "coverRate": 92.3,
@@ -252,7 +252,7 @@
       "confirmCount": 5441.0,
       "attendCount": 4933.0,
       "bindRate": 98.4,
-      "joinRate": 92.7,
+      "joinRate": 94.3,
       "confirmRate": 44.6,
       "attendRate": 40.4,
       "coverRate": 81.5,
@@ -272,7 +272,7 @@
       "confirmCount": 6990.0,
       "attendCount": 6203.0,
       "bindRate": 99.0,
-      "joinRate": 95.9,
+      "joinRate": 96.9,
       "confirmRate": 57.7,
       "attendRate": 51.2,
       "coverRate": 93.5,
@@ -292,7 +292,7 @@
       "confirmCount": 5736.0,
       "attendCount": 5340.0,
       "bindRate": 99.1,
-      "joinRate": 95.3,
+      "joinRate": 96.2,
       "confirmRate": 47.4,
       "attendRate": 44.1,
       "coverRate": 97.9,
@@ -312,7 +312,7 @@
       "confirmCount": 6522.0,
       "attendCount": 6022.0,
       "bindRate": 97.8,
-      "joinRate": 93.3,
+      "joinRate": 95.4,
       "confirmRate": 55.5,
       "attendRate": 51.2,
       "coverRate": 88.3,
@@ -332,7 +332,7 @@
       "confirmCount": 8293.0,
       "attendCount": 7340.0,
       "bindRate": 98.8,
-      "joinRate": 95.7,
+      "joinRate": 96.9,
       "confirmRate": 71.1,
       "attendRate": 62.9,
       "coverRate": 91.3,
@@ -352,7 +352,7 @@
       "confirmCount": 6903.0,
       "attendCount": 6297.0,
       "bindRate": 99.1,
-      "joinRate": 95.3,
+      "joinRate": 96.2,
       "confirmRate": 74.8,
       "attendRate": 68.2,
       "coverRate": 90.6,
@@ -372,7 +372,7 @@
       "confirmCount": 3124.0,
       "attendCount": 1739.0,
       "bindRate": 98.9,
-      "joinRate": 93.3,
+      "joinRate": 94.4,
       "confirmRate": 37.3,
       "attendRate": 20.8,
       "coverRate": 89.2,
@@ -392,7 +392,7 @@
       "confirmCount": 3467.0,
       "attendCount": 1575.0,
       "bindRate": 99.3,
-      "joinRate": 95.8,
+      "joinRate": 96.5,
       "confirmRate": 47.1,
       "attendRate": 21.4,
       "coverRate": 94.1,
@@ -425,7 +425,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 87.6,
+      "joinRate": 89.0,
       "confirmRate": 23.6,
       "attendRate": 14.3,
       "coverRate": 72.0,
@@ -456,7 +456,7 @@
         "常规课包"
       ],
       "bindRate": 98.7,
-      "joinRate": 93.6,
+      "joinRate": 94.8,
       "confirmRate": 34.9,
       "attendRate": 17.3,
       "coverRate": 98.4,
@@ -487,7 +487,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 94.4,
+      "joinRate": 96.0,
       "confirmRate": 42.6,
       "attendRate": 23.6,
       "coverRate": 96.5,
@@ -518,7 +518,7 @@
         "常规课包"
       ],
       "bindRate": 97.7,
-      "joinRate": 86.2,
+      "joinRate": 88.2,
       "confirmRate": 49.1,
       "attendRate": 44.5,
       "coverRate": 91.1,
@@ -549,7 +549,7 @@
         "常规课包"
       ],
       "bindRate": 99.7,
-      "joinRate": 96.9,
+      "joinRate": 97.2,
       "confirmRate": 72.4,
       "attendRate": 62.7,
       "coverRate": 99.5,
@@ -580,7 +580,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 91.6,
+      "joinRate": 93.3,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 98.0,
@@ -611,7 +611,7 @@
         "常规课包"
       ],
       "bindRate": 98.0,
-      "joinRate": 90.1,
+      "joinRate": 92.0,
       "confirmRate": 83.6,
       "attendRate": 68.7,
       "coverRate": 96.2,
@@ -642,7 +642,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 96.5,
+      "joinRate": 96.7,
       "confirmRate": 30.1,
       "attendRate": 29.7,
       "coverRate": 96.5,
@@ -673,7 +673,7 @@
         "常规课包"
       ],
       "bindRate": 99.7,
-      "joinRate": 96.8,
+      "joinRate": 97.1,
       "confirmRate": 79.6,
       "attendRate": 68.1,
       "coverRate": 99.2,
@@ -704,7 +704,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 96.8,
+      "joinRate": 97.3,
       "confirmRate": 59.8,
       "attendRate": 52.5,
       "coverRate": 99.5,
@@ -735,7 +735,7 @@
         "常规课包"
       ],
       "bindRate": 96.6,
-      "joinRate": 90.2,
+      "joinRate": 93.3,
       "confirmRate": 65.2,
       "attendRate": 59.4,
       "coverRate": 94.8,
@@ -766,7 +766,7 @@
         "常规课包"
       ],
       "bindRate": 97.9,
-      "joinRate": 92.4,
+      "joinRate": 94.4,
       "confirmRate": 28.2,
       "attendRate": 17.4,
       "coverRate": 78.4,
@@ -797,7 +797,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 94.8,
+      "joinRate": 94.9,
       "confirmRate": 34.1,
       "attendRate": 31.2,
       "coverRate": 98.4,
@@ -828,7 +828,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 96.9,
+      "joinRate": 97.1,
       "confirmRate": 41.7,
       "attendRate": 39.5,
       "coverRate": 68.5,
@@ -859,7 +859,7 @@
         "常规课包"
       ],
       "bindRate": 97.5,
-      "joinRate": 90.4,
+      "joinRate": 92.6,
       "confirmRate": 46.4,
       "attendRate": 41.0,
       "coverRate": 95.8,
@@ -890,7 +890,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 96.2,
+      "joinRate": 96.4,
       "confirmRate": 43.3,
       "attendRate": 40.2,
       "coverRate": 99.0,
@@ -921,7 +921,7 @@
         "常规课包"
       ],
       "bindRate": 96.9,
-      "joinRate": 93.3,
+      "joinRate": 96.3,
       "confirmRate": 59.1,
       "attendRate": 56.5,
       "coverRate": 95.6,
@@ -952,7 +952,7 @@
         "常规课包"
       ],
       "bindRate": 97.7,
-      "joinRate": 91.1,
+      "joinRate": 93.3,
       "confirmRate": 35.7,
       "attendRate": 34.7,
       "coverRate": 96.7,
@@ -983,7 +983,7 @@
         "常规课包"
       ],
       "bindRate": 99.7,
-      "joinRate": 95.9,
+      "joinRate": 96.2,
       "confirmRate": 48.5,
       "attendRate": 44.1,
       "coverRate": 92.3,
@@ -1014,7 +1014,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 97.0,
+      "joinRate": 97.2,
       "confirmRate": 54.4,
       "attendRate": 52.6,
       "coverRate": 99.8,
@@ -1045,7 +1045,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 95.7,
+      "joinRate": 96.2,
       "confirmRate": 41.5,
       "attendRate": 38.2,
       "coverRate": 98.0,
@@ -1076,7 +1076,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 95.0,
+      "joinRate": 95.5,
       "confirmRate": 48.5,
       "attendRate": 45.7,
       "coverRate": 98.7,
@@ -1107,7 +1107,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 96.9,
+      "joinRate": 98.0,
       "confirmRate": 80.5,
       "attendRate": 80.5,
       "coverRate": 98.5,
@@ -1169,7 +1169,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 93.4,
+      "joinRate": 94.3,
       "confirmRate": 44.4,
       "attendRate": 38.1,
       "coverRate": 97.2,
@@ -1200,7 +1200,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 95.4,
+      "joinRate": 95.5,
       "confirmRate": 10.1,
       "attendRate": 10.1,
       "coverRate": 99.7,
@@ -1231,7 +1231,7 @@
         "常规课包"
       ],
       "bindRate": 99.2,
-      "joinRate": 95.5,
+      "joinRate": 96.3,
       "confirmRate": 5.6,
       "attendRate": 5.1,
       "coverRate": 98.5,
@@ -1262,7 +1262,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 98.3,
+      "joinRate": 99.3,
       "confirmRate": 86.4,
       "attendRate": 83.4,
       "coverRate": 97.5,
@@ -1293,7 +1293,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 96.2,
+      "joinRate": 97.3,
       "confirmRate": 54.9,
       "attendRate": 51.1,
       "coverRate": 97.2,
@@ -1324,7 +1324,7 @@
         "常规课包"
       ],
       "bindRate": 97.5,
-      "joinRate": 92.0,
+      "joinRate": 94.3,
       "confirmRate": 63.9,
       "attendRate": 53.6,
       "coverRate": 62.3,
@@ -1355,7 +1355,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 96.3,
+      "joinRate": 96.5,
       "confirmRate": 30.8,
       "attendRate": 11.9,
       "coverRate": 69.7,
@@ -1386,7 +1386,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 95.6,
+      "joinRate": 96.3,
       "confirmRate": 93.6,
       "attendRate": 86.9,
       "coverRate": 98.3,
@@ -1417,7 +1417,7 @@
         "常规课包"
       ],
       "bindRate": 98.2,
-      "joinRate": 94.3,
+      "joinRate": 96.1,
       "confirmRate": 56.1,
       "attendRate": 50.4,
       "coverRate": 96.8,
@@ -1448,7 +1448,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 95.8,
+      "joinRate": 96.8,
       "confirmRate": 95.6,
       "attendRate": 95.6,
       "coverRate": 97.8,
@@ -1479,7 +1479,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 92.9,
+      "joinRate": 93.9,
       "confirmRate": 99.8,
       "attendRate": 95.3,
       "coverRate": 85.2,
@@ -1510,7 +1510,7 @@
         "常规课包"
       ],
       "bindRate": 96.1,
-      "joinRate": 91.3,
+      "joinRate": 94.9,
       "confirmRate": 6.1,
       "attendRate": 3.9,
       "coverRate": 95.0,
@@ -1541,7 +1541,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 94.1,
+      "joinRate": 95.9,
       "confirmRate": 42.4,
       "attendRate": 40.9,
       "coverRate": 97.0,
@@ -1572,7 +1572,7 @@
         "常规课包"
       ],
       "bindRate": 98.5,
-      "joinRate": 94.8,
+      "joinRate": 96.2,
       "confirmRate": 65.8,
       "attendRate": 56.6,
       "coverRate": 94.4,
@@ -1603,7 +1603,7 @@
         "常规课包"
       ],
       "bindRate": 98.7,
-      "joinRate": 96.1,
+      "joinRate": 97.4,
       "confirmRate": 54.0,
       "attendRate": 50.9,
       "coverRate": 69.6,
@@ -1634,7 +1634,7 @@
         "常规课包"
       ],
       "bindRate": 98.5,
-      "joinRate": 98.1,
+      "joinRate": 99.7,
       "confirmRate": 99.2,
       "attendRate": 89.0,
       "coverRate": 98.5,
@@ -1665,7 +1665,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 89.9,
+      "joinRate": 91.4,
       "confirmRate": 16.5,
       "attendRate": 13.5,
       "coverRate": 36.9,
@@ -1696,7 +1696,7 @@
         "常规课包"
       ],
       "bindRate": 97.6,
-      "joinRate": 93.6,
+      "joinRate": 95.8,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 93.2,
@@ -1727,7 +1727,7 @@
         "常规课包"
       ],
       "bindRate": 98.5,
-      "joinRate": 93.1,
+      "joinRate": 94.5,
       "confirmRate": 33.1,
       "attendRate": 30.6,
       "coverRate": 96.6,
@@ -1758,7 +1758,7 @@
         "常规课包"
       ],
       "bindRate": 95.8,
-      "joinRate": 75.5,
+      "joinRate": 78.8,
       "confirmRate": 62.1,
       "attendRate": 55.0,
       "coverRate": 89.3,
@@ -1789,7 +1789,7 @@
         "常规课包"
       ],
       "bindRate": 95.9,
-      "joinRate": 92.0,
+      "joinRate": 95.9,
       "confirmRate": 11.0,
       "attendRate": 11.0,
       "coverRate": 34.9,
@@ -1820,7 +1820,7 @@
         "常规课包"
       ],
       "bindRate": 99.7,
-      "joinRate": 93.9,
+      "joinRate": 94.2,
       "confirmRate": 96.4,
       "attendRate": 86.8,
       "coverRate": 99.5,
@@ -1851,7 +1851,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 98.0,
+      "joinRate": 99.1,
       "confirmRate": 36.6,
       "attendRate": 33.1,
       "coverRate": 98.5,
@@ -1882,7 +1882,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 92.9,
+      "joinRate": 94.5,
       "confirmRate": 43.9,
       "attendRate": 17.1,
       "coverRate": 76.9,
@@ -1913,7 +1913,7 @@
         "常规课包"
       ],
       "bindRate": 98.6,
-      "joinRate": 94.7,
+      "joinRate": 96.0,
       "confirmRate": 51.0,
       "attendRate": 47.6,
       "coverRate": 97.3,
@@ -1944,7 +1944,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 94.2,
+      "joinRate": 95.2,
       "confirmRate": 55.6,
       "attendRate": 53.4,
       "coverRate": 84.2,
@@ -2006,7 +2006,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 93.0,
+      "joinRate": 94.6,
       "confirmRate": 30.9,
       "attendRate": 27.7,
       "coverRate": 67.9,
@@ -2037,7 +2037,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 98.1,
+      "joinRate": 98.8,
       "confirmRate": 68.1,
       "attendRate": 57.6,
       "coverRate": 98.1,
@@ -2068,7 +2068,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 97.1,
+      "joinRate": 97.8,
       "confirmRate": 58.8,
       "attendRate": 49.7,
       "coverRate": 62.4,
@@ -2099,7 +2099,7 @@
         "常规课包"
       ],
       "bindRate": 98.6,
-      "joinRate": 93.9,
+      "joinRate": 95.2,
       "confirmRate": 69.8,
       "attendRate": 59.8,
       "coverRate": 97.3,
@@ -2130,7 +2130,7 @@
         "常规课包"
       ],
       "bindRate": 98.0,
-      "joinRate": 91.5,
+      "joinRate": 93.4,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 96.8,
@@ -2192,7 +2192,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 93.7,
+      "joinRate": 94.3,
       "confirmRate": 42.2,
       "attendRate": 41.2,
       "coverRate": 33.3,
@@ -2223,7 +2223,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 94.5,
+      "joinRate": 95.7,
       "confirmRate": 64.1,
       "attendRate": 60.5,
       "coverRate": 72.1,
@@ -2254,7 +2254,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 97.3,
+      "joinRate": 97.9,
       "confirmRate": 70.4,
       "attendRate": 63.7,
       "coverRate": 98.8,
@@ -2285,7 +2285,7 @@
         "常规课包"
       ],
       "bindRate": 98.6,
-      "joinRate": 93.2,
+      "joinRate": 94.4,
       "confirmRate": 53.4,
       "attendRate": 49.0,
       "coverRate": 98.1,
@@ -2316,7 +2316,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 96.2,
+      "joinRate": 96.7,
       "confirmRate": 46.7,
       "attendRate": 24.0,
       "coverRate": 98.5,
@@ -2347,7 +2347,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 93.5,
+      "joinRate": 94.6,
       "confirmRate": 60.1,
       "attendRate": 55.7,
       "coverRate": 96.2,
@@ -2378,7 +2378,7 @@
         "常规课包"
       ],
       "bindRate": 98.5,
-      "joinRate": 96.6,
+      "joinRate": 98.1,
       "confirmRate": 98.6,
       "attendRate": 84.9,
       "coverRate": 96.2,
@@ -2440,7 +2440,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 97.8,
+      "joinRate": 98.3,
       "confirmRate": 99.1,
       "attendRate": 98.5,
       "coverRate": 99.5,
@@ -2471,7 +2471,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 98.1,
+      "joinRate": 99.1,
       "confirmRate": 53.4,
       "attendRate": 50.3,
       "coverRate": 98.3,
@@ -2502,7 +2502,7 @@
         "常规课包"
       ],
       "bindRate": 98.5,
-      "joinRate": 91.7,
+      "joinRate": 93.2,
       "confirmRate": 9.1,
       "attendRate": 6.9,
       "coverRate": 11.9,
@@ -2533,7 +2533,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 91.0,
+      "joinRate": 91.7,
       "confirmRate": 41.5,
       "attendRate": 39.4,
       "coverRate": 96.0,
@@ -2564,7 +2564,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 99.0,
+      "joinRate": 99.1,
       "confirmRate": 55.4,
       "attendRate": 44.7,
       "coverRate": 99.1,
@@ -2595,7 +2595,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 95.5,
+      "joinRate": 97.0,
       "confirmRate": 52.2,
       "attendRate": 49.7,
       "coverRate": 98.1,
@@ -2626,7 +2626,7 @@
         "常规课包"
       ],
       "bindRate": 97.6,
-      "joinRate": 95.8,
+      "joinRate": 98.2,
       "confirmRate": 56.9,
       "attendRate": 56.6,
       "coverRate": 69.0,
@@ -2657,7 +2657,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 95.3,
+      "joinRate": 96.0,
       "confirmRate": 48.9,
       "attendRate": 43.7,
       "coverRate": 99.0,
@@ -2688,7 +2688,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 98.3,
+      "joinRate": 98.4,
       "confirmRate": 57.7,
       "attendRate": 50.1,
       "coverRate": 99.7,
@@ -2719,7 +2719,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 95.7,
+      "joinRate": 96.5,
       "confirmRate": 99.1,
       "attendRate": 20.5,
       "coverRate": 98.3,
@@ -2750,7 +2750,7 @@
         "常规课包"
       ],
       "bindRate": 93.7,
-      "joinRate": 84.2,
+      "joinRate": 89.8,
       "confirmRate": 41.6,
       "attendRate": 31.5,
       "coverRate": 92.5,
@@ -2781,7 +2781,7 @@
         "常规课包"
       ],
       "bindRate": 93.6,
-      "joinRate": 86.1,
+      "joinRate": 92.0,
       "confirmRate": 43.0,
       "attendRate": 39.0,
       "coverRate": 91.1,
@@ -2812,7 +2812,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 99.0,
+      "joinRate": 99.1,
       "confirmRate": 61.0,
       "attendRate": 50.1,
       "coverRate": 99.5,
@@ -2843,7 +2843,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 94.9,
+      "joinRate": 96.1,
       "confirmRate": 67.8,
       "attendRate": 62.7,
       "coverRate": 98.6,
@@ -2874,7 +2874,7 @@
         "常规课包"
       ],
       "bindRate": 97.6,
-      "joinRate": 83.8,
+      "joinRate": 85.9,
       "confirmRate": 75.7,
       "attendRate": 70.3,
       "coverRate": 91.1,
@@ -2905,7 +2905,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 97.9,
+      "joinRate": 98.9,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 90.6,
@@ -2936,7 +2936,7 @@
         "常规课包"
       ],
       "bindRate": 98.6,
-      "joinRate": 97.9,
+      "joinRate": 99.3,
       "confirmRate": 55.3,
       "attendRate": 48.7,
       "coverRate": 98.4,
@@ -2967,7 +2967,7 @@
         "常规课包"
       ],
       "bindRate": 98.6,
-      "joinRate": 92.3,
+      "joinRate": 93.6,
       "confirmRate": 59.4,
       "attendRate": 0.0,
       "coverRate": 10.5,
@@ -3029,7 +3029,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 88.9,
+      "joinRate": 90.0,
       "confirmRate": 85.1,
       "attendRate": 85.1,
       "coverRate": 70.1,
@@ -3060,7 +3060,7 @@
         "常规课包"
       ],
       "bindRate": 97.2,
-      "joinRate": 90.9,
+      "joinRate": 93.5,
       "confirmRate": 40.9,
       "attendRate": 38.7,
       "coverRate": 95.6,
@@ -3091,7 +3091,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 94.5,
+      "joinRate": 96.4,
       "confirmRate": 26.2,
       "attendRate": 22.2,
       "coverRate": 54.2,
@@ -3122,7 +3122,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 94.5,
+      "joinRate": 95.2,
       "confirmRate": 82.9,
       "attendRate": 82.2,
       "coverRate": 98.9,
@@ -3153,7 +3153,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 90.1,
+      "joinRate": 91.6,
       "confirmRate": 42.2,
       "attendRate": 38.1,
       "coverRate": 95.9,
@@ -3184,7 +3184,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 97.2,
+      "joinRate": 97.5,
       "confirmRate": 47.4,
       "attendRate": 44.8,
       "coverRate": 98.4,
@@ -3215,7 +3215,7 @@
         "常规课包"
       ],
       "bindRate": 98.9,
-      "joinRate": 91.7,
+      "joinRate": 92.7,
       "confirmRate": 50.9,
       "attendRate": 46.1,
       "coverRate": 96.5,
@@ -3246,7 +3246,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 96.6,
+      "joinRate": 97.9,
       "confirmRate": 52.8,
       "attendRate": 48.2,
       "coverRate": 97.9,
@@ -3277,7 +3277,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 95.4,
+      "joinRate": 96.6,
       "confirmRate": 98.9,
       "attendRate": 94.0,
       "coverRate": 80.7,
@@ -3308,7 +3308,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 97.5,
+      "joinRate": 97.9,
       "confirmRate": 36.9,
       "attendRate": 17.5,
       "coverRate": 98.9,
@@ -3339,7 +3339,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 97.3,
+      "joinRate": 98.0,
       "confirmRate": 51.3,
       "attendRate": 46.5,
       "coverRate": 98.9,
@@ -3401,7 +3401,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 97.0,
+      "joinRate": 97.7,
       "confirmRate": 88.1,
       "attendRate": 85.3,
       "coverRate": 99.1,
@@ -3432,7 +3432,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 98.6,
+      "joinRate": 98.9,
       "confirmRate": 52.0,
       "attendRate": 44.7,
       "coverRate": 99.6,
@@ -3463,7 +3463,7 @@
         "常规课包"
       ],
       "bindRate": 98.0,
-      "joinRate": 91.7,
+      "joinRate": 93.5,
       "confirmRate": 37.1,
       "attendRate": 22.9,
       "coverRate": 79.9,
@@ -3494,7 +3494,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 97.0,
+      "joinRate": 97.1,
       "confirmRate": 92.5,
       "attendRate": 79.2,
       "coverRate": 99.6,
@@ -3525,7 +3525,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 93.1,
+      "joinRate": 93.7,
       "confirmRate": 56.9,
       "attendRate": 48.8,
       "coverRate": 97.7,
@@ -3556,7 +3556,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 97.3,
+      "joinRate": 98.0,
       "confirmRate": 67.1,
       "attendRate": 62.0,
       "coverRate": 98.6,
@@ -3587,7 +3587,7 @@
         "常规课包"
       ],
       "bindRate": 97.1,
-      "joinRate": 77.2,
+      "joinRate": 79.5,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 85.3,
@@ -3618,7 +3618,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 97.5,
+      "joinRate": 97.7,
       "confirmRate": 79.0,
       "attendRate": 79.0,
       "coverRate": 97.1,
@@ -3680,7 +3680,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 95.8,
+      "joinRate": 96.4,
       "confirmRate": 24.4,
       "attendRate": 15.0,
       "coverRate": 99.5,
@@ -3711,7 +3711,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 92.6,
+      "joinRate": 93.1,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 99.3,
@@ -3742,7 +3742,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 98.2,
+      "joinRate": 98.9,
       "confirmRate": 90.8,
       "attendRate": 82.1,
       "coverRate": 99.3,
@@ -3773,7 +3773,7 @@
         "常规课包"
       ],
       "bindRate": 97.6,
-      "joinRate": 87.7,
+      "joinRate": 89.8,
       "confirmRate": 61.1,
       "attendRate": 53.5,
       "coverRate": 96.6,
@@ -3804,7 +3804,7 @@
         "常规课包"
       ],
       "bindRate": 98.0,
-      "joinRate": 91.3,
+      "joinRate": 93.2,
       "confirmRate": 52.8,
       "attendRate": 47.7,
       "coverRate": 94.0,
@@ -3835,7 +3835,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 98.7,
+      "joinRate": 98.9,
       "confirmRate": 55.5,
       "attendRate": 51.9,
       "coverRate": 99.5,
@@ -3866,7 +3866,7 @@
         "常规课包"
       ],
       "bindRate": 98.9,
-      "joinRate": 98.0,
+      "joinRate": 99.1,
       "confirmRate": 52.0,
       "attendRate": 49.8,
       "coverRate": 98.2,
@@ -3897,7 +3897,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 96.0,
+      "joinRate": 96.9,
       "confirmRate": 25.7,
       "attendRate": 12.3,
       "coverRate": 97.6,
@@ -3928,7 +3928,7 @@
         "常规课包"
       ],
       "bindRate": 97.8,
-      "joinRate": 91.1,
+      "joinRate": 93.1,
       "confirmRate": 88.2,
       "attendRate": 83.1,
       "coverRate": 97.6,
@@ -3959,7 +3959,7 @@
         "常规课包"
       ],
       "bindRate": 98.7,
-      "joinRate": 95.8,
+      "joinRate": 97.0,
       "confirmRate": 70.3,
       "attendRate": 67.6,
       "coverRate": 96.9,
@@ -3990,7 +3990,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 99.3,
+      "joinRate": 99.6,
       "confirmRate": 90.9,
       "attendRate": 90.9,
       "coverRate": 99.5,
@@ -4021,7 +4021,7 @@
         "常规课包"
       ],
       "bindRate": 96.2,
-      "joinRate": 94.0,
+      "joinRate": 97.7,
       "confirmRate": 63.1,
       "attendRate": 57.5,
       "coverRate": 76.6,
@@ -4052,7 +4052,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 98.4,
+      "joinRate": 99.3,
       "confirmRate": 62.0,
       "attendRate": 55.0,
       "coverRate": 98.7,
@@ -4083,7 +4083,7 @@
         "常规课包"
       ],
       "bindRate": 97.8,
-      "joinRate": 96.1,
+      "joinRate": 98.3,
       "confirmRate": 93.9,
       "attendRate": 92.3,
       "coverRate": 97.6,
@@ -4114,7 +4114,7 @@
         "常规课包"
       ],
       "bindRate": 98.7,
-      "joinRate": 96.9,
+      "joinRate": 98.1,
       "confirmRate": 31.6,
       "attendRate": 27.0,
       "coverRate": 98.3,
@@ -4145,7 +4145,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 95.9,
+      "joinRate": 96.7,
       "confirmRate": 46.4,
       "attendRate": 30.6,
       "coverRate": 97.4,
@@ -4176,7 +4176,7 @@
         "常规课包"
       ],
       "bindRate": 96.1,
-      "joinRate": 90.8,
+      "joinRate": 94.4,
       "confirmRate": 39.6,
       "attendRate": 32.8,
       "coverRate": 96.1,
@@ -4207,7 +4207,7 @@
         "常规课包"
       ],
       "bindRate": 97.6,
-      "joinRate": 88.7,
+      "joinRate": 90.9,
       "confirmRate": 58.3,
       "attendRate": 51.8,
       "coverRate": 97.0,
@@ -4238,7 +4238,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 92.4,
+      "joinRate": 93.1,
       "confirmRate": 24.2,
       "attendRate": 21.4,
       "coverRate": 94.1,
@@ -4300,7 +4300,7 @@
         "常规课包"
       ],
       "bindRate": 98.2,
-      "joinRate": 94.6,
+      "joinRate": 96.4,
       "confirmRate": 64.5,
       "attendRate": 55.6,
       "coverRate": 96.3,
@@ -4331,7 +4331,7 @@
         "常规课包"
       ],
       "bindRate": 96.8,
-      "joinRate": 93.1,
+      "joinRate": 96.2,
       "confirmRate": 69.3,
       "attendRate": 62.6,
       "coverRate": 96.1,
@@ -4362,7 +4362,7 @@
         "常规课包"
       ],
       "bindRate": 98.9,
-      "joinRate": 95.7,
+      "joinRate": 96.8,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 98.7,
@@ -4393,7 +4393,7 @@
         "常规课包"
       ],
       "bindRate": 95.7,
-      "joinRate": 87.9,
+      "joinRate": 91.8,
       "confirmRate": 25.6,
       "attendRate": 24.1,
       "coverRate": 94.0,
@@ -4424,7 +4424,7 @@
         "常规课包"
       ],
       "bindRate": 98.7,
-      "joinRate": 96.4,
+      "joinRate": 97.7,
       "confirmRate": 67.5,
       "attendRate": 60.2,
       "coverRate": 97.4,
@@ -4455,7 +4455,7 @@
         "常规课包"
       ],
       "bindRate": 99.4,
-      "joinRate": 97.4,
+      "joinRate": 97.9,
       "confirmRate": 99.2,
       "attendRate": 96.6,
       "coverRate": 98.9,
@@ -4486,7 +4486,7 @@
         "常规课包"
       ],
       "bindRate": 98.5,
-      "joinRate": 94.6,
+      "joinRate": 96.0,
       "confirmRate": 78.0,
       "attendRate": 74.3,
       "coverRate": 98.5,
@@ -4517,7 +4517,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 91.0,
+      "joinRate": 92.7,
       "confirmRate": 21.2,
       "attendRate": 19.7,
       "coverRate": 96.6,
@@ -4548,7 +4548,7 @@
         "常规课包"
       ],
       "bindRate": 99.2,
-      "joinRate": 97.2,
+      "joinRate": 97.9,
       "confirmRate": 0.2,
       "attendRate": 0.2,
       "coverRate": 98.9,
@@ -4579,7 +4579,7 @@
         "常规课包"
       ],
       "bindRate": 98.5,
-      "joinRate": 94.2,
+      "joinRate": 95.6,
       "confirmRate": 56.2,
       "attendRate": 51.7,
       "coverRate": 97.7,
@@ -4610,7 +4610,7 @@
         "常规课包"
       ],
       "bindRate": 99.2,
-      "joinRate": 97.2,
+      "joinRate": 97.9,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 99.1,
@@ -4641,7 +4641,7 @@
         "常规课包"
       ],
       "bindRate": 97.5,
-      "joinRate": 91.1,
+      "joinRate": 93.4,
       "confirmRate": 33.8,
       "attendRate": 33.5,
       "coverRate": 95.7,
@@ -4672,7 +4672,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 90.1,
+      "joinRate": 90.3,
       "confirmRate": 58.1,
       "attendRate": 28.5,
       "coverRate": 99.4,
@@ -4703,7 +4703,7 @@
         "常规课包"
       ],
       "bindRate": 97.5,
-      "joinRate": 94.5,
+      "joinRate": 96.9,
       "confirmRate": 1.3,
       "attendRate": 1.0,
       "coverRate": 97.1,
@@ -4734,7 +4734,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 96.6,
+      "joinRate": 97.5,
       "confirmRate": 62.5,
       "attendRate": 54.5,
       "coverRate": 99.0,
@@ -4765,7 +4765,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 96.7,
+      "joinRate": 97.1,
       "confirmRate": 75.3,
       "attendRate": 71.1,
       "coverRate": 64.1,
@@ -4827,7 +4827,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 95.0,
+      "joinRate": 96.7,
       "confirmRate": 38.7,
       "attendRate": 20.1,
       "coverRate": 97.7,
@@ -4858,7 +4858,7 @@
         "常规课包"
       ],
       "bindRate": 96.2,
-      "joinRate": 90.0,
+      "joinRate": 93.6,
       "confirmRate": 72.0,
       "attendRate": 66.2,
       "coverRate": 79.7,
@@ -4889,7 +4889,7 @@
         "常规课包"
       ],
       "bindRate": 97.1,
-      "joinRate": 91.5,
+      "joinRate": 94.2,
       "confirmRate": 38.3,
       "attendRate": 38.2,
       "coverRate": 96.9,
@@ -4920,7 +4920,7 @@
         "常规课包"
       ],
       "bindRate": 97.3,
-      "joinRate": 94.4,
+      "joinRate": 97.0,
       "confirmRate": 59.0,
       "attendRate": 51.8,
       "coverRate": 97.1,
@@ -4951,7 +4951,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 96.7,
+      "joinRate": 97.8,
       "confirmRate": 38.7,
       "attendRate": 29.0,
       "coverRate": 98.6,
@@ -4982,7 +4982,7 @@
         "常规课包"
       ],
       "bindRate": 96.7,
-      "joinRate": 88.1,
+      "joinRate": 91.1,
       "confirmRate": 78.6,
       "attendRate": 75.0,
       "coverRate": 80.7,
@@ -5013,7 +5013,7 @@
         "常规课包"
       ],
       "bindRate": 93.7,
-      "joinRate": 84.1,
+      "joinRate": 89.8,
       "confirmRate": 53.4,
       "attendRate": 44.2,
       "coverRate": 92.8,
@@ -5044,7 +5044,7 @@
         "常规课包"
       ],
       "bindRate": 98.6,
-      "joinRate": 95.1,
+      "joinRate": 96.4,
       "confirmRate": 68.8,
       "attendRate": 60.3,
       "coverRate": 97.6,
@@ -5075,7 +5075,7 @@
         "常规课包"
       ],
       "bindRate": 97.6,
-      "joinRate": 88.8,
+      "joinRate": 90.9,
       "confirmRate": 71.0,
       "attendRate": 59.8,
       "coverRate": 97.0,
@@ -5137,7 +5137,7 @@
         "常规课包"
       ],
       "bindRate": 90.7,
-      "joinRate": 86.3,
+      "joinRate": 95.2,
       "confirmRate": 70.9,
       "attendRate": 61.6,
       "coverRate": 89.1,
@@ -5168,7 +5168,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 98.8,
+      "joinRate": 99.2,
       "confirmRate": 79.8,
       "attendRate": 60.2,
       "coverRate": 98.0,
@@ -5199,7 +5199,7 @@
         "常规课包"
       ],
       "bindRate": 99.4,
-      "joinRate": 97.4,
+      "joinRate": 98.0,
       "confirmRate": 71.4,
       "attendRate": 60.1,
       "coverRate": 98.0,
@@ -5230,7 +5230,7 @@
         "常规课包"
       ],
       "bindRate": 97.4,
-      "joinRate": 91.7,
+      "joinRate": 94.1,
       "confirmRate": 67.7,
       "attendRate": 61.7,
       "coverRate": 97.4,
@@ -5261,7 +5261,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 94.4,
+      "joinRate": 96.0,
       "confirmRate": 77.7,
       "attendRate": 57.8,
       "coverRate": 44.8,
@@ -5292,7 +5292,7 @@
         "常规课包"
       ],
       "bindRate": 97.8,
-      "joinRate": 94.8,
+      "joinRate": 96.9,
       "confirmRate": 34.3,
       "attendRate": 33.1,
       "coverRate": 95.6,
@@ -5323,7 +5323,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 96.4,
+      "joinRate": 97.4,
       "confirmRate": 81.1,
       "attendRate": 73.9,
       "coverRate": 98.6,
@@ -5354,7 +5354,7 @@
         "常规课包"
       ],
       "bindRate": 99.2,
-      "joinRate": 92.2,
+      "joinRate": 93.0,
       "confirmRate": 37.5,
       "attendRate": 14.6,
       "coverRate": 98.8,
@@ -5385,7 +5385,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 97.0,
+      "joinRate": 98.0,
       "confirmRate": 69.8,
       "attendRate": 61.6,
       "coverRate": 97.4,
@@ -5416,7 +5416,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 89.8,
+      "joinRate": 90.2,
       "confirmRate": 57.0,
       "attendRate": 20.6,
       "coverRate": 99.4,
@@ -5447,7 +5447,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 96.0,
+      "joinRate": 97.6,
       "confirmRate": 50.1,
       "attendRate": 42.3,
       "coverRate": 98.2,
@@ -5478,7 +5478,7 @@
         "常规课包"
       ],
       "bindRate": 96.0,
-      "joinRate": 94.2,
+      "joinRate": 98.1,
       "confirmRate": 60.8,
       "attendRate": 54.5,
       "coverRate": 95.0,
@@ -5509,7 +5509,7 @@
         "常规课包"
       ],
       "bindRate": 98.6,
-      "joinRate": 94.8,
+      "joinRate": 96.1,
       "confirmRate": 34.8,
       "attendRate": 34.0,
       "coverRate": 98.4,
@@ -5540,7 +5540,7 @@
         "常规课包"
       ],
       "bindRate": 98.2,
-      "joinRate": 95.2,
+      "joinRate": 96.9,
       "confirmRate": 85.5,
       "attendRate": 74.0,
       "coverRate": 97.6,
@@ -5571,7 +5571,7 @@
         "常规课包"
       ],
       "bindRate": 96.6,
-      "joinRate": 87.9,
+      "joinRate": 91.0,
       "confirmRate": 32.1,
       "attendRate": 27.4,
       "coverRate": 94.0,
@@ -5602,7 +5602,7 @@
         "常规课包"
       ],
       "bindRate": 99.2,
-      "joinRate": 96.8,
+      "joinRate": 97.5,
       "confirmRate": 62.3,
       "attendRate": 51.3,
       "coverRate": 98.8,
@@ -5633,7 +5633,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 94.9,
+      "joinRate": 95.9,
       "confirmRate": 76.1,
       "attendRate": 70.4,
       "coverRate": 98.4,
@@ -5664,7 +5664,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 98.6,
+      "joinRate": 99.0,
       "confirmRate": 83.9,
       "attendRate": 67.1,
       "coverRate": 99.6,
@@ -5695,7 +5695,7 @@
         "常规课包"
       ],
       "bindRate": 97.8,
-      "joinRate": 86.1,
+      "joinRate": 88.1,
       "confirmRate": 55.2,
       "attendRate": 49.7,
       "coverRate": 93.9,
@@ -5726,7 +5726,7 @@
         "常规课包"
       ],
       "bindRate": 97.5,
-      "joinRate": 89.1,
+      "joinRate": 91.4,
       "confirmRate": 20.5,
       "attendRate": 19.9,
       "coverRate": 23.4,
@@ -5757,7 +5757,7 @@
         "常规课包"
       ],
       "bindRate": 99.2,
-      "joinRate": 95.5,
+      "joinRate": 96.3,
       "confirmRate": 66.2,
       "attendRate": 60.5,
       "coverRate": 99.2,
@@ -5788,7 +5788,7 @@
         "常规课包"
       ],
       "bindRate": 98.6,
-      "joinRate": 91.4,
+      "joinRate": 92.7,
       "confirmRate": 38.8,
       "attendRate": 35.9,
       "coverRate": 97.7,
@@ -5819,7 +5819,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 96.5,
+      "joinRate": 97.7,
       "confirmRate": 66.1,
       "attendRate": 60.6,
       "coverRate": 97.5,
@@ -5850,7 +5850,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 97.5,
+      "joinRate": 98.8,
       "confirmRate": 79.7,
       "attendRate": 74.3,
       "coverRate": 98.6,
@@ -5881,7 +5881,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 88.3,
+      "joinRate": 89.4,
       "confirmRate": 75.7,
       "attendRate": 65.4,
       "coverRate": 97.5,
@@ -5912,7 +5912,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 92.0,
+      "joinRate": 93.5,
       "confirmRate": 82.3,
       "attendRate": 75.7,
       "coverRate": 97.1,
@@ -5943,7 +5943,7 @@
         "常规课包"
       ],
       "bindRate": 96.5,
-      "joinRate": 91.5,
+      "joinRate": 94.9,
       "confirmRate": 81.2,
       "attendRate": 76.9,
       "coverRate": 95.9,
@@ -5974,7 +5974,7 @@
         "常规课包"
       ],
       "bindRate": 97.7,
-      "joinRate": 88.0,
+      "joinRate": 90.0,
       "confirmRate": 14.7,
       "attendRate": 14.7,
       "coverRate": 93.6,
@@ -6005,7 +6005,7 @@
         "常规课包"
       ],
       "bindRate": 97.9,
-      "joinRate": 91.9,
+      "joinRate": 93.9,
       "confirmRate": 25.3,
       "attendRate": 25.3,
       "coverRate": 95.9,
@@ -6036,7 +6036,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 92.1,
+      "joinRate": 93.6,
       "confirmRate": 49.2,
       "attendRate": 47.3,
       "coverRate": 97.5,
@@ -6067,7 +6067,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 97.9,
+      "joinRate": 98.3,
       "confirmRate": 67.7,
       "attendRate": 60.4,
       "coverRate": 99.4,
@@ -6098,7 +6098,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 97.3,
+      "joinRate": 97.5,
       "confirmRate": 30.0,
       "attendRate": 17.0,
       "coverRate": 99.8,
@@ -6129,7 +6129,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 92.9,
+      "joinRate": 93.1,
       "confirmRate": 52.4,
       "attendRate": 46.8,
       "coverRate": 98.5,
@@ -6160,7 +6160,7 @@
         "常规课包"
       ],
       "bindRate": 96.6,
-      "joinRate": 92.9,
+      "joinRate": 96.1,
       "confirmRate": 73.7,
       "attendRate": 71.2,
       "coverRate": 95.0,
@@ -6191,7 +6191,7 @@
         "常规课包"
       ],
       "bindRate": 97.7,
-      "joinRate": 90.5,
+      "joinRate": 92.7,
       "confirmRate": 15.8,
       "attendRate": 13.1,
       "coverRate": 96.0,
@@ -6253,7 +6253,7 @@
         "常规课包"
       ],
       "bindRate": 97.7,
-      "joinRate": 96.4,
+      "joinRate": 98.7,
       "confirmRate": 65.0,
       "attendRate": 54.2,
       "coverRate": 96.0,
@@ -6284,7 +6284,7 @@
         "常规课包"
       ],
       "bindRate": 96.2,
-      "joinRate": 91.1,
+      "joinRate": 94.7,
       "confirmRate": 58.4,
       "attendRate": 55.2,
       "coverRate": 93.4,
@@ -6315,7 +6315,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 93.4,
+      "joinRate": 93.8,
       "confirmRate": 69.3,
       "attendRate": 60.2,
       "coverRate": 98.3,
@@ -6346,7 +6346,7 @@
         "常规课包"
       ],
       "bindRate": 98.9,
-      "joinRate": 96.8,
+      "joinRate": 97.9,
       "confirmRate": 55.3,
       "attendRate": 48.3,
       "coverRate": 98.7,
@@ -6377,7 +6377,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 94.0,
+      "joinRate": 94.8,
       "confirmRate": 75.3,
       "attendRate": 65.5,
       "coverRate": 98.3,
@@ -6408,7 +6408,7 @@
         "常规课包"
       ],
       "bindRate": 93.4,
-      "joinRate": 87.2,
+      "joinRate": 93.4,
       "confirmRate": 67.4,
       "attendRate": 58.9,
       "coverRate": 93.2,
@@ -6439,7 +6439,7 @@
         "常规课包"
       ],
       "bindRate": 97.6,
-      "joinRate": 93.6,
+      "joinRate": 95.8,
       "confirmRate": 72.4,
       "attendRate": 61.5,
       "coverRate": 87.2,
@@ -6470,7 +6470,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 95.9,
+      "joinRate": 97.6,
       "confirmRate": 39.4,
       "attendRate": 35.5,
       "coverRate": 96.7,
@@ -6501,7 +6501,7 @@
         "常规课包"
       ],
       "bindRate": 92.8,
-      "joinRate": 81.4,
+      "joinRate": 87.7,
       "confirmRate": 51.9,
       "attendRate": 46.8,
       "coverRate": 90.6,
@@ -6532,7 +6532,7 @@
         "常规课包"
       ],
       "bindRate": 98.5,
-      "joinRate": 96.5,
+      "joinRate": 98.0,
       "confirmRate": 61.5,
       "attendRate": 50.5,
       "coverRate": 97.4,
@@ -6563,7 +6563,7 @@
         "常规课包"
       ],
       "bindRate": 98.2,
-      "joinRate": 93.9,
+      "joinRate": 95.5,
       "confirmRate": 68.9,
       "attendRate": 61.4,
       "coverRate": 97.1,
@@ -6625,7 +6625,7 @@
         "常规课包"
       ],
       "bindRate": 97.8,
-      "joinRate": 93.8,
+      "joinRate": 95.9,
       "confirmRate": 30.8,
       "attendRate": 28.6,
       "coverRate": 95.6,
@@ -6656,7 +6656,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 96.9,
+      "joinRate": 97.6,
       "confirmRate": 50.6,
       "attendRate": 46.4,
       "coverRate": 99.1,
@@ -6687,7 +6687,7 @@
         "常规课包"
       ],
       "bindRate": 97.6,
-      "joinRate": 94.0,
+      "joinRate": 96.4,
       "confirmRate": 37.9,
       "attendRate": 35.0,
       "coverRate": 96.9,
@@ -6749,7 +6749,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 94.6,
+      "joinRate": 95.1,
       "confirmRate": 27.5,
       "attendRate": 24.3,
       "coverRate": 99.6,
@@ -6780,7 +6780,7 @@
         "常规课包"
       ],
       "bindRate": 97.3,
-      "joinRate": 93.0,
+      "joinRate": 95.6,
       "confirmRate": 40.8,
       "attendRate": 33.6,
       "coverRate": 95.5,
@@ -6811,7 +6811,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 97.3,
+      "joinRate": 98.2,
       "confirmRate": 93.5,
       "attendRate": 81.4,
       "coverRate": 97.5,
@@ -6842,7 +6842,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 96.9,
+      "joinRate": 97.1,
       "confirmRate": 33.4,
       "attendRate": 26.0,
       "coverRate": 97.3,
@@ -6873,7 +6873,7 @@
         "常规课包"
       ],
       "bindRate": 98.0,
-      "joinRate": 85.6,
+      "joinRate": 87.4,
       "confirmRate": 63.6,
       "attendRate": 57.3,
       "coverRate": 96.6,
@@ -6904,7 +6904,7 @@
         "常规课包"
       ],
       "bindRate": 98.2,
-      "joinRate": 95.5,
+      "joinRate": 97.2,
       "confirmRate": 21.9,
       "attendRate": 16.9,
       "coverRate": 96.8,
@@ -6935,7 +6935,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 94.8,
+      "joinRate": 95.0,
       "confirmRate": 83.0,
       "attendRate": 67.6,
       "coverRate": 99.5,
@@ -6966,7 +6966,7 @@
         "常规课包"
       ],
       "bindRate": 98.0,
-      "joinRate": 95.0,
+      "joinRate": 97.0,
       "confirmRate": 54.5,
       "attendRate": 53.9,
       "coverRate": 97.0,
@@ -6997,7 +6997,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 95.9,
+      "joinRate": 96.1,
       "confirmRate": 48.6,
       "attendRate": 48.0,
       "coverRate": 99.3,
@@ -7028,7 +7028,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 92.7,
+      "joinRate": 92.9,
       "confirmRate": 73.5,
       "attendRate": 71.6,
       "coverRate": 97.0,
@@ -7059,7 +7059,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 94.5,
+      "joinRate": 95.1,
       "confirmRate": 36.2,
       "attendRate": 17.1,
       "coverRate": 97.2,
@@ -7090,7 +7090,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 94.0,
+      "joinRate": 94.9,
       "confirmRate": 97.5,
       "attendRate": 96.1,
       "coverRate": 96.3,
@@ -7121,7 +7121,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 95.1,
+      "joinRate": 96.9,
       "confirmRate": 86.1,
       "attendRate": 85.6,
       "coverRate": 97.5,
@@ -7152,7 +7152,7 @@
         "常规课包"
       ],
       "bindRate": 96.1,
-      "joinRate": 89.1,
+      "joinRate": 92.8,
       "confirmRate": 54.3,
       "attendRate": 53.1,
       "coverRate": 95.4,
@@ -7183,7 +7183,7 @@
         "常规课包"
       ],
       "bindRate": 96.7,
-      "joinRate": 95.3,
+      "joinRate": 98.6,
       "confirmRate": 76.3,
       "attendRate": 70.5,
       "coverRate": 74.4,
@@ -7214,7 +7214,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 95.6,
+      "joinRate": 96.7,
       "confirmRate": 67.5,
       "attendRate": 57.5,
       "coverRate": 95.1,
@@ -7276,7 +7276,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 94.8,
+      "joinRate": 95.3,
       "confirmRate": 39.7,
       "attendRate": 18.8,
       "coverRate": 98.1,
@@ -7307,7 +7307,7 @@
         "常规课包"
       ],
       "bindRate": 98.6,
-      "joinRate": 95.5,
+      "joinRate": 96.9,
       "confirmRate": 38.7,
       "attendRate": 38.7,
       "coverRate": 98.6,
@@ -7338,7 +7338,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 95.5,
+      "joinRate": 97.4,
       "confirmRate": 70.4,
       "attendRate": 59.3,
       "coverRate": 98.1,
@@ -7369,7 +7369,7 @@
         "常规课包"
       ],
       "bindRate": 97.6,
-      "joinRate": 93.3,
+      "joinRate": 95.6,
       "confirmRate": 45.6,
       "attendRate": 44.2,
       "coverRate": 95.2,
@@ -7431,7 +7431,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 94.5,
+      "joinRate": 95.4,
       "confirmRate": 52.1,
       "attendRate": 42.4,
       "coverRate": 98.8,
@@ -7462,7 +7462,7 @@
         "常规课包"
       ],
       "bindRate": 97.6,
-      "joinRate": 81.6,
+      "joinRate": 83.6,
       "confirmRate": 65.4,
       "attendRate": 60.9,
       "coverRate": 96.4,
@@ -7493,7 +7493,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 97.6,
+      "joinRate": 97.8,
       "confirmRate": 30.9,
       "attendRate": 9.1,
       "coverRate": 99.5,
@@ -7554,7 +7554,7 @@
         "常规课包"
       ],
       "bindRate": 95.2,
-      "joinRate": 90.6,
+      "joinRate": 95.2,
       "confirmRate": 91.8,
       "attendRate": 91.8,
       "coverRate": 86.3,
@@ -7585,7 +7585,7 @@
         "常规课包"
       ],
       "bindRate": 97.3,
-      "joinRate": 89.6,
+      "joinRate": 92.0,
       "confirmRate": 72.6,
       "attendRate": 69.2,
       "coverRate": 96.6,
@@ -7616,7 +7616,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 94.4,
+      "joinRate": 95.4,
       "confirmRate": 34.1,
       "attendRate": 30.5,
       "coverRate": 96.6,
@@ -7647,7 +7647,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 94.9,
+      "joinRate": 95.1,
       "confirmRate": 44.4,
       "attendRate": 37.4,
       "coverRate": 96.8,
@@ -7678,7 +7678,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 97.8,
+      "joinRate": 98.3,
       "confirmRate": 7.6,
       "attendRate": 5.9,
       "coverRate": 98.8,
@@ -7709,7 +7709,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 94.6,
+      "joinRate": 95.3,
       "confirmRate": 51.1,
       "attendRate": 21.3,
       "coverRate": 96.8,
@@ -7740,7 +7740,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 97.3,
+      "joinRate": 98.0,
       "confirmRate": 55.9,
       "attendRate": 24.5,
       "coverRate": 98.5,
@@ -7771,7 +7771,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 94.9,
+      "joinRate": 96.5,
       "confirmRate": 82.6,
       "attendRate": 57.8,
       "coverRate": 97.8,
@@ -7802,7 +7802,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 97.3,
+      "joinRate": 98.0,
       "confirmRate": 46.4,
       "attendRate": 15.7,
       "coverRate": 98.3,
@@ -7833,7 +7833,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 93.1,
+      "joinRate": 93.8,
       "confirmRate": 58.6,
       "attendRate": 50.0,
       "coverRate": 98.5,
@@ -7864,7 +7864,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 96.1,
+      "joinRate": 97.3,
       "confirmRate": 68.5,
       "attendRate": 59.4,
       "coverRate": 98.3,
@@ -7895,7 +7895,7 @@
         "常规课包"
       ],
       "bindRate": 91.1,
-      "joinRate": 77.8,
+      "joinRate": 85.4,
       "confirmRate": 57.3,
       "attendRate": 54.6,
       "coverRate": 89.6,
@@ -7957,7 +7957,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 98.3,
+      "joinRate": 99.0,
       "confirmRate": 63.9,
       "attendRate": 58.7,
       "coverRate": 99.0,
@@ -7988,7 +7988,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 94.3,
+      "joinRate": 95.2,
       "confirmRate": 48.4,
       "attendRate": 42.4,
       "coverRate": 98.5,
@@ -8081,7 +8081,7 @@
         "常规课包"
       ],
       "bindRate": 97.0,
-      "joinRate": 94.2,
+      "joinRate": 97.1,
       "confirmRate": 73.6,
       "attendRate": 68.5,
       "coverRate": 97.0,
@@ -8112,7 +8112,7 @@
         "常规课包"
       ],
       "bindRate": 97.4,
-      "joinRate": 96.1,
+      "joinRate": 98.7,
       "confirmRate": 74.5,
       "attendRate": 29.4,
       "coverRate": 97.2,
@@ -8143,7 +8143,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 94.8,
+      "joinRate": 95.8,
       "confirmRate": 25.3,
       "attendRate": 24.7,
       "coverRate": 98.4,
@@ -8174,7 +8174,7 @@
         "常规课包"
       ],
       "bindRate": 95.3,
-      "joinRate": 82.2,
+      "joinRate": 86.2,
       "confirmRate": 87.9,
       "attendRate": 82.9,
       "coverRate": 78.0,
@@ -8205,7 +8205,7 @@
         "常规课包"
       ],
       "bindRate": 97.1,
-      "joinRate": 95.0,
+      "joinRate": 97.8,
       "confirmRate": 67.4,
       "attendRate": 67.1,
       "coverRate": 19.7,
@@ -8298,7 +8298,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 95.7,
+      "joinRate": 96.2,
       "confirmRate": 56.1,
       "attendRate": 51.5,
       "coverRate": 97.8,
@@ -8329,7 +8329,7 @@
         "常规课包"
       ],
       "bindRate": 98.6,
-      "joinRate": 94.8,
+      "joinRate": 96.1,
       "confirmRate": 52.3,
       "attendRate": 51.0,
       "coverRate": 97.8,
@@ -8360,7 +8360,7 @@
         "常规课包"
       ],
       "bindRate": 98.9,
-      "joinRate": 95.9,
+      "joinRate": 97.0,
       "confirmRate": 27.4,
       "attendRate": 26.8,
       "coverRate": 98.6,
@@ -8422,7 +8422,7 @@
         "常规课包"
       ],
       "bindRate": 97.5,
-      "joinRate": 91.5,
+      "joinRate": 93.8,
       "confirmRate": 42.1,
       "attendRate": 42.1,
       "coverRate": 94.2,
@@ -8453,7 +8453,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 90.3,
+      "joinRate": 92.0,
       "confirmRate": 32.9,
       "attendRate": 29.0,
       "coverRate": 67.1,
@@ -8483,7 +8483,7 @@
         "常规课包"
       ],
       "bindRate": 97.2,
-      "joinRate": 96.6,
+      "joinRate": 99.4,
       "confirmRate": 33.1,
       "attendRate": 22.8,
       "coverRate": 95.2,
@@ -8514,7 +8514,7 @@
         "常规课包"
       ],
       "bindRate": 98.0,
-      "joinRate": 91.0,
+      "joinRate": 92.8,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 95.8,
@@ -8545,7 +8545,7 @@
         "常规课包"
       ],
       "bindRate": 96.6,
-      "joinRate": 95.2,
+      "joinRate": 98.5,
       "confirmRate": 63.5,
       "attendRate": 59.2,
       "coverRate": 76.8,
@@ -8576,7 +8576,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 95.7,
+      "joinRate": 97.4,
       "confirmRate": 51.1,
       "attendRate": 42.3,
       "coverRate": 98.0,
@@ -8607,7 +8607,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 95.7,
+      "joinRate": 96.5,
       "confirmRate": 75.1,
       "attendRate": 63.7,
       "coverRate": 98.6,
@@ -8637,7 +8637,7 @@
         "常规课包"
       ],
       "bindRate": 96.0,
-      "joinRate": 89.1,
+      "joinRate": 92.8,
       "confirmRate": 62.9,
       "attendRate": 54.3,
       "coverRate": 92.5,
@@ -8668,7 +8668,7 @@
         "常规课包"
       ],
       "bindRate": 99.7,
-      "joinRate": 96.3,
+      "joinRate": 96.5,
       "confirmRate": 66.4,
       "attendRate": 50.3,
       "coverRate": 99.4,
@@ -8699,7 +8699,7 @@
         "常规课包"
       ],
       "bindRate": 98.0,
-      "joinRate": 93.7,
+      "joinRate": 95.6,
       "confirmRate": 86.5,
       "attendRate": 77.6,
       "coverRate": 96.8,
@@ -8730,7 +8730,7 @@
         "常规课包"
       ],
       "bindRate": 99.7,
-      "joinRate": 97.1,
+      "joinRate": 97.4,
       "confirmRate": 81.0,
       "attendRate": 68.1,
       "coverRate": 97.7,
@@ -8761,7 +8761,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 96.8,
+      "joinRate": 97.7,
       "confirmRate": 48.0,
       "attendRate": 44.5,
       "coverRate": 98.6,
@@ -8792,7 +8792,7 @@
         "常规课包"
       ],
       "bindRate": 99.4,
-      "joinRate": 97.1,
+      "joinRate": 97.7,
       "confirmRate": 31.6,
       "attendRate": 16.2,
       "coverRate": 98.0,
@@ -8823,7 +8823,7 @@
         "常规课包"
       ],
       "bindRate": 98.5,
-      "joinRate": 94.2,
+      "joinRate": 95.6,
       "confirmRate": 69.8,
       "attendRate": 65.7,
       "coverRate": 98.5,
@@ -8854,7 +8854,7 @@
         "常规课包"
       ],
       "bindRate": 97.1,
-      "joinRate": 92.4,
+      "joinRate": 95.2,
       "confirmRate": 59.3,
       "attendRate": 51.5,
       "coverRate": 95.9,
@@ -8885,7 +8885,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 93.8,
+      "joinRate": 94.9,
       "confirmRate": 40.6,
       "attendRate": 35.6,
       "coverRate": 95.6,
@@ -8916,7 +8916,7 @@
         "常规课包"
       ],
       "bindRate": 97.6,
-      "joinRate": 93.3,
+      "joinRate": 95.7,
       "confirmRate": 40.9,
       "attendRate": 28.2,
       "coverRate": 97.3,
@@ -8947,7 +8947,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 95.7,
+      "joinRate": 96.6,
       "confirmRate": 61.1,
       "attendRate": 45.6,
       "coverRate": 97.9,
@@ -9009,7 +9009,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 93.5,
+      "joinRate": 94.7,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 12.7,
@@ -9040,7 +9040,7 @@
         "常规课包"
       ],
       "bindRate": 99.7,
-      "joinRate": 98.4,
+      "joinRate": 98.7,
       "confirmRate": 92.8,
       "attendRate": 90.9,
       "coverRate": 99.7,
@@ -9071,7 +9071,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 93.1,
+      "joinRate": 94.0,
       "confirmRate": 51.9,
       "attendRate": 26.1,
       "coverRate": 99.1,
@@ -9133,7 +9133,7 @@
         "常规课包"
       ],
       "bindRate": 99.4,
-      "joinRate": 99.0,
+      "joinRate": 99.7,
       "confirmRate": 75.0,
       "attendRate": 63.8,
       "coverRate": 97.8,
@@ -9163,7 +9163,7 @@
         "常规课包"
       ],
       "bindRate": 95.1,
-      "joinRate": 86.7,
+      "joinRate": 91.1,
       "confirmRate": 53.9,
       "attendRate": 50.3,
       "coverRate": 93.2,
@@ -9194,7 +9194,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 97.0,
+      "joinRate": 97.7,
       "confirmRate": 78.6,
       "attendRate": 67.8,
       "coverRate": 99.3,
@@ -9225,7 +9225,7 @@
         "常规课包"
       ],
       "bindRate": 92.3,
-      "joinRate": 88.3,
+      "joinRate": 95.7,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 90.0,
@@ -9255,7 +9255,7 @@
         "常规课包"
       ],
       "bindRate": 95.5,
-      "joinRate": 83.6,
+      "joinRate": 87.5,
       "confirmRate": 38.4,
       "attendRate": 36.6,
       "coverRate": 91.4,
@@ -9286,7 +9286,7 @@
         "常规课包"
       ],
       "bindRate": 98.6,
-      "joinRate": 93.3,
+      "joinRate": 94.6,
       "confirmRate": 33.6,
       "attendRate": 30.0,
       "coverRate": 97.5,
@@ -9316,7 +9316,7 @@
         "常规课包"
       ],
       "bindRate": 98.2,
-      "joinRate": 94.6,
+      "joinRate": 96.3,
       "confirmRate": 46.0,
       "attendRate": 43.5,
       "coverRate": 95.7,
@@ -9347,7 +9347,7 @@
         "常规课包"
       ],
       "bindRate": 98.2,
-      "joinRate": 96.7,
+      "joinRate": 98.5,
       "confirmRate": 19.8,
       "attendRate": 19.0,
       "coverRate": 96.7,
@@ -9408,7 +9408,7 @@
         "常规课包"
       ],
       "bindRate": 96.3,
-      "joinRate": 89.6,
+      "joinRate": 93.1,
       "confirmRate": 62.5,
       "attendRate": 61.7,
       "coverRate": 94.4,
@@ -9439,7 +9439,7 @@
         "常规课包"
       ],
       "bindRate": 97.7,
-      "joinRate": 89.0,
+      "joinRate": 91.1,
       "confirmRate": 45.5,
       "attendRate": 40.9,
       "coverRate": 97.3,
@@ -9470,7 +9470,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 95.7,
+      "joinRate": 96.1,
       "confirmRate": 63.0,
       "attendRate": 51.8,
       "coverRate": 95.3,
@@ -9501,7 +9501,7 @@
         "常规课包"
       ],
       "bindRate": 94.0,
-      "joinRate": 84.0,
+      "joinRate": 89.4,
       "confirmRate": 29.2,
       "attendRate": 25.6,
       "coverRate": 93.2,
@@ -9563,7 +9563,7 @@
         "常规课包"
       ],
       "bindRate": 93.0,
-      "joinRate": 66.8,
+      "joinRate": 71.8,
       "confirmRate": 28.3,
       "attendRate": 26.2,
       "coverRate": 91.4,
@@ -9594,7 +9594,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 93.9,
+      "joinRate": 95.0,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 98.4,
@@ -9625,7 +9625,7 @@
         "常规课包"
       ],
       "bindRate": 98.7,
-      "joinRate": 97.9,
+      "joinRate": 99.1,
       "confirmRate": 38.1,
       "attendRate": 36.0,
       "coverRate": 98.3,
@@ -9655,7 +9655,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 96.9,
+      "joinRate": 97.8,
       "confirmRate": 14.1,
       "attendRate": 11.0,
       "coverRate": 98.7,
@@ -9717,7 +9717,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 97.7,
+      "joinRate": 98.1,
       "confirmRate": 99.5,
       "attendRate": 93.5,
       "coverRate": 98.2,
@@ -9779,7 +9779,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 96.6,
+      "joinRate": 97.6,
       "confirmRate": 51.4,
       "attendRate": 49.5,
       "coverRate": 98.6,
@@ -9840,7 +9840,7 @@
         "常规课包"
       ],
       "bindRate": 85.8,
-      "joinRate": 78.7,
+      "joinRate": 91.7,
       "confirmRate": 1.5,
       "attendRate": 1.5,
       "coverRate": 82.2,
@@ -9874,7 +9874,7 @@
         "常规课包"
       ],
       "bindRate": 98.7,
-      "joinRate": 96.2,
+      "joinRate": 97.5,
       "confirmRate": 67.3,
       "attendRate": 59.6,
       "coverRate": 97.6,
@@ -9906,7 +9906,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 97.6,
+      "joinRate": 98.8,
       "confirmRate": 68.7,
       "attendRate": 63.9,
       "coverRate": 96.4,
@@ -9938,7 +9938,7 @@
         "常规课包"
       ],
       "bindRate": 96.5,
-      "joinRate": 93.5,
+      "joinRate": 97.0,
       "confirmRate": 57.6,
       "attendRate": 54.7,
       "coverRate": 95.1,
@@ -9970,7 +9970,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 91.9,
+      "joinRate": 92.9,
       "confirmRate": 66.7,
       "attendRate": 65.7,
       "coverRate": 98.0,
@@ -10002,7 +10002,7 @@
         "常规课包"
       ],
       "bindRate": 99.7,
-      "joinRate": 97.6,
+      "joinRate": 97.9,
       "confirmRate": 66.6,
       "attendRate": 58.7,
       "coverRate": 99.4,
@@ -10034,7 +10034,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 98.6,
+      "joinRate": 99.3,
       "confirmRate": 70.3,
       "attendRate": 64.2,
       "coverRate": 99.3,
@@ -10066,7 +10066,7 @@
         "常规课包"
       ],
       "bindRate": 96.5,
-      "joinRate": 92.1,
+      "joinRate": 95.4,
       "confirmRate": 68.9,
       "attendRate": 62.4,
       "coverRate": 96.1,
@@ -10098,7 +10098,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 97.2,
+      "joinRate": 99.0,
       "confirmRate": 70.8,
       "attendRate": 63.2,
       "coverRate": 96.2,
@@ -10130,7 +10130,7 @@
         "常规课包"
       ],
       "bindRate": 98.5,
-      "joinRate": 94.8,
+      "joinRate": 96.3,
       "confirmRate": 63.1,
       "attendRate": 55.0,
       "coverRate": 94.8,
@@ -10162,7 +10162,7 @@
         "常规课包"
       ],
       "bindRate": 99.4,
-      "joinRate": 96.8,
+      "joinRate": 97.4,
       "confirmRate": 75.2,
       "attendRate": 61.8,
       "coverRate": 95.5,
@@ -10194,7 +10194,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 95.9,
+      "joinRate": 96.3,
       "confirmRate": 53.7,
       "attendRate": 51.3,
       "coverRate": 98.7,
@@ -10226,7 +10226,7 @@
         "常规课包"
       ],
       "bindRate": 98.5,
-      "joinRate": 87.9,
+      "joinRate": 89.2,
       "confirmRate": 6.1,
       "attendRate": 0.0,
       "coverRate": 98.5,
@@ -10258,7 +10258,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 92.7,
+      "joinRate": 93.6,
       "confirmRate": 20.3,
       "attendRate": 17.6,
       "coverRate": 94.1,
@@ -10322,7 +10322,7 @@
         "常规课包"
       ],
       "bindRate": 97.8,
-      "joinRate": 89.2,
+      "joinRate": 91.1,
       "confirmRate": 60.7,
       "attendRate": 52.9,
       "coverRate": 97.0,
@@ -10354,7 +10354,7 @@
         "常规课包"
       ],
       "bindRate": 96.7,
-      "joinRate": 80.4,
+      "joinRate": 83.1,
       "confirmRate": 63.0,
       "attendRate": 56.5,
       "coverRate": 94.6,
@@ -10386,7 +10386,7 @@
         "常规课包"
       ],
       "bindRate": 98.0,
-      "joinRate": 93.7,
+      "joinRate": 95.6,
       "confirmRate": 70.5,
       "attendRate": 62.8,
       "coverRate": 96.8,
@@ -10418,7 +10418,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 94.4,
+      "joinRate": 95.3,
       "confirmRate": 63.6,
       "attendRate": 57.0,
       "coverRate": 98.1,
@@ -10514,7 +10514,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 96.4,
+      "joinRate": 97.4,
       "confirmRate": 47.6,
       "attendRate": 44.3,
       "coverRate": 98.4,
@@ -10578,7 +10578,7 @@
         "常规课包"
       ],
       "bindRate": 97.7,
-      "joinRate": 84.6,
+      "joinRate": 86.6,
       "confirmRate": 46.0,
       "attendRate": 42.3,
       "coverRate": 89.9,
@@ -10610,7 +10610,7 @@
         "常规课包"
       ],
       "bindRate": 97.8,
-      "joinRate": 92.1,
+      "joinRate": 94.1,
       "confirmRate": 60.4,
       "attendRate": 52.5,
       "coverRate": 95.7,
@@ -10642,7 +10642,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 94.5,
+      "joinRate": 95.4,
       "confirmRate": 45.7,
       "attendRate": 39.0,
       "coverRate": 98.5,
@@ -10674,7 +10674,7 @@
         "常规课包"
       ],
       "bindRate": 98.7,
-      "joinRate": 93.3,
+      "joinRate": 94.6,
       "confirmRate": 60.0,
       "attendRate": 57.3,
       "coverRate": 98.7,
@@ -10706,7 +10706,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 92.2,
+      "joinRate": 94.0,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 96.5,
@@ -10738,7 +10738,7 @@
         "常规课包"
       ],
       "bindRate": 97.6,
-      "joinRate": 88.7,
+      "joinRate": 90.9,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 97.6,
@@ -10770,7 +10770,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 97.5,
+      "joinRate": 98.7,
       "confirmRate": 97.3,
       "attendRate": 95.5,
       "coverRate": 98.5,
@@ -10802,7 +10802,7 @@
         "常规课包"
       ],
       "bindRate": 95.0,
-      "joinRate": 92.2,
+      "joinRate": 97.0,
       "confirmRate": 84.4,
       "attendRate": 83.0,
       "coverRate": 95.0,
@@ -10834,7 +10834,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 96.7,
+      "joinRate": 96.9,
       "confirmRate": 92.0,
       "attendRate": 79.8,
       "coverRate": 99.6,
@@ -10898,7 +10898,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 74.6,
+      "joinRate": 75.8,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 84.0,
@@ -10930,7 +10930,7 @@
         "常规课包"
       ],
       "bindRate": 92.6,
-      "joinRate": 86.8,
+      "joinRate": 93.8,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 90.1,
@@ -10962,7 +10962,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 91.6,
+      "joinRate": 93.2,
       "confirmRate": 44.3,
       "attendRate": 42.6,
       "coverRate": 97.2,
@@ -10994,7 +10994,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 93.3,
+      "joinRate": 94.9,
       "confirmRate": 63.9,
       "attendRate": 61.3,
       "coverRate": 98.3,
@@ -11026,7 +11026,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 94.5,
+      "joinRate": 94.9,
       "confirmRate": 96.1,
       "attendRate": 85.1,
       "coverRate": 99.4,
@@ -11090,7 +11090,7 @@
         "常规课包"
       ],
       "bindRate": 93.9,
-      "joinRate": 89.7,
+      "joinRate": 95.6,
       "confirmRate": 55.1,
       "attendRate": 50.6,
       "coverRate": 91.7,
@@ -11122,7 +11122,7 @@
         "常规课包"
       ],
       "bindRate": 90.3,
-      "joinRate": 63.4,
+      "joinRate": 70.2,
       "confirmRate": 44.8,
       "attendRate": 38.6,
       "coverRate": 88.3,
@@ -11154,7 +11154,7 @@
         "常规课包"
       ],
       "bindRate": 98.2,
-      "joinRate": 95.3,
+      "joinRate": 97.1,
       "confirmRate": 49.1,
       "attendRate": 37.9,
       "coverRate": 98.2,
@@ -11186,7 +11186,7 @@
         "常规课包"
       ],
       "bindRate": 98.7,
-      "joinRate": 97.3,
+      "joinRate": 98.6,
       "confirmRate": 58.7,
       "attendRate": 58.7,
       "coverRate": 97.3,
@@ -11282,7 +11282,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 94.6,
+      "joinRate": 95.5,
       "confirmRate": 94.1,
       "attendRate": 87.2,
       "coverRate": 97.6,
@@ -11346,7 +11346,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 98.3,
+      "joinRate": 99.3,
       "confirmRate": 54.4,
       "attendRate": 50.6,
       "coverRate": 98.3,
@@ -11378,7 +11378,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 97.5,
+      "joinRate": 98.7,
       "confirmRate": 50.6,
       "attendRate": 49.4,
       "coverRate": 98.1,
@@ -11442,7 +11442,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 88.0,
+      "joinRate": 89.6,
       "confirmRate": 70.9,
       "attendRate": 64.1,
       "coverRate": 98.3,
@@ -11474,7 +11474,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 97.0,
+      "joinRate": 97.2,
       "confirmRate": 51.7,
       "attendRate": 49.9,
       "coverRate": 99.8,
@@ -11538,7 +11538,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 97.0,
+      "joinRate": 97.7,
       "confirmRate": 99.3,
       "attendRate": 97.0,
       "coverRate": 98.6,
@@ -11666,7 +11666,7 @@
         "常规课包"
       ],
       "bindRate": 98.6,
-      "joinRate": 97.6,
+      "joinRate": 99.0,
       "confirmRate": 35.5,
       "attendRate": 31.7,
       "coverRate": 98.2,
@@ -11730,7 +11730,7 @@
         "常规课包"
       ],
       "bindRate": 99.4,
-      "joinRate": 98.3,
+      "joinRate": 98.9,
       "confirmRate": 69.0,
       "attendRate": 57.9,
       "coverRate": 98.1,
@@ -11762,7 +11762,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 96.2,
+      "joinRate": 98.0,
       "confirmRate": 59.6,
       "attendRate": 53.8,
       "coverRate": 98.1,
@@ -11794,7 +11794,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 91.0,
+      "joinRate": 91.9,
       "confirmRate": 39.4,
       "attendRate": 37.4,
       "coverRate": 94.5,
@@ -11858,7 +11858,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 98.7,
+      "joinRate": 98.9,
       "confirmRate": 52.2,
       "attendRate": 43.0,
       "coverRate": 98.9,
@@ -11922,7 +11922,7 @@
         "常规课包"
       ],
       "bindRate": 99.2,
-      "joinRate": 98.7,
+      "joinRate": 99.6,
       "confirmRate": 96.7,
       "attendRate": 94.6,
       "coverRate": 97.5,
@@ -11954,7 +11954,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 96.7,
+      "joinRate": 98.3,
       "confirmRate": 46.3,
       "attendRate": 39.8,
       "coverRate": 97.6,
@@ -11986,7 +11986,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 95.4,
+      "joinRate": 96.2,
       "confirmRate": 26.1,
       "attendRate": 25.5,
       "coverRate": 98.9,
@@ -12018,7 +12018,7 @@
         "常规课包"
       ],
       "bindRate": 97.1,
-      "joinRate": 88.6,
+      "joinRate": 91.2,
       "confirmRate": 17.1,
       "attendRate": 17.1,
       "coverRate": 94.3,
@@ -12050,7 +12050,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 93.1,
+      "joinRate": 94.1,
       "confirmRate": 47.8,
       "attendRate": 43.0,
       "coverRate": 95.7,
@@ -12082,7 +12082,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 88.4,
+      "joinRate": 89.5,
       "confirmRate": 57.8,
       "attendRate": 53.2,
       "coverRate": 98.3,
@@ -12114,7 +12114,7 @@
         "常规课包"
       ],
       "bindRate": 96.8,
-      "joinRate": 94.4,
+      "joinRate": 97.6,
       "confirmRate": 67.3,
       "attendRate": 67.0,
       "coverRate": 20.6,
@@ -12178,7 +12178,7 @@
         "常规课包"
       ],
       "bindRate": 99.4,
-      "joinRate": 97.3,
+      "joinRate": 97.9,
       "confirmRate": 67.7,
       "attendRate": 61.5,
       "coverRate": 99.0,
@@ -12210,7 +12210,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 96.9,
+      "joinRate": 97.9,
       "confirmRate": 83.7,
       "attendRate": 74.5,
       "coverRate": 98.0,
@@ -12242,7 +12242,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 97.2,
+      "joinRate": 97.9,
       "confirmRate": 63.8,
       "attendRate": 53.2,
       "coverRate": 62.1,
@@ -12274,7 +12274,7 @@
         "常规课包"
       ],
       "bindRate": 99.4,
-      "joinRate": 96.9,
+      "joinRate": 97.5,
       "confirmRate": 45.7,
       "attendRate": 40.7,
       "coverRate": 63.0,
@@ -12306,7 +12306,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 97.3,
+      "joinRate": 98.2,
       "confirmRate": 52.4,
       "attendRate": 47.4,
       "coverRate": 98.0,
@@ -12338,7 +12338,7 @@
         "常规课包"
       ],
       "bindRate": 96.4,
-      "joinRate": 90.9,
+      "joinRate": 94.3,
       "confirmRate": 56.4,
       "attendRate": 56.4,
       "coverRate": 96.4,
@@ -12370,7 +12370,7 @@
         "常规课包"
       ],
       "bindRate": 98.6,
-      "joinRate": 94.4,
+      "joinRate": 95.7,
       "confirmRate": 97.4,
       "attendRate": 92.7,
       "coverRate": 98.6,
@@ -12402,7 +12402,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 95.3,
+      "joinRate": 97.1,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 98.1,
@@ -12434,7 +12434,7 @@
         "常规课包"
       ],
       "bindRate": 98.0,
-      "joinRate": 96.2,
+      "joinRate": 98.2,
       "confirmRate": 99.2,
       "attendRate": 84.7,
       "coverRate": 95.9,
@@ -12466,7 +12466,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 97.4,
+      "joinRate": 97.9,
       "confirmRate": 97.4,
       "attendRate": 85.3,
       "coverRate": 96.8,
@@ -12498,7 +12498,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 90.2,
+      "joinRate": 91.7,
       "confirmRate": 27.0,
       "attendRate": 25.1,
       "coverRate": 96.4,
@@ -12530,7 +12530,7 @@
         "常规课包"
       ],
       "bindRate": 97.4,
-      "joinRate": 93.9,
+      "joinRate": 96.4,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 97.4,
@@ -12562,7 +12562,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 96.6,
+      "joinRate": 97.4,
       "confirmRate": 93.6,
       "attendRate": 92.7,
       "coverRate": 98.7,
@@ -12626,7 +12626,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 95.4,
+      "joinRate": 97.1,
       "confirmRate": 96.0,
       "attendRate": 96.0,
       "coverRate": 96.9,
@@ -12690,7 +12690,7 @@
         "常规课包"
       ],
       "bindRate": 97.8,
-      "joinRate": 95.8,
+      "joinRate": 98.0,
       "confirmRate": 45.3,
       "attendRate": 42.2,
       "coverRate": 96.9,
@@ -12722,7 +12722,7 @@
         "常规课包"
       ],
       "bindRate": 96.8,
-      "joinRate": 87.1,
+      "joinRate": 90.0,
       "confirmRate": 9.7,
       "attendRate": 7.5,
       "coverRate": 96.8,
@@ -12754,7 +12754,7 @@
         "常规课包"
       ],
       "bindRate": 97.7,
-      "joinRate": 90.7,
+      "joinRate": 92.8,
       "confirmRate": 27.3,
       "attendRate": 26.4,
       "coverRate": 96.3,
@@ -12786,7 +12786,7 @@
         "常规课包"
       ],
       "bindRate": 97.8,
-      "joinRate": 92.2,
+      "joinRate": 94.3,
       "confirmRate": 55.6,
       "attendRate": 54.4,
       "coverRate": 97.8,
@@ -12818,7 +12818,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 98.5,
+      "joinRate": 99.3,
       "confirmRate": 59.3,
       "attendRate": 53.2,
       "coverRate": 98.7,
@@ -12850,7 +12850,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 97.6,
+      "joinRate": 98.8,
       "confirmRate": 76.5,
       "attendRate": 64.7,
       "coverRate": 98.8,
@@ -12882,7 +12882,7 @@
         "常规课包"
       ],
       "bindRate": 98.5,
-      "joinRate": 91.9,
+      "joinRate": 93.2,
       "confirmRate": 10.2,
       "attendRate": 8.1,
       "coverRate": 10.9,
@@ -12914,7 +12914,7 @@
         "常规课包"
       ],
       "bindRate": 98.0,
-      "joinRate": 91.2,
+      "joinRate": 93.0,
       "confirmRate": 3.9,
       "attendRate": 1.0,
       "coverRate": 16.7,
@@ -12946,7 +12946,7 @@
         "常规课包"
       ],
       "bindRate": 99.4,
-      "joinRate": 95.7,
+      "joinRate": 96.3,
       "confirmRate": 51.1,
       "attendRate": 45.2,
       "coverRate": 99.2,
@@ -12978,7 +12978,7 @@
         "常规课包"
       ],
       "bindRate": 98.9,
-      "joinRate": 93.2,
+      "joinRate": 94.3,
       "confirmRate": 36.4,
       "attendRate": 35.2,
       "coverRate": 97.7,
@@ -13010,7 +13010,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 96.6,
+      "joinRate": 96.8,
       "confirmRate": 29.2,
       "attendRate": 29.0,
       "coverRate": 95.8,
@@ -13074,7 +13074,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 98.1,
+      "joinRate": 98.3,
       "confirmRate": 55.0,
       "attendRate": 48.7,
       "coverRate": 99.6,
@@ -13170,7 +13170,7 @@
         "常规课包"
       ],
       "bindRate": 99.2,
-      "joinRate": 96.6,
+      "joinRate": 97.5,
       "confirmRate": 68.9,
       "attendRate": 60.9,
       "coverRate": 99.2,
@@ -13202,7 +13202,7 @@
         "常规课包"
       ],
       "bindRate": 98.0,
-      "joinRate": 93.6,
+      "joinRate": 95.5,
       "confirmRate": 57.9,
       "attendRate": 51.9,
       "coverRate": 93.1,
@@ -13234,7 +13234,7 @@
         "常规课包"
       ],
       "bindRate": 98.0,
-      "joinRate": 81.4,
+      "joinRate": 83.0,
       "confirmRate": 30.4,
       "attendRate": 29.4,
       "coverRate": 98.0,
@@ -13266,7 +13266,7 @@
         "常规课包"
       ],
       "bindRate": 99.4,
-      "joinRate": 98.9,
+      "joinRate": 99.4,
       "confirmRate": 50.3,
       "attendRate": 47.8,
       "coverRate": 99.4,
@@ -13298,7 +13298,7 @@
         "常规课包"
       ],
       "bindRate": 98.0,
-      "joinRate": 96.4,
+      "joinRate": 98.4,
       "confirmRate": 55.1,
       "attendRate": 53.6,
       "coverRate": 95.9,
@@ -13330,7 +13330,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 96.6,
+      "joinRate": 97.3,
       "confirmRate": 86.7,
       "attendRate": 84.7,
       "coverRate": 99.0,
@@ -13362,7 +13362,7 @@
         "常规课包"
       ],
       "bindRate": 99.4,
-      "joinRate": 98.1,
+      "joinRate": 98.7,
       "confirmRate": 91.8,
       "attendRate": 86.7,
       "coverRate": 99.4,
@@ -13394,7 +13394,7 @@
         "常规课包"
       ],
       "bindRate": 97.7,
-      "joinRate": 96.8,
+      "joinRate": 99.1,
       "confirmRate": 94.5,
       "attendRate": 94.2,
       "coverRate": 65.1,
@@ -13426,7 +13426,7 @@
         "常规课包"
       ],
       "bindRate": 97.4,
-      "joinRate": 94.4,
+      "joinRate": 96.9,
       "confirmRate": 0.4,
       "attendRate": 0.0,
       "coverRate": 74.9,
@@ -13458,7 +13458,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 96.2,
+      "joinRate": 96.7,
       "confirmRate": 78.9,
       "attendRate": 74.0,
       "coverRate": 49.1,
@@ -13586,7 +13586,7 @@
         "常规课包"
       ],
       "bindRate": 97.6,
-      "joinRate": 91.7,
+      "joinRate": 93.9,
       "confirmRate": 57.2,
       "attendRate": 50.8,
       "coverRate": 96.9,
@@ -13618,7 +13618,7 @@
         "常规课包"
       ],
       "bindRate": 97.5,
-      "joinRate": 78.2,
+      "joinRate": 80.2,
       "confirmRate": 62.2,
       "attendRate": 55.5,
       "coverRate": 97.5,
@@ -13714,7 +13714,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 97.1,
+      "joinRate": 97.3,
       "confirmRate": 59.0,
       "attendRate": 53.2,
       "coverRate": 98.5,
@@ -13746,7 +13746,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 93.4,
+      "joinRate": 93.9,
       "confirmRate": 26.8,
       "attendRate": 25.3,
       "coverRate": 79.3,
@@ -13778,7 +13778,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 95.6,
+      "joinRate": 95.8,
       "confirmRate": 34.9,
       "attendRate": 32.6,
       "coverRate": 98.8,
@@ -13842,7 +13842,7 @@
         "常规课包"
       ],
       "bindRate": 99.4,
-      "joinRate": 99.1,
+      "joinRate": 99.7,
       "confirmRate": 89.1,
       "attendRate": 89.1,
       "coverRate": 99.1,
@@ -13906,7 +13906,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 96.1,
+      "joinRate": 96.7,
       "confirmRate": 40.8,
       "attendRate": 33.8,
       "coverRate": 97.4,
@@ -13938,7 +13938,7 @@
         "常规课包"
       ],
       "bindRate": 97.9,
-      "joinRate": 84.5,
+      "joinRate": 86.3,
       "confirmRate": 56.3,
       "attendRate": 52.1,
       "coverRate": 96.5,
@@ -13970,7 +13970,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 96.9,
+      "joinRate": 97.5,
       "confirmRate": 66.7,
       "attendRate": 61.3,
       "coverRate": 98.4,
@@ -14002,7 +14002,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 99.1,
+      "joinRate": 100.0,
       "confirmRate": 69.0,
       "attendRate": 64.6,
       "coverRate": 99.1,
@@ -14098,7 +14098,7 @@
         "常规课包"
       ],
       "bindRate": 97.1,
-      "joinRate": 93.4,
+      "joinRate": 96.1,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 91.8,
@@ -14130,7 +14130,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 94.2,
+      "joinRate": 94.9,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 97.8,
@@ -14162,7 +14162,7 @@
         "常规课包"
       ],
       "bindRate": 98.5,
-      "joinRate": 92.8,
+      "joinRate": 94.2,
       "confirmRate": 42.1,
       "attendRate": 37.6,
       "coverRate": 95.8,
@@ -14194,7 +14194,7 @@
         "常规课包"
       ],
       "bindRate": 98.2,
-      "joinRate": 83.4,
+      "joinRate": 85.0,
       "confirmRate": 42.3,
       "attendRate": 39.3,
       "coverRate": 96.3,
@@ -14226,7 +14226,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 97.2,
+      "joinRate": 97.6,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 99.4,
@@ -14258,7 +14258,7 @@
         "常规课包"
       ],
       "bindRate": 96.7,
-      "joinRate": 96.7,
+      "joinRate": 100.0,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 96.7,
@@ -14290,7 +14290,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 92.9,
+      "joinRate": 93.5,
       "confirmRate": 40.9,
       "attendRate": 39.8,
       "coverRate": 34.2,
@@ -14322,7 +14322,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 96.3,
+      "joinRate": 97.0,
       "confirmRate": 46.7,
       "attendRate": 45.9,
       "coverRate": 30.4,
@@ -14354,7 +14354,7 @@
         "常规课包"
       ],
       "bindRate": 96.2,
-      "joinRate": 89.7,
+      "joinRate": 93.3,
       "confirmRate": 62.4,
       "attendRate": 61.6,
       "coverRate": 94.3,
@@ -14418,7 +14418,7 @@
         "常规课包"
       ],
       "bindRate": 96.7,
-      "joinRate": 95.2,
+      "joinRate": 98.4,
       "confirmRate": 78.4,
       "attendRate": 72.4,
       "coverRate": 74.6,
@@ -14450,7 +14450,7 @@
         "常规课包"
       ],
       "bindRate": 96.9,
-      "joinRate": 96.9,
+      "joinRate": 100.0,
       "confirmRate": 50.0,
       "attendRate": 46.9,
       "coverRate": 71.9,
@@ -14482,7 +14482,7 @@
         "常规课包"
       ],
       "bindRate": 98.7,
-      "joinRate": 91.7,
+      "joinRate": 92.9,
       "confirmRate": 48.3,
       "attendRate": 42.1,
       "coverRate": 98.1,
@@ -14514,7 +14514,7 @@
         "常规课包"
       ],
       "bindRate": 98.6,
-      "joinRate": 95.7,
+      "joinRate": 97.1,
       "confirmRate": 62.6,
       "attendRate": 61.1,
       "coverRate": 98.1,
@@ -14546,7 +14546,7 @@
         "常规课包"
       ],
       "bindRate": 99.7,
-      "joinRate": 96.7,
+      "joinRate": 96.9,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 99.5,
@@ -14578,7 +14578,7 @@
         "常规课包"
       ],
       "bindRate": 96.6,
-      "joinRate": 93.2,
+      "joinRate": 96.5,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 96.6,
@@ -14610,7 +14610,7 @@
         "常规课包"
       ],
       "bindRate": 98.9,
-      "joinRate": 95.9,
+      "joinRate": 97.0,
       "confirmRate": 54.8,
       "attendRate": 50.7,
       "coverRate": 98.1,
@@ -14642,7 +14642,7 @@
         "常规课包"
       ],
       "bindRate": 95.4,
-      "joinRate": 81.5,
+      "joinRate": 85.5,
       "confirmRate": 66.2,
       "attendRate": 58.5,
       "coverRate": 95.4,
@@ -14674,7 +14674,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 95.1,
+      "joinRate": 95.6,
       "confirmRate": 54.9,
       "attendRate": 46.1,
       "coverRate": 97.7,
@@ -14706,7 +14706,7 @@
         "常规课包"
       ],
       "bindRate": 98.5,
-      "joinRate": 86.2,
+      "joinRate": 87.5,
       "confirmRate": 63.8,
       "attendRate": 57.7,
       "coverRate": 97.7,
@@ -14738,7 +14738,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 96.4,
+      "joinRate": 97.4,
       "confirmRate": 52.3,
       "attendRate": 48.7,
       "coverRate": 97.4,
@@ -14770,7 +14770,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 95.6,
+      "joinRate": 97.2,
       "confirmRate": 61.1,
       "attendRate": 56.7,
       "coverRate": 96.7,
@@ -14802,7 +14802,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 96.9,
+      "joinRate": 97.9,
       "confirmRate": 64.7,
       "attendRate": 57.0,
       "coverRate": 97.4,
@@ -14834,7 +14834,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 97.2,
+      "joinRate": 98.1,
       "confirmRate": 88.1,
       "attendRate": 78.0,
       "coverRate": 97.2,
@@ -14866,7 +14866,7 @@
         "常规课包"
       ],
       "bindRate": 99.2,
-      "joinRate": 99.0,
+      "joinRate": 99.8,
       "confirmRate": 54.0,
       "attendRate": 46.2,
       "coverRate": 99.0,
@@ -14898,7 +14898,7 @@
         "常规课包"
       ],
       "bindRate": 95.5,
-      "joinRate": 92.0,
+      "joinRate": 96.4,
       "confirmRate": 62.5,
       "attendRate": 62.5,
       "coverRate": 95.5,
@@ -14930,7 +14930,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 96.0,
+      "joinRate": 97.0,
       "confirmRate": 52.8,
       "attendRate": 50.7,
       "coverRate": 68.7,
@@ -14962,7 +14962,7 @@
         "常规课包"
       ],
       "bindRate": 97.4,
-      "joinRate": 96.5,
+      "joinRate": 99.1,
       "confirmRate": 58.8,
       "attendRate": 51.8,
       "coverRate": 73.7,
@@ -14994,7 +14994,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 96.7,
+      "joinRate": 97.1,
       "confirmRate": 45.5,
       "attendRate": 43.1,
       "coverRate": 97.9,
@@ -15058,7 +15058,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 94.8,
+      "joinRate": 95.0,
       "confirmRate": 9.2,
       "attendRate": 9.2,
       "coverRate": 99.8,
@@ -15122,7 +15122,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 96.4,
+      "joinRate": 97.3,
       "confirmRate": 99.1,
       "attendRate": 95.1,
       "coverRate": 77.7,
@@ -15154,7 +15154,7 @@
         "常规课包"
       ],
       "bindRate": 97.5,
-      "joinRate": 91.5,
+      "joinRate": 93.9,
       "confirmRate": 98.3,
       "attendRate": 89.8,
       "coverRate": 92.4,
@@ -15186,7 +15186,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 99.0,
+      "joinRate": 99.5,
       "confirmRate": 48.4,
       "attendRate": 41.5,
       "coverRate": 99.5,
@@ -15250,7 +15250,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 90.3,
+      "joinRate": 91.2,
       "confirmRate": 95.8,
       "attendRate": 95.8,
       "coverRate": 69.5,
@@ -15282,7 +15282,7 @@
         "常规课包"
       ],
       "bindRate": 96.9,
-      "joinRate": 78.1,
+      "joinRate": 80.6,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 75.0,
@@ -15314,7 +15314,7 @@
         "常规课包"
       ],
       "bindRate": 98.9,
-      "joinRate": 96.1,
+      "joinRate": 97.2,
       "confirmRate": 7.5,
       "attendRate": 7.1,
       "coverRate": 98.2,
@@ -15442,7 +15442,7 @@
         "常规课包"
       ],
       "bindRate": 97.7,
-      "joinRate": 92.2,
+      "joinRate": 94.4,
       "confirmRate": 61.3,
       "attendRate": 51.2,
       "coverRate": 55.4,
@@ -15474,7 +15474,7 @@
         "常规课包"
       ],
       "bindRate": 96.8,
-      "joinRate": 91.3,
+      "joinRate": 94.3,
       "confirmRate": 73.8,
       "attendRate": 62.7,
       "coverRate": 88.1,
@@ -15506,7 +15506,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 93.7,
+      "joinRate": 95.2,
       "confirmRate": 69.0,
       "attendRate": 64.9,
       "coverRate": 98.4,
@@ -15570,7 +15570,7 @@
         "常规课包"
       ],
       "bindRate": 99.2,
-      "joinRate": 92.8,
+      "joinRate": 93.5,
       "confirmRate": 99.8,
       "attendRate": 95.1,
       "coverRate": 87.0,
@@ -15602,7 +15602,7 @@
         "常规课包"
       ],
       "bindRate": 97.0,
-      "joinRate": 93.9,
+      "joinRate": 96.9,
       "confirmRate": 100.0,
       "attendRate": 97.0,
       "coverRate": 71.2,
@@ -15634,7 +15634,7 @@
         "常规课包"
       ],
       "bindRate": 98.2,
-      "joinRate": 95.2,
+      "joinRate": 97.0,
       "confirmRate": 89.7,
       "attendRate": 66.7,
       "coverRate": 38.6,
@@ -15698,7 +15698,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 97.8,
+      "joinRate": 98.0,
       "confirmRate": 30.7,
       "attendRate": 8.8,
       "coverRate": 99.5,
@@ -15762,7 +15762,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 93.6,
+      "joinRate": 95.2,
       "confirmRate": 42.4,
       "attendRate": 17.1,
       "coverRate": 76.9,
@@ -15794,7 +15794,7 @@
         "常规课包"
       ],
       "bindRate": 95.8,
-      "joinRate": 75.0,
+      "joinRate": 78.3,
       "confirmRate": 79.2,
       "attendRate": 16.7,
       "coverRate": 79.2,
@@ -15890,7 +15890,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 95.9,
+      "joinRate": 96.8,
       "confirmRate": 99.5,
       "attendRate": 20.1,
       "coverRate": 98.2,
@@ -15954,7 +15954,7 @@
         "常规课包"
       ],
       "bindRate": 99.2,
-      "joinRate": 93.3,
+      "joinRate": 94.1,
       "confirmRate": 37.8,
       "attendRate": 14.5,
       "coverRate": 98.8,
@@ -16018,7 +16018,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 94.6,
+      "joinRate": 95.2,
       "confirmRate": 36.8,
       "attendRate": 17.2,
       "coverRate": 98.8,
@@ -16082,7 +16082,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 96.3,
+      "joinRate": 97.2,
       "confirmRate": 25.4,
       "attendRate": 12.3,
       "coverRate": 97.8,
@@ -16146,7 +16146,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 97.6,
+      "joinRate": 97.8,
       "confirmRate": 80.4,
       "attendRate": 80.4,
       "coverRate": 97.1,
@@ -16210,7 +16210,7 @@
         "常规课包"
       ],
       "bindRate": 98.0,
-      "joinRate": 92.0,
+      "joinRate": 93.8,
       "confirmRate": 38.0,
       "attendRate": 23.6,
       "coverRate": 80.6,
@@ -16338,7 +16338,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 94.3,
+      "joinRate": 95.2,
       "confirmRate": 51.9,
       "attendRate": 26.1,
       "coverRate": 99.0,
@@ -16402,7 +16402,7 @@
         "常规课包"
       ],
       "bindRate": 99.2,
-      "joinRate": 96.2,
+      "joinRate": 97.0,
       "confirmRate": 46.4,
       "attendRate": 30.4,
       "coverRate": 97.4,
@@ -16466,7 +16466,7 @@
         "常规课包"
       ],
       "bindRate": 99.4,
-      "joinRate": 96.0,
+      "joinRate": 96.5,
       "confirmRate": 24.3,
       "attendRate": 14.7,
       "coverRate": 99.4,
@@ -16530,7 +16530,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 91.5,
+      "joinRate": 91.7,
       "confirmRate": 57.6,
       "attendRate": 28.3,
       "coverRate": 99.4,
@@ -16594,7 +16594,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 96.2,
+      "joinRate": 96.8,
       "confirmRate": 46.2,
       "attendRate": 24.0,
       "coverRate": 98.4,
@@ -16658,7 +16658,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 97.5,
+      "joinRate": 97.7,
       "confirmRate": 30.1,
       "attendRate": 16.9,
       "coverRate": 99.8,
@@ -16722,7 +16722,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 89.7,
+      "joinRate": 90.1,
       "confirmRate": 57.2,
       "attendRate": 20.6,
       "coverRate": 99.4,
@@ -16785,7 +16785,7 @@
         "常规课包"
       ],
       "bindRate": 97.2,
-      "joinRate": 96.6,
+      "joinRate": 99.4,
       "confirmRate": 33.1,
       "attendRate": 22.8,
       "coverRate": 95.2,
@@ -16817,7 +16817,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 94.6,
+      "joinRate": 96.2,
       "confirmRate": 42.6,
       "attendRate": 23.5,
       "coverRate": 96.4,
@@ -16881,7 +16881,7 @@
         "常规课包"
       ],
       "bindRate": 97.5,
-      "joinRate": 89.2,
+      "joinRate": 91.5,
       "confirmRate": 21.1,
       "attendRate": 20.5,
       "coverRate": 23.7,
@@ -16945,7 +16945,7 @@
         "常规课包"
       ],
       "bindRate": 98.7,
-      "joinRate": 93.8,
+      "joinRate": 95.0,
       "confirmRate": 34.7,
       "attendRate": 16.8,
       "coverRate": 98.5,
@@ -17009,7 +17009,7 @@
         "常规课包"
       ],
       "bindRate": 97.8,
-      "joinRate": 92.3,
+      "joinRate": 94.4,
       "confirmRate": 28.6,
       "attendRate": 17.8,
       "coverRate": 80.0,
@@ -17073,7 +17073,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 87.5,
+      "joinRate": 89.0,
       "confirmRate": 24.0,
       "attendRate": 14.5,
       "coverRate": 73.1,
@@ -17137,7 +17137,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 94.8,
+      "joinRate": 95.3,
       "confirmRate": 39.6,
       "attendRate": 18.6,
       "coverRate": 98.1,
@@ -17201,7 +17201,7 @@
         "常规课包"
       ],
       "bindRate": 99.2,
-      "joinRate": 97.5,
+      "joinRate": 98.2,
       "confirmRate": 55.9,
       "attendRate": 24.3,
       "coverRate": 98.5,
@@ -17265,7 +17265,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 96.9,
+      "joinRate": 97.0,
       "confirmRate": 32.0,
       "attendRate": 12.4,
       "coverRate": 69.1,
@@ -17329,7 +17329,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 97.5,
+      "joinRate": 97.8,
       "confirmRate": 36.9,
       "attendRate": 17.2,
       "coverRate": 98.9,
@@ -17393,7 +17393,7 @@
         "常规课包"
       ],
       "bindRate": 98.2,
-      "joinRate": 95.9,
+      "joinRate": 97.6,
       "confirmRate": 39.7,
       "attendRate": 20.6,
       "coverRate": 97.6,
@@ -17457,7 +17457,7 @@
         "常规课包"
       ],
       "bindRate": 99.4,
-      "joinRate": 98.0,
+      "joinRate": 98.5,
       "confirmRate": 31.9,
       "attendRate": 16.4,
       "coverRate": 98.0,
@@ -17521,7 +17521,7 @@
         "常规课包"
       ],
       "bindRate": 99.2,
-      "joinRate": 97.5,
+      "joinRate": 98.2,
       "confirmRate": 44.9,
       "attendRate": 15.4,
       "coverRate": 98.2,
@@ -17649,7 +17649,7 @@
         "常规课包"
       ],
       "bindRate": 96.1,
-      "joinRate": 94.8,
+      "joinRate": 98.6,
       "confirmRate": 64.0,
       "attendRate": 59.4,
       "coverRate": 74.7,
@@ -17713,7 +17713,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 96.5,
+      "joinRate": 97.5,
       "confirmRate": 62.0,
       "attendRate": 53.9,
       "coverRate": 99.0,
@@ -17777,7 +17777,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 96.0,
+      "joinRate": 96.9,
       "confirmRate": 61.0,
       "attendRate": 45.4,
       "coverRate": 97.9,
@@ -17841,7 +17841,7 @@
         "常规课包"
       ],
       "bindRate": 99.4,
-      "joinRate": 97.3,
+      "joinRate": 97.9,
       "confirmRate": 70.8,
       "attendRate": 59.5,
       "coverRate": 98.2,
@@ -17905,7 +17905,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 95.1,
+      "joinRate": 97.0,
       "confirmRate": 54.8,
       "attendRate": 49.0,
       "coverRate": 96.6,
@@ -17937,7 +17937,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 91.3,
+      "joinRate": 92.7,
       "confirmRate": 61.1,
       "attendRate": 55.6,
       "coverRate": 97.6,
@@ -17969,7 +17969,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 96.6,
+      "joinRate": 97.7,
       "confirmRate": 39.7,
       "attendRate": 30.0,
       "coverRate": 98.6,
@@ -18033,7 +18033,7 @@
         "常规课包"
       ],
       "bindRate": 96.8,
-      "joinRate": 93.0,
+      "joinRate": 96.0,
       "confirmRate": 72.3,
       "attendRate": 69.8,
       "coverRate": 95.3,
@@ -18065,7 +18065,7 @@
         "常规课包"
       ],
       "bindRate": 93.8,
-      "joinRate": 90.6,
+      "joinRate": 96.7,
       "confirmRate": 93.8,
       "attendRate": 90.6,
       "coverRate": 90.6,
@@ -18097,7 +18097,7 @@
         "常规课包"
       ],
       "bindRate": 97.7,
-      "joinRate": 88.1,
+      "joinRate": 90.2,
       "confirmRate": 62.5,
       "attendRate": 55.9,
       "coverRate": 96.2,
@@ -18161,7 +18161,7 @@
         "常规课包"
       ],
       "bindRate": 97.8,
-      "joinRate": 86.4,
+      "joinRate": 88.4,
       "confirmRate": 54.7,
       "attendRate": 49.0,
       "coverRate": 94.1,
@@ -18193,7 +18193,7 @@
         "常规课包"
       ],
       "bindRate": 96.9,
-      "joinRate": 81.2,
+      "joinRate": 83.9,
       "confirmRate": 62.5,
       "attendRate": 59.4,
       "coverRate": 90.6,
@@ -18225,7 +18225,7 @@
         "常规课包"
       ],
       "bindRate": 97.9,
-      "joinRate": 91.9,
+      "joinRate": 93.9,
       "confirmRate": 88.7,
       "attendRate": 82.7,
       "coverRate": 97.7,
@@ -18257,7 +18257,7 @@
         "常规课包"
       ],
       "bindRate": 97.5,
-      "joinRate": 86.2,
+      "joinRate": 88.5,
       "confirmRate": 85.0,
       "attendRate": 85.0,
       "coverRate": 97.5,
@@ -18289,7 +18289,7 @@
         "常规课包"
       ],
       "bindRate": 97.7,
-      "joinRate": 90.1,
+      "joinRate": 92.2,
       "confirmRate": 19.1,
       "attendRate": 15.8,
       "coverRate": 95.9,
@@ -18321,7 +18321,7 @@
         "常规课包"
       ],
       "bindRate": 97.6,
-      "joinRate": 92.7,
+      "joinRate": 95.0,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 96.3,
@@ -18352,7 +18352,7 @@
         "常规课包"
       ],
       "bindRate": 96.0,
-      "joinRate": 89.1,
+      "joinRate": 92.8,
       "confirmRate": 62.9,
       "attendRate": 54.3,
       "coverRate": 92.5,
@@ -18416,7 +18416,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 95.3,
+      "joinRate": 96.8,
       "confirmRate": 78.1,
       "attendRate": 68.8,
       "coverRate": 98.4,
@@ -18448,7 +18448,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 93.1,
+      "joinRate": 94.6,
       "confirmRate": 36.7,
       "attendRate": 31.4,
       "coverRate": 94.7,
@@ -18576,7 +18576,7 @@
         "常规课包"
       ],
       "bindRate": 97.3,
-      "joinRate": 80.8,
+      "joinRate": 83.1,
       "confirmRate": 67.3,
       "attendRate": 62.4,
       "coverRate": 96.5,
@@ -18640,7 +18640,7 @@
         "常规课包"
       ],
       "bindRate": 99.4,
-      "joinRate": 95.1,
+      "joinRate": 95.7,
       "confirmRate": 97.7,
       "attendRate": 96.3,
       "coverRate": 96.6,
@@ -18672,7 +18672,7 @@
         "常规课包"
       ],
       "bindRate": 97.7,
-      "joinRate": 89.5,
+      "joinRate": 91.7,
       "confirmRate": 96.5,
       "attendRate": 95.3,
       "coverRate": 95.3,
@@ -18704,7 +18704,7 @@
         "常规课包"
       ],
       "bindRate": 93.0,
-      "joinRate": 67.1,
+      "joinRate": 72.1,
       "confirmRate": 28.4,
       "attendRate": 26.3,
       "coverRate": 91.4,
@@ -18768,7 +18768,7 @@
         "常规课包"
       ],
       "bindRate": 96.8,
-      "joinRate": 92.0,
+      "joinRate": 95.0,
       "confirmRate": 59.1,
       "attendRate": 50.8,
       "coverRate": 95.5,
@@ -18832,7 +18832,7 @@
         "常规课包"
       ],
       "bindRate": 99.4,
-      "joinRate": 96.7,
+      "joinRate": 97.3,
       "confirmRate": 55.3,
       "attendRate": 51.4,
       "coverRate": 97.9,
@@ -18960,7 +18960,7 @@
         "常规课包"
       ],
       "bindRate": 99.7,
-      "joinRate": 94.6,
+      "joinRate": 94.9,
       "confirmRate": 26.1,
       "attendRate": 22.8,
       "coverRate": 99.7,
@@ -18992,7 +18992,7 @@
         "常规课包"
       ],
       "bindRate": 98.2,
-      "joinRate": 94.7,
+      "joinRate": 96.4,
       "confirmRate": 36.8,
       "attendRate": 35.1,
       "coverRate": 98.2,
@@ -19088,7 +19088,7 @@
         "常规课包"
       ],
       "bindRate": 97.4,
-      "joinRate": 90.6,
+      "joinRate": 93.0,
       "confirmRate": 71.8,
       "attendRate": 68.1,
       "coverRate": 96.6,
@@ -19120,7 +19120,7 @@
         "常规课包"
       ],
       "bindRate": 96.8,
-      "joinRate": 83.9,
+      "joinRate": 86.7,
       "confirmRate": 77.4,
       "attendRate": 75.8,
       "coverRate": 96.8,
@@ -19152,7 +19152,7 @@
         "常规课包"
       ],
       "bindRate": 97.4,
-      "joinRate": 92.4,
+      "joinRate": 94.9,
       "confirmRate": 35.9,
       "attendRate": 29.6,
       "coverRate": 95.5,
@@ -19184,7 +19184,7 @@
         "常规课包"
       ],
       "bindRate": 96.9,
-      "joinRate": 96.9,
+      "joinRate": 100.0,
       "confirmRate": 70.3,
       "attendRate": 57.8,
       "coverRate": 95.3,
@@ -19216,7 +19216,7 @@
         "常规课包"
       ],
       "bindRate": 97.2,
-      "joinRate": 91.3,
+      "joinRate": 93.9,
       "confirmRate": 53.3,
       "attendRate": 53.3,
       "coverRate": 93.7,
@@ -19248,7 +19248,7 @@
         "常规课包"
       ],
       "bindRate": 98.7,
-      "joinRate": 92.1,
+      "joinRate": 93.3,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 96.1,
@@ -19280,7 +19280,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 95.8,
+      "joinRate": 96.8,
       "confirmRate": 19.5,
       "attendRate": 19.2,
       "coverRate": 98.7,
@@ -19312,7 +19312,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 96.2,
+      "joinRate": 98.0,
       "confirmRate": 75.0,
       "attendRate": 73.1,
       "coverRate": 98.1,
@@ -19408,7 +19408,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 95.3,
+      "joinRate": 96.9,
       "confirmRate": 26.8,
       "attendRate": 23.1,
       "coverRate": 51.3,
@@ -19440,7 +19440,7 @@
         "常规课包"
       ],
       "bindRate": 96.0,
-      "joinRate": 89.3,
+      "joinRate": 93.1,
       "confirmRate": 22.7,
       "attendRate": 16.0,
       "coverRate": 73.3,
@@ -19472,7 +19472,7 @@
         "常规课包"
       ],
       "bindRate": 98.2,
-      "joinRate": 96.4,
+      "joinRate": 98.2,
       "confirmRate": 24.3,
       "attendRate": 18.7,
       "coverRate": 96.9,
@@ -19504,7 +19504,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 88.5,
+      "joinRate": 90.2,
       "confirmRate": 3.8,
       "attendRate": 3.8,
       "coverRate": 96.2,
@@ -19536,7 +19536,7 @@
         "常规课包"
       ],
       "bindRate": 98.0,
-      "joinRate": 94.7,
+      "joinRate": 96.6,
       "confirmRate": 94.2,
       "attendRate": 93.7,
       "coverRate": 97.2,
@@ -19664,7 +19664,7 @@
         "常规课包"
       ],
       "bindRate": 99.2,
-      "joinRate": 93.9,
+      "joinRate": 94.7,
       "confirmRate": 73.8,
       "attendRate": 64.5,
       "coverRate": 98.1,
@@ -19696,7 +19696,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 94.4,
+      "joinRate": 95.3,
       "confirmRate": 80.4,
       "attendRate": 69.2,
       "coverRate": 99.1,
@@ -19728,7 +19728,7 @@
         "常规课包"
       ],
       "bindRate": 97.9,
-      "joinRate": 93.4,
+      "joinRate": 95.4,
       "confirmRate": 71.6,
       "attendRate": 60.3,
       "coverRate": 89.8,
@@ -19760,7 +19760,7 @@
         "常规课包"
       ],
       "bindRate": 95.6,
-      "joinRate": 95.6,
+      "joinRate": 100.0,
       "confirmRate": 80.0,
       "attendRate": 73.3,
       "coverRate": 62.2,
@@ -19792,7 +19792,7 @@
         "常规课包"
       ],
       "bindRate": 94.5,
-      "joinRate": 85.6,
+      "joinRate": 90.5,
       "confirmRate": 40.7,
       "attendRate": 31.2,
       "coverRate": 93.2,
@@ -19824,7 +19824,7 @@
         "常规课包"
       ],
       "bindRate": 87.1,
-      "joinRate": 72.6,
+      "joinRate": 83.3,
       "confirmRate": 48.4,
       "attendRate": 33.9,
       "coverRate": 87.1,
@@ -19856,7 +19856,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 97.3,
+      "joinRate": 98.0,
       "confirmRate": 59.5,
       "attendRate": 48.8,
       "coverRate": 98.8,
@@ -19888,7 +19888,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 94.0,
+      "joinRate": 95.1,
       "confirmRate": 75.9,
       "attendRate": 63.9,
       "coverRate": 98.8,
@@ -20016,7 +20016,7 @@
         "常规课包"
       ],
       "bindRate": 98.9,
-      "joinRate": 85.1,
+      "joinRate": 86.0,
       "confirmRate": 45.7,
       "attendRate": 45.7,
       "coverRate": 96.8,
@@ -20048,7 +20048,7 @@
         "常规课包"
       ],
       "bindRate": 97.6,
-      "joinRate": 92.9,
+      "joinRate": 95.1,
       "confirmRate": 45.4,
       "attendRate": 43.8,
       "coverRate": 95.3,
@@ -20080,7 +20080,7 @@
         "常规课包"
       ],
       "bindRate": 97.6,
-      "joinRate": 97.6,
+      "joinRate": 100.0,
       "confirmRate": 47.6,
       "attendRate": 47.6,
       "coverRate": 95.2,
@@ -20112,7 +20112,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 93.8,
+      "joinRate": 95.6,
       "confirmRate": 40.9,
       "attendRate": 39.0,
       "coverRate": 96.8,
@@ -20144,7 +20144,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 95.3,
+      "joinRate": 96.8,
       "confirmRate": 48.0,
       "attendRate": 48.0,
       "coverRate": 97.6,
@@ -20176,7 +20176,7 @@
         "常规课包"
       ],
       "bindRate": 98.9,
-      "joinRate": 94.8,
+      "joinRate": 95.9,
       "confirmRate": 63.3,
       "attendRate": 59.4,
       "coverRate": 70.5,
@@ -20208,7 +20208,7 @@
         "常规课包"
       ],
       "bindRate": 97.8,
-      "joinRate": 91.3,
+      "joinRate": 93.3,
       "confirmRate": 73.9,
       "attendRate": 73.9,
       "coverRate": 91.3,
@@ -20240,7 +20240,7 @@
         "常规课包"
       ],
       "bindRate": 95.6,
-      "joinRate": 91.3,
+      "joinRate": 95.4,
       "confirmRate": 6.8,
       "attendRate": 4.4,
       "coverRate": 94.2,
@@ -20272,7 +20272,7 @@
         "常规课包"
       ],
       "bindRate": 98.9,
-      "joinRate": 91.3,
+      "joinRate": 92.3,
       "confirmRate": 2.2,
       "attendRate": 1.1,
       "coverRate": 98.9,
@@ -20304,7 +20304,7 @@
         "常规课包"
       ],
       "bindRate": 92.2,
-      "joinRate": 88.2,
+      "joinRate": 95.6,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 89.9,
@@ -20368,7 +20368,7 @@
         "常规课包"
       ],
       "bindRate": 90.6,
-      "joinRate": 76.1,
+      "joinRate": 84.0,
       "confirmRate": 53.8,
       "attendRate": 51.1,
       "coverRate": 89.0,
@@ -20400,7 +20400,7 @@
         "常规课包"
       ],
       "bindRate": 97.0,
-      "joinRate": 97.0,
+      "joinRate": 100.0,
       "confirmRate": 97.0,
       "attendRate": 93.9,
       "coverRate": 97.0,
@@ -20432,7 +20432,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 94.0,
+      "joinRate": 94.4,
       "confirmRate": 68.1,
       "attendRate": 58.8,
       "coverRate": 98.1,
@@ -20496,7 +20496,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 97.1,
+      "joinRate": 97.3,
       "confirmRate": 39.7,
       "attendRate": 37.7,
       "coverRate": 66.3,
@@ -20560,7 +20560,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 95.5,
+      "joinRate": 95.8,
       "confirmRate": 81.8,
       "attendRate": 66.7,
       "coverRate": 99.5,
@@ -20624,7 +20624,7 @@
         "常规课包"
       ],
       "bindRate": 99.4,
-      "joinRate": 94.0,
+      "joinRate": 94.5,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 99.2,
@@ -20688,7 +20688,7 @@
         "常规课包"
       ],
       "bindRate": 96.1,
-      "joinRate": 80.9,
+      "joinRate": 84.2,
       "confirmRate": 64.3,
       "attendRate": 57.8,
       "coverRate": 90.6,
@@ -20720,7 +20720,7 @@
         "常规课包"
       ],
       "bindRate": 94.2,
-      "joinRate": 49.5,
+      "joinRate": 52.6,
       "confirmRate": 51.5,
       "attendRate": 41.7,
       "coverRate": 83.5,
@@ -20752,7 +20752,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 98.6,
+      "joinRate": 98.8,
       "confirmRate": 56.1,
       "attendRate": 52.5,
       "coverRate": 99.4,
@@ -20815,7 +20815,7 @@
         "常规课包"
       ],
       "bindRate": 95.1,
-      "joinRate": 86.7,
+      "joinRate": 91.1,
       "confirmRate": 53.9,
       "attendRate": 50.3,
       "coverRate": 93.2,
@@ -20846,7 +20846,7 @@
         "常规课包"
       ],
       "bindRate": 85.8,
-      "joinRate": 78.7,
+      "joinRate": 91.7,
       "confirmRate": 1.5,
       "attendRate": 1.5,
       "coverRate": 82.2,
@@ -20878,7 +20878,7 @@
         "常规课包"
       ],
       "bindRate": 98.7,
-      "joinRate": 95.5,
+      "joinRate": 96.7,
       "confirmRate": 51.5,
       "attendRate": 47.9,
       "coverRate": 97.3,
@@ -20910,7 +20910,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 88.7,
+      "joinRate": 90.2,
       "confirmRate": 46.8,
       "attendRate": 45.2,
       "coverRate": 96.8,
@@ -20942,7 +20942,7 @@
         "常规课包"
       ],
       "bindRate": 90.5,
-      "joinRate": 86.1,
+      "joinRate": 95.2,
       "confirmRate": 70.0,
       "attendRate": 60.8,
       "coverRate": 89.4,
@@ -20974,7 +20974,7 @@
         "常规课包"
       ],
       "bindRate": 91.3,
-      "joinRate": 87.0,
+      "joinRate": 95.2,
       "confirmRate": 73.2,
       "attendRate": 63.8,
       "coverRate": 88.4,
@@ -21006,7 +21006,7 @@
         "常规课包"
       ],
       "bindRate": 93.9,
-      "joinRate": 88.7,
+      "joinRate": 94.5,
       "confirmRate": 44.0,
       "attendRate": 40.3,
       "coverRate": 91.4,
@@ -21038,7 +21038,7 @@
         "常规课包"
       ],
       "bindRate": 92.9,
-      "joinRate": 79.8,
+      "joinRate": 85.9,
       "confirmRate": 40.5,
       "attendRate": 35.7,
       "coverRate": 90.5,
@@ -21070,7 +21070,7 @@
         "常规课包"
       ],
       "bindRate": 96.6,
-      "joinRate": 94.2,
+      "joinRate": 97.5,
       "confirmRate": 57.7,
       "attendRate": 53.2,
       "coverRate": 72.7,
@@ -21102,7 +21102,7 @@
         "常规课包"
       ],
       "bindRate": 94.1,
-      "joinRate": 93.1,
+      "joinRate": 98.9,
       "confirmRate": 87.1,
       "attendRate": 76.2,
       "coverRate": 94.1,
@@ -21134,7 +21134,7 @@
         "常规课包"
       ],
       "bindRate": 96.1,
-      "joinRate": 94.1,
+      "joinRate": 98.0,
       "confirmRate": 61.2,
       "attendRate": 54.7,
       "coverRate": 95.0,
@@ -21166,7 +21166,7 @@
         "常规课包"
       ],
       "bindRate": 94.7,
-      "joinRate": 94.7,
+      "joinRate": 100.0,
       "confirmRate": 55.3,
       "attendRate": 52.6,
       "coverRate": 94.7,
@@ -21198,7 +21198,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 95.8,
+      "joinRate": 96.9,
       "confirmRate": 65.2,
       "attendRate": 57.3,
       "coverRate": 94.2,
@@ -21230,7 +21230,7 @@
         "常规课包"
       ],
       "bindRate": 95.9,
-      "joinRate": 87.8,
+      "joinRate": 91.5,
       "confirmRate": 70.3,
       "attendRate": 51.4,
       "coverRate": 95.9,
@@ -21261,7 +21261,7 @@
         "常规课包"
       ],
       "bindRate": 95.5,
-      "joinRate": 83.6,
+      "joinRate": 87.5,
       "confirmRate": 38.4,
       "attendRate": 36.6,
       "coverRate": 91.4,
@@ -21293,7 +21293,7 @@
         "常规课包"
       ],
       "bindRate": 96.3,
-      "joinRate": 89.6,
+      "joinRate": 93.1,
       "confirmRate": 62.3,
       "attendRate": 56.5,
       "coverRate": 94.2,
@@ -21325,7 +21325,7 @@
         "常规课包"
       ],
       "bindRate": 97.8,
-      "joinRate": 92.0,
+      "joinRate": 94.1,
       "confirmRate": 75.4,
       "attendRate": 69.6,
       "coverRate": 97.1,
@@ -21357,7 +21357,7 @@
         "常规课包"
       ],
       "bindRate": 97.7,
-      "joinRate": 90.8,
+      "joinRate": 92.9,
       "confirmRate": 44.2,
       "attendRate": 38.8,
       "coverRate": 95.8,
@@ -21389,7 +21389,7 @@
         "常规课包"
       ],
       "bindRate": 96.7,
-      "joinRate": 88.0,
+      "joinRate": 91.0,
       "confirmRate": 58.7,
       "attendRate": 53.3,
       "coverRate": 95.7,
@@ -21421,7 +21421,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 92.0,
+      "joinRate": 93.8,
       "confirmRate": 75.9,
       "attendRate": 70.1,
       "coverRate": 91.0,
@@ -21485,7 +21485,7 @@
         "常规课包"
       ],
       "bindRate": 98.9,
-      "joinRate": 95.8,
+      "joinRate": 96.8,
       "confirmRate": 67.9,
       "attendRate": 65.3,
       "coverRate": 97.3,
@@ -21517,7 +21517,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 95.9,
+      "joinRate": 97.6,
       "confirmRate": 75.6,
       "attendRate": 72.7,
       "coverRate": 95.9,
@@ -21549,7 +21549,7 @@
         "常规课包"
       ],
       "bindRate": 98.9,
-      "joinRate": 98.5,
+      "joinRate": 99.6,
       "confirmRate": 99.4,
       "attendRate": 88.6,
       "coverRate": 98.9,
@@ -21581,7 +21581,7 @@
         "常规课包"
       ],
       "bindRate": 95.5,
-      "joinRate": 95.5,
+      "joinRate": 100.0,
       "confirmRate": 97.0,
       "attendRate": 92.5,
       "coverRate": 95.5,
@@ -21613,7 +21613,7 @@
         "常规课包"
       ],
       "bindRate": 98.5,
-      "joinRate": 92.0,
+      "joinRate": 93.4,
       "confirmRate": 37.6,
       "attendRate": 34.6,
       "coverRate": 97.5,
@@ -21645,7 +21645,7 @@
         "常规课包"
       ],
       "bindRate": 98.9,
-      "joinRate": 88.6,
+      "joinRate": 89.7,
       "confirmRate": 44.3,
       "attendRate": 42.0,
       "coverRate": 98.9,
@@ -21677,7 +21677,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 99.2,
+      "joinRate": 99.7,
       "confirmRate": 79.3,
       "attendRate": 60.1,
       "coverRate": 98.0,
@@ -21741,7 +21741,7 @@
         "常规课包"
       ],
       "bindRate": 98.2,
-      "joinRate": 95.2,
+      "joinRate": 96.9,
       "confirmRate": 83.0,
       "attendRate": 58.3,
       "coverRate": 98.0,
@@ -21805,7 +21805,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 92.6,
+      "joinRate": 94.4,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 97.9,
@@ -21837,7 +21837,7 @@
         "常规课包"
       ],
       "bindRate": 98.2,
-      "joinRate": 86.6,
+      "joinRate": 88.2,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 98.2,
@@ -21869,7 +21869,7 @@
         "常规课包"
       ],
       "bindRate": 97.6,
-      "joinRate": 90.9,
+      "joinRate": 93.1,
       "confirmRate": 42.7,
       "attendRate": 40.1,
       "coverRate": 95.7,
@@ -21901,7 +21901,7 @@
         "常规课包"
       ],
       "bindRate": 95.4,
-      "joinRate": 90.7,
+      "joinRate": 95.1,
       "confirmRate": 33.3,
       "attendRate": 32.4,
       "coverRate": 95.4,
@@ -21933,7 +21933,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 89.5,
+      "joinRate": 90.9,
       "confirmRate": 19.2,
       "attendRate": 19.2,
       "coverRate": 93.2,
@@ -21965,7 +21965,7 @@
         "常规课包"
       ],
       "bindRate": 95.6,
-      "joinRate": 83.2,
+      "joinRate": 87.0,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 94.7,
@@ -21997,7 +21997,7 @@
         "常规课包"
       ],
       "bindRate": 98.7,
-      "joinRate": 92.8,
+      "joinRate": 94.1,
       "confirmRate": 61.2,
       "attendRate": 56.5,
       "coverRate": 96.4,
@@ -22029,7 +22029,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 95.7,
+      "joinRate": 96.4,
       "confirmRate": 56.5,
       "attendRate": 52.9,
       "coverRate": 95.7,
@@ -22061,7 +22061,7 @@
         "常规课包"
       ],
       "bindRate": 94.9,
-      "joinRate": 81.3,
+      "joinRate": 85.7,
       "confirmRate": 87.0,
       "attendRate": 81.6,
       "coverRate": 76.8,
@@ -22155,7 +22155,7 @@
         "常规课包"
       ],
       "bindRate": 98.2,
-      "joinRate": 94.6,
+      "joinRate": 96.3,
       "confirmRate": 46.0,
       "attendRate": 43.5,
       "coverRate": 95.7,
@@ -22187,7 +22187,7 @@
         "常规课包"
       ],
       "bindRate": 96.4,
-      "joinRate": 90.9,
+      "joinRate": 94.3,
       "confirmRate": 56.2,
       "attendRate": 53.2,
       "coverRate": 93.1,
@@ -22219,7 +22219,7 @@
         "常规课包"
       ],
       "bindRate": 95.5,
-      "joinRate": 91.8,
+      "joinRate": 96.2,
       "confirmRate": 65.5,
       "attendRate": 61.8,
       "coverRate": 94.5,
@@ -22283,7 +22283,7 @@
         "常规课包"
       ],
       "bindRate": 97.9,
-      "joinRate": 97.9,
+      "joinRate": 100.0,
       "confirmRate": 59.6,
       "attendRate": 55.3,
       "coverRate": 97.9,
@@ -22379,7 +22379,7 @@
         "常规课包"
       ],
       "bindRate": 98.6,
-      "joinRate": 96.6,
+      "joinRate": 98.0,
       "confirmRate": 59.4,
       "attendRate": 49.0,
       "coverRate": 97.5,
@@ -22411,7 +22411,7 @@
         "常规课包"
       ],
       "bindRate": 98.0,
-      "joinRate": 96.1,
+      "joinRate": 98.0,
       "confirmRate": 68.6,
       "attendRate": 55.9,
       "coverRate": 97.1,
@@ -22443,7 +22443,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 94.6,
+      "joinRate": 96.2,
       "confirmRate": 64.0,
       "attendRate": 54.9,
       "coverRate": 96.7,
@@ -22475,7 +22475,7 @@
         "常规课包"
       ],
       "bindRate": 96.6,
-      "joinRate": 94.8,
+      "joinRate": 98.2,
       "confirmRate": 69.0,
       "attendRate": 62.1,
       "coverRate": 93.1,
@@ -22507,7 +22507,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 95.2,
+      "joinRate": 96.8,
       "confirmRate": 34.6,
       "attendRate": 33.6,
       "coverRate": 96.3,
@@ -22539,7 +22539,7 @@
         "常规课包"
       ],
       "bindRate": 85.0,
-      "joinRate": 85.0,
+      "joinRate": 100.0,
       "confirmRate": 25.0,
       "attendRate": 20.0,
       "coverRate": 80.0,
@@ -22571,7 +22571,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 95.6,
+      "joinRate": 97.1,
       "confirmRate": 85.4,
       "attendRate": 74.3,
       "coverRate": 97.8,
@@ -22603,7 +22603,7 @@
         "常规课包"
       ],
       "bindRate": 95.6,
-      "joinRate": 91.1,
+      "joinRate": 95.3,
       "confirmRate": 86.7,
       "attendRate": 71.1,
       "coverRate": 95.6,
@@ -22635,7 +22635,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 94.0,
+      "joinRate": 95.0,
       "confirmRate": 33.7,
       "attendRate": 29.8,
       "coverRate": 96.4,
@@ -22699,7 +22699,7 @@
         "常规课包"
       ],
       "bindRate": 97.9,
-      "joinRate": 94.4,
+      "joinRate": 96.3,
       "confirmRate": 29.7,
       "attendRate": 27.2,
       "coverRate": 95.4,
@@ -22731,7 +22731,7 @@
         "常规课包"
       ],
       "bindRate": 96.9,
-      "joinRate": 90.6,
+      "joinRate": 93.5,
       "confirmRate": 37.5,
       "attendRate": 37.5,
       "coverRate": 96.9,
@@ -22763,7 +22763,7 @@
         "常规课包"
       ],
       "bindRate": 98.5,
-      "joinRate": 94.3,
+      "joinRate": 95.8,
       "confirmRate": 70.1,
       "attendRate": 59.9,
       "coverRate": 97.2,
@@ -22827,7 +22827,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 96.6,
+      "joinRate": 97.1,
       "confirmRate": 59.9,
       "attendRate": 53.0,
       "coverRate": 99.5,
@@ -22955,7 +22955,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 96.1,
+      "joinRate": 96.4,
       "confirmRate": 39.0,
       "attendRate": 36.2,
       "coverRate": 98.3,
@@ -22987,7 +22987,7 @@
         "常规课包"
       ],
       "bindRate": 98.6,
-      "joinRate": 93.2,
+      "joinRate": 94.5,
       "confirmRate": 59.5,
       "attendRate": 52.7,
       "coverRate": 95.9,
@@ -23019,7 +23019,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 96.7,
+      "joinRate": 96.9,
       "confirmRate": 40.9,
       "attendRate": 37.5,
       "coverRate": 99.0,
@@ -23083,7 +23083,7 @@
         "常规课包"
       ],
       "bindRate": 98.2,
-      "joinRate": 94.5,
+      "joinRate": 96.2,
       "confirmRate": 38.5,
       "attendRate": 35.7,
       "coverRate": 96.1,
@@ -23147,7 +23147,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 94.7,
+      "joinRate": 95.8,
       "confirmRate": 55.2,
       "attendRate": 54.0,
       "coverRate": 98.2,
@@ -23179,7 +23179,7 @@
         "常规课包"
       ],
       "bindRate": 96.7,
-      "joinRate": 96.7,
+      "joinRate": 100.0,
       "confirmRate": 20.0,
       "attendRate": 16.7,
       "coverRate": 93.3,
@@ -23211,7 +23211,7 @@
         "常规课包"
       ],
       "bindRate": 98.5,
-      "joinRate": 94.5,
+      "joinRate": 95.9,
       "confirmRate": 35.7,
       "attendRate": 31.6,
       "coverRate": 73.5,
@@ -23243,7 +23243,7 @@
         "常规课包"
       ],
       "bindRate": 97.5,
-      "joinRate": 87.3,
+      "joinRate": 89.6,
       "confirmRate": 11.9,
       "attendRate": 11.9,
       "coverRate": 45.8,
@@ -23275,7 +23275,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 95.3,
+      "joinRate": 96.3,
       "confirmRate": 60.3,
       "attendRate": 57.9,
       "coverRate": 86.1,
@@ -23307,7 +23307,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 89.1,
+      "joinRate": 90.0,
       "confirmRate": 32.7,
       "attendRate": 31.7,
       "coverRate": 75.2,
@@ -23339,7 +23339,7 @@
         "常规课包"
       ],
       "bindRate": 97.4,
-      "joinRate": 96.4,
+      "joinRate": 99.0,
       "confirmRate": 75.6,
       "attendRate": 33.1,
       "coverRate": 97.4,
@@ -23371,7 +23371,7 @@
         "常规课包"
       ],
       "bindRate": 97.5,
-      "joinRate": 95.0,
+      "joinRate": 97.4,
       "confirmRate": 70.0,
       "attendRate": 15.0,
       "coverRate": 96.2,
@@ -23403,7 +23403,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 97.7,
+      "joinRate": 98.8,
       "confirmRate": 85.3,
       "attendRate": 85.3,
       "coverRate": 98.6,
@@ -23435,7 +23435,7 @@
         "常规课包"
       ],
       "bindRate": 97.1,
-      "joinRate": 82.4,
+      "joinRate": 84.8,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 97.1,
@@ -23531,7 +23531,7 @@
         "常规课包"
       ],
       "bindRate": 98.9,
-      "joinRate": 97.7,
+      "joinRate": 98.8,
       "confirmRate": 19.9,
       "attendRate": 19.2,
       "coverRate": 97.7,
@@ -23563,7 +23563,7 @@
         "常规课包"
       ],
       "bindRate": 83.3,
-      "joinRate": 75.0,
+      "joinRate": 90.0,
       "confirmRate": 16.7,
       "attendRate": 16.7,
       "coverRate": 75.0,
@@ -23659,7 +23659,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 98.1,
+      "joinRate": 98.6,
       "confirmRate": 100.0,
       "attendRate": 94.0,
       "coverRate": 98.1,
@@ -23723,7 +23723,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 98.0,
+      "joinRate": 98.4,
       "confirmRate": 99.4,
       "attendRate": 98.8,
       "coverRate": 99.6,
@@ -23755,7 +23755,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 96.5,
+      "joinRate": 97.6,
       "confirmRate": 97.7,
       "attendRate": 96.5,
       "coverRate": 98.8,
@@ -23819,7 +23819,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 98.5,
+      "joinRate": 99.0,
       "confirmRate": 66.5,
       "attendRate": 51.8,
       "coverRate": 99.5,
@@ -23883,7 +23883,7 @@
         "常规课包"
       ],
       "bindRate": 93.3,
-      "joinRate": 93.3,
+      "joinRate": 100.0,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 93.3,
@@ -23915,7 +23915,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 96.6,
+      "joinRate": 97.6,
       "confirmRate": 51.7,
       "attendRate": 49.8,
       "coverRate": 98.6,
@@ -24107,7 +24107,7 @@
         "常规课包"
       ],
       "bindRate": 99.2,
-      "joinRate": 94.7,
+      "joinRate": 95.4,
       "confirmRate": 51.5,
       "attendRate": 21.6,
       "coverRate": 96.7,
@@ -24171,7 +24171,7 @@
         "常规课包"
       ],
       "bindRate": 99.7,
-      "joinRate": 94.2,
+      "joinRate": 94.6,
       "confirmRate": 56.9,
       "attendRate": 48.5,
       "coverRate": 99.3,
@@ -24203,7 +24203,7 @@
         "常规课包"
       ],
       "bindRate": 98.2,
-      "joinRate": 90.1,
+      "joinRate": 91.7,
       "confirmRate": 63.1,
       "attendRate": 54.1,
       "coverRate": 96.4,
@@ -24299,7 +24299,7 @@
         "常规课包"
       ],
       "bindRate": 99.2,
-      "joinRate": 94.9,
+      "joinRate": 95.6,
       "confirmRate": 50.5,
       "attendRate": 40.8,
       "coverRate": 99.0,
@@ -24331,7 +24331,7 @@
         "常规课包"
       ],
       "bindRate": 96.7,
-      "joinRate": 90.0,
+      "joinRate": 93.1,
       "confirmRate": 73.3,
       "attendRate": 63.3,
       "coverRate": 96.7,
@@ -24363,7 +24363,7 @@
         "常规课包"
       ],
       "bindRate": 97.5,
-      "joinRate": 93.4,
+      "joinRate": 95.8,
       "confirmRate": 42.0,
       "attendRate": 29.2,
       "coverRate": 97.2,
@@ -24427,7 +24427,7 @@
         "常规课包"
       ],
       "bindRate": 97.7,
-      "joinRate": 91.5,
+      "joinRate": 93.6,
       "confirmRate": 37.9,
       "attendRate": 37.4,
       "coverRate": 96.1,
@@ -24459,7 +24459,7 @@
         "常规课包"
       ],
       "bindRate": 96.9,
-      "joinRate": 89.6,
+      "joinRate": 92.5,
       "confirmRate": 15.6,
       "attendRate": 15.6,
       "coverRate": 93.8,
@@ -24491,7 +24491,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 97.8,
+      "joinRate": 98.6,
       "confirmRate": 89.4,
       "attendRate": 81.1,
       "coverRate": 99.1,
@@ -24555,7 +24555,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 97.0,
+      "joinRate": 97.9,
       "confirmRate": 92.5,
       "attendRate": 78.0,
       "coverRate": 97.6,
@@ -24587,7 +24587,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 98.2,
+      "joinRate": 99.1,
       "confirmRate": 96.5,
       "attendRate": 91.2,
       "coverRate": 97.4,
@@ -24618,7 +24618,7 @@
         "常规课包"
       ],
       "bindRate": 95.2,
-      "joinRate": 90.6,
+      "joinRate": 95.2,
       "confirmRate": 91.8,
       "attendRate": 91.8,
       "coverRate": 86.3,
@@ -24650,7 +24650,7 @@
         "常规课包"
       ],
       "bindRate": 98.7,
-      "joinRate": 96.7,
+      "joinRate": 98.0,
       "confirmRate": 66.0,
       "attendRate": 57.8,
       "coverRate": 98.0,
@@ -24682,7 +24682,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 94.0,
+      "joinRate": 94.9,
       "confirmRate": 76.0,
       "attendRate": 64.0,
       "coverRate": 99.0,
@@ -24714,7 +24714,7 @@
         "常规课包"
       ],
       "bindRate": 97.0,
-      "joinRate": 91.6,
+      "joinRate": 94.4,
       "confirmRate": 33.7,
       "attendRate": 29.1,
       "coverRate": 97.0,
@@ -24746,7 +24746,7 @@
         "常规课包"
       ],
       "bindRate": 94.2,
-      "joinRate": 89.0,
+      "joinRate": 94.4,
       "confirmRate": 52.3,
       "attendRate": 40.7,
       "coverRate": 94.2,
@@ -24778,7 +24778,7 @@
         "常规课包"
       ],
       "bindRate": 98.7,
-      "joinRate": 93.5,
+      "joinRate": 94.7,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 12.4,
@@ -24842,7 +24842,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 93.4,
+      "joinRate": 95.2,
       "confirmRate": 53.8,
       "attendRate": 53.6,
       "coverRate": 97.8,
@@ -24874,7 +24874,7 @@
         "常规课包"
       ],
       "bindRate": 94.8,
-      "joinRate": 87.1,
+      "joinRate": 91.8,
       "confirmRate": 1.9,
       "attendRate": 1.9,
       "coverRate": 94.8,
@@ -24906,7 +24906,7 @@
         "常规课包"
       ],
       "bindRate": 94.0,
-      "joinRate": 83.9,
+      "joinRate": 89.3,
       "confirmRate": 29.4,
       "attendRate": 25.8,
       "coverRate": 93.1,
@@ -24970,7 +24970,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 97.0,
+      "joinRate": 97.7,
       "confirmRate": 77.2,
       "attendRate": 66.8,
       "coverRate": 99.3,
@@ -25034,7 +25034,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 98.0,
+      "joinRate": 98.5,
       "confirmRate": 7.9,
       "attendRate": 6.1,
       "coverRate": 98.7,
@@ -25098,7 +25098,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 95.4,
+      "joinRate": 96.3,
       "confirmRate": 67.1,
       "attendRate": 59.7,
       "coverRate": 97.8,
@@ -25130,7 +25130,7 @@
         "常规课包"
       ],
       "bindRate": 96.8,
-      "joinRate": 93.7,
+      "joinRate": 96.7,
       "confirmRate": 75.8,
       "attendRate": 63.2,
       "coverRate": 96.8,
@@ -25162,7 +25162,7 @@
         "常规课包"
       ],
       "bindRate": 98.9,
-      "joinRate": 96.7,
+      "joinRate": 97.8,
       "confirmRate": 66.9,
       "attendRate": 62.1,
       "coverRate": 97.8,
@@ -25194,7 +25194,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 95.8,
+      "joinRate": 97.4,
       "confirmRate": 63.6,
       "attendRate": 55.9,
       "coverRate": 96.6,
@@ -25226,7 +25226,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 94.8,
+      "joinRate": 95.9,
       "confirmRate": 49.1,
       "attendRate": 48.3,
       "coverRate": 98.6,
@@ -25258,7 +25258,7 @@
         "常规课包"
       ],
       "bindRate": 98.0,
-      "joinRate": 94.7,
+      "joinRate": 96.6,
       "confirmRate": 2.0,
       "attendRate": 1.3,
       "coverRate": 98.0,
@@ -25290,7 +25290,7 @@
         "常规课包"
       ],
       "bindRate": 99.7,
-      "joinRate": 95.1,
+      "joinRate": 95.4,
       "confirmRate": 63.1,
       "attendRate": 57.1,
       "coverRate": 99.7,
@@ -25322,7 +25322,7 @@
         "常规课包"
       ],
       "bindRate": 97.4,
-      "joinRate": 96.6,
+      "joinRate": 99.1,
       "confirmRate": 76.1,
       "attendRate": 70.9,
       "coverRate": 97.4,
@@ -25354,7 +25354,7 @@
         "常规课包"
       ],
       "bindRate": 98.0,
-      "joinRate": 90.7,
+      "joinRate": 92.5,
       "confirmRate": 33.0,
       "attendRate": 29.0,
       "coverRate": 67.3,
@@ -25418,7 +25418,7 @@
         "常规课包"
       ],
       "bindRate": 99.2,
-      "joinRate": 97.7,
+      "joinRate": 98.5,
       "confirmRate": 50.6,
       "attendRate": 47.3,
       "coverRate": 99.0,
@@ -25482,7 +25482,7 @@
         "常规课包"
       ],
       "bindRate": 97.8,
-      "joinRate": 96.8,
+      "joinRate": 99.0,
       "confirmRate": 66.1,
       "attendRate": 55.6,
       "coverRate": 96.0,
@@ -25514,7 +25514,7 @@
         "常规课包"
       ],
       "bindRate": 97.3,
-      "joinRate": 94.5,
+      "joinRate": 97.2,
       "confirmRate": 58.9,
       "attendRate": 46.6,
       "coverRate": 95.9,
@@ -25546,7 +25546,7 @@
         "常规课包"
       ],
       "bindRate": 99.7,
-      "joinRate": 96.9,
+      "joinRate": 97.2,
       "confirmRate": 32.6,
       "attendRate": 25.3,
       "coverRate": 97.7,
@@ -25610,7 +25610,7 @@
         "常规课包"
       ],
       "bindRate": 99.5,
-      "joinRate": 97.9,
+      "joinRate": 98.4,
       "confirmRate": 54.0,
       "attendRate": 47.3,
       "coverRate": 99.2,
@@ -25642,7 +25642,7 @@
         "常规课包"
       ],
       "bindRate": 96.9,
-      "joinRate": 92.7,
+      "joinRate": 95.7,
       "confirmRate": 60.4,
       "attendRate": 52.1,
       "coverRate": 96.9,
@@ -25674,7 +25674,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 95.7,
+      "joinRate": 97.3,
       "confirmRate": 68.1,
       "attendRate": 67.1,
       "coverRate": 98.0,
@@ -25706,7 +25706,7 @@
         "常规课包"
       ],
       "bindRate": 97.1,
-      "joinRate": 93.5,
+      "joinRate": 96.3,
       "confirmRate": 25.2,
       "attendRate": 25.2,
       "coverRate": 95.0,
@@ -25738,7 +25738,7 @@
         "常规课包"
       ],
       "bindRate": 98.5,
-      "joinRate": 97.0,
+      "joinRate": 98.5,
       "confirmRate": 71.2,
       "attendRate": 59.5,
       "coverRate": 98.5,
@@ -25770,7 +25770,7 @@
         "常规课包"
       ],
       "bindRate": 96.7,
-      "joinRate": 90.2,
+      "joinRate": 93.3,
       "confirmRate": 67.4,
       "attendRate": 58.7,
       "coverRate": 96.7,
@@ -25802,7 +25802,7 @@
         "常规课包"
       ],
       "bindRate": 97.9,
-      "joinRate": 93.4,
+      "joinRate": 95.4,
       "confirmRate": 86.1,
       "attendRate": 77.0,
       "coverRate": 96.7,
@@ -25866,7 +25866,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 99.0,
+      "joinRate": 99.7,
       "confirmRate": 75.7,
       "attendRate": 64.5,
       "coverRate": 97.7,
@@ -25930,7 +25930,7 @@
         "常规课包"
       ],
       "bindRate": 97.1,
-      "joinRate": 89.3,
+      "joinRate": 92.0,
       "confirmRate": 27.5,
       "attendRate": 26.3,
       "coverRate": 95.7,
@@ -25962,7 +25962,7 @@
         "常规课包"
       ],
       "bindRate": 93.1,
-      "joinRate": 85.2,
+      "joinRate": 91.5,
       "confirmRate": 22.2,
       "attendRate": 20.1,
       "coverRate": 91.0,
@@ -25994,7 +25994,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 95.8,
+      "joinRate": 96.7,
       "confirmRate": 67.6,
       "attendRate": 62.2,
       "coverRate": 98.8,
@@ -26026,7 +26026,7 @@
         "常规课包"
       ],
       "bindRate": 96.2,
-      "joinRate": 86.8,
+      "joinRate": 90.2,
       "confirmRate": 69.8,
       "attendRate": 67.9,
       "coverRate": 96.2,
@@ -26090,7 +26090,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 98.1,
+      "joinRate": 100.0,
       "confirmRate": 94.4,
       "attendRate": 68.5,
       "coverRate": 98.1,
@@ -26122,7 +26122,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 93.2,
+      "joinRate": 94.2,
       "confirmRate": 19.9,
       "attendRate": 19.9,
       "coverRate": 96.9,
@@ -26154,7 +26154,7 @@
         "常规课包"
       ],
       "bindRate": 94.1,
-      "joinRate": 87.3,
+      "joinRate": 92.7,
       "confirmRate": 45.1,
       "attendRate": 45.1,
       "coverRate": 92.2,
@@ -26186,7 +26186,7 @@
         "常规课包"
       ],
       "bindRate": 94.4,
-      "joinRate": 85.8,
+      "joinRate": 90.9,
       "confirmRate": 48.1,
       "attendRate": 41.7,
       "coverRate": 93.0,
@@ -26218,7 +26218,7 @@
         "常规课包"
       ],
       "bindRate": 92.0,
-      "joinRate": 79.6,
+      "joinRate": 86.5,
       "confirmRate": 67.9,
       "attendRate": 51.1,
       "coverRate": 92.0,
@@ -26249,7 +26249,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 96.9,
+      "joinRate": 97.8,
       "confirmRate": 14.1,
       "attendRate": 11.0,
       "coverRate": 98.7,
@@ -26281,7 +26281,7 @@
         "常规课包"
       ],
       "bindRate": 96.9,
-      "joinRate": 90.3,
+      "joinRate": 93.1,
       "confirmRate": 64.9,
       "attendRate": 63.8,
       "coverRate": 96.4,
@@ -26313,7 +26313,7 @@
         "常规课包"
       ],
       "bindRate": 91.7,
-      "joinRate": 83.3,
+      "joinRate": 90.9,
       "confirmRate": 1.4,
       "attendRate": 0.0,
       "coverRate": 90.3,
@@ -26345,7 +26345,7 @@
         "常规课包"
       ],
       "bindRate": 99.7,
-      "joinRate": 95.9,
+      "joinRate": 96.2,
       "confirmRate": 49.2,
       "attendRate": 48.4,
       "coverRate": 99.2,
@@ -26409,7 +26409,7 @@
         "常规课包"
       ],
       "bindRate": 95.9,
-      "joinRate": 87.7,
+      "joinRate": 91.4,
       "confirmRate": 32.8,
       "attendRate": 29.3,
       "coverRate": 93.5,
@@ -26441,7 +26441,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 88.4,
+      "joinRate": 90.1,
       "confirmRate": 30.3,
       "attendRate": 23.2,
       "coverRate": 94.8,
@@ -26473,7 +26473,7 @@
         "常规课包"
       ],
       "bindRate": 98.0,
-      "joinRate": 95.0,
+      "joinRate": 97.0,
       "confirmRate": 0.9,
       "attendRate": 0.5,
       "coverRate": 97.7,
@@ -26505,7 +26505,7 @@
         "常规课包"
       ],
       "bindRate": 95.3,
-      "joinRate": 91.9,
+      "joinRate": 96.3,
       "confirmRate": 3.5,
       "attendRate": 3.5,
       "coverRate": 94.2,
@@ -26537,7 +26537,7 @@
         "常规课包"
       ],
       "bindRate": 98.9,
-      "joinRate": 97.9,
+      "joinRate": 98.9,
       "confirmRate": 95.5,
       "attendRate": 95.5,
       "coverRate": 98.7,
@@ -26569,7 +26569,7 @@
         "常规课包"
       ],
       "bindRate": 98.1,
-      "joinRate": 96.3,
+      "joinRate": 98.1,
       "confirmRate": 24.1,
       "attendRate": 0.0,
       "coverRate": 98.1,
@@ -26601,7 +26601,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 96.2,
+      "joinRate": 97.1,
       "confirmRate": 52.7,
       "attendRate": 52.7,
       "coverRate": 99.0,
@@ -26633,7 +26633,7 @@
         "常规课包"
       ],
       "bindRate": 97.3,
-      "joinRate": 93.8,
+      "joinRate": 96.4,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 97.3,
@@ -26665,7 +26665,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 88.4,
+      "joinRate": 89.6,
       "confirmRate": 77.5,
       "attendRate": 65.9,
       "coverRate": 97.2,
@@ -26697,7 +26697,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 88.0,
+      "joinRate": 89.0,
       "confirmRate": 72.3,
       "attendRate": 64.5,
       "coverRate": 98.2,
@@ -26825,7 +26825,7 @@
         "常规课包"
       ],
       "bindRate": 98.2,
-      "joinRate": 93.4,
+      "joinRate": 95.1,
       "confirmRate": 41.7,
       "attendRate": 37.3,
       "coverRate": 97.8,
@@ -26857,7 +26857,7 @@
         "常规课包"
       ],
       "bindRate": 97.0,
-      "joinRate": 94.7,
+      "joinRate": 97.7,
       "confirmRate": 53.4,
       "attendRate": 43.6,
       "coverRate": 96.2,
@@ -26889,7 +26889,7 @@
         "常规课包"
       ],
       "bindRate": 98.9,
-      "joinRate": 96.4,
+      "joinRate": 97.5,
       "confirmRate": 48.9,
       "attendRate": 41.8,
       "coverRate": 98.9,
@@ -26921,7 +26921,7 @@
         "常规课包"
       ],
       "bindRate": 97.2,
-      "joinRate": 91.1,
+      "joinRate": 93.7,
       "confirmRate": 76.6,
       "attendRate": 72.3,
       "coverRate": 85.8,
@@ -26953,7 +26953,7 @@
         "常规课包"
       ],
       "bindRate": 95.0,
-      "joinRate": 78.3,
+      "joinRate": 82.5,
       "confirmRate": 85.0,
       "attendRate": 84.2,
       "coverRate": 64.2,
@@ -26985,7 +26985,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 96.0,
+      "joinRate": 97.7,
       "confirmRate": 39.4,
       "attendRate": 35.1,
       "coverRate": 96.9,
@@ -27017,7 +27017,7 @@
         "常规课包"
       ],
       "bindRate": 98.2,
-      "joinRate": 95.4,
+      "joinRate": 97.2,
       "confirmRate": 39.4,
       "attendRate": 36.7,
       "coverRate": 96.3,
@@ -27049,7 +27049,7 @@
         "常规课包"
       ],
       "bindRate": 99.4,
-      "joinRate": 98.2,
+      "joinRate": 98.8,
       "confirmRate": 61.0,
       "attendRate": 55.5,
       "coverRate": 99.1,
@@ -27081,7 +27081,7 @@
         "常规课包"
       ],
       "bindRate": 98.7,
-      "joinRate": 98.7,
+      "joinRate": 100.0,
       "confirmRate": 76.3,
       "attendRate": 72.4,
       "coverRate": 98.7,
@@ -27113,7 +27113,7 @@
         "常规课包"
       ],
       "bindRate": 97.6,
-      "joinRate": 91.3,
+      "joinRate": 93.6,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 95.2,
@@ -27177,7 +27177,7 @@
         "常规课包"
       ],
       "bindRate": 99.8,
-      "joinRate": 98.1,
+      "joinRate": 98.3,
       "confirmRate": 0.2,
       "attendRate": 0.2,
       "coverRate": 99.5,
@@ -27209,7 +27209,7 @@
         "常规课包"
       ],
       "bindRate": 97.3,
-      "joinRate": 93.6,
+      "joinRate": 96.3,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 96.4,
@@ -27241,7 +27241,7 @@
         "常规课包"
       ],
       "bindRate": 97.3,
-      "joinRate": 92.3,
+      "joinRate": 94.9,
       "confirmRate": 63.4,
       "attendRate": 57.4,
       "coverRate": 97.3,
@@ -27273,7 +27273,7 @@
         "常规课包"
       ],
       "bindRate": 97.8,
-      "joinRate": 89.9,
+      "joinRate": 91.9,
       "confirmRate": 79.0,
       "attendRate": 73.2,
       "coverRate": 97.8,
@@ -27305,7 +27305,7 @@
         "常规课包"
       ],
       "bindRate": 94.4,
-      "joinRate": 88.8,
+      "joinRate": 94.1,
       "confirmRate": 66.7,
       "attendRate": 58.5,
       "coverRate": 94.2,
@@ -27337,7 +27337,7 @@
         "常规课包"
       ],
       "bindRate": 86.2,
-      "joinRate": 75.9,
+      "joinRate": 88.0,
       "confirmRate": 72.4,
       "attendRate": 62.1,
       "coverRate": 86.2,
@@ -27369,7 +27369,7 @@
         "常规课包"
       ],
       "bindRate": 98.9,
-      "joinRate": 93.6,
+      "joinRate": 94.6,
       "confirmRate": 80.7,
       "attendRate": 73.5,
       "coverRate": 98.0,
@@ -27401,7 +27401,7 @@
         "常规课包"
       ],
       "bindRate": 96.9,
-      "joinRate": 87.5,
+      "joinRate": 90.3,
       "confirmRate": 86.7,
       "attendRate": 82.0,
       "coverRate": 94.5,
@@ -27433,7 +27433,7 @@
         "常规课包"
       ],
       "bindRate": 95.9,
-      "joinRate": 91.5,
+      "joinRate": 95.5,
       "confirmRate": 76.1,
       "attendRate": 70.5,
       "coverRate": 82.4,
@@ -27465,7 +27465,7 @@
         "常规课包"
       ],
       "bindRate": 97.2,
-      "joinRate": 84.1,
+      "joinRate": 86.5,
       "confirmRate": 56.1,
       "attendRate": 49.5,
       "coverRate": 69.2,
@@ -27497,7 +27497,7 @@
         "常规课包"
       ],
       "bindRate": 97.7,
-      "joinRate": 88.9,
+      "joinRate": 91.0,
       "confirmRate": 45.4,
       "attendRate": 40.8,
       "coverRate": 97.3,
@@ -27561,7 +27561,7 @@
         "常规课包"
       ],
       "bindRate": 99.4,
-      "joinRate": 97.3,
+      "joinRate": 97.9,
       "confirmRate": 57.4,
       "attendRate": 51.9,
       "coverRate": 99.0,
@@ -27593,7 +27593,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 97.5,
+      "joinRate": 98.8,
       "confirmRate": 14.8,
       "attendRate": 14.8,
       "coverRate": 98.8,
@@ -27625,7 +27625,7 @@
         "常规课包"
       ],
       "bindRate": 99.3,
-      "joinRate": 96.9,
+      "joinRate": 97.6,
       "confirmRate": 81.9,
       "attendRate": 73.5,
       "coverRate": 98.8,
@@ -27657,7 +27657,7 @@
         "常规课包"
       ],
       "bindRate": 97.6,
-      "joinRate": 94.0,
+      "joinRate": 96.3,
       "confirmRate": 77.1,
       "attendRate": 75.9,
       "coverRate": 97.6,
@@ -27753,7 +27753,7 @@
         "常规课包"
       ],
       "bindRate": 98.6,
-      "joinRate": 98.2,
+      "joinRate": 99.5,
       "confirmRate": 37.9,
       "attendRate": 35.6,
       "coverRate": 98.2,
@@ -27817,7 +27817,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 93.8,
+      "joinRate": 95.0,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 98.3,
@@ -27881,7 +27881,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 96.2,
+      "joinRate": 97.1,
       "confirmRate": 76.1,
       "attendRate": 70.8,
       "coverRate": 98.3,
@@ -27913,7 +27913,7 @@
         "常规课包"
       ],
       "bindRate": 98.7,
-      "joinRate": 88.0,
+      "joinRate": 89.2,
       "confirmRate": 76.0,
       "attendRate": 68.0,
       "coverRate": 98.7,
@@ -27945,7 +27945,7 @@
         "常规课包"
       ],
       "bindRate": 98.6,
-      "joinRate": 96.9,
+      "joinRate": 98.3,
       "confirmRate": 39.7,
       "attendRate": 35.2,
       "coverRate": 98.1,
@@ -27977,7 +27977,7 @@
         "常规课包"
       ],
       "bindRate": 99.2,
-      "joinRate": 96.8,
+      "joinRate": 97.6,
       "confirmRate": 4.8,
       "attendRate": 0.0,
       "coverRate": 99.2,
@@ -28009,7 +28009,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 98.8,
+      "joinRate": 99.2,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 90.1,
@@ -28041,7 +28041,7 @@
         "常规课包"
       ],
       "bindRate": 94.1,
-      "joinRate": 91.2,
+      "joinRate": 96.9,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 94.1,
@@ -28073,7 +28073,7 @@
         "常规课包"
       ],
       "bindRate": 98.4,
-      "joinRate": 95.8,
+      "joinRate": 97.4,
       "confirmRate": 53.8,
       "attendRate": 51.0,
       "coverRate": 98.2,
@@ -28105,7 +28105,7 @@
         "常规课包"
       ],
       "bindRate": 98.7,
-      "joinRate": 93.7,
+      "joinRate": 94.9,
       "confirmRate": 41.8,
       "attendRate": 41.8,
       "coverRate": 97.5,
@@ -28137,7 +28137,7 @@
         "常规课包"
       ],
       "bindRate": 97.3,
-      "joinRate": 96.0,
+      "joinRate": 98.6,
       "confirmRate": 57.6,
       "attendRate": 51.0,
       "coverRate": 97.1,
@@ -28169,7 +28169,7 @@
         "常规课包"
       ],
       "bindRate": 96.9,
-      "joinRate": 82.8,
+      "joinRate": 85.5,
       "confirmRate": 68.8,
       "attendRate": 57.8,
       "coverRate": 96.9,
@@ -28201,7 +28201,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 98.5,
+      "joinRate": 99.0,
       "confirmRate": 83.7,
       "attendRate": 67.2,
       "coverRate": 99.6,
@@ -28265,7 +28265,7 @@
         "常规课包"
       ],
       "bindRate": 99.0,
-      "joinRate": 94.4,
+      "joinRate": 95.3,
       "confirmRate": 70.9,
       "attendRate": 0.0,
       "coverRate": 10.3,
@@ -28297,7 +28297,7 @@
         "常规课包"
       ],
       "bindRate": 96.8,
-      "joinRate": 81.7,
+      "joinRate": 84.4,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 11.8,
@@ -28329,7 +28329,7 @@
         "常规课包"
       ],
       "bindRate": 98.8,
-      "joinRate": 92.4,
+      "joinRate": 93.5,
       "confirmRate": 19.0,
       "attendRate": 15.5,
       "coverRate": 38.6,
@@ -28361,7 +28361,7 @@
         "常规课包"
       ],
       "bindRate": 94.8,
-      "joinRate": 72.7,
+      "joinRate": 76.7,
       "confirmRate": 0.0,
       "attendRate": 0.0,
       "coverRate": 26.0,
@@ -28393,7 +28393,7 @@
         "常规课包"
       ],
       "bindRate": 97.2,
-      "joinRate": 95.0,
+      "joinRate": 97.7,
       "confirmRate": 74.7,
       "attendRate": 69.1,
       "coverRate": 97.2,
@@ -28425,7 +28425,7 @@
         "常规课包"
       ],
       "bindRate": 94.3,
-      "joinRate": 85.7,
+      "joinRate": 90.9,
       "confirmRate": 62.9,
       "attendRate": 62.9,
       "coverRate": 94.3,
@@ -28457,7 +28457,7 @@
         "常规课包"
       ],
       "bindRate": 99.6,
-      "joinRate": 96.4,
+      "joinRate": 96.8,
       "confirmRate": 63.1,
       "attendRate": 51.8,
       "coverRate": 95.2,
@@ -28585,7 +28585,7 @@
         "常规课包"
       ],
       "bindRate": 97.1,
-      "joinRate": 90.9,
+      "joinRate": 93.5,
       "confirmRate": 67.1,
       "attendRate": 57.4,
       "coverRate": 96.9,
@@ -28617,7 +28617,7 @@
         "常规课包"
       ],
       "bindRate": 98.7,
-      "joinRate": 84.1,
+      "joinRate": 85.2,
       "confirmRate": 79.6,
       "attendRate": 65.0,
       "coverRate": 97.5,
@@ -28649,7 +28649,7 @@
         "常规课包"
       ],
       "bindRate": 99.7,
-      "joinRate": 95.0,
+      "joinRate": 95.3,
       "confirmRate": 40.7,
       "attendRate": 35.3,
       "coverRate": 96.5,
@@ -28841,7 +28841,7 @@
         "常规课包"
       ],
       "bindRate": 97.2,
-      "joinRate": 93.1,
+      "joinRate": 95.8,
       "confirmRate": 81.2,
       "attendRate": 76.9,
       "coverRate": 96.5,
@@ -28873,7 +28873,7 @@
         "常规课包"
       ],
       "bindRate": 81.8,
-      "joinRate": 59.1,
+      "joinRate": 72.2,
       "confirmRate": 81.8,
       "attendRate": 77.3,
       "coverRate": 81.8,
@@ -28905,7 +28905,7 @@
         "常规课包"
       ],
       "bindRate": 98.3,
-      "joinRate": 90.9,
+      "joinRate": 92.5,
       "confirmRate": 82.1,
       "attendRate": 74.2,
       "coverRate": 95.9,
@@ -28937,7 +28937,7 @@
         "常规课包"
       ],
       "bindRate": 97.3,
-      "joinRate": 88.6,
+      "joinRate": 91.1,
       "confirmRate": 86.4,
       "attendRate": 58.2,
       "coverRate": 96.8,
@@ -28969,7 +28969,7 @@
         "常规课包"
       ],
       "bindRate": 99.1,
-      "joinRate": 95.8,
+      "joinRate": 96.7,
       "confirmRate": 75.4,
       "attendRate": 64.0,
       "coverRate": 98.5,
@@ -29033,7 +29033,7 @@
         "常规课包"
       ],
       "bindRate": 96.6,
-      "joinRate": 94.0,
+      "joinRate": 97.3,
       "confirmRate": 12.5,
       "attendRate": 12.5,
       "coverRate": 37.0,
@@ -29065,7 +29065,7 @@
         "常规课包"
       ],
       "bindRate": 92.6,
-      "joinRate": 81.9,
+      "joinRate": 88.5,
       "confirmRate": 3.2,
       "attendRate": 3.2,
       "coverRate": 23.4,
