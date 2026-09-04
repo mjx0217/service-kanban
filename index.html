@@ -500,10 +500,9 @@ function applyFilters() {
     cts = cts.filter(c => (c.name || '').includes(currentCtSearch));
   }
 
-  // ===== 2. 教学组汇总：从 pkgSrc 按 group 聚合 =====（subjects筛选不影响group）
+  // ===== 2. 教学组汇总：从 cts（已应用学科筛选）按 group 聚合 =====
   const grpAgg = {};
-  pkgSrc.forEach(ct => {
-    if (ct.base !== '沈阳') return;
+  cts.forEach(ct => {
     const g = ct.group || '未知';
     if (!grpAgg[g]) {
       grpAgg[g] = { base: '沈阳', group: g, inClassCount:0, bindCount:0, joinGroupCount:0,
@@ -529,23 +528,25 @@ function applyFilters() {
     return obj;
   });
 
-  // ===== 3. 学科汇总：从 pkgSrc 按 subject 聚合 =====（subjects筛选不影响subject聚合）
+  // ===== 3. 学科汇总：从 cts（已应用学科筛选）按 subject 聚合 =====
   const subjAgg = {};
-  pkgSrc.forEach(ct => {
-    if (ct.base !== '沈阳') return;
+  // 如果有学科筛选，只展示选中的学科；否则展示全部学科
+  const targetSubjects = currentSubjects.length > 0 ? currentSubjects : (cts.flatMap(c => c.subjects || [])).filter((v,i,a) => a.indexOf(v) === i).sort();
+  targetSubjects.forEach(subj => {
+    subjAgg[subj] = { base: '沈阳', subject: subj, inClassCount:0, bindCount:0, joinGroupCount:0,
+      coverCount:0, interactCount:0, activeCount:0, confirmCount:0, attendCount:0, unbindCount:0,
+      weightedRespTime:0 };
+  });
+  cts.forEach(ct => {
     (ct.subjects || []).forEach(subj => {
-      if (!subjAgg[subj]) {
-        subjAgg[subj] = { base: '沈阳', subject: subj, inClassCount:0, bindCount:0, joinGroupCount:0,
-          coverCount:0, interactCount:0, activeCount:0, confirmCount:0, attendCount:0, unbindCount:0,
-          weightedRespTime:0 };
-      }
+      if (!subjAgg[subj]) return; // 跳过非目标学科
       ['inClassCount','bindCount','joinGroupCount','coverCount','interactCount',
        'activeCount','confirmCount','attendCount','unbindCount']
         .forEach(k => subjAgg[subj][k] += ct[k] || 0);
       subjAgg[subj].weightedRespTime += (ct.avgRespTime || 0) * ct.inClassCount;
     });
   });
-  let subjects = Object.keys(subjAgg).sort().map(subj => {
+  let subjects = targetSubjects.map(subj => {
     const ic = subjAgg[subj].inClassCount || 1;
     const obj = { ...subjAgg[subj] };
     obj.avgRespTime = ic > 0 ? Math.round(subjAgg[subj].weightedRespTime / ic * 10) / 10 : 0;
