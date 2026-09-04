@@ -227,7 +227,7 @@ tbody td {
 <body>
 
 <div class="header">
-  <h1>📊 <span id="boardTitle">沈阳基地·服务沟通数据看板</span></h1>
+  <h1>📊 <span id="boardTitle">沈阳基地·服务沟通数据看板</span> <span id="updateTime" style="font-size:13px;font-weight:normal;opacity:0.75;margin-left:10px;"></span></h1>
   <div class="header-right">
     <div class="header-stat">
       <div class="header-stat-val" id="totalInClass">-</div>
@@ -438,6 +438,9 @@ function loadData() {
     .then(r => r.json())
     .then(d => {
       rawData = d;
+      if (d.meta && d.meta.updated) {
+        document.getElementById('updateTime').textContent = '数据更新：' + d.meta.updated;
+      }
       buildCapsules();
       applyFilters();
     });
