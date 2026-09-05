@@ -253,7 +253,7 @@ tbody td {
       <div class="header-stat-val" id="totalAvgRespTime">-</div>
       <div class="header-stat-label">响应时长(近七日)(分)</div>
     </div>
-    <button class="refresh-btn" onclick="location.reload()">🔄 刷新数据</button>
+    <button class="refresh-btn" onclick="forceReload()">🔄 刷新数据</button>
   </div>
 </div>
 
@@ -434,7 +434,7 @@ function calcRates(row) {
 }
 
 function loadData() {
-  fetch('kanban_data.json')
+  fetch('kanban_data.json?t=' + Date.now())
     .then(r => r.json())
     .then(d => {
       rawData = d;
@@ -443,6 +443,29 @@ function loadData() {
       }
       buildCapsules();
       applyFilters();
+    });
+}
+
+// 强制刷新：绕过缓存，确保拉取最新数据，等同 Ctrl+Shift+R
+function forceReload() {
+  rawData = null;
+  const ts = Date.now();
+  fetch('kanban_data.json?t=' + ts)
+    .then(r => r.json())
+    .then(d => {
+      rawData = d;
+      if (d.meta && d.meta.updated) {
+        document.getElementById('updateTime').textContent = '数据更新：' + d.meta.updated;
+      }
+      buildCapsules();
+      applyFilters();
+      // 给页面 URL 加时间戳，强制刷新整个页面（含 CSS/JS）
+      const url = new URL(location.href);
+      url.searchParams.set('__r', ts);
+      location.href = url.toString();
+    })
+    .catch(() => {
+      location.href = location.pathname + '?__r=' + Date.now();
     });
 }
 
