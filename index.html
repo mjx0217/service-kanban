@@ -301,8 +301,6 @@ tbody td {
           <th data-col="bindRate">绑定率 ↕</th>
           <th data-col="joinRate">进群率 ↕</th>
           <th data-col="unbindCount">未绑定人次 ↕</th>
-          <th data-col="confirmRate">预出勤确认率 ↕</th>
-          <th data-col="attendRate">预出勤率 ↕</th>
           <th data-col="coverRate">覆盖率 ↕</th>
           <th data-col="interactRate">交互率 ↕</th>
           <th data-col="activeRate">活跃度 ↕</th>
@@ -329,8 +327,6 @@ tbody td {
           <th data-col="bindRate">绑定率 ↕</th>
           <th data-col="joinRate">进群率 ↕</th>
           <th data-col="unbindCount">未绑定人次 ↕</th>
-          <th data-col="confirmRate">预出勤确认率 ↕</th>
-          <th data-col="attendRate">预出勤率 ↕</th>
           <th data-col="coverRate">覆盖率 ↕</th>
           <th data-col="interactRate">交互率 ↕</th>
           <th data-col="activeRate">活跃度 ↕</th>
@@ -367,8 +363,6 @@ tbody td {
           <th data-col="bindRate">绑定率 ↕</th>
           <th data-col="joinRate">进群率 ↕</th>
           <th data-col="unbindCount">未绑定人次 ↕</th>
-          <th data-col="confirmRate">预出勤确认率 ↕</th>
-          <th data-col="attendRate">预出勤率 ↕</th>
           <th data-col="coverRate">覆盖率 ↕</th>
           <th data-col="interactRate">交互率 ↕</th>
           <th data-col="activeRate">活跃度 ↕</th>
@@ -425,8 +419,6 @@ function calcRates(row) {
   return {
     bindRate: pct(row.bindCount, ic),
     joinRate: pct(row.joinGroupCount, ic),
-    confirmRate: pct(row.confirmCount, ic),
-    attendRate: pct(row.attendCount, ic),
     coverRate: pct(row.coverCount, ic),
     interactRate: pct(row.interactCount, ic),
     activeRate: pct(row.activeCount, ic),
@@ -543,8 +535,6 @@ function applyFilters() {
     obj.avgRespTime = ic > 0 ? Math.round(grpAgg[grp].weightedRespTime / ic * 10) / 10 : 0;
     obj.bindRate = pct(obj.bindCount, ic);
     obj.joinRate = pct(obj.joinGroupCount, ic);
-    obj.confirmRate = pct(obj.confirmCount, ic);
-    obj.attendRate = pct(obj.attendCount, ic);
     obj.coverRate = pct(obj.coverCount, ic);
     obj.interactRate = pct(obj.interactCount, ic);
     obj.activeRate = pct(obj.activeCount, ic);
@@ -575,8 +565,6 @@ function applyFilters() {
     obj.avgRespTime = ic > 0 ? Math.round(subjAgg[subj].weightedRespTime / ic * 10) / 10 : 0;
     obj.bindRate = pct(obj.bindCount, ic);
     obj.joinRate = pct(obj.joinGroupCount, ic);
-    obj.confirmRate = pct(obj.confirmCount, ic);
-    obj.attendRate = pct(obj.attendCount, ic);
     obj.coverRate = pct(obj.coverCount, ic);
     obj.interactRate = pct(obj.interactCount, ic);
     obj.activeRate = pct(obj.activeCount, ic);
@@ -650,8 +638,6 @@ function renderSubjectTable() {
   const _v = {
     bindRate: sorted.map(r => r.bindRate),
     joinRate: sorted.map(r => r.joinRate),
-    confirmRate: sorted.map(r => r.confirmRate),
-    attendRate: sorted.map(r => r.attendRate),
     coverRate: sorted.map(r => r.coverRate),
     interactRate: sorted.map(r => r.interactRate),
     activeRate: sorted.map(r => r.activeRate),
@@ -663,8 +649,6 @@ function renderSubjectTable() {
       '<td class="td-rate ' + rateColor(r.bindRate,'bindRate',_v.bindRate) + '">' + r.bindRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.joinRate,'joinRate',_v.joinRate) + '">' + r.joinRate + '%</td>' +
       '<td class="td-num">' + fmt(r.unbindCount) + '</td>' +
-      '<td class="td-rate ' + rateColor(r.confirmRate,'confirmRate',_v.confirmRate) + '">' + r.confirmRate + '%</td>' +
-      '<td class="td-rate ' + rateColor(r.attendRate,'attendRate',_v.attendRate) + '">' + r.attendRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.coverRate,'coverRate',_v.coverRate) + '">' + r.coverRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.interactRate,'interactRate',_v.interactRate) + '">' + r.interactRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.activeRate,'activeRate',_v.activeRate) + '">' + r.activeRate + '%</td>' +
@@ -684,8 +668,6 @@ function renderGroupTable() {
   const _v = {
     bindRate: sorted.map(r => r.bindRate),
     joinRate: sorted.map(r => r.joinRate),
-    confirmRate: sorted.map(r => r.confirmRate),
-    attendRate: sorted.map(r => r.attendRate),
     coverRate: sorted.map(r => r.coverRate),
     interactRate: sorted.map(r => r.interactRate),
     activeRate: sorted.map(r => r.activeRate),
@@ -697,8 +679,6 @@ function renderGroupTable() {
       '<td class="td-rate ' + rateColor(r.bindRate,'bindRate',_v.bindRate) + '">' + r.bindRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.joinRate,'joinRate',_v.joinRate) + '">' + r.joinRate + '%</td>' +
       '<td class="td-num">' + fmt(r.unbindCount) + '</td>' +
-      '<td class="td-rate ' + rateColor(r.confirmRate,'confirmRate',_v.confirmRate) + '">' + r.confirmRate + '%</td>' +
-      '<td class="td-rate ' + rateColor(r.attendRate,'attendRate',_v.attendRate) + '">' + r.attendRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.coverRate,'coverRate',_v.coverRate) + '">' + r.coverRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.interactRate,'interactRate',_v.interactRate) + '">' + r.interactRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.activeRate,'activeRate',_v.activeRate) + '">' + r.activeRate + '%</td>' +
@@ -725,8 +705,6 @@ function renderCtTable() {
   const _v = {
     bindRate: sorted.map(r => r.bindRate),
     joinRate: sorted.map(r => r.joinRate),
-    confirmRate: sorted.map(r => r.confirmRate),
-    attendRate: sorted.map(r => r.attendRate),
     coverRate: sorted.map(r => r.coverRate),
     interactRate: sorted.map(r => r.interactRate),
     activeRate: sorted.map(r => r.activeRate),
@@ -739,8 +717,6 @@ function renderCtTable() {
       '<td class="td-rate ' + rateColor(c.bindRate,'bindRate',_v.bindRate) + '">' + c.bindRate + '%</td>' +
       '<td class="td-rate ' + rateColor(c.joinRate,'joinRate',_v.joinRate) + '">' + c.joinRate + '%</td>' +
       '<td class="td-num">' + fmt(c.unbindCount) + '</td>' +
-      '<td class="td-rate ' + rateColor(c.confirmRate,'confirmRate',_v.confirmRate) + '">' + c.confirmRate + '%</td>' +
-      '<td class="td-rate ' + rateColor(c.attendRate,'attendRate',_v.attendRate) + '">' + c.attendRate + '%</td>' +
       '<td class="td-rate ' + rateColor(c.coverRate,'coverRate',_v.coverRate) + '">' + c.coverRate + '%</td>' +
       '<td class="td-rate ' + rateColor(c.interactRate,'interactRate',_v.interactRate) + '">' + c.interactRate + '%</td>' +
       '<td class="td-rate ' + rateColor(c.activeRate,'activeRate',_v.activeRate) + '">' + c.activeRate + '%</td>' +
