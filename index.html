@@ -446,7 +446,7 @@ function rateColor(val, col, localVals) {
 }
 
 function fmt(n) { return n.toLocaleString(); }
-function pct(a, b) { return b ? Math.round(a / b * 100 * 10) / 10 : 0; }
+function pct(a, b) { return b ? Math.round(a / b * 100 * 100) / 100 : 0; }
 
 function calcRates(row) {
   const ic = row.inClassCount || 1;
@@ -556,10 +556,12 @@ function applyFilters() {
     if (!grpAgg[g]) {
       grpAgg[g] = { base: '沈阳', group: g, inClassCount:0, bindCount:0, joinGroupCount:0,
         coverCount:0, interactCount:0, activeCount:0, confirmCount:0, attendCount:0, unbindCount:0,
+        zero3Count:0, onePayCount:0, zero3OnePayCount:0,
         weightedRespTime:0 };
     }
     ['inClassCount','bindCount','joinGroupCount','coverCount','interactCount',
-     'activeCount','confirmCount','attendCount','unbindCount']
+     'activeCount','confirmCount','attendCount','unbindCount',
+     'zero3Count','onePayCount','zero3OnePayCount']
       .forEach(k => grpAgg[g][k] += ct[k] || 0);
     grpAgg[g].weightedRespTime += (ct.avgRespTime || 0) * ct.inClassCount;
   });
@@ -572,6 +574,9 @@ function applyFilters() {
     obj.coverRate = pct(obj.coverCount, ic);
     obj.interactRate = pct(obj.interactCount, ic);
     obj.activeRate = pct(obj.activeCount, ic);
+    obj.onePayRate = pct(obj.onePayCount, ic);
+    obj.zero3Rate = pct(obj.zero3Count, ic);
+    obj.zero3OnePayRate = pct(obj.zero3OnePayCount, ic);
     return obj;
   });
 
@@ -582,13 +587,15 @@ function applyFilters() {
   targetSubjects.forEach(subj => {
     subjAgg[subj] = { base: '沈阳', subject: subj, inClassCount:0, bindCount:0, joinGroupCount:0,
       coverCount:0, interactCount:0, activeCount:0, confirmCount:0, attendCount:0, unbindCount:0,
+      zero3Count:0, onePayCount:0, zero3OnePayCount:0,
       weightedRespTime:0 };
   });
   cts.forEach(ct => {
     (ct.subjects || []).forEach(subj => {
       if (!subjAgg[subj]) return; // 跳过非目标学科
       ['inClassCount','bindCount','joinGroupCount','coverCount','interactCount',
-       'activeCount','confirmCount','attendCount','unbindCount']
+       'activeCount','confirmCount','attendCount','unbindCount',
+       'zero3Count','onePayCount','zero3OnePayCount']
         .forEach(k => subjAgg[subj][k] += ct[k] || 0);
       subjAgg[subj].weightedRespTime += (ct.avgRespTime || 0) * ct.inClassCount;
     });
@@ -602,6 +609,9 @@ function applyFilters() {
     obj.coverRate = pct(obj.coverCount, ic);
     obj.interactRate = pct(obj.interactCount, ic);
     obj.activeRate = pct(obj.activeCount, ic);
+    obj.onePayRate = pct(obj.onePayCount, ic);
+    obj.zero3Rate = pct(obj.zero3Count, ic);
+    obj.zero3OnePayRate = pct(obj.zero3OnePayCount, ic);
     return obj;
   });
 
