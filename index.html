@@ -253,6 +253,14 @@ tbody td {
       <div class="header-stat-val" id="totalAvgRespTime">-</div>
       <div class="header-stat-label">响应时长(近七日)(分)</div>
     </div>
+    <div class="header-stat">
+      <div class="header-stat-val green" id="totalOnePayRate">-</div>
+      <div class="header-stat-label">一次付费率</div>
+    </div>
+    <div class="header-stat">
+      <div class="header-stat-val red" id="totalZero3Rate">-</div>
+      <div class="header-stat-label">三零率</div>
+    </div>
     <button class="refresh-btn" onclick="forceReload()">🔄 刷新数据</button>
   </div>
 </div>
@@ -305,7 +313,8 @@ tbody td {
           <th data-col="interactRate">交互率 ↕</th>
           <th data-col="activeRate">活跃度 ↕</th>
           <th data-col="avgRespTime">响应时长(近七日) ↕</th>
-          
+          <th data-col="onePayRate">一次付费率 ↕</th>
+          <th data-col="zero3Rate">三零率 ↕</th>
         </tr>
       </thead>
       <tbody id="subjectBody"></tbody>
@@ -331,7 +340,8 @@ tbody td {
           <th data-col="interactRate">交互率 ↕</th>
           <th data-col="activeRate">活跃度 ↕</th>
           <th data-col="avgRespTime">响应时长(近七日) ↕</th>
-          
+          <th data-col="onePayRate">一次付费率 ↕</th>
+          <th data-col="zero3Rate">三零率 ↕</th>
         </tr>
       </thead>
       <tbody id="groupBody"></tbody>
@@ -367,7 +377,8 @@ tbody td {
           <th data-col="interactRate">交互率 ↕</th>
           <th data-col="activeRate">活跃度 ↕</th>
           <th data-col="avgRespTime">响应时长(近七日) ↕</th>
-          
+          <th data-col="onePayRate">一次付费率 ↕</th>
+          <th data-col="zero3Rate">三零率 ↕</th>
         </tr>
       </thead>
       <tbody id="ctBody"></tbody>
@@ -394,9 +405,20 @@ let expandedCtGroups = new Set();
 // respTimeCol=true 时表示响应时长列：≤15绿，15-20黄，>20红
 function rateColor(val, col, localVals) {
   if (col === 'avgRespTime') {
-    // 响应时长特殊规则
     if (val <= 15) return 'rate-green';
     if (val <= 20) return 'rate-yellow';
+    return 'rate-red';
+  }
+  if (col === 'zero3Rate') {
+    // 三零率：越低越好（反向颜色）
+    const nums = (localVals || []).filter(v => typeof v === 'number' && !isNaN(v));
+    if (nums.length === 0) return 'rate-green';
+    const min = Math.min(...nums), max = Math.max(...nums);
+    const range = max - min;
+    if (range === 0) return 'rate-green';
+    const ratio = (max - val) / range; // 反向：越小越绿
+    if (ratio >= 0.7) return 'rate-green';
+    if (ratio >= 0.4) return 'rate-yellow';
     return 'rate-red';
   }
   const nums = (localVals || []).filter(v => typeof v === 'number' && !isNaN(v));
@@ -582,12 +604,16 @@ function applyFilters() {
   const totalAvgRespTime = groups.length > 0
     ? (groups.reduce((s, r) => s + (r.avgRespTime || 0) * (r.inClassCount || 0), 0) / subjects.reduce((s, r) => s + (r.inClassCount || 0), 0)).toFixed(1)
     : 0;
+  const totalOnePayRate = totalInClass > 0 ? pct(subjects.reduce((s, r) => s + (r.onePayCount || 0), 0), totalInClass) : 0;
+  const totalZero3Rate = totalInClass > 0 ? pct(subjects.reduce((s, r) => s + (r.zero3Count || 0), 0), totalInClass) : 0;
   document.getElementById('totalInClass').textContent = totalInClass.toLocaleString();
   document.getElementById('totalBindRate').textContent = pct(totalBind, totalInClass) + '%';
   document.getElementById('totalUnbindCount').textContent = totalUnbind.toLocaleString();
   document.getElementById('totalCoverRate').textContent = totalCoverRate + '%';
   document.getElementById('totalActiveRate').textContent = totalActiveRate + '%';
   document.getElementById('totalAvgRespTime').textContent = totalAvgRespTime;
+  document.getElementById('totalOnePayRate').textContent = totalOnePayRate + '%';
+  document.getElementById('totalZero3Rate').textContent = totalZero3Rate + '%';
   document.getElementById('boardTitle').textContent = '沈阳基地·服务沟通数据看板' + (currentPkg ? '（' + currentPkg + '）' : '');
 
   // ===== 5. Meta =====
@@ -642,6 +668,8 @@ function renderSubjectTable() {
     interactRate: sorted.map(r => r.interactRate),
     activeRate: sorted.map(r => r.activeRate),
     unbindCount: sorted.map(r => r.unbindCount),
+    onePayRate: sorted.map(r => r.onePayRate),
+    zero3Rate: sorted.map(r => r.zero3Rate),
   };
   tbody.innerHTML = sorted.map(r => {
     return '<tr>' +
@@ -653,6 +681,8 @@ function renderSubjectTable() {
       '<td class="td-rate ' + rateColor(r.interactRate,'interactRate',_v.interactRate) + '">' + r.interactRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.activeRate,'activeRate',_v.activeRate) + '">' + r.activeRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + r.avgRespTime + '</td>' +
+      '<td class="td-rate ' + rateColor(r.onePayRate,'onePayRate',_v.onePayRate) + '">' + r.onePayRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.zero3Rate,'zero3Rate',_v.zero3Rate) + '">' + r.zero3Rate + '%</td>' +
     '</tr>';
   }).join('');
 
@@ -672,6 +702,8 @@ function renderGroupTable() {
     interactRate: sorted.map(r => r.interactRate),
     activeRate: sorted.map(r => r.activeRate),
     unbindCount: sorted.map(r => r.unbindCount),
+    onePayRate: sorted.map(r => r.onePayRate),
+    zero3Rate: sorted.map(r => r.zero3Rate),
   };
   tbody.innerHTML = sorted.map(r => {
     return '<tr>' +
@@ -683,6 +715,8 @@ function renderGroupTable() {
       '<td class="td-rate ' + rateColor(r.interactRate,'interactRate',_v.interactRate) + '">' + r.interactRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.activeRate,'activeRate',_v.activeRate) + '">' + r.activeRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + r.avgRespTime + '</td>' +
+      '<td class="td-rate ' + rateColor(r.onePayRate,'onePayRate',_v.onePayRate) + '">' + r.onePayRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.zero3Rate,'zero3Rate',_v.zero3Rate) + '">' + r.zero3Rate + '%</td>' +
     '</tr>';
   }).join('');
 
@@ -709,6 +743,8 @@ function renderCtTable() {
     interactRate: sorted.map(r => r.interactRate),
     activeRate: sorted.map(r => r.activeRate),
     unbindCount: sorted.map(r => r.unbindCount),
+    onePayRate: sorted.map(r => r.onePayRate),
+    zero3Rate: sorted.map(r => r.zero3Rate),
   };
   tbody.innerHTML = sorted.map(c => {
     return '<tr>' +
@@ -721,6 +757,8 @@ function renderCtTable() {
       '<td class="td-rate ' + rateColor(c.interactRate,'interactRate',_v.interactRate) + '">' + c.interactRate + '%</td>' +
       '<td class="td-rate ' + rateColor(c.activeRate,'activeRate',_v.activeRate) + '">' + c.activeRate + '%</td>' +
       '<td class="td-rate ' + rateColor(c.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + c.avgRespTime + '分</td>' +
+      '<td class="td-rate ' + rateColor(c.onePayRate,'onePayRate',_v.onePayRate) + '">' + c.onePayRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.zero3Rate,'zero3Rate',_v.zero3Rate) + '">' + c.zero3Rate + '%</td>' +
     '</tr>';
   }).join('');
 
