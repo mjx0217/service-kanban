@@ -313,8 +313,9 @@ tbody td {
           <th data-col="interactRate">交互率 ↕</th>
           <th data-col="activeRate">活跃度 ↕</th>
           <th data-col="avgRespTime">响应时长(近七日) ↕</th>
-          <th data-col="onePayRate">一次付费率 ↕</th>
-          <th data-col="zero3Rate">三零率 ↕</th>
+          <th data-col="onePayRate">一次付费占比 ↕</th>
+          <th data-col="zero3Rate">三零占比 ↕</th>
+          <th data-col="weekDrop">较上周下降 ↕</th>
         </tr>
       </thead>
       <tbody id="subjectBody"></tbody>
@@ -340,8 +341,9 @@ tbody td {
           <th data-col="interactRate">交互率 ↕</th>
           <th data-col="activeRate">活跃度 ↕</th>
           <th data-col="avgRespTime">响应时长(近七日) ↕</th>
-          <th data-col="onePayRate">一次付费率 ↕</th>
-          <th data-col="zero3Rate">三零率 ↕</th>
+          <th data-col="onePayRate">一次付费占比 ↕</th>
+          <th data-col="zero3Rate">三零占比 ↕</th>
+          <th data-col="weekDrop">较上周下降 ↕</th>
         </tr>
       </thead>
       <tbody id="groupBody"></tbody>
@@ -377,8 +379,9 @@ tbody td {
           <th data-col="interactRate">交互率 ↕</th>
           <th data-col="activeRate">活跃度 ↕</th>
           <th data-col="avgRespTime">响应时长(近七日) ↕</th>
-          <th data-col="onePayRate">一次付费率 ↕</th>
-          <th data-col="zero3Rate">三零率 ↕</th>
+          <th data-col="onePayRate">一次付费占比 ↕</th>
+          <th data-col="zero3Rate">三零占比 ↕</th>
+          <th data-col="weekDrop">较上周下降 ↕</th>
         </tr>
       </thead>
       <tbody id="ctBody"></tbody>
@@ -416,7 +419,7 @@ function rateColor(val, col, localVals) {
     const min = Math.min(...nums), max = Math.max(...nums);
     const range = max - min;
     if (range === 0) return 'rate-green';
-    const ratio = (max - val) / range; // 反向：越小越绿
+    const ratio = (max - val) / range;
     if (ratio >= 0.7) return 'rate-green';
     if (ratio >= 0.4) return 'rate-yellow';
     return 'rate-red';
@@ -428,10 +431,16 @@ function rateColor(val, col, localVals) {
     const min = Math.min(...nums), max = Math.max(...nums);
     const range = max - min;
     if (range === 0) return 'rate-green';
-    const ratio = (max - val) / range; // 反向：越小越绿
+    const ratio = (max - val) / range;
     if (ratio >= 0.7) return 'rate-green';
     if (ratio >= 0.4) return 'rate-yellow';
     return 'rate-red';
+  }
+  if (col === 'weekDrop') {
+    // weekDrop：正值=改善(绿)，负值=恶化(红)，0=绿
+    if (val > 0) return 'rate-green';
+    if (val < 0) return 'rate-red';
+    return '';
   }
   const nums = (localVals || []).filter(v => typeof v === 'number' && !isNaN(v));
   if (nums.length === 0) return 'rate-green';
@@ -577,6 +586,12 @@ function applyFilters() {
     obj.onePayRate = pct(obj.onePayCount, ic);
     obj.zero3Rate = pct(obj.zero3Count, ic);
     obj.zero3OnePayRate = pct(obj.zero3OnePayCount, ic);
+    // 教学组级别较上周下降
+    const lastGrp = (rawData.__lastRates || {}).groups || {};
+    const lastOpG = lastGrp.lastOnePayRate, lastZ3G = lastGrp.lastZero3Rate;
+    obj.weekDrop = (lastOpG != null && lastZ3G != null)
+      ? +((lastOpG - obj.onePayRate) + (lastZ3G - obj.zero3Rate)).toFixed(2)
+      : null;
     return obj;
   });
 
@@ -612,6 +627,12 @@ function applyFilters() {
     obj.onePayRate = pct(obj.onePayCount, ic);
     obj.zero3Rate = pct(obj.zero3Count, ic);
     obj.zero3OnePayRate = pct(obj.zero3OnePayCount, ic);
+    // 学科级别较上周下降
+    const lastSubj = (rawData.__lastRates || {}).subjects || {};
+    const lastOpS = lastSubj.lastOnePayRate, lastZ3S = lastSubj.lastZero3Rate;
+    obj.weekDrop = (lastOpS != null && lastZ3S != null)
+      ? +((lastOpS - obj.onePayRate) + (lastZ3S - obj.zero3Rate)).toFixed(2)
+      : null;
     return obj;
   });
 
@@ -692,8 +713,12 @@ function renderSubjectTable() {
     unbindCount: sorted.map(r => r.unbindCount),
     onePayRate: sorted.map(r => r.onePayRate),
     zero3Rate: sorted.map(r => r.zero3Rate),
+    weekDrop: sorted.map(r => r.weekDrop),
   };
   tbody.innerHTML = sorted.map(r => {
+    const wd = r.weekDrop !== null && r.weekDrop !== undefined
+      ? '<span class="td-rate ' + rateColor(r.weekDrop,'weekDrop',_v.weekDrop) + '">' + (r.weekDrop >= 0 ? '+' : '') + r.weekDrop + 'pp</span>'
+      : '<span class="td-rate">—</span>';
     return '<tr>' +
       '<td>' + r.subject + '</td>' +
       '<td class="td-rate ' + rateColor(r.bindRate,'bindRate',_v.bindRate) + '">' + r.bindRate + '%</td>' +
@@ -705,6 +730,7 @@ function renderSubjectTable() {
       '<td class="td-rate ' + rateColor(r.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + r.avgRespTime + '</td>' +
       '<td class="td-rate ' + rateColor(r.onePayRate,'onePayRate',_v.onePayRate) + '">' + r.onePayRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.zero3Rate,'zero3Rate',_v.zero3Rate) + '">' + r.zero3Rate + '%</td>' +
+      '<td>' + wd + '</td>' +
     '</tr>';
   }).join('');
 
@@ -726,8 +752,12 @@ function renderGroupTable() {
     unbindCount: sorted.map(r => r.unbindCount),
     onePayRate: sorted.map(r => r.onePayRate),
     zero3Rate: sorted.map(r => r.zero3Rate),
+    weekDrop: sorted.map(r => r.weekDrop),
   };
   tbody.innerHTML = sorted.map(r => {
+    const wd = r.weekDrop !== null && r.weekDrop !== undefined
+      ? '<span class="td-rate ' + rateColor(r.weekDrop,'weekDrop',_v.weekDrop) + '">' + (r.weekDrop >= 0 ? '+' : '') + r.weekDrop + 'pp</span>'
+      : '<span class="td-rate">—</span>';
     return '<tr>' +
       '<td>' + r.group + '</td>' +
       '<td class="td-rate ' + rateColor(r.bindRate,'bindRate',_v.bindRate) + '">' + r.bindRate + '%</td>' +
@@ -739,6 +769,7 @@ function renderGroupTable() {
       '<td class="td-rate ' + rateColor(r.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + r.avgRespTime + '</td>' +
       '<td class="td-rate ' + rateColor(r.onePayRate,'onePayRate',_v.onePayRate) + '">' + r.onePayRate + '%</td>' +
       '<td class="td-rate ' + rateColor(r.zero3Rate,'zero3Rate',_v.zero3Rate) + '">' + r.zero3Rate + '%</td>' +
+      '<td>' + wd + '</td>' +
     '</tr>';
   }).join('');
 
@@ -767,8 +798,12 @@ function renderCtTable() {
     unbindCount: sorted.map(r => r.unbindCount),
     onePayRate: sorted.map(r => r.onePayRate),
     zero3Rate: sorted.map(r => r.zero3Rate),
+    weekDrop: sorted.map(r => r.weekDrop),
   };
   tbody.innerHTML = sorted.map(c => {
+    const wd = c.weekDrop !== null && c.weekDrop !== undefined
+      ? '<span class="td-rate ' + rateColor(c.weekDrop,'weekDrop',_v.weekDrop) + '">' + (c.weekDrop >= 0 ? '+' : '') + c.weekDrop + 'pp</span>'
+      : '<span class="td-rate">—</span>';
     return '<tr>' +
       '<td>' + (c.name || '') + '</td>' +
       '<td>' + (c.group || '未知') + '</td>' +
@@ -781,6 +816,7 @@ function renderCtTable() {
       '<td class="td-rate ' + rateColor(c.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + c.avgRespTime + '分</td>' +
       '<td class="td-rate ' + rateColor(c.onePayRate,'onePayRate',_v.onePayRate) + '">' + c.onePayRate + '%</td>' +
       '<td class="td-rate ' + rateColor(c.zero3Rate,'zero3Rate',_v.zero3Rate) + '">' + c.zero3Rate + '%</td>' +
+      '<td>' + wd + '</td>' +
     '</tr>';
   }).join('');
 
