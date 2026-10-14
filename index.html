@@ -409,8 +409,8 @@ function rateColor(val, col, localVals) {
     if (val <= 20) return 'rate-yellow';
     return 'rate-red';
   }
-  if (col === 'zero3Rate') {
-    // 三零率：越低越好（反向颜色）
+  if (col === 'zero3Rate' || col === 'onePayRate') {
+    // 越高越红（反向颜色）
     const nums = (localVals || []).filter(v => typeof v === 'number' && !isNaN(v));
     if (nums.length === 0) return 'rate-green';
     const min = Math.min(...nums), max = Math.max(...nums);
