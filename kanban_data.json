@@ -34404,95 +34404,1271 @@
     }
   ],
   "__lastRates": {
+    "subjects": {
+      "历史": {
+        "lastOnePayRate": 66.11,
+        "lastZero3Rate": 14.31
+      },
+      "地理": {
+        "lastOnePayRate": 80.84,
+        "lastZero3Rate": 8.96
+      },
+      "数学": {
+        "lastOnePayRate": 43.37,
+        "lastZero3Rate": 1.11
+      },
+      "物理": {
+        "lastOnePayRate": 46.88,
+        "lastZero3Rate": 0.96
+      },
+      "生物": {
+        "lastOnePayRate": 80.42,
+        "lastZero3Rate": 14.87
+      },
+      "英语": {
+        "lastOnePayRate": 37.08,
+        "lastZero3Rate": 0.78
+      },
+      "道德与法治": {
+        "lastOnePayRate": 69.74,
+        "lastZero3Rate": 14.99
+      }
+    },
     "groups": {
       "刘宇": {
-        "lastOnePayRate": 42.48,
+        "lastOnePayRate": 42.47,
         "lastZero3Rate": 1.28
-      },
-      "孟京雷": {
-        "lastOnePayRate": 42.66,
-        "lastZero3Rate": 1.07
-      },
-      "杭禹则": {
-        "lastOnePayRate": 43.1,
-        "lastZero3Rate": 0.98
-      },
-      "王欣": {
-        "lastOnePayRate": 37.29,
-        "lastZero3Rate": 0.68
-      },
-      "郑欣悦": {
-        "lastOnePayRate": 37.29,
-        "lastZero3Rate": 1.19
       },
       "刘鹤鑫": {
         "lastOnePayRate": 44.88,
         "lastZero3Rate": 0.97
       },
-      "张钧瑞": {
-        "lastOnePayRate": 37.32,
+      "孙英哲": {
+        "lastOnePayRate": 47.92,
         "lastZero3Rate": 1.0
       },
-      "魏述博": {
-        "lastOnePayRate": 46.86,
-        "lastZero3Rate": 0.89
+      "孟京雷": {
+        "lastOnePayRate": 43.63,
+        "lastZero3Rate": 1.09
       },
-      "牟春宇": {
-        "lastOnePayRate": 51.63,
-        "lastZero3Rate": 0.94
-      },
-      "李宇娇": {
-        "lastOnePayRate": 41.43,
-        "lastZero3Rate": 1.03
-      },
-      "梁恩泉": {
-        "lastOnePayRate": 42.07,
-        "lastZero3Rate": 1.23
-      },
-      "孙英哲": {
-        "lastOnePayRate": 48.03,
+      "张钧瑞": {
+        "lastOnePayRate": 37.25,
         "lastZero3Rate": 1.0
       },
       "朱太阳": {
-        "lastOnePayRate": 80.79,
-        "lastZero3Rate": 11.96
+        "lastOnePayRate": 80.63,
+        "lastZero3Rate": 11.91
+      },
+      "李宇娇": {
+        "lastOnePayRate": 41.36,
+        "lastZero3Rate": 1.02
+      },
+      "杭禹则": {
+        "lastOnePayRate": 43.64,
+        "lastZero3Rate": 0.99
+      },
+      "梁恩泉": {
+        "lastOnePayRate": 41.97,
+        "lastZero3Rate": 1.21
+      },
+      "牟春宇": {
+        "lastOnePayRate": 51.49,
+        "lastZero3Rate": 0.94
+      },
+      "王欣": {
+        "lastOnePayRate": 37.35,
+        "lastZero3Rate": 0.68
       },
       "缪家新": {
-        "lastOnePayRate": 69.23,
-        "lastZero3Rate": 14.9
-      }
-    },
-    "subjects": {
-      "数学": {
-        "lastOnePayRate": 43.06,
-        "lastZero3Rate": 1.1
+        "lastOnePayRate": 69.06,
+        "lastZero3Rate": 14.82
       },
-      "物理": {
-        "lastOnePayRate": 46.96,
-        "lastZero3Rate": 0.96
+      "郑欣悦": {
+        "lastOnePayRate": 37.24,
+        "lastZero3Rate": 1.19
       },
-      "英语": {
-        "lastOnePayRate": 37.1,
-        "lastZero3Rate": 0.78
-      },
-      "历史": {
-        "lastOnePayRate": 66.18,
-        "lastZero3Rate": 14.4
-      },
-      "地理": {
-        "lastOnePayRate": 80.91,
-        "lastZero3Rate": 8.96
-      },
-      "生物": {
-        "lastOnePayRate": 80.66,
-        "lastZero3Rate": 14.98
-      },
-      "道德与法治": {
-        "lastOnePayRate": 69.91,
-        "lastZero3Rate": 15.01
+      "魏述博": {
+        "lastOnePayRate": 46.87,
+        "lastZero3Rate": 0.89
       }
     },
     "classTeachers": {
+      "1092391": {
+        "lastOnePayRate": 35.33,
+        "lastZero3Rate": 0.89
+      },
+      "1096161": {
+        "lastOnePayRate": 49.55,
+        "lastZero3Rate": 1.2
+      },
+      "87791": {
+        "lastOnePayRate": 53.78,
+        "lastZero3Rate": 0
+      },
+      "1094411": {
+        "lastOnePayRate": 47.92,
+        "lastZero3Rate": 0.88
+      },
+      "1306448": {
+        "lastOnePayRate": 71.98,
+        "lastZero3Rate": 1.03
+      },
+      "87870": {
+        "lastOnePayRate": 35.41,
+        "lastZero3Rate": 0.45
+      },
+      "1306973": {
+        "lastOnePayRate": 23.17,
+        "lastZero3Rate": 0.63
+      },
+      "87944": {
+        "lastOnePayRate": 45.35,
+        "lastZero3Rate": 0
+      },
+      "1307293": {
+        "lastOnePayRate": 47.54,
+        "lastZero3Rate": 1.16
+      },
+      "87741": {
+        "lastOnePayRate": 41.44,
+        "lastZero3Rate": 2.11
+      },
+      "87830": {
+        "lastOnePayRate": 34.93,
+        "lastZero3Rate": 0
+      },
+      "1092265": {
+        "lastOnePayRate": 73.07,
+        "lastZero3Rate": 10.6
+      },
+      "88206": {
+        "lastOnePayRate": 34.16,
+        "lastZero3Rate": 0.38
+      },
+      "1301921": {
+        "lastOnePayRate": 51.3,
+        "lastZero3Rate": 1.85
+      },
+      "1092261": {
+        "lastOnePayRate": 35.13,
+        "lastZero3Rate": 0.77
+      },
+      "1089398": {
+        "lastOnePayRate": 60.1,
+        "lastZero3Rate": 13.3
+      },
+      "1092260": {
+        "lastOnePayRate": 30.84,
+        "lastZero3Rate": 0.43
+      },
+      "1092393": {
+        "lastOnePayRate": 38.36,
+        "lastZero3Rate": 1.53
+      },
+      "87827": {
+        "lastOnePayRate": 40.9,
+        "lastZero3Rate": 0.9
+      },
+      "87701": {
+        "lastOnePayRate": 45.42,
+        "lastZero3Rate": 0
+      },
+      "1306987": {
+        "lastOnePayRate": 58.12,
+        "lastZero3Rate": 0
+      },
+      "87757": {
+        "lastOnePayRate": 45.45,
+        "lastZero3Rate": 0.44
+      },
+      "1300020": {
+        "lastOnePayRate": 33.2,
+        "lastZero3Rate": 0.8
+      },
+      "1092392": {
+        "lastOnePayRate": 42.96,
+        "lastZero3Rate": 1.5
+      },
+      "1094419": {
+        "lastOnePayRate": 40.77,
+        "lastZero3Rate": 0.77
+      },
+      "1092394": {
+        "lastOnePayRate": 33.27,
+        "lastZero3Rate": 0.76
+      },
+      "1304729": {
+        "lastOnePayRate": 21.33,
+        "lastZero3Rate": 0.89
+      },
+      "1306980": {
+        "lastOnePayRate": 37.44,
+        "lastZero3Rate": 0.77
+      },
+      "1304963": {
+        "lastOnePayRate": 37.44,
+        "lastZero3Rate": 0.26
+      },
+      "1096283": {
+        "lastOnePayRate": 31.68,
+        "lastZero3Rate": 3.73
+      },
+      "87787": {
+        "lastOnePayRate": 54.02,
+        "lastZero3Rate": 0.75
+      },
+      "1301829": {
+        "lastOnePayRate": 26.6,
+        "lastZero3Rate": 2.6
+      },
+      "1304968": {
+        "lastOnePayRate": 19.63,
+        "lastZero3Rate": 1.59
+      },
+      "87793": {
+        "lastOnePayRate": 53.71,
+        "lastZero3Rate": 0.76
+      },
+      "1096288": {
+        "lastOnePayRate": 29.4,
+        "lastZero3Rate": 0.93
+      },
+      "1306524": {
+        "lastOnePayRate": 22.93,
+        "lastZero3Rate": 0.22
+      },
+      "87738": {
+        "lastOnePayRate": 73.05,
+        "lastZero3Rate": 20.71
+      },
+      "1300031": {
+        "lastOnePayRate": 65.43,
+        "lastZero3Rate": 14.61
+      },
+      "1306505": {
+        "lastOnePayRate": 49.36,
+        "lastZero3Rate": 0.51
+      },
+      "88039": {
+        "lastOnePayRate": 19.23,
+        "lastZero3Rate": 0.38
+      },
+      "1304728": {
+        "lastOnePayRate": 47.33,
+        "lastZero3Rate": 0.89
+      },
+      "87538": {
+        "lastOnePayRate": 26.44,
+        "lastZero3Rate": 0.7
+      },
+      "88135": {
+        "lastOnePayRate": 68.93,
+        "lastZero3Rate": 0.28
+      },
+      "1092253": {
+        "lastOnePayRate": 76.34,
+        "lastZero3Rate": 5.73
+      },
+      "1306988": {
+        "lastOnePayRate": 28.85,
+        "lastZero3Rate": 0.24
+      },
+      "87803": {
+        "lastOnePayRate": 52.1,
+        "lastZero3Rate": 1.73
+      },
+      "1302749": {
+        "lastOnePayRate": 36.69,
+        "lastZero3Rate": 1.9
+      },
+      "1304765": {
+        "lastOnePayRate": 44.6,
+        "lastZero3Rate": 0.28
+      },
+      "87700": {
+        "lastOnePayRate": 35.68,
+        "lastZero3Rate": 0.72
+      },
+      "88175": {
+        "lastOnePayRate": 16.19,
+        "lastZero3Rate": 0.95
+      },
+      "87893": {
+        "lastOnePayRate": 5.56,
+        "lastZero3Rate": 0.64
+      },
+      "87941": {
+        "lastOnePayRate": 61.02,
+        "lastZero3Rate": 0.85
+      },
+      "1089394": {
+        "lastOnePayRate": 78.6,
+        "lastZero3Rate": 17.37
+      },
+      "1306516": {
+        "lastOnePayRate": 36.4,
+        "lastZero3Rate": 0.94
+      },
+      "87956": {
+        "lastOnePayRate": 81.72,
+        "lastZero3Rate": 1.08
+      },
+      "88152": {
+        "lastOnePayRate": 30.47,
+        "lastZero3Rate": 1.56
+      },
+      "1096167": {
+        "lastOnePayRate": 64.91,
+        "lastZero3Rate": 14.91
+      },
+      "87940": {
+        "lastOnePayRate": 50.1,
+        "lastZero3Rate": 0.81
+      },
+      "1304967": {
+        "lastOnePayRate": 26.67,
+        "lastZero3Rate": 0.51
+      },
+      "88210": {
+        "lastOnePayRate": 24.77,
+        "lastZero3Rate": 0.93
+      },
+      "1309054": {
+        "lastOnePayRate": 40.36,
+        "lastZero3Rate": 0
+      },
+      "1094421": {
+        "lastOnePayRate": 69.48,
+        "lastZero3Rate": 1.81
+      },
+      "1096041": {
+        "lastOnePayRate": 68.59,
+        "lastZero3Rate": 1.07
+      },
+      "87780": {
+        "lastOnePayRate": 53.6,
+        "lastZero3Rate": 0.74
+      },
+      "1096166": {
+        "lastOnePayRate": 64.17,
+        "lastZero3Rate": 12.55
+      },
+      "1095950": {
+        "lastOnePayRate": 83.8,
+        "lastZero3Rate": 1.4
+      },
+      "87864": {
+        "lastOnePayRate": 37.86,
+        "lastZero3Rate": 0.22
+      },
+      "1306506": {
+        "lastOnePayRate": 38.24,
+        "lastZero3Rate": 1.1
+      },
+      "87966": {
+        "lastOnePayRate": 27.74,
+        "lastZero3Rate": 0.62
+      },
+      "1307607": {
+        "lastOnePayRate": 30.41,
+        "lastZero3Rate": 0.26
+      },
+      "1091009": {
+        "lastOnePayRate": 37.7,
+        "lastZero3Rate": 0.2
+      },
+      "1306512": {
+        "lastOnePayRate": 36.05,
+        "lastZero3Rate": 1.84
+      },
+      "1095955": {
+        "lastOnePayRate": 28.85,
+        "lastZero3Rate": 0
+      },
+      "1306519": {
+        "lastOnePayRate": 40.3,
+        "lastZero3Rate": 0.21
+      },
+      "88249": {
+        "lastOnePayRate": 23.33,
+        "lastZero3Rate": 1.79
+      },
+      "1300226": {
+        "lastOnePayRate": 38.4,
+        "lastZero3Rate": 1.03
+      },
+      "1095947": {
+        "lastOnePayRate": 84.09,
+        "lastZero3Rate": 0
+      },
+      "87848": {
+        "lastOnePayRate": 52.67,
+        "lastZero3Rate": 2.38
+      },
+      "1300019": {
+        "lastOnePayRate": 46.44,
+        "lastZero3Rate": 0.37
+      },
+      "87926": {
+        "lastOnePayRate": 53.24,
+        "lastZero3Rate": 1.12
+      },
+      "1304771": {
+        "lastOnePayRate": 47.41,
+        "lastZero3Rate": 0.29
+      },
+      "1304971": {
+        "lastOnePayRate": 43.11,
+        "lastZero3Rate": 0.26
+      },
+      "1093851": {
+        "lastOnePayRate": 38.72,
+        "lastZero3Rate": 3.62
+      },
+      "1301704": {
+        "lastOnePayRate": 47.96,
+        "lastZero3Rate": 1.94
+      },
+      "1096162": {
+        "lastOnePayRate": 52.92,
+        "lastZero3Rate": 2.01
+      },
+      "88343": {
+        "lastOnePayRate": 38.27,
+        "lastZero3Rate": 1.54
+      },
+      "1306974": {
+        "lastOnePayRate": 36.31,
+        "lastZero3Rate": 0
+      },
+      "88154": {
+        "lastOnePayRate": 38.99,
+        "lastZero3Rate": 1.31
+      },
+      "88291": {
+        "lastOnePayRate": 64.44,
+        "lastZero3Rate": 1.29
+      },
+      "1093998": {
+        "lastOnePayRate": 41.81,
+        "lastZero3Rate": 0
+      },
+      "1092250": {
+        "lastOnePayRate": 33.26,
+        "lastZero3Rate": 1.59
+      },
+      "87874": {
+        "lastOnePayRate": 48.64,
+        "lastZero3Rate": 0.84
+      },
+      "1307291": {
+        "lastOnePayRate": 54.03,
+        "lastZero3Rate": 1.27
+      },
+      "1304970": {
+        "lastOnePayRate": 38.83,
+        "lastZero3Rate": 1.02
+      },
+      "1093854": {
+        "lastOnePayRate": 50.62,
+        "lastZero3Rate": 1.06
+      },
+      "1096286": {
+        "lastOnePayRate": 49.38,
+        "lastZero3Rate": 1.24
+      },
+      "1306981": {
+        "lastOnePayRate": 41.7,
+        "lastZero3Rate": 0.61
+      },
+      "88110": {
+        "lastOnePayRate": 41.11,
+        "lastZero3Rate": 0.44
+      },
+      "87669": {
+        "lastOnePayRate": 77.93,
+        "lastZero3Rate": 0
+      },
+      "1304768": {
+        "lastOnePayRate": 32.76,
+        "lastZero3Rate": 0.64
+      },
+      "1089396": {
+        "lastOnePayRate": 55.75,
+        "lastZero3Rate": 0.22
+      },
+      "87895": {
+        "lastOnePayRate": 52.75,
+        "lastZero3Rate": 1.27
+      },
+      "1304735": {
+        "lastOnePayRate": 35.38,
+        "lastZero3Rate": 1.54
+      },
+      "87907": {
+        "lastOnePayRate": 45.43,
+        "lastZero3Rate": 0.59
+      },
+      "88310": {
+        "lastOnePayRate": 31.83,
+        "lastZero3Rate": 0.2
+      },
+      "1301690": {
+        "lastOnePayRate": 55.72,
+        "lastZero3Rate": 1.48
+      },
+      "87826": {
+        "lastOnePayRate": 94.7,
+        "lastZero3Rate": 8.59
+      },
+      "1091188": {
+        "lastOnePayRate": 29.4,
+        "lastZero3Rate": 0.25
+      },
+      "1306986": {
+        "lastOnePayRate": 32.0,
+        "lastZero3Rate": 1.47
+      },
+      "87837": {
+        "lastOnePayRate": 30.51,
+        "lastZero3Rate": 0.67
+      },
+      "1307120": {
+        "lastOnePayRate": 42.29,
+        "lastZero3Rate": 1.19
+      },
+      "87835": {
+        "lastOnePayRate": 70.71,
+        "lastZero3Rate": 10.71
+      },
+      "1092257": {
+        "lastOnePayRate": 80.85,
+        "lastZero3Rate": 16.63
+      },
+      "1089395": {
+        "lastOnePayRate": 68.14,
+        "lastZero3Rate": 8.59
+      },
+      "87853": {
+        "lastOnePayRate": 54.99,
+        "lastZero3Rate": 0
+      },
+      "1300025": {
+        "lastOnePayRate": 79.56,
+        "lastZero3Rate": 0
+      },
+      "87781": {
+        "lastOnePayRate": 55.9,
+        "lastZero3Rate": 0.66
+      },
+      "1093010": {
+        "lastOnePayRate": 41.01,
+        "lastZero3Rate": 0.52
+      },
+      "1304731": {
+        "lastOnePayRate": 43.85,
+        "lastZero3Rate": 0.45
+      },
+      "1095948": {
+        "lastOnePayRate": 26.6,
+        "lastZero3Rate": 1.0
+      },
+      "1093214": {
+        "lastOnePayRate": 35.06,
+        "lastZero3Rate": 0.56
+      },
+      "87782": {
+        "lastOnePayRate": 21.18,
+        "lastZero3Rate": 0.24
+      },
+      "87836": {
+        "lastOnePayRate": 54.18,
+        "lastZero3Rate": 0.27
+      },
+      "1300229": {
+        "lastOnePayRate": 48.4,
+        "lastZero3Rate": 0.8
+      },
+      "1304730": {
+        "lastOnePayRate": 45.11,
+        "lastZero3Rate": 1.11
+      },
+      "1095951": {
+        "lastOnePayRate": 45.33,
+        "lastZero3Rate": 1.38
+      },
+      "1094415": {
+        "lastOnePayRate": 39.78,
+        "lastZero3Rate": 1.1
+      },
+      "88211": {
+        "lastOnePayRate": 52.33,
+        "lastZero3Rate": 1.33
+      },
+      "87641": {
+        "lastOnePayRate": 52.16,
+        "lastZero3Rate": 1.53
+      },
+      "1089392": {
+        "lastOnePayRate": 54.55,
+        "lastZero3Rate": 1.01
+      },
+      "1306513": {
+        "lastOnePayRate": 72.29,
+        "lastZero3Rate": 0.39
+      },
+      "87942": {
+        "lastOnePayRate": 48.02,
+        "lastZero3Rate": 0.83
+      },
+      "1306989": {
+        "lastOnePayRate": 40.77,
+        "lastZero3Rate": 0
+      },
+      "1304962": {
+        "lastOnePayRate": 48.49,
+        "lastZero3Rate": 1.1
+      },
+      "88347": {
+        "lastOnePayRate": 48.9,
+        "lastZero3Rate": 1.2
+      },
+      "1096284": {
+        "lastOnePayRate": 51.46,
+        "lastZero3Rate": 2.39
+      },
+      "1092254": {
+        "lastOnePayRate": 84.3,
+        "lastZero3Rate": 10.09
+      },
+      "87839": {
+        "lastOnePayRate": 66.05,
+        "lastZero3Rate": 1.24
+      },
+      "1089509": {
+        "lastOnePayRate": 32.32,
+        "lastZero3Rate": 0.76
+      },
+      "1096173": {
+        "lastOnePayRate": 37.94,
+        "lastZero3Rate": 1.87
+      },
+      "87448": {
+        "lastOnePayRate": 39.96,
+        "lastZero3Rate": 0.43
+      },
+      "87673": {
+        "lastOnePayRate": 24.0,
+        "lastZero3Rate": 0.67
+      },
+      "1306525": {
+        "lastOnePayRate": 52.6,
+        "lastZero3Rate": 1.52
+      },
+      "1093008": {
+        "lastOnePayRate": 35.6,
+        "lastZero3Rate": 1.1
+      },
+      "1310253": {
+        "lastOnePayRate": 64.71,
+        "lastZero3Rate": 17.65
+      },
+      "1306523": {
+        "lastOnePayRate": 56.59,
+        "lastZero3Rate": 0.43
+      },
+      "87967": {
+        "lastOnePayRate": 84.75,
+        "lastZero3Rate": 14.08
+      },
+      "87734": {
+        "lastOnePayRate": 49.32,
+        "lastZero3Rate": 0.81
+      },
+      "1304766": {
+        "lastOnePayRate": 19.1,
+        "lastZero3Rate": 1.97
+      },
+      "1095250": {
+        "lastOnePayRate": 23.78,
+        "lastZero3Rate": 0.89
+      },
+      "1094554": {
+        "lastOnePayRate": 34.42,
+        "lastZero3Rate": 1.3
+      },
+      "88172": {
+        "lastOnePayRate": 27.37,
+        "lastZero3Rate": 3.35
+      },
+      "1300014": {
+        "lastOnePayRate": 45.62,
+        "lastZero3Rate": 1.03
+      },
+      "1304964": {
+        "lastOnePayRate": 43.29,
+        "lastZero3Rate": 0.93
+      },
+      "1096171": {
+        "lastOnePayRate": 40.31,
+        "lastZero3Rate": 1.54
+      },
+      "1304965": {
+        "lastOnePayRate": 49.08,
+        "lastZero3Rate": 0.92
+      },
+      "1310188": {
+        "lastOnePayRate": 71.91,
+        "lastZero3Rate": 1.7
+      },
+      "1091008": {
+        "lastOnePayRate": 44.21,
+        "lastZero3Rate": 0.58
+      },
+      "1300027": {
+        "lastOnePayRate": 67.35,
+        "lastZero3Rate": 1.17
+      },
+      "87742": {
+        "lastOnePayRate": 50.95,
+        "lastZero3Rate": 2.29
+      },
+      "1096163": {
+        "lastOnePayRate": 26.22,
+        "lastZero3Rate": 1.11
+      },
+      "1094563": {
+        "lastOnePayRate": 38.7,
+        "lastZero3Rate": 1.34
+      },
+      "1096169": {
+        "lastOnePayRate": 18.47,
+        "lastZero3Rate": 0.75
+      },
+      "87752": {
+        "lastOnePayRate": 44.61,
+        "lastZero3Rate": 1.3
+      },
+      "87652": {
+        "lastOnePayRate": 29.86,
+        "lastZero3Rate": 0.61
+      },
+      "88298": {
+        "lastOnePayRate": 81.75,
+        "lastZero3Rate": 10.2
+      },
+      "1094000": {
+        "lastOnePayRate": 66.31,
+        "lastZero3Rate": 1.94
+      },
+      "88307": {
+        "lastOnePayRate": 51.05,
+        "lastZero3Rate": 0.84
+      },
+      "1300016": {
+        "lastOnePayRate": 27.5,
+        "lastZero3Rate": 0.55
+      },
+      "1092262": {
+        "lastOnePayRate": 70.0,
+        "lastZero3Rate": 15.69
+      },
+      "1092249": {
+        "lastOnePayRate": 30.89,
+        "lastZero3Rate": 0.89
+      },
+      "88111": {
+        "lastOnePayRate": 33.33,
+        "lastZero3Rate": 0.74
+      },
+      "1304774": {
+        "lastOnePayRate": 35.41,
+        "lastZero3Rate": 0.81
+      },
+      "1096042": {
+        "lastOnePayRate": 14.79,
+        "lastZero3Rate": 2.07
+      },
+      "87850": {
+        "lastOnePayRate": 48.62,
+        "lastZero3Rate": 0.2
+      },
+      "1307288": {
+        "lastOnePayRate": 44.89,
+        "lastZero3Rate": 1.25
+      },
+      "1089397": {
+        "lastOnePayRate": 35.83,
+        "lastZero3Rate": 0
+      },
+      "1089510": {
+        "lastOnePayRate": 37.45,
+        "lastZero3Rate": 0.21
+      },
+      "87957": {
+        "lastOnePayRate": 33.19,
+        "lastZero3Rate": 0.21
+      },
+      "88308": {
+        "lastOnePayRate": 42.25,
+        "lastZero3Rate": 1.36
+      },
+      "88150": {
+        "lastOnePayRate": 76.73,
+        "lastZero3Rate": 13.3
+      },
+      "88299": {
+        "lastOnePayRate": 38.11,
+        "lastZero3Rate": 0.51
+      },
+      "1309149": {
+        "lastOnePayRate": 69.05,
+        "lastZero3Rate": 4.42
+      },
+      "88136": {
+        "lastOnePayRate": 65.6,
+        "lastZero3Rate": 0.69
+      },
+      "87906": {
+        "lastOnePayRate": 67.53,
+        "lastZero3Rate": 11.83
+      },
+      "1309148": {
+        "lastOnePayRate": 45.71,
+        "lastZero3Rate": 1.43
+      },
+      "1092390": {
+        "lastOnePayRate": 38.83,
+        "lastZero3Rate": 0.78
+      },
+      "87733": {
+        "lastOnePayRate": 33.03,
+        "lastZero3Rate": 2.06
+      },
+      "88224": {
+        "lastOnePayRate": 47.26,
+        "lastZero3Rate": 0.88
+      },
+      "1092267": {
+        "lastOnePayRate": 39.44,
+        "lastZero3Rate": 0.56
+      },
+      "1094691": {
+        "lastOnePayRate": 40.87,
+        "lastZero3Rate": 0.77
+      },
+      "1093009": {
+        "lastOnePayRate": 40.21,
+        "lastZero3Rate": 1.06
+      },
+      "1095953": {
+        "lastOnePayRate": 24.29,
+        "lastZero3Rate": 1.71
+      },
+      "87792": {
+        "lastOnePayRate": 66.31,
+        "lastZero3Rate": 9.59
+      },
+      "1309058": {
+        "lastOnePayRate": 44.1,
+        "lastZero3Rate": 2.81
+      },
+      "1096172": {
+        "lastOnePayRate": 96.49,
+        "lastZero3Rate": 13.1
+      },
+      "1300026": {
+        "lastOnePayRate": 54.78,
+        "lastZero3Rate": 0.87
+      },
+      "1306509": {
+        "lastOnePayRate": 45.33,
+        "lastZero3Rate": 2.33
+      },
+      "1306976": {
+        "lastOnePayRate": 22.6,
+        "lastZero3Rate": 0.52
+      },
+      "1089399": {
+        "lastOnePayRate": 80.61,
+        "lastZero3Rate": 2.81
+      },
+      "1092551": {
+        "lastOnePayRate": 97.64,
+        "lastZero3Rate": 19.86
+      },
+      "1304770": {
+        "lastOnePayRate": 20.07,
+        "lastZero3Rate": 1.64
+      },
+      "1304732": {
+        "lastOnePayRate": 25.0,
+        "lastZero3Rate": 0
+      },
+      "1094561": {
+        "lastOnePayRate": 26.9,
+        "lastZero3Rate": 0.51
+      },
+      "1303241": {
+        "lastOnePayRate": 50.87,
+        "lastZero3Rate": 0.87
+      },
+      "1092252": {
+        "lastOnePayRate": 53.41,
+        "lastZero3Rate": 0.92
+      },
+      "87865": {
+        "lastOnePayRate": 70.72,
+        "lastZero3Rate": 18.75
+      },
+      "1306520": {
+        "lastOnePayRate": 30.86,
+        "lastZero3Rate": 0
+      },
+      "1306449": {
+        "lastOnePayRate": 48.01,
+        "lastZero3Rate": 0.84
+      },
+      "1089964": {
+        "lastOnePayRate": 36.62,
+        "lastZero3Rate": 0.76
+      },
+      "1093853": {
+        "lastOnePayRate": 40.32,
+        "lastZero3Rate": 0.72
+      },
+      "1094422": {
+        "lastOnePayRate": 25.81,
+        "lastZero3Rate": 1.15
+      },
+      "88355": {
+        "lastOnePayRate": 69.23,
+        "lastZero3Rate": 20.28
+      },
+      "1307287": {
+        "lastOnePayRate": 38.35,
+        "lastZero3Rate": 1.69
+      },
+      "1304733": {
+        "lastOnePayRate": 10.49,
+        "lastZero3Rate": 0.51
+      },
+      "87753": {
+        "lastOnePayRate": 63.85,
+        "lastZero3Rate": 17.97
+      },
+      "1304969": {
+        "lastOnePayRate": 46.39,
+        "lastZero3Rate": 0.26
+      },
+      "1306511": {
+        "lastOnePayRate": 68.92,
+        "lastZero3Rate": 1.2
+      },
+      "1094412": {
+        "lastOnePayRate": 30.04,
+        "lastZero3Rate": 0.21
+      },
+      "1092389": {
+        "lastOnePayRate": 28.14,
+        "lastZero3Rate": 1.71
+      },
+      "1094555": {
+        "lastOnePayRate": 46.12,
+        "lastZero3Rate": 0.95
+      },
+      "1306972": {
+        "lastOnePayRate": 51.41,
+        "lastZero3Rate": 1.74
+      },
+      "1300018": {
+        "lastOnePayRate": 50.19,
+        "lastZero3Rate": 0.38
+      },
+      "1301354": {
+        "lastOnePayRate": 44.85,
+        "lastZero3Rate": 0
+      },
+      "1092428": {
+        "lastOnePayRate": 35.18,
+        "lastZero3Rate": 0.57
+      },
+      "88100": {
+        "lastOnePayRate": 41.02,
+        "lastZero3Rate": 1.32
+      },
+      "87771": {
+        "lastOnePayRate": 63.85,
+        "lastZero3Rate": 0.59
+      },
+      "1093862": {
+        "lastOnePayRate": 20.11,
+        "lastZero3Rate": 0
+      },
+      "1304773": {
+        "lastOnePayRate": 45.01,
+        "lastZero3Rate": 1.62
+      },
+      "87447": {
+        "lastOnePayRate": 16.89,
+        "lastZero3Rate": 2.44
+      },
+      "1096045": {
+        "lastOnePayRate": 44.91,
+        "lastZero3Rate": 1.11
+      },
+      "87772": {
+        "lastOnePayRate": 45.56,
+        "lastZero3Rate": 1.78
+      },
+      "1092584": {
+        "lastOnePayRate": 56.87,
+        "lastZero3Rate": 0.95
+      },
+      "1307400": {
+        "lastOnePayRate": 39.16,
+        "lastZero3Rate": 1.99
+      },
+      "1092255": {
+        "lastOnePayRate": 79.27,
+        "lastZero3Rate": 8.55
+      },
+      "1300030": {
+        "lastOnePayRate": 56.21,
+        "lastZero3Rate": 1.74
+      },
+      "1093863": {
+        "lastOnePayRate": 42.59,
+        "lastZero3Rate": 0.42
+      },
+      "1300015": {
+        "lastOnePayRate": 55.78,
+        "lastZero3Rate": 0.19
+      },
+      "87943": {
+        "lastOnePayRate": 56.75,
+        "lastZero3Rate": 0.79
+      },
+      "1301689": {
+        "lastOnePayRate": 35.28,
+        "lastZero3Rate": 1.46
+      },
+      "1307471": {
+        "lastOnePayRate": 56.45,
+        "lastZero3Rate": 1.08
+      },
+      "88348": {
+        "lastOnePayRate": 81.94,
+        "lastZero3Rate": 1.32
+      },
+      "88153": {
+        "lastOnePayRate": 33.05,
+        "lastZero3Rate": 1.71
+      },
+      "1307472": {
+        "lastOnePayRate": 58.35,
+        "lastZero3Rate": 0
+      },
+      "1096290": {
+        "lastOnePayRate": 45.16,
+        "lastZero3Rate": 1.41
+      },
+      "87851": {
+        "lastOnePayRate": 54.68,
+        "lastZero3Rate": 0.55
+      },
+      "87779": {
+        "lastOnePayRate": 32.84,
+        "lastZero3Rate": 0.74
+      },
+      "1093184": {
+        "lastOnePayRate": 22.26,
+        "lastZero3Rate": 0.77
+      },
+      "1096285": {
+        "lastOnePayRate": 71.77,
+        "lastZero3Rate": 19.53
+      },
+      "87588": {
+        "lastOnePayRate": 35.13,
+        "lastZero3Rate": 0
+      },
+      "1092266": {
+        "lastOnePayRate": 50.1,
+        "lastZero3Rate": 11.76
+      },
+      "87854": {
+        "lastOnePayRate": 43.57,
+        "lastZero3Rate": 0.92
+      },
+      "87872": {
+        "lastOnePayRate": 57.98,
+        "lastZero3Rate": 0.61
+      },
+      "87789": {
+        "lastOnePayRate": 87.62,
+        "lastZero3Rate": 6.31
+      },
+      "1307927": {
+        "lastOnePayRate": 50.72,
+        "lastZero3Rate": 0.62
+      },
+      "1093884": {
+        "lastOnePayRate": 5.46,
+        "lastZero3Rate": 0
+      },
+      "1093852": {
+        "lastOnePayRate": 50.11,
+        "lastZero3Rate": 1.47
+      },
+      "1091010": {
+        "lastOnePayRate": 26.71,
+        "lastZero3Rate": 0.36
+      },
+      "1302752": {
+        "lastOnePayRate": 32.58,
+        "lastZero3Rate": 0.75
+      },
+      "1094564": {
+        "lastOnePayRate": 49.7,
+        "lastZero3Rate": 1.79
+      },
+      "1300022": {
+        "lastOnePayRate": 46.31,
+        "lastZero3Rate": 1.64
+      },
+      "1309056": {
+        "lastOnePayRate": 74.53,
+        "lastZero3Rate": 1.24
+      },
+      "1095956": {
+        "lastOnePayRate": 27.08,
+        "lastZero3Rate": 2.29
+      },
+      "1094417": {
+        "lastOnePayRate": 40.16,
+        "lastZero3Rate": 2.17
+      },
+      "1096043": {
+        "lastOnePayRate": 70.34,
+        "lastZero3Rate": 17.51
+      },
+      "87737": {
+        "lastOnePayRate": 51.19,
+        "lastZero3Rate": 1.37
+      },
+      "1091154": {
+        "lastOnePayRate": 48.32,
+        "lastZero3Rate": 1.26
+      },
+      "1310250": {
+        "lastOnePayRate": 50.0,
+        "lastZero3Rate": 50.0
+      },
+      "1094414": {
+        "lastOnePayRate": 72.12,
+        "lastZero3Rate": 0.88
+      },
+      "1093857": {
+        "lastOnePayRate": 41.25,
+        "lastZero3Rate": 1.21
+      },
+      "88335": {
+        "lastOnePayRate": 42.04,
+        "lastZero3Rate": 0.71
+      },
+      "1091007": {
+        "lastOnePayRate": 35.98,
+        "lastZero3Rate": 0.35
+      },
+      "1304775": {
+        "lastOnePayRate": 34.56,
+        "lastZero3Rate": 2.37
+      },
+      "1302751": {
+        "lastOnePayRate": 39.75,
+        "lastZero3Rate": 1.27
+      },
+      "1089400": {
+        "lastOnePayRate": 46.53,
+        "lastZero3Rate": 0
+      },
+      "1092251": {
+        "lastOnePayRate": 23.77,
+        "lastZero3Rate": 0.55
+      },
+      "1309146": {
+        "lastOnePayRate": 59.72,
+        "lastZero3Rate": 0.56
+      },
+      "1092397": {
+        "lastOnePayRate": 74.64,
+        "lastZero3Rate": 11.11
+      },
+      "87476": {
+        "lastOnePayRate": 48.9,
+        "lastZero3Rate": 0.8
+      },
+      "1093856": {
+        "lastOnePayRate": 57.12,
+        "lastZero3Rate": 0.36
+      },
+      "88366": {
+        "lastOnePayRate": 86.33,
+        "lastZero3Rate": 0.39
+      },
+      "1309147": {
+        "lastOnePayRate": 60.3,
+        "lastZero3Rate": 0.75
+      },
+      "1092259": {
+        "lastOnePayRate": 50.55,
+        "lastZero3Rate": 0.55
+      },
+      "1096047": {
+        "lastOnePayRate": 48.21,
+        "lastZero3Rate": 1.79
+      },
+      "1306983": {
+        "lastOnePayRate": 29.98,
+        "lastZero3Rate": 0.6
+      },
+      "87736": {
+        "lastOnePayRate": 42.65,
+        "lastZero3Rate": 0.41
+      },
+      "1096170": {
+        "lastOnePayRate": 26.67,
+        "lastZero3Rate": 0
+      },
+      "1309057": {
+        "lastOnePayRate": 46.96,
+        "lastZero3Rate": 0
+      },
+      "1093860": {
+        "lastOnePayRate": 40.0,
+        "lastZero3Rate": 1.04
+      },
+      "87948": {
+        "lastOnePayRate": 43.21,
+        "lastZero3Rate": 1.56
+      },
+      "1307290": {
+        "lastOnePayRate": 32.39,
+        "lastZero3Rate": 1.41
+      },
+      "87947": {
+        "lastOnePayRate": 68.67,
+        "lastZero3Rate": 0.22
+      },
+      "1096165": {
+        "lastOnePayRate": 48.42,
+        "lastZero3Rate": 0.53
+      },
+      "1306451": {
+        "lastOnePayRate": 26.48,
+        "lastZero3Rate": 1.97
+      },
       "梁恩泉": {
         "lastOnePayRate": 28.69,
         "lastZero3Rate": 0.0
