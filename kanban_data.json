@@ -34403,5 +34403,152 @@
       "weekDrop": 0.0
     }
   ],
-  "__lastRates": {}
+  "__lastRates": {
+    "groups": {
+      "刘宇": {
+        "lastOnePayRate": 42.48,
+        "lastZero3Rate": 1.28
+      },
+      "孟京雷": {
+        "lastOnePayRate": 42.66,
+        "lastZero3Rate": 1.07
+      },
+      "杭禹则": {
+        "lastOnePayRate": 43.1,
+        "lastZero3Rate": 0.98
+      },
+      "王欣": {
+        "lastOnePayRate": 37.29,
+        "lastZero3Rate": 0.68
+      },
+      "郑欣悦": {
+        "lastOnePayRate": 37.29,
+        "lastZero3Rate": 1.19
+      },
+      "刘鹤鑫": {
+        "lastOnePayRate": 44.88,
+        "lastZero3Rate": 0.97
+      },
+      "张钧瑞": {
+        "lastOnePayRate": 37.32,
+        "lastZero3Rate": 1.0
+      },
+      "魏述博": {
+        "lastOnePayRate": 46.86,
+        "lastZero3Rate": 0.89
+      },
+      "牟春宇": {
+        "lastOnePayRate": 51.63,
+        "lastZero3Rate": 0.94
+      },
+      "李宇娇": {
+        "lastOnePayRate": 41.43,
+        "lastZero3Rate": 1.03
+      },
+      "梁恩泉": {
+        "lastOnePayRate": 42.07,
+        "lastZero3Rate": 1.23
+      },
+      "孙英哲": {
+        "lastOnePayRate": 48.03,
+        "lastZero3Rate": 1.0
+      },
+      "朱太阳": {
+        "lastOnePayRate": 80.79,
+        "lastZero3Rate": 11.96
+      },
+      "缪家新": {
+        "lastOnePayRate": 69.23,
+        "lastZero3Rate": 14.9
+      }
+    },
+    "subjects": {
+      "数学": {
+        "lastOnePayRate": 43.06,
+        "lastZero3Rate": 1.1
+      },
+      "物理": {
+        "lastOnePayRate": 46.96,
+        "lastZero3Rate": 0.96
+      },
+      "英语": {
+        "lastOnePayRate": 37.1,
+        "lastZero3Rate": 0.78
+      },
+      "历史": {
+        "lastOnePayRate": 66.18,
+        "lastZero3Rate": 14.4
+      },
+      "地理": {
+        "lastOnePayRate": 80.91,
+        "lastZero3Rate": 8.96
+      },
+      "生物": {
+        "lastOnePayRate": 80.66,
+        "lastZero3Rate": 14.98
+      },
+      "道德与法治": {
+        "lastOnePayRate": 69.91,
+        "lastZero3Rate": 15.01
+      }
+    },
+    "classTeachers": {
+      "梁恩泉": {
+        "lastOnePayRate": 28.69,
+        "lastZero3Rate": 0.0
+      },
+      "朱太阳": {
+        "lastOnePayRate": 76.62,
+        "lastZero3Rate": 5.76
+      },
+      "王欣": {
+        "lastOnePayRate": 45.28,
+        "lastZero3Rate": 1.42
+      },
+      "孟京雷": {
+        "lastOnePayRate": 3.65,
+        "lastZero3Rate": 0.0
+      },
+      "刘鹤鑫": {
+        "lastOnePayRate": 26.83,
+        "lastZero3Rate": 7.32
+      },
+      "刘宇": {
+        "lastOnePayRate": 32.73,
+        "lastZero3Rate": 2.05
+      },
+      "牟春宇": {
+        "lastOnePayRate": 54.26,
+        "lastZero3Rate": 0.0
+      },
+      "杭禹则": {
+        "lastOnePayRate": 35.48,
+        "lastZero3Rate": 35.48
+      },
+      "郑欣悦": {
+        "lastOnePayRate": 35.13,
+        "lastZero3Rate": 0.0
+      },
+      "张钧瑞": {
+        "lastOnePayRate": 34.8,
+        "lastZero3Rate": 0.0
+      },
+      "李宇娇": {
+        "lastOnePayRate": 72.44,
+        "lastZero3Rate": 0.89
+      },
+      "缪家新": {
+        "lastOnePayRate": 71.43,
+        "lastZero3Rate": 18.94
+      },
+      "孙英哲": {
+        "lastOnePayRate": 81.94,
+        "lastZero3Rate": 1.32
+      },
+      "魏述博": {
+        "lastOnePayRate": 38.24,
+        "lastZero3Rate": 1.1
+      }
+    }
+  }
 }
