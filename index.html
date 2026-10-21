@@ -437,9 +437,9 @@ function rateColor(val, col, localVals) {
     return 'rate-red';
   }
   if (col === 'weekDrop') {
-    // weekDrop：正值=改善(绿)，负值=恶化(红)，0=绿
-    if (val > 0) return 'rate-green';
-    if (val < 0) return 'rate-red';
+    // weekDrop：负值=改善(绿)，正值=恶化(红)，0=绿（下降越多越绿）
+    if (val < 0) return 'rate-green';
+    if (val > 0) return 'rate-red';
     return '';
   }
   const nums = (localVals || []).filter(v => typeof v === 'number' && !isNaN(v));
