@@ -587,8 +587,8 @@ function applyFilters() {
     obj.zero3Rate = pct(obj.zero3Count, ic);
     obj.zero3OnePayRate = pct(obj.zero3OnePayCount, ic);
     // 教学组级别较上周下降
-    const lastGrp = (rawData.__lastRates || {}).groups || {};
-    const lastOpG = lastGrp.lastOnePayRate, lastZ3G = lastGrp.lastZero3Rate;
+    const lastGrpData = ((rawData.__lastRates || {}).groups || {})[grp] || {};
+    const lastOpG = lastGrpData.lastOnePayRate, lastZ3G = lastGrpData.lastZero3Rate;
     obj.weekDrop = (lastOpG != null && lastZ3G != null)
       ? +((lastOpG - obj.onePayRate) + (lastZ3G - obj.zero3Rate)).toFixed(2)
       : null;
@@ -628,12 +628,22 @@ function applyFilters() {
     obj.zero3Rate = pct(obj.zero3Count, ic);
     obj.zero3OnePayRate = pct(obj.zero3OnePayCount, ic);
     // 学科级别较上周下降
-    const lastSubj = (rawData.__lastRates || {}).subjects || {};
-    const lastOpS = lastSubj.lastOnePayRate, lastZ3S = lastSubj.lastZero3Rate;
+    const lastSubjData = ((rawData.__lastRates || {}).subjects || {})[subj] || {};
+    const lastOpS = lastSubjData.lastOnePayRate, lastZ3S = lastSubjData.lastZero3Rate;
     obj.weekDrop = (lastOpS != null && lastZ3S != null)
       ? +((lastOpS - obj.onePayRate) + (lastZ3S - obj.zero3Rate)).toFixed(2)
       : null;
     return obj;
+  });
+
+  // 给每个班主任附加 weekDrop（用 ctid 做 key）
+  const lastCtRates = ((rawData.__lastRates || {}).classTeachers || {});
+  cts.forEach(c => {
+    const last = lastCtRates[c.ctid] || {};
+    const lastOp = last.lastOnePayRate, lastZ3 = last.lastZero3Rate;
+    c.weekDrop = (lastOp != null && lastZ3 != null)
+      ? +((lastOp - c.onePayRate) + (lastZ3 - c.zero3Rate)).toFixed(2)
+      : null;
   });
 
   filteredAll = { subjects, groups, classTeachers: cts };
