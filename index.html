@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>沈阳基地·服务沟通数据看板</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  background: #f2f4f8;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #1a73e8, #0d47a1);
+  color: white;
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.header h1 { font-size: 20px; font-weight: 600; letter-spacing: 0.5px; }
+.header-right {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  font-size: 14px;
+}
+.header-stat { text-align: center; }
+.header-stat-val { font-size: 22px; font-weight: 700; }
+.header-stat-label { font-size: 12px; opacity: 0.85; margin-top: 1px; }
+.green { color: #22c55e; }
+.refresh-btn {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+  padding: 7px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.15s;
+}
+.refresh-btn:hover { background: rgba(255,255,255,0.25); }
+
+/* Filter Bar */
+.filter-bar {
+  background: white;
+  padding: 16px 32px;
+  border-bottom: 1px solid #e8e8ec;
+}
+.filter-row {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.filter-row + .filter-row { margin-top: 10px; }
+.filter-label {
+  font-size: 13px;
+  color: #888;
+  font-weight: 500;
+  min-width: 36px;
+}
+.capsule-group {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.capsule {
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1.5px solid #d0d0d0;
+  background: white;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+  color: #555;
+  user-select: none;
+}
+.capsule:hover { border-color: #1a73e8; color: #1a73e8; }
+.capsule.active {
+  background: #1a73e8;
+  border-color: #1a73e8;
+  color: white;
+}
+.capsule.active-purple {
+  background: #7c3aed;
+  border-color: #7c3aed;
+  color: white;
+}
+.capsule-toggle-hint {
+  font-size: 11px;
+  color: #aaa;
+  margin-left: 4px;
+}
+
+/* Legend */
+.legend-bar {
+  background: #f8f9fa;
+  padding: 10px 32px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 12px;
+  color: #666;
+  border-bottom: 1px solid #e8e8ec;
+  flex-wrap: wrap;
+}
+.legend-item { display: flex; align-items: center; gap: 5px; }
+.legend-dot { width: 8px; height: 8px; border-radius: 50%; }
+.legend-note { margin-left: auto; color: #aaa; font-size: 11px; }
+
+/* Content */
+.content { padding: 20px 32px; max-width: 1400px; margin: 0 auto; }
+
+/* Table Section */
+.table-section {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  border: 1px solid #f0f0f5;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.table-section-header {
+  padding: 14px 20px;
+  border-bottom: 2px solid #f0f0f5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.table-section-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a73e8;
+}
+.table-section-meta { font-size: 12px; color: #aaa; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+thead th {
+  background: #fafafa;
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 500;
+  color: #888;
+  font-size: 12px;
+  border-bottom: 1px solid #f0f0f5;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+}
+thead th:hover { background: #f0f0f8; }
+thead th.sort-asc::after { content: ' ↑'; color: #1a73e8; }
+thead th.sort-desc::after { content: ' ↓'; color: #1a73e8; }
+tbody tr { border-bottom: 1px solid #f5f5f5; }
+tbody tr:last-child { border-bottom: none; }
+tbody tr:hover { background: #f8f9ff; }
+tbody td {
+  padding: 10px 12px;
+  color: #333;
+  text-align: center;
+}
+.td-num { text-align: center; font-variant-numeric: tabular-nums; }
+.td-rate { text-align: center; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* Color coding for rates */
+.rate-green { color: #16a34a; }
+.rate-yellow { color: #d97706; }
+.rate-red { color: #dc2626; }
+
+/* Accordion for class teacher */
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  cursor: pointer;
+  background: #fafafa;
+  border-bottom: 1px solid #f0f0f5;
+  font-size: 13px;
+  transition: background 0.15s;
+}
+.accordion-header:hover { background: #f0f0f8; }
+.accordion-header.open { background: #e8f0fe; }
+.accordion-title { font-weight: 600; color: #333; display: flex; align-items: center; gap: 8px; }
+.accordion-meta { font-size: 12px; color: #888; }
+.accordion-arrow { font-size: 12px; color: #888; transition: transform 0.2s; }
+.accordion-header.open .accordion-arrow { transform: rotate(180deg); }
+
+.accordion-body { display: none; }
+.accordion-body.open { display: block; }
+
+.ct-table { font-size: 12px; }
+.ct-table thead th { font-size: 11px; padding: 8px 10px; }
+.ct-table tbody td { padding: 8px 10px; }
+
+/* Section divider */
+.section-divider {
+  height: 1px;
+  background: #e8e8ec;
+  margin: 4px 0 20px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #ccc;
+  font-size: 12px;
+}
+
+/* Loading */
+.loading { text-align: center; padding: 60px; color: #999; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>📊 <span id="boardTitle">沈阳基地·服务沟通数据看板</span> <span id="updateTime" style="font-size:13px;font-weight:normal;opacity:0.75;margin-left:10px;"></span></h1>
+  <div class="header-right">
+    <div class="header-stat">
+      <div class="header-stat-val" id="totalInClass">-</div>
+      <div class="header-stat-label">在班人次</div>
+    </div>
+    <div class="header-stat">
+      <div class="header-stat-val green" id="totalBindRate">-</div>
+      <div class="header-stat-label">绑定率</div>
+    </div>
+    <div class="header-stat">
+      <div class="header-stat-val red" id="totalUnbindCount">-</div>
+      <div class="header-stat-label">未绑定人次</div>
+    </div>
+    <div class="header-stat">
+      <div class="header-stat-val" id="totalCoverRate">-</div>
+      <div class="header-stat-label">覆盖率</div>
+    </div>
+    <div class="header-stat">
+      <div class="header-stat-val" id="totalActiveRate">-</div>
+      <div class="header-stat-label">活跃度</div>
+    </div>
+    <div class="header-stat">
+      <div class="header-stat-val" id="totalAvgRespTime">-</div>
+      <div class="header-stat-label">响应时长(近七日)(分)</div>
+    </div>
+    <div class="header-stat">
+      <div class="header-stat-val green" id="totalOnePayRate">-</div>
+      <div class="header-stat-label">一次付费率</div>
+    </div>
+    <div class="header-stat">
+      <div class="header-stat-val red" id="totalZero3Rate">-</div>
+      <div class="header-stat-label">三零率</div>
+    </div>
+    <button class="refresh-btn" onclick="forceReload()">🔄 刷新数据</button>
+  </div>
+</div>
+
+<div class="filter-bar">
+  <!-- 学科筛选（多选） -->
+  <div class="filter-row">
+    <span class="filter-label">学科</span>
+    <div class="capsule-group" id="subjectCapsules">
+      <span class="capsule-toggle-hint" id="subjectHint">（可多选，点击选中多个）</span>
+    </div>
+  </div>
+  <!-- 课包筛选 -->
+  <div class="filter-row">
+    <span class="filter-label">课包</span>
+    <div class="capsule-group" id="pkgCapsules">
+      <button class="capsule capsule-active-purple active" data-val="">全部</button>
+      <button class="capsule" data-val="常规课包">常规课包</button>
+      <button class="capsule" data-val="抖音课包">抖音课包</button>
+    </div>
+  </div>
+</div>
+
+<div class="legend-bar">
+  <div class="legend-item"><div class="legend-dot" style="background:#22c55e"></div> 列内最高（最优）</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#f59e0b"></div> 列内居中</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div> 列内最低（最差）</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#22c55e"></div> 响应时长≤15分</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#f59e0b"></div> 15-20分</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div> &gt;20分</div>
+  <div class="legend-note">点击列头可排序 · 学科支持多选</div>
+</div>
+
+<div class="content">
+
+  <!-- 学科汇总 -->
+  <div class="table-section">
+    <div class="table-section-header">
+      <span class="table-section-title">📚 学科汇总</span>
+      <span class="table-section-meta" id="subjectMeta"></span>
+    </div>
+    <table id="subjectTable">
+      <thead>
+        <tr>
+          <th data-col="subject" class="sort-asc">学科</th>
+          <th data-col="bindRate">绑定率 ↕</th>
+          <th data-col="joinRate">进群率 ↕</th>
+          <th data-col="unbindCount">未绑定人次 ↕</th>
+          <th data-col="coverRate">覆盖率 ↕</th>
+          <th data-col="interactRate">交互率 ↕</th>
+          <th data-col="activeRate">活跃度 ↕</th>
+          <th data-col="avgRespTime">响应时长(近七日) ↕</th>
+          <th data-col="onePayRate">一次付费占比 ↕</th>
+          <th data-col="zero3Rate">三零占比 ↕</th>
+          <th data-col="weekDrop">较上周下降 ↕</th>
+        </tr>
+      </thead>
+      <tbody id="subjectBody"></tbody>
+    </table>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- 教学组汇总 -->
+  <div class="table-section">
+    <div class="table-section-header">
+      <span class="table-section-title">👥 教学组汇总</span>
+      <span class="table-section-meta" id="groupMeta"></span>
+    </div>
+    <table id="groupTable">
+      <thead>
+        <tr>
+          <th data-col="group">教学组</th>
+          <th data-col="bindRate">绑定率 ↕</th>
+          <th data-col="joinRate">进群率 ↕</th>
+          <th data-col="unbindCount">未绑定人次 ↕</th>
+          <th data-col="coverRate">覆盖率 ↕</th>
+          <th data-col="interactRate">交互率 ↕</th>
+          <th data-col="activeRate">活跃度 ↕</th>
+          <th data-col="avgRespTime">响应时长(近七日) ↕</th>
+          <th data-col="onePayRate">一次付费占比 ↕</th>
+          <th data-col="zero3Rate">三零占比 ↕</th>
+          <th data-col="weekDrop">较上周下降 ↕</th>
+        </tr>
+      </thead>
+      <tbody id="groupBody"></tbody>
+    </table>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- 班主任明细 -->
+  <div class="table-section">
+    <div class="table-section-header">
+      <span class="table-section-title">🏫 班主任明细</span>
+      <span class="table-section-meta" id="ctMeta"></span>
+    </div>
+    <div class="filter-row" id="ctGroupFilterRow">
+      <span class="filter-label">教学组</span>
+      <div class="capsule-group" id="ctGroupCapsules">
+        <span class="capsule-toggle-hint">（可多选）</span>
+      </div>
+      <span class="filter-label" style="margin-left:16px">搜索</span>
+      <input id="ctSearchInput" type="text" placeholder="输入班主任姓名" oninput="onCtSearchChange(this.value)" style="padding:4px 10px;border:1.5px solid #d0d0d0;border-radius:16px;font-size:13px;outline:none;width:140px">
+    </div>
+    <table id="ctTable">
+      <thead>
+        <tr>
+          <th data-col="name" class="sort-asc">班主任</th>
+          <th data-col="group">教学组</th>
+          
+          <th data-col="bindRate">绑定率 ↕</th>
+          <th data-col="joinRate">进群率 ↕</th>
+          <th data-col="unbindCount">未绑定人次 ↕</th>
+          <th data-col="coverRate">覆盖率 ↕</th>
+          <th data-col="interactRate">交互率 ↕</th>
+          <th data-col="activeRate">活跃度 ↕</th>
+          <th data-col="avgRespTime">响应时长(近七日) ↕</th>
+          <th data-col="onePayRate">一次付费占比 ↕</th>
+          <th data-col="zero3Rate">三零占比 ↕</th>
+          <th data-col="weekDrop">较上周下降 ↕</th>
+        </tr>
+      </thead>
+      <tbody id="ctBody"></tbody>
+    </table>
+  </div>
+
+</div>
+
+<div class="footer">服务沟通看板 · 每日数据更新</div>
+
+<script>
+let rawData = {};
+let filteredAll = { subjects: [], groups: [], classTeachers: [] };
+// let currentBase = '沈阳'; // 固定沈阳
+let currentSubjects = [];  // 多选：空数组表示全部
+let currentPkg = '';
+let currentCtGroups = [];
+let currentCtSearch = '';
+let sortCol = 'bindRate';
+let sortDir = 'desc';
+let expandedCtGroups = new Set();
+
+// 相对颜色：根据列内所有值排序，排名越高越绿，排名越低越红
+// respTimeCol=true 时表示响应时长列：≤15绿，15-20黄，>20红
+function rateColor(val, col, localVals) {
+  if (col === 'avgRespTime') {
+    if (val <= 15) return 'rate-green';
+    if (val <= 20) return 'rate-yellow';
+    return 'rate-red';
+  }
+  if (col === 'onePayRate') {
+    // 一次付费率：越高越红（反向颜色）
+    const nums = (localVals || []).filter(v => typeof v === 'number' && !isNaN(v));
+    if (nums.length === 0) return 'rate-green';
+    const min = Math.min(...nums), max = Math.max(...nums);
+    const range = max - min;
+    if (range === 0) return 'rate-green';
+    const ratio = (max - val) / range;
+    if (ratio >= 0.7) return 'rate-green';
+    if (ratio >= 0.4) return 'rate-yellow';
+    return 'rate-red';
+  }
+  if (col === 'zero3Rate') {
+    // 三零率：越高越红（反向颜色）
+    const nums = (localVals || []).filter(v => typeof v === 'number' && !isNaN(v));
+    if (nums.length === 0) return 'rate-green';
+    const min = Math.min(...nums), max = Math.max(...nums);
+    const range = max - min;
+    if (range === 0) return 'rate-green';
+    const ratio = (max - val) / range;
+    if (ratio >= 0.7) return 'rate-green';
+    if (ratio >= 0.4) return 'rate-yellow';
+    return 'rate-red';
+  }
+  if (col === 'weekDrop') {
+    // weekDrop：正值=改善(绿)，负值=恶化(红)，0=绿
+    if (val > 0) return 'rate-green';
+    if (val < 0) return 'rate-red';
+    return '';
+  }
+  const nums = (localVals || []).filter(v => typeof v === 'number' && !isNaN(v));
+  if (nums.length === 0) return 'rate-green';
+  const min = Math.min(...nums);
+  const max = Math.max(...nums);
+  const range = max - min;
+  if (range === 0) return 'rate-green';
+  const ratio = (val - min) / range; // 0=最红, 1=最绿
+  if (ratio >= 0.7) return 'rate-green';
+  if (ratio >= 0.4) return 'rate-yellow';
+  return 'rate-red';
+}
+
+function fmt(n) { return n.toLocaleString(); }
+function pct(a, b) { return b ? Math.round(a / b * 100 * 100) / 100 : 0; }
+
+function calcRates(row) {
+  const ic = row.inClassCount || 1;
+  return {
+    bindRate: pct(row.bindCount, ic),
+    joinRate: pct(row.joinGroupCount, ic),
+    coverRate: pct(row.coverCount, ic),
+    interactRate: pct(row.interactCount, ic),
+    activeRate: pct(row.activeCount, ic),
+  };
+}
+
+function loadData() {
+  fetch('kanban_data.json?t=' + Date.now())
+    .then(r => r.json())
+    .then(d => {
+      rawData = d;
+      if (d.meta && d.meta.updated) {
+        document.getElementById('updateTime').textContent = '数据更新：' + d.meta.updated;
+      }
+      buildCapsules();
+      applyFilters();
+    });
+}
+
+// 强制刷新：绕过缓存，确保拉取最新数据，等同 Ctrl+Shift+R
+function forceReload() {
+  rawData = null;
+  const ts = Date.now();
+  fetch('kanban_data.json?t=' + ts)
+    .then(r => r.json())
+    .then(d => {
+      rawData = d;
+      if (d.meta && d.meta.updated) {
+        document.getElementById('updateTime').textContent = '数据更新：' + d.meta.updated;
+      }
+      buildCapsules();
+      applyFilters();
+      // 给页面 URL 加时间戳，强制刷新整个页面（含 CSS/JS）
+      const url = new URL(location.href);
+      url.searchParams.set('__r', ts);
+      location.href = url.toString();
+    })
+    .catch(() => {
+      location.href = location.pathname + '?__r=' + Date.now();
+    });
+}
+
+// 构建基地和学科胶囊
+function buildCapsules() {
+  buildSubjectCapsules();
+}
+
+// 重建学科胶囊（按当前基地去重）
+function buildSubjectCapsules() {
+  const subjectContainer = document.getElementById('subjectCapsules');
+  subjectContainer.querySelectorAll('.capsule').forEach(b => b.remove());
+
+  // 只展示当前基地的学科（去重）
+  const baseSubjects = rawData.subjects.filter(s => s.base === '沈阳');
+  const uniqueSubjects = [...new Set(baseSubjects.map(s => s.subject))].sort();
+  uniqueSubjects.forEach(s => {
+    const btn = document.createElement('button');
+    btn.className = 'capsule';
+    btn.textContent = s;
+    btn.dataset.val = s;
+    btn.onclick = () => toggleSubject(s, btn);
+    subjectContainer.appendChild(btn);
+  });
+}
+
+// 切换学科多选
+function toggleSubject(subject, btn) {
+  const idx = currentSubjects.indexOf(subject);
+  if (idx === -1) {
+    currentSubjects.push(subject);
+    btn.classList.add('active');
+  } else {
+    currentSubjects.splice(idx, 1);
+    btn.classList.remove('active');
+  }
+  applyFilters();
+}
+
+function applyFilters() {
+  // 根据课包筛选决定数据来源：全部=聚合305人，单课包=ctPkgList每人×每课包
+  const pkgSrc = currentPkg
+    ? (rawData.ctPkgList || []).filter(c => c.pkg === currentPkg)
+    : rawData.classTeachers;
+
+  // ===== 1. 班主任列表：每人一行 =====（subjects筛选影响班主任）
+  let cts = pkgSrc.filter(c => c.base === '沈阳');
+  if (currentSubjects.length > 0) {
+    cts = cts.filter(c => (c.subjects || []).some(s => currentSubjects.includes(s)));
+  }
+  if (currentCtGroups.length > 0) {
+    cts = cts.filter(c => currentCtGroups.includes(c.group || '未知'));
+  }
+  if (currentCtSearch) {
+    cts = cts.filter(c => (c.name || '').includes(currentCtSearch));
+  }
+
+  // ===== 2. 教学组汇总：从 cts（已应用学科筛选）按 group 聚合 =====
+  const grpAgg = {};
+  cts.forEach(ct => {
+    const g = ct.group || '未知';
+    if (!grpAgg[g]) {
+      grpAgg[g] = { base: '沈阳', group: g, inClassCount:0, bindCount:0, joinGroupCount:0,
+        coverCount:0, interactCount:0, activeCount:0, confirmCount:0, attendCount:0, unbindCount:0,
+        zero3Count:0, onePayCount:0, zero3OnePayCount:0,
+        weightedRespTime:0 };
+    }
+    ['inClassCount','bindCount','joinGroupCount','coverCount','interactCount',
+     'activeCount','confirmCount','attendCount','unbindCount',
+     'zero3Count','onePayCount','zero3OnePayCount']
+      .forEach(k => grpAgg[g][k] += ct[k] || 0);
+    grpAgg[g].weightedRespTime += (ct.avgRespTime || 0) * ct.inClassCount;
+  });
+  let groups = Object.keys(grpAgg).sort().map(grp => {
+    const ic = grpAgg[grp].inClassCount || 1;
+    const obj = { ...grpAgg[grp] };
+    obj.avgRespTime = ic > 0 ? Math.round(grpAgg[grp].weightedRespTime / ic * 10) / 10 : 0;
+    obj.bindRate = pct(obj.bindCount, ic);
+    obj.joinRate = pct(obj.joinGroupCount, ic);
+    obj.coverRate = pct(obj.coverCount, ic);
+    obj.interactRate = pct(obj.interactCount, ic);
+    obj.activeRate = pct(obj.activeCount, ic);
+    obj.onePayRate = pct(obj.onePayCount, ic);
+    obj.zero3Rate = pct(obj.zero3Count, ic);
+    obj.zero3OnePayRate = pct(obj.zero3OnePayCount, ic);
+    // 教学组级别较上周下降
+    const lastGrp = (rawData.__lastRates || {}).groups || {};
+    const lastOpG = lastGrp.lastOnePayRate, lastZ3G = lastGrp.lastZero3Rate;
+    obj.weekDrop = (lastOpG != null && lastZ3G != null)
+      ? +((lastOpG - obj.onePayRate) + (lastZ3G - obj.zero3Rate)).toFixed(2)
+      : null;
+    return obj;
+  });
+
+  // ===== 3. 学科汇总：从 cts（已应用学科筛选）按 subject 聚合 =====
+  const subjAgg = {};
+  // 如果有学科筛选，只展示选中的学科；否则展示全部学科
+  const targetSubjects = currentSubjects.length > 0 ? currentSubjects : (cts.flatMap(c => c.subjects || [])).filter((v,i,a) => a.indexOf(v) === i).sort();
+  targetSubjects.forEach(subj => {
+    subjAgg[subj] = { base: '沈阳', subject: subj, inClassCount:0, bindCount:0, joinGroupCount:0,
+      coverCount:0, interactCount:0, activeCount:0, confirmCount:0, attendCount:0, unbindCount:0,
+      zero3Count:0, onePayCount:0, zero3OnePayCount:0,
+      weightedRespTime:0 };
+  });
+  cts.forEach(ct => {
+    (ct.subjects || []).forEach(subj => {
+      if (!subjAgg[subj]) return; // 跳过非目标学科
+      ['inClassCount','bindCount','joinGroupCount','coverCount','interactCount',
+       'activeCount','confirmCount','attendCount','unbindCount',
+       'zero3Count','onePayCount','zero3OnePayCount']
+        .forEach(k => subjAgg[subj][k] += ct[k] || 0);
+      subjAgg[subj].weightedRespTime += (ct.avgRespTime || 0) * ct.inClassCount;
+    });
+  });
+  let subjects = targetSubjects.map(subj => {
+    const ic = subjAgg[subj].inClassCount || 1;
+    const obj = { ...subjAgg[subj] };
+    obj.avgRespTime = ic > 0 ? Math.round(subjAgg[subj].weightedRespTime / ic * 10) / 10 : 0;
+    obj.bindRate = pct(obj.bindCount, ic);
+    obj.joinRate = pct(obj.joinGroupCount, ic);
+    obj.coverRate = pct(obj.coverCount, ic);
+    obj.interactRate = pct(obj.interactCount, ic);
+    obj.activeRate = pct(obj.activeCount, ic);
+    obj.onePayRate = pct(obj.onePayCount, ic);
+    obj.zero3Rate = pct(obj.zero3Count, ic);
+    obj.zero3OnePayRate = pct(obj.zero3OnePayCount, ic);
+    // 学科级别较上周下降
+    const lastSubj = (rawData.__lastRates || {}).subjects || {};
+    const lastOpS = lastSubj.lastOnePayRate, lastZ3S = lastSubj.lastZero3Rate;
+    obj.weekDrop = (lastOpS != null && lastZ3S != null)
+      ? +((lastOpS - obj.onePayRate) + (lastZ3S - obj.zero3Rate)).toFixed(2)
+      : null;
+    return obj;
+  });
+
+  filteredAll = { subjects, groups, classTeachers: cts };
+
+  // ===== 4. Header =====
+  const totalInClass = subjects.reduce((s, r) => s + r.inClassCount, 0);
+  const totalBind = subjects.reduce((s, r) => s + r.bindCount, 0);
+  const totalUnbind = subjects.reduce((s, r) => s + (r.unbindCount || 0), 0);
+  const totalCoverRate = totalInClass > 0 ? pct(subjects.reduce((s, r) => s + (r.coverCount || 0), 0), totalInClass) : 0;
+  const totalActiveRate = totalInClass > 0 ? pct(subjects.reduce((s, r) => s + (r.activeCount || 0), 0), totalInClass) : 0;
+  const totalAvgRespTime = groups.length > 0
+    ? (groups.reduce((s, r) => s + (r.avgRespTime || 0) * (r.inClassCount || 0), 0) / subjects.reduce((s, r) => s + (r.inClassCount || 0), 0)).toFixed(1)
+    : 0;
+  const totalOnePayRate = totalInClass > 0 ? pct(subjects.reduce((s, r) => s + (r.onePayCount || 0), 0), totalInClass) : 0;
+  const totalZero3Rate = totalInClass > 0 ? pct(subjects.reduce((s, r) => s + (r.zero3Count || 0), 0), totalInClass) : 0;
+  document.getElementById('totalInClass').textContent = totalInClass.toLocaleString();
+  document.getElementById('totalBindRate').textContent = pct(totalBind, totalInClass) + '%';
+  document.getElementById('totalUnbindCount').textContent = totalUnbind.toLocaleString();
+  document.getElementById('totalCoverRate').textContent = totalCoverRate + '%';
+  document.getElementById('totalActiveRate').textContent = totalActiveRate + '%';
+  document.getElementById('totalAvgRespTime').textContent = totalAvgRespTime;
+  document.getElementById('totalOnePayRate').textContent = totalOnePayRate + '%';
+  document.getElementById('totalZero3Rate').textContent = totalZero3Rate + '%';
+  document.getElementById('boardTitle').textContent = '沈阳基地·服务沟通数据看板' + (currentPkg ? '（' + currentPkg + '）' : '');
+
+  // ===== 5. Meta =====
+  const subjectLabel = currentSubjects.length > 0 ? currentSubjects.join('+') : '全部';
+  document.getElementById('subjectMeta').textContent = '共 ' + subjects.length + ' 个学科';
+  document.getElementById('groupMeta').textContent = subjectLabel + ' · ' + groups.length + '个教学组';
+  document.getElementById('ctMeta').textContent = '共 ' + cts.length + ' 位班主任';
+
+  renderTables();
+  buildCtGroupCapsules();
+}
+
+
+function buildCtGroupCapsules() {
+  const allGroups = [...new Set(filteredAll.classTeachers.map(c => c.group || '未知'))].sort();
+  const container = document.getElementById('ctGroupCapsules');
+  container.innerHTML = allGroups.map(g => {
+    const active = currentCtGroups.includes(g) ? ' active' : '';
+    return `<button class="capsule${active}" data-val="${g}" onclick="toggleCtGroup('${g}')">${g}</button>`;
+  }).join('');
+}
+
+function toggleCtGroup(g) {
+  const idx = currentCtGroups.indexOf(g);
+  if (idx >= 0) currentCtGroups.splice(idx, 1);
+  else currentCtGroups.push(g);
+  buildCtGroupCapsules();
+  renderCtTable();
+}
+
+function renderTables() {
+  renderSubjectTable();
+  renderGroupTable();
+  renderCtTable();
+}
+
+function makeSortFn(col) {
+  return function(a, b) {
+    let av = a[col], bv = b[col];
+    if (typeof av === 'string') return sortDir === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
+    return sortDir === 'asc' ? av - bv : bv - av;
+  };
+}
+
+function renderSubjectTable() {
+  const sorted = [...filteredAll.subjects].sort(makeSortFn(sortCol));
+  const tbody = document.getElementById('subjectBody');
+  const _v = {
+    bindRate: sorted.map(r => r.bindRate),
+    joinRate: sorted.map(r => r.joinRate),
+    coverRate: sorted.map(r => r.coverRate),
+    interactRate: sorted.map(r => r.interactRate),
+    activeRate: sorted.map(r => r.activeRate),
+    unbindCount: sorted.map(r => r.unbindCount),
+    onePayRate: sorted.map(r => r.onePayRate),
+    zero3Rate: sorted.map(r => r.zero3Rate),
+    weekDrop: sorted.map(r => r.weekDrop),
+  };
+  tbody.innerHTML = sorted.map(r => {
+    const wd = r.weekDrop !== null && r.weekDrop !== undefined
+      ? '<span class="td-rate ' + rateColor(r.weekDrop,'weekDrop',_v.weekDrop) + '">' + (r.weekDrop >= 0 ? '+' : '') + r.weekDrop + 'pp</span>'
+      : '<span class="td-rate">—</span>';
+    return '<tr>' +
+      '<td>' + r.subject + '</td>' +
+      '<td class="td-rate ' + rateColor(r.bindRate,'bindRate',_v.bindRate) + '">' + r.bindRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.joinRate,'joinRate',_v.joinRate) + '">' + r.joinRate + '%</td>' +
+      '<td class="td-num">' + fmt(r.unbindCount) + '</td>' +
+      '<td class="td-rate ' + rateColor(r.coverRate,'coverRate',_v.coverRate) + '">' + r.coverRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.interactRate,'interactRate',_v.interactRate) + '">' + r.interactRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.activeRate,'activeRate',_v.activeRate) + '">' + r.activeRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + r.avgRespTime + '</td>' +
+      '<td class="td-rate ' + rateColor(r.onePayRate,'onePayRate',_v.onePayRate) + '">' + r.onePayRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.zero3Rate,'zero3Rate',_v.zero3Rate) + '">' + r.zero3Rate + '%</td>' +
+      '<td>' + wd + '</td>' +
+    '</tr>';
+  }).join('');
+
+  document.querySelectorAll('#subjectTable thead th[data-col]').forEach(th => {
+    th.classList.remove('sort-asc', 'sort-desc');
+    if (th.dataset.col === sortCol) th.classList.add('sort-' + sortDir);
+  });
+}
+
+function renderGroupTable() {
+  const sorted = [...filteredAll.groups].sort(makeSortFn(sortCol));
+  const tbody = document.getElementById('groupBody');
+  const _v = {
+    bindRate: sorted.map(r => r.bindRate),
+    joinRate: sorted.map(r => r.joinRate),
+    coverRate: sorted.map(r => r.coverRate),
+    interactRate: sorted.map(r => r.interactRate),
+    activeRate: sorted.map(r => r.activeRate),
+    unbindCount: sorted.map(r => r.unbindCount),
+    onePayRate: sorted.map(r => r.onePayRate),
+    zero3Rate: sorted.map(r => r.zero3Rate),
+    weekDrop: sorted.map(r => r.weekDrop),
+  };
+  tbody.innerHTML = sorted.map(r => {
+    const wd = r.weekDrop !== null && r.weekDrop !== undefined
+      ? '<span class="td-rate ' + rateColor(r.weekDrop,'weekDrop',_v.weekDrop) + '">' + (r.weekDrop >= 0 ? '+' : '') + r.weekDrop + 'pp</span>'
+      : '<span class="td-rate">—</span>';
+    return '<tr>' +
+      '<td>' + r.group + '</td>' +
+      '<td class="td-rate ' + rateColor(r.bindRate,'bindRate',_v.bindRate) + '">' + r.bindRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.joinRate,'joinRate',_v.joinRate) + '">' + r.joinRate + '%</td>' +
+      '<td class="td-num">' + fmt(r.unbindCount) + '</td>' +
+      '<td class="td-rate ' + rateColor(r.coverRate,'coverRate',_v.coverRate) + '">' + r.coverRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.interactRate,'interactRate',_v.interactRate) + '">' + r.interactRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.activeRate,'activeRate',_v.activeRate) + '">' + r.activeRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + r.avgRespTime + '</td>' +
+      '<td class="td-rate ' + rateColor(r.onePayRate,'onePayRate',_v.onePayRate) + '">' + r.onePayRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(r.zero3Rate,'zero3Rate',_v.zero3Rate) + '">' + r.zero3Rate + '%</td>' +
+      '<td>' + wd + '</td>' +
+    '</tr>';
+  }).join('');
+
+  document.querySelectorAll('#groupTable thead th[data-col]').forEach(th => {
+    th.classList.remove('sort-asc', 'sort-desc');
+    if (th.dataset.col === sortCol) th.classList.add('sort-' + sortDir);
+  });
+}
+
+function renderCtTable() {
+  let cts = filteredAll.classTeachers;
+  if (currentCtGroups.length > 0) {
+    cts = cts.filter(c => currentCtGroups.includes(c.group || '未知'));
+  }
+  if (currentCtSearch) {
+    cts = cts.filter(c => (c.name || '').includes(currentCtSearch));
+  }
+  const sorted = [...cts].sort(makeSortFn(sortCol));
+  const tbody = document.getElementById('ctBody');
+  const _v = {
+    bindRate: sorted.map(r => r.bindRate),
+    joinRate: sorted.map(r => r.joinRate),
+    coverRate: sorted.map(r => r.coverRate),
+    interactRate: sorted.map(r => r.interactRate),
+    activeRate: sorted.map(r => r.activeRate),
+    unbindCount: sorted.map(r => r.unbindCount),
+    onePayRate: sorted.map(r => r.onePayRate),
+    zero3Rate: sorted.map(r => r.zero3Rate),
+    weekDrop: sorted.map(r => r.weekDrop),
+  };
+  tbody.innerHTML = sorted.map(c => {
+    const wd = c.weekDrop !== null && c.weekDrop !== undefined
+      ? '<span class="td-rate ' + rateColor(c.weekDrop,'weekDrop',_v.weekDrop) + '">' + (c.weekDrop >= 0 ? '+' : '') + c.weekDrop + 'pp</span>'
+      : '<span class="td-rate">—</span>';
+    return '<tr>' +
+      '<td>' + (c.name || '') + '</td>' +
+      '<td>' + (c.group || '未知') + '</td>' +
+      '<td class="td-rate ' + rateColor(c.bindRate,'bindRate',_v.bindRate) + '">' + c.bindRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.joinRate,'joinRate',_v.joinRate) + '">' + c.joinRate + '%</td>' +
+      '<td class="td-num">' + fmt(c.unbindCount) + '</td>' +
+      '<td class="td-rate ' + rateColor(c.coverRate,'coverRate',_v.coverRate) + '">' + c.coverRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.interactRate,'interactRate',_v.interactRate) + '">' + c.interactRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.activeRate,'activeRate',_v.activeRate) + '">' + c.activeRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.avgRespTime,'avgRespTime',_v.avgRespTime) + '">' + c.avgRespTime + '分</td>' +
+      '<td class="td-rate ' + rateColor(c.onePayRate,'onePayRate',_v.onePayRate) + '">' + c.onePayRate + '%</td>' +
+      '<td class="td-rate ' + rateColor(c.zero3Rate,'zero3Rate',_v.zero3Rate) + '">' + c.zero3Rate + '%</td>' +
+      '<td>' + wd + '</td>' +
+    '</tr>';
+  }).join('');
+
+  document.getElementById('ctMeta').textContent = '共 ' + cts.length + ' 条记录' + (currentCtGroups.length > 0 || currentCtSearch ? '（已筛选）' : '');
+
+  document.querySelectorAll('#ctTable thead th[data-col]').forEach(th => {
+    th.classList.remove('sort-asc', 'sort-desc');
+    if (th.dataset.col === sortCol) th.classList.add('sort-' + sortDir);
+  });
+}
+
+function onCtSearchChange(val) {
+  currentCtSearch = val.trim();
+  renderCtTable();
+}
+// Sort handlers
+document.querySelectorAll('#subjectTable thead th[data-col], #groupTable thead th[data-col], #ctTable thead th[data-col]').forEach(th => {
+  th.addEventListener('click', () => {
+    const col = th.dataset.col;
+    if (sortCol === col) {
+      sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+    } else {
+      sortCol = col;
+      sortDir = 'desc';
+    }
+    renderTables();
+  });
+});
+
+// Pkg filter
+document.querySelectorAll('#pkgCapsules .capsule').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('#pkgCapsules .capsule').forEach(b => b.classList.remove('active', 'capsule-active-purple'));
+    btn.classList.add('active', 'capsule-active-purple');
+    currentPkg = btn.dataset.val;
+    applyFilters();
+  });
+});
+
+loadData();
+</script>
+</body>
+</html>
